@@ -11,8 +11,13 @@
             "id": "1435022489da659a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "React/React Home.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "React/React Home.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "React/React Home.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "React/React Home.md"
+              }
             }
           }
         ]
@@ -140,20 +149,24 @@
   },
   "active": "1435022489da659a",
   "lastOpenFiles": [
+    "React/Pasted image 20240319022643.png",
+    "React/React-dev-learn/Custom Hooks.md",
+    "React/React Home.md",
+    "React/Typescript/No BS TS.md",
+    "2024-03-19.md",
+    "Untitled 2.canvas",
+    "Untitled 1.canvas",
+    "React/React-dev-learn/Escape Hatches.md",
     "DotNet/Hello world.md",
     "Welcome.md",
-    "React/React-dev-learn/Custom Hooks.md",
-    "DotNet",
-    "Typescript/No BS TS.md",
     "create a link.md",
+    "DotNet",
     "React/React-dev-learn/Managing state.md",
-    "2024-03-19.md",
     "repository",
     "New folder",
     "Untitled.canvas",
-    "React/React-dev-learn/Escape Hatches.md",
     "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
-    "Typescript",
+    "React/Typescript",
     "React/React-dev-learn",
     "React"
   ]
