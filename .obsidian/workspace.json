@@ -11,13 +11,8 @@
             "id": "1435022489da659a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React/React Home.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/React Home.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/React Home.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "React/React Home.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -149,9 +140,15 @@
   },
   "active": "1435022489da659a",
   "lastOpenFiles": [
+    "DotNet/C_Sharp/C_Sharp.md",
+    "DotNet/ASP.NET.md",
+    "DotNet/C_Sharp",
+    "React/React Home.md",
+    "React/attachments/Pasted image 20240319022748.png",
+    "React/attachments",
+    "React/attachments/Pasted image 20240319022718.png",
     "React/Pasted image 20240319022643.png",
     "React/React-dev-learn/Custom Hooks.md",
-    "React/React Home.md",
     "React/Typescript/No BS TS.md",
     "2024-03-19.md",
     "Untitled 2.canvas",
