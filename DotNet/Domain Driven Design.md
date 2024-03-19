@@ -49,10 +49,6 @@ We can solve Event sourcing problem with CQRS.
 
 ![[1 Y0Kml0LWJvp4Tcm83DyCfw.webp]]
 
-engagement safety - filtering asfety 
 
-live safety - live streaming followed, eg.stream and contents 
-
-internal or external
 
 
