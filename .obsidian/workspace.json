@@ -26,7 +26,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DotNet/Domain Driven Design - a way of building of microservice.md",
+                "file": "DotNet/C_Sharp/Polymorphism.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "47a2cf1a09142c3a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DotNet/C_Sharp/Boxing and unboxing.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -34,7 +47,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -100,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DotNet/Domain Driven Design - a way of building of microservice.md",
+                "file": "DotNet/C_Sharp/Boxing and unboxing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DotNet/Domain Driven Design - a way of building of microservice.md",
+                "file": "DotNet/C_Sharp/Boxing and unboxing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DotNet/Domain Driven Design - a way of building of microservice.md"
+                "file": "DotNet/C_Sharp/Boxing and unboxing.md"
               }
             }
           }
@@ -161,16 +174,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "65c02b4c7a676bfb",
+  "active": "47a2cf1a09142c3a",
   "lastOpenFiles": [
+    "DotNet/C_Sharp/attachments/Pasted image 20240319190513.png",
+    "DotNet/C_Sharp/attachments/Pasted image 20240319190222.png",
+    "DotNet/C_Sharp/attachments",
+    "DotNet/C_Sharp/readonly vs const.md",
+    "DotNet/C_Sharp/Boxing and unboxing.md",
+    "DotNet/C_Sharp/Properties vs fields.md",
+    "DotNet/C_Sharp/Struct vs classes.md",
+    "DotNet/C_Sharp/Polymorphism.md",
+    "DotNet/C_Sharp/Ref vs Out.md",
+    "DotNet/ASP.NET.md",
+    "DotNet/C_Sharp/C_Sharp.md",
+    "DotNet/Domain Driven Design - a way of building of microservice.md",
     "DotNet/attachments/1 Y0Kml0LWJvp4Tcm83DyCfw.webp",
     "DotNet/attachments/1 CAfs0qB6Ap4P10UqWsD7rw.webp",
     "DotNet/attachments/domain-driven-design-microservice.png",
     "DotNet/attachments",
     "DotNet/Event Driven Architecture.md",
-    "DotNet/Domain Driven Design - a way of building of microservice.md",
-    "DotNet/C_Sharp/C_Sharp.md",
-    "DotNet/ASP.NET.md",
     "DotNet/C_Sharp",
     "React/React Home.md",
     "React/attachments/Pasted image 20240319022748.png",
