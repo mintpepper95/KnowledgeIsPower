@@ -1,12 +1,42 @@
+
 For designing complex microservices with significant business rules. Simpler responsibilities, like CRUD can be managed with simpler approaches.
 
-Ubiquitous language - using the same business terms, meaning all the microservices etc uses the same language
+
+We need to first identify the subdomains. ideally, each subdomain is mapped to a single bounded context. A bounded context is a logical boundary in which the terms are consistent.
+
+Ubiquitous language - used in a boundary context, meaning all the microservices etc uses the same language
+
+Example, host in the listing domain of airbnb, refers to a person renting their homes.
+
+
+Aggregate- eg. Reservation Aggregate in Airbnb might be Guest entity. Host entity, and price value objects ( the pricing ) The Reservation Aggregate is at the root so it's the root aggregate. It's responsible for aggregates are in valid states. Eg. Not more guests booked than homes available.
+
+Aggregate is also transactional boundary, meaning changes to it are either commited or rolled back as a whole.
+
+
+
+
+
+
 
 Bounded Context - Eg. For e-commerce site, we have order management, customer management, stock management, delivery management, payment management, product management etc...
 
 
+#### Practical example in ASP.NET
+In this case, our microservice is divided into 3 layers.
+Api - web api project, here we have the controllers and system configurations like DI.
+Domain - class library, for business logics. DTOs, Interfaces and services that implements interfaces. Enums, constants etc as well.
+Infra - class library, where we access the database. Eg. Db Context, Entities ( where each properties maps to a column ), repository interfaces and implementations.
 
 ![[domain-driven-design-microservice.png]]
+
+
+
+
+
+
+
+
 
 
 
@@ -49,6 +79,8 @@ We can solve Event sourcing problem with CQRS.
 
 ![[1 Y0Kml0LWJvp4Tcm83DyCfw.webp]]
 
+Client starts the operation to change to state of entity on the system. Event info is generated as result of this operation, and it's stored in the system as a model for writing. Event sourcing is for writing.
 
+Our process is triggered and reading model is updated based on our writing model.
 
 

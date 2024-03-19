@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DotNet/Domain Driven Design.md",
+                "file": "DotNet/Domain Driven Design - a way of building of microservice.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DotNet/Domain Driven Design.md",
+                "file": "DotNet/Domain Driven Design - a way of building of microservice.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DotNet/Domain Driven Design.md",
+                "file": "DotNet/Domain Driven Design - a way of building of microservice.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DotNet/Domain Driven Design.md"
+                "file": "DotNet/Domain Driven Design - a way of building of microservice.md"
               }
             }
           }
@@ -168,7 +168,7 @@
     "DotNet/attachments/domain-driven-design-microservice.png",
     "DotNet/attachments",
     "DotNet/Event Driven Architecture.md",
-    "DotNet/Domain Driven Design.md",
+    "DotNet/Domain Driven Design - a way of building of microservice.md",
     "DotNet/C_Sharp/C_Sharp.md",
     "DotNet/ASP.NET.md",
     "DotNet/C_Sharp",
