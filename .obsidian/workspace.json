@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DotNet/C_Sharp/Boxing and unboxing.md",
+                "file": "DotNet/Domain Driven Design - a way of building of microservice.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DotNet/C_Sharp/Boxing and unboxing.md",
+                "file": "DotNet/Domain Driven Design - a way of building of microservice.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DotNet/C_Sharp/Boxing and unboxing.md",
+                "file": "DotNet/Domain Driven Design - a way of building of microservice.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DotNet/C_Sharp/Boxing and unboxing.md"
+                "file": "DotNet/Domain Driven Design - a way of building of microservice.md"
               }
             }
           }
@@ -176,23 +176,24 @@
   },
   "active": "47a2cf1a09142c3a",
   "lastOpenFiles": [
+    "DotNet/Event Driven Architecture.md",
+    "DotNet/Domain Driven Design - a way of building of microservice.md",
+    "DotNet/C_Sharp/SOLID.md",
+    "DotNet/C_Sharp/Boxing and unboxing.md",
     "DotNet/C_Sharp/attachments/Pasted image 20240319190513.png",
     "DotNet/C_Sharp/attachments/Pasted image 20240319190222.png",
     "DotNet/C_Sharp/attachments",
     "DotNet/C_Sharp/readonly vs const.md",
-    "DotNet/C_Sharp/Boxing and unboxing.md",
     "DotNet/C_Sharp/Properties vs fields.md",
     "DotNet/C_Sharp/Struct vs classes.md",
     "DotNet/C_Sharp/Polymorphism.md",
     "DotNet/C_Sharp/Ref vs Out.md",
     "DotNet/ASP.NET.md",
     "DotNet/C_Sharp/C_Sharp.md",
-    "DotNet/Domain Driven Design - a way of building of microservice.md",
     "DotNet/attachments/1 Y0Kml0LWJvp4Tcm83DyCfw.webp",
     "DotNet/attachments/1 CAfs0qB6Ap4P10UqWsD7rw.webp",
     "DotNet/attachments/domain-driven-design-microservice.png",
     "DotNet/attachments",
-    "DotNet/Event Driven Architecture.md",
     "DotNet/C_Sharp",
     "React/React Home.md",
     "React/attachments/Pasted image 20240319022748.png",

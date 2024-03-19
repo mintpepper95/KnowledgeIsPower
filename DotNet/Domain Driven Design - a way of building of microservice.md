@@ -16,9 +16,6 @@ Aggregate is also transactional boundary, meaning changes to it are either commi
 
 
 
-
-
-
 Bounded Context - Eg. For e-commerce site, we have order management, customer management, stock management, delivery management, payment management, product management etc...
 
 
@@ -29,10 +26,6 @@ Domain - class library, for business logics. DTOs, Interfaces and services that 
 Infra - class library, where we access the database. Eg. Db Context, Entities ( where each properties maps to a column ), repository interfaces and implementations.
 
 ![[domain-driven-design-microservice.png]]
-
-
-
-
 
 
 

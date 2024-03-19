@@ -5,6 +5,8 @@ Reference types are stored on the heap.
 Value types are actual values stored on the stack.
 #### What is boxing?
 
+CLR boxes the value type, by creating a new System.Object on the heap and wraps the value of `i` in it, and then assigns its address to o, on the stack.
+
 ![[Pasted image 20240319190222.png]]
 Here object o is an address and not value itself.
 It's created on the stack.
@@ -36,7 +38,6 @@ if (o is 10)
 #### What is unboxing?
 Extracting value type from an object and converting it to a value type.
 
-CLR boxes the value type, by creating a new System.Object on the heap and wraps the value of `i` in it, and then assigns its address to o, on the stack.
 
 ![[Pasted image 20240319190513.png]]
 ```csharp
