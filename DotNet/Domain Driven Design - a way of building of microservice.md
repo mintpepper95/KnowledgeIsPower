@@ -1,22 +1,37 @@
 
-For designing complex microservices with significant business rules. Simpler responsibilities, like CRUD can be managed with simpler approaches.
-
+For designing complex microservices ( independently deployable services ) with significant business rules. Simpler responsibilities, like CRUD can be managed with simpler approaches.
 
 We need to first identify the subdomains. ideally, each subdomain is mapped to a single bounded context. A bounded context is a logical boundary in which the terms are consistent.
 
-Ubiquitous language - used in a boundary context, meaning all the microservices etc uses the same language
+**Bounded Context** - Eg. For e-commerce site, we have order management, customer management, stock management, delivery management, payment management, product management etc...
 
-Example, host in the listing domain of airbnb, refers to a person renting their homes.
+**Ubiquitous language** - used in a boundary context, meaning all microservices etc uses the same language. We use this language to build a model of our domain. Example, host in the listing domain of airbnb, refers to a person renting their homes.
+
+**Value object** - an immutable object that represents a specific value. E.g. price, or rgb value, they are considered equal if they have the same value, there's no identity. They also help express business rules.
+
+**Entity** - they may have the same values, but are regarded as different instances. They are only equal if they have the same identity. They are mutable.
+
+**Domain events** - events with data that notify other services when something happens. Eg. buying a book, user is logged on etc.
+
+**Aggregate** - A cluster that contains value objects, entities and domain events. Eg. Customer place orders to buy books, then customer, order and book can be treated as an aggregate. Aggregates must be ref by a main entity, which is the root entity.
+
+We think about the aggregate as a whole. All calls from outside will ref the aggregate root, they can't ref the other entities within this aggregate.
+
+Aggregate define a consistency boundary where states of all entities must be valid according to the business rules.
+
+To ensure state changes are consistent, we must save all changes to an aggregate in 1 atomic data transaction. For reading, we load the whole thing from the repository. So our aggregate remains in a valid state.
+![[Pasted image 20240320003601.png|680]]
 
 
-Aggregate- eg. Reservation Aggregate in Airbnb might be Guest entity. Host entity, and price value objects ( the pricing ) The Reservation Aggregate is at the root so it's the root aggregate. It's responsible for aggregates are in valid states. Eg. Not more guests booked than homes available.
 
-Aggregate is also transactional boundary, meaning changes to it are either commited or rolled back as a whole.
+It's responsible for aggregates are in valid states. Eg. Not more guests booked than homes available.
+
+Aggregate is also transactional boundary, meaning changes to it are either committed or rolled back as a whole.
 
 
 
 
-Bounded Context - Eg. For e-commerce site, we have order management, customer management, stock management, delivery management, payment management, product management etc...
+
 
 
 #### Practical example in ASP.NET

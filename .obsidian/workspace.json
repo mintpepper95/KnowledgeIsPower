@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DotNet/Domain Driven Design - a way of building of microservice.md",
+                "file": "DotNet/C_Sharp/EF Core.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DotNet/Domain Driven Design - a way of building of microservice.md",
+                "file": "DotNet/C_Sharp/EF Core.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DotNet/Domain Driven Design - a way of building of microservice.md",
+                "file": "DotNet/C_Sharp/EF Core.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DotNet/Domain Driven Design - a way of building of microservice.md"
+                "file": "DotNet/C_Sharp/EF Core.md"
               }
             }
           }
@@ -176,12 +176,26 @@
   },
   "active": "47a2cf1a09142c3a",
   "lastOpenFiles": [
-    "DotNet/Event Driven Architecture.md",
+    "DotNet/C_Sharp/attachments/dbset-fg1.png",
+    "DotNet/C_Sharp/attachments/Pasted image 20240320010252.png",
+    "DotNet/C_Sharp/attachments/Pasted image 20240320010226.png",
+    "DotNet/C_Sharp/attachments/Pasted image 20240320010221.png",
+    "DotNet/C_Sharp/attachments/Pasted image 20240320005650.png",
     "DotNet/Domain Driven Design - a way of building of microservice.md",
+    "DotNet/C_Sharp/EF Core.md",
+    "DotNet/Event Sourcing and CQRS.md",
+    "DotNet/attachments/Pasted image 20240320003601.png",
     "DotNet/C_Sharp/SOLID.md",
+    "DotNet/Improving performance of a system.md",
+    "DotNet/Database stuffs.md",
+    "DotNet/attachments/Pasted image 20240320000952.png",
+    "DotNet/attachments/Pasted image 20240320000940.png",
+    "DotNet/attachments/Pasted image 20240320000007.png",
+    "DotNet/attachments/Pasted image 20240319235232.png",
+    "DotNet/attachments/Pasted image 20240319235202.png",
+    "DotNet/Event Driven Architecture.md",
+    "DotNet/Untitled.canvas",
     "DotNet/C_Sharp/Boxing and unboxing.md",
-    "DotNet/C_Sharp/attachments/Pasted image 20240319190513.png",
-    "DotNet/C_Sharp/attachments/Pasted image 20240319190222.png",
     "DotNet/C_Sharp/attachments",
     "DotNet/C_Sharp/readonly vs const.md",
     "DotNet/C_Sharp/Properties vs fields.md",
@@ -190,16 +204,10 @@
     "DotNet/C_Sharp/Ref vs Out.md",
     "DotNet/ASP.NET.md",
     "DotNet/C_Sharp/C_Sharp.md",
-    "DotNet/attachments/1 Y0Kml0LWJvp4Tcm83DyCfw.webp",
-    "DotNet/attachments/1 CAfs0qB6Ap4P10UqWsD7rw.webp",
-    "DotNet/attachments/domain-driven-design-microservice.png",
     "DotNet/attachments",
     "DotNet/C_Sharp",
     "React/React Home.md",
-    "React/attachments/Pasted image 20240319022748.png",
     "React/attachments",
-    "React/attachments/Pasted image 20240319022718.png",
-    "React/Pasted image 20240319022643.png",
     "React/React-dev-learn/Custom Hooks.md",
     "React/Typescript/No BS TS.md",
     "2024-03-19.md",
@@ -213,8 +221,6 @@
     "React/React-dev-learn/Managing state.md",
     "repository",
     "New folder",
-    "Untitled.canvas",
-    "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
     "React/Typescript",
     "React/React-dev-learn",
     "React"
