@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DotNet/C_Sharp/EF Core.md",
+                "file": "DotNet/C_Sharp/Boxing and unboxing.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DotNet/C_Sharp/EF Core.md",
+                "file": "DotNet/C_Sharp/Boxing and unboxing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DotNet/C_Sharp/EF Core.md",
+                "file": "DotNet/C_Sharp/Boxing and unboxing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DotNet/C_Sharp/EF Core.md"
+                "file": "DotNet/C_Sharp/Boxing and unboxing.md"
               }
             }
           }
@@ -176,13 +176,14 @@
   },
   "active": "47a2cf1a09142c3a",
   "lastOpenFiles": [
+    "DotNet/C_Sharp/attachments/1690826560012.png",
+    "DotNet/C_Sharp/EF Core.md",
     "DotNet/C_Sharp/attachments/dbset-fg1.png",
     "DotNet/C_Sharp/attachments/Pasted image 20240320010252.png",
     "DotNet/C_Sharp/attachments/Pasted image 20240320010226.png",
     "DotNet/C_Sharp/attachments/Pasted image 20240320010221.png",
     "DotNet/C_Sharp/attachments/Pasted image 20240320005650.png",
     "DotNet/Domain Driven Design - a way of building of microservice.md",
-    "DotNet/C_Sharp/EF Core.md",
     "DotNet/Event Sourcing and CQRS.md",
     "DotNet/attachments/Pasted image 20240320003601.png",
     "DotNet/C_Sharp/SOLID.md",
@@ -192,7 +193,6 @@
     "DotNet/attachments/Pasted image 20240320000940.png",
     "DotNet/attachments/Pasted image 20240320000007.png",
     "DotNet/attachments/Pasted image 20240319235232.png",
-    "DotNet/attachments/Pasted image 20240319235202.png",
     "DotNet/Event Driven Architecture.md",
     "DotNet/Untitled.canvas",
     "DotNet/C_Sharp/Boxing and unboxing.md",

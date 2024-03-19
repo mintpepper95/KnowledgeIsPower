@@ -47,3 +47,14 @@ int j = (int)o;
 ```
 
 
+### **Boxing is an expensive operation because it involves:**
+
+- Allocating memory on the heap.
+- Copying the value from the stack to the newly allocated heap memory.
+
+### **And unboxing is costly because it involves:**
+
+- Type checking at runtime to ensure the correct type is being unboxed.
+- Copying the value from the heap back to the stack.
+
+![[1690826560012.png]]
