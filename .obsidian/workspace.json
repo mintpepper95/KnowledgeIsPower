@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DotNet/Domain Driven Design - a way of building of microservice.md",
+                "file": "DotNet/EFCore code first vs database first.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DotNet/Domain Driven Design - a way of building of microservice.md",
+                "file": "DotNet/EFCore code first vs database first.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DotNet/Domain Driven Design - a way of building of microservice.md",
+                "file": "DotNet/EFCore code first vs database first.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DotNet/Domain Driven Design - a way of building of microservice.md"
+                "file": "DotNet/EFCore code first vs database first.md"
               }
             }
           }
@@ -149,10 +149,10 @@
   },
   "active": "21b317b6c372685f",
   "lastOpenFiles": [
+    "DotNet/Domain Driven Design - a way of building of microservice.md",
     "DotNet/attachments/ES-CQRS-Sketch-4.svg",
     "DotNet/Event Sourcing and CQRS.md",
     "DotNet/Event Driven Architecture.md",
-    "DotNet/Domain Driven Design - a way of building of microservice.md",
     "DotNet/Database stuffs.md",
     "DotNet/C_Sharp/Polymorphism.md",
     "DotNet/Improving performance of a system.md",
@@ -169,7 +169,6 @@
     "DotNet/C_Sharp/SOLID.md",
     "DotNet/attachments/Pasted image 20240320000952.png",
     "DotNet/attachments/Pasted image 20240320000940.png",
-    "DotNet/attachments/Pasted image 20240320000007.png",
     "DotNet/Untitled.canvas",
     "DotNet/C_Sharp/attachments",
     "DotNet/C_Sharp/readonly vs const.md",

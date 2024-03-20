@@ -1,4 +1,25 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Code first
 * You don't bother with db, just create the entities, and ef handles everything with EF migrations.
 * Database version control, since all changes are tracked
