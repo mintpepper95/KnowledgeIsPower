@@ -1,3 +1,11 @@
+[[#Denormalization]]
+[[#DB indexing]]
+[[#Sharding]]
+
+
+
+
+#### Denormalization
 Normalized - For storing non-redundant and consistent data
 Denormalized - Combining data so querying is fast
 
@@ -14,9 +22,7 @@ Data integrity is not maintained. Common to have redundant data. Excess data, st
 
 
 
-
 #### DB indexing
-
 ![[Pasted image 20240320000007.png]]
 While we see data as rows. Data are stored inside blocks in the db. Each block has a fixed space. A block is the smallest unit of data used by a database. This data is persisted in disk.
 
@@ -33,6 +39,11 @@ Note this is sorted in alphabetical order.
 ![[Pasted image 20240320000952.png]]
 
 Things that are sorted are fast to query.
+
+
+#### Sharding
+Horizontal scaling technique.
+Used in distributed databases where a single db can't handle the volume of data/requests. We basically divide a large dataset into smaller subsets called shards, and store each shard on a separate db server.
 
 
 

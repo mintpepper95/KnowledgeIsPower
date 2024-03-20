@@ -1,9 +1,17 @@
 
+[[[#DDD Theory]]]
+[[#Practical example in ASP.NET]]
+
+
+#### DDD Theory
+
 For designing complex microservices ( independently deployable services ) with significant business rules. Simpler responsibilities, like CRUD can be managed with simpler approaches.
 
 We need to first identify the subdomains. ideally, each subdomain is mapped to a single bounded context. A bounded context is a logical boundary in which the terms are consistent.
 
 **Bounded Context** - Eg. For e-commerce site, we have order management, customer management, stock management, delivery management, payment management, product management etc...
+
+A bounded context can include many aggregate, or a single aggregate.
 
 **Ubiquitous language** - used in a boundary context, meaning all microservices etc uses the same language. We use this language to build a model of our domain. Example, host in the listing domain of airbnb, refers to a person renting their homes.
 
@@ -15,6 +23,14 @@ We need to first identify the subdomains. ideally, each subdomain is mapped to a
 
 **Aggregate** - A cluster that contains value objects, entities and domain events. Eg. Customer place orders to buy books, then customer, order and book can be treated as an aggregate. Aggregates must be ref by a main entity, which is the root entity.
 
+Aggregate live in the write model.
+
+
+
+
+Aggregate root - To ensure aggregate is always in a valid state. It's also what's visible to the outside. 
+
+
 We think about the aggregate as a whole. All calls from outside will ref the aggregate root, they can't ref the other entities within this aggregate.
 
 Aggregate define a consistency boundary where states of all entities must be valid according to the business rules.
@@ -22,11 +38,29 @@ Aggregate define a consistency boundary where states of all entities must be val
 To ensure state changes are consistent, we must save all changes to an aggregate in 1 atomic data transaction. For reading, we load the whole thing from the repository. So our aggregate remains in a valid state.
 ![[Pasted image 20240320003601.png|680]]
 
-
-
 It's responsible for aggregates are in valid states. Eg. Not more guests booked than homes available.
 
-Aggregate is also transactional boundary, meaning changes to it are either committed or rolled back as a whole.
+Aggregate is also transactional boundary, meaning changes to it are either committed or rolled back as a whole in case any rules/operations fail.
+
+In the context of event sourcing, each operation made on the aggregate should result in a new event.
+
+We can think of an aggregate as a cluster of associated objects, it's a single unit for the purpose of data changes. Each aggregate has a root and a boundary. Root is a single, specific entity contained in the aggregate. It's the only member of the aggregate that outside objects are allowed to interact with.
+
+Eg. Invoice is a domain object, it can be made up of several objects, amounts to be paid, vendor name, due date. Invoice joins them together. Invoice is the aggregate. The root aggregate is the unique invoice number.
+
+
+
+Read model
+When events are added to the event store/db as result of write model processing, corresponding projections are triggered to create/update the read model. 
+
+Due to being derived from events, they can deleted/recreated without losing info. 
+
+
+![[ES-CQRS-Sketch-4.svg]]
+
+
+
+
 
 
 
@@ -54,7 +88,10 @@ Separation of command and query responsibilities.
 Have separate interfaces that reads data to that updates data.
 Data you read and write are stored in different database tools.
 
-Command - Only way to change something in the system. Commands are sent to CommandHandler from CommandDispatcher.
+Command - Only way to change something in the system. Commands are sent to CommandHandler from CommandDispatcher. Command handler is typically responsible for one aggregate. They can also emit domain events instead of directly modifying other aggregates.
+
+In Event Sourcing, each operation made on the aggregate should result with the new **event**. For example, issuing the invoice should result in the InvoiceIssued event. Once the event has happened, it is recorded in the event store.
+
 
 Query - Only way to read data from system. Querys are sent to QueryHandler from QueryDispatcher.
 
@@ -69,6 +106,8 @@ When user queries data, the services answer requests with the reading model.
 CQRS is updating reading model with async processes after writing model is registered. Which is what eventual consistency is about.
 
 There are no transactional dependency in eventual consistent systems, therefore read and write don't wait for each other, this is performance.
+
+
 
 
 

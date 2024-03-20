@@ -2,7 +2,7 @@ Also known as pub/sub.
 
 At least 3 components
 * Producer - emits events to a broker
-* Broker - Redirected the emitted events to the consumer
+* Broker - Redirected the emitted events to the consumer ( eg. kafka, rabbitmq)
 * Consumer - Receives the events and execute.
 
 Advantages

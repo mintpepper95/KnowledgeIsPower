@@ -13,11 +13,22 @@ Cons
 
 
 
+Eventual Consistency
+
+
+
+
+Projections - Builds a view of the current state derived from stream of events. You basically process events in chronological order and apply them to update the projection's state. Projections are often updated async, separate from writing events to the db. This means there maybe a delay between when an event is added and when it's reflected in the projection.
+
+
+
 #### CQRS - for implementing event sourcing
 
 Because it separates read and write, you can scale each part independently depending on needs. You can have separate models for read & write.
 
 However it introduces complexity. So use only when necessary.
+
+You can have event sourcing without CQRS, or implement CQRS without event sourcing, they work great together. 
 
 
 
