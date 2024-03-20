@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DotNet/C_Sharp/Boxing and unboxing.md",
+                "file": "DotNet/Event Driven Architecture.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DotNet/C_Sharp/Boxing and unboxing.md",
+                "file": "DotNet/Event Driven Architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DotNet/C_Sharp/Boxing and unboxing.md",
+                "file": "DotNet/Event Driven Architecture.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DotNet/C_Sharp/Boxing and unboxing.md"
+                "file": "DotNet/Event Driven Architecture.md"
               }
             }
           }
@@ -176,6 +176,13 @@
   },
   "active": "47a2cf1a09142c3a",
   "lastOpenFiles": [
+    "DotNet/EFCore code first vs database first.md",
+    "DotNet/Domain Driven Design - a way of building of microservice.md",
+    "DotNet/Event Driven Architecture.md",
+    "DotNet/Event Sourcing and CQRS.md",
+    "DotNet/Improving performance of a system.md",
+    "DotNet/Database stuffs.md",
+    "DotNet/C_Sharp/Boxing and unboxing.md",
     "DotNet/C_Sharp/attachments/1690826560012.png",
     "DotNet/C_Sharp/EF Core.md",
     "DotNet/C_Sharp/attachments/dbset-fg1.png",
@@ -183,19 +190,12 @@
     "DotNet/C_Sharp/attachments/Pasted image 20240320010226.png",
     "DotNet/C_Sharp/attachments/Pasted image 20240320010221.png",
     "DotNet/C_Sharp/attachments/Pasted image 20240320005650.png",
-    "DotNet/Domain Driven Design - a way of building of microservice.md",
-    "DotNet/Event Sourcing and CQRS.md",
     "DotNet/attachments/Pasted image 20240320003601.png",
     "DotNet/C_Sharp/SOLID.md",
-    "DotNet/Improving performance of a system.md",
-    "DotNet/Database stuffs.md",
     "DotNet/attachments/Pasted image 20240320000952.png",
     "DotNet/attachments/Pasted image 20240320000940.png",
     "DotNet/attachments/Pasted image 20240320000007.png",
-    "DotNet/attachments/Pasted image 20240319235232.png",
-    "DotNet/Event Driven Architecture.md",
     "DotNet/Untitled.canvas",
-    "DotNet/C_Sharp/Boxing and unboxing.md",
     "DotNet/C_Sharp/attachments",
     "DotNet/C_Sharp/readonly vs const.md",
     "DotNet/C_Sharp/Properties vs fields.md",
