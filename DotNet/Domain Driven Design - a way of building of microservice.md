@@ -1,5 +1,5 @@
 
-[[[#DDD Theory]]]
+[[#DDD Theory]]
 [[#Practical example in ASP.NET]]
 
 

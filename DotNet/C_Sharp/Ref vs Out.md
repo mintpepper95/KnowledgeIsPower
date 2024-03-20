@@ -2,6 +2,19 @@
 `out` requires assigning a value before returning back from caller to callee, even if it's already `initialised` when calling the method.
 
 
+A data is a value type if it holds the actual data within its memory.
+
+When you pass a value type from one method to another, system creates a separate copy hence value types aren't modified.
+
+Unlike value types, reference type contains the reference. Eg. String, Array, Class, Delegate.
+
+When you pass a reference type from one method to another, it can be changed.
+
+Note C# defaults to pass by value, meaning that even for a reference object, if you change the data inside the object, it will be visible to the caller. But if you change the passed argument to refer to a different object, then it will not be visible to the caller.
+
+
+
+
 
 To pass by reference, you can either use `out` or `ref` keyword.
 

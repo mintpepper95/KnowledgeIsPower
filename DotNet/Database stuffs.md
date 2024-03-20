@@ -14,12 +14,34 @@ This is normalized data.
 Data integrity is maintained and little redundant data.
 Many tables.
 
+**Normalization** is the process of removing redundant data from the database by splitting the table in a well-defined manner in order to maintain data integrity. This process saves much of the storage space.
+
 
 ![[Pasted image 20240319235232.png]]
 This is denormalized data, we combined multiple things into one table, so that accessing is fast.
 Data integrity is not maintained. Common to have redundant data. Excess data, storage is less optimal.
 
+**De-normalization** is the process of adding up redundant data on the table in order to speed up the complex queries and thus achieve better performance.
 
+#### Different types of normalizations
+- **First Normal Form (1NF):** A relation is said to be in 1NF only when all the entities of the table contain unique or atomic values.
+- **Second Normal Form (2NF):** A relation is said to be in 2NF only if it is in 1NF and all the non-key attribute of the table is fully dependent on the primary key.
+- **Third Normal Form (3NF):** A relation is said to be in 3NF only if it is in 2NF and every non-key attribute of the table is not transitively dependent on the primary key.
+
+#### PK and Composite Key and Unique Key
+**Primary Key** is that column of the table whose every row data is uniquely identified. Every row in the table must have a primary key and no two rows can have the same primary key. Primary key value can never be null nor can it be modified or updated.
+
+**Composite Key** is a form of the candidate key where a set of columns will uniquely identify every row in the table.
+
+Unique Keys are like PKs but can have NULL values.
+
+A Stored procedure is a collection of pre-compiled SQL Queries. Meaning once we compile it next time and can just reuse.
+
+#### Function vs Stored Procedure
+Functions have outputs and optionally inputs. 
+Use function if you want to compute and return a value/table for other SQL statements.
+
+While SP are more like batch script.
 
 
 #### DB indexing
