@@ -39,3 +39,9 @@ Eg. user on a website clicks a buy button. System triggers an purchased event. T
 Alternatively we may want to confirm the payment before shipping the product. Can still do with event driven system. The user clicks buy button. Emits an event to confirm payment. Payment service will read it and process it and send response back to the client.
 
 Each services store the incoming events data into its own database.
+
+
+
+
+
+Eventual consistency is **a model that allows for temporary inconsistencies between services, with the understanding that all services will eventually hold the same, consistent data**. This model works well when absolute consistency between services isn't a requirement.
