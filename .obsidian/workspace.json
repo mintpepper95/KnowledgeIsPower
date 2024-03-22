@@ -11,13 +11,8 @@
             "id": "21b317b6c372685f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Infotrack questions.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Infotrack questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Infotrack questions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Infotrack questions.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -149,6 +140,14 @@
   },
   "active": "21b317b6c372685f",
   "lastOpenFiles": [
+    "Javascript/Javascript.md",
+    "Javascript/Untitled.md",
+    "DotNet/Event Sourcing and CQRS.md",
+    "Javascript",
+    "DotNet/Event Driven Architecture.md",
+    "DotNet/EFCore code first vs database first.md",
+    "DotNet/Domain Driven Design - a way of building of microservice.md",
+    "Infotrack questions.md",
     "DotNet/C_Sharp/Boxing and unboxing.md",
     "DotNet/C_Sharp/Polymorphism.md",
     "DotNet/C_Sharp/readonly vs const.md",
@@ -159,14 +158,9 @@
     "DotNet/ASP.NET.md",
     "DotNet/Database stuffs.md",
     "DotNet/Design patterns.md",
-    "DotNet/Domain Driven Design - a way of building of microservice.md",
     "DotNet/EFCore.md",
-    "DotNet/Event Driven Architecture.md",
-    "DotNet/Event Sourcing and CQRS.md",
     "DotNet/Improving performance of a system.md",
     "Interface vs abstract class.md",
-    "Infotrack questions.md",
-    "DotNet/EFCore code first vs database first.md",
     "DotNet/C_Sharp/Properties vs fields.md",
     "DotNet/C_Sharp/NET Framework vs NET Core.md",
     "DotNet/C_Sharp/Namespace.md",
@@ -175,11 +169,9 @@
     "Untitled 2.canvas",
     "DotNet/C_Sharp/C_Sharp.md",
     "Untitled 1.canvas",
-    "System design/Untitled.md",
     "System design",
     "DotNet/C_Sharp/attachments/boxing-operation-i-o-variables.gif",
     "DotNet/C_Sharp/attachments/unboxing-conversion-operation.gif",
-    "DotNet/C_Sharp/Main.md",
     "DotNet/C_Sharp/attachments/1690826560012.png",
     "DotNet/attachments/ES-CQRS-Sketch-4.svg",
     "DotNet/C_Sharp/attachments/dbset-fg1.png",
@@ -196,7 +188,6 @@
     "DotNet",
     "repository",
     "New folder",
-    "React/Typescript",
-    "React/React-dev-learn"
+    "React/Typescript"
   ]
 }
