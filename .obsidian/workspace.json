@@ -11,11 +11,30 @@
             "id": "21b317b6c372685f",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "System design/A Senior Engineer's Guide to the System Design Interview 4 Parts.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "28fab7d866fb9897",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Javascript/Browser storage mechanism.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Javascript/Browser storage mechanism.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Javascript/Browser storage mechanism.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +139,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Javascript/Browser storage mechanism.md"
+              }
             }
           }
         ]
@@ -138,16 +161,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "21b317b6c372685f",
+  "active": "28fab7d866fb9897",
   "lastOpenFiles": [
+    "System design/A Senior Engineer's Guide to the System Design Interview 4 Parts.md",
+    "System design/Part 1.md",
+    "System design/Part 4.md",
+    "System design/Part 3.md",
+    "System design/Part 2.md",
+    "Infotrack questions.md",
+    "Interface vs abstract class.md",
+    "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
+    "Untitled 2.canvas",
+    "Untitled 1.canvas",
+    "Untitled",
     "Javascript/Javascript.md",
-    "Javascript/Untitled.md",
+    "Javascript/Browser storage mechanism.md",
     "DotNet/Event Sourcing and CQRS.md",
     "Javascript",
     "DotNet/Event Driven Architecture.md",
     "DotNet/EFCore code first vs database first.md",
     "DotNet/Domain Driven Design - a way of building of microservice.md",
-    "Infotrack questions.md",
     "DotNet/C_Sharp/Boxing and unboxing.md",
     "DotNet/C_Sharp/Polymorphism.md",
     "DotNet/C_Sharp/readonly vs const.md",
@@ -160,15 +193,7 @@
     "DotNet/Design patterns.md",
     "DotNet/EFCore.md",
     "DotNet/Improving performance of a system.md",
-    "Interface vs abstract class.md",
     "DotNet/C_Sharp/Properties vs fields.md",
-    "DotNet/C_Sharp/NET Framework vs NET Core.md",
-    "DotNet/C_Sharp/Namespace.md",
-    "DotNet/C_Sharp/EF Core.md",
-    "DotNet/C_Sharp/Attributes.md",
-    "Untitled 2.canvas",
-    "DotNet/C_Sharp/C_Sharp.md",
-    "Untitled 1.canvas",
     "System design",
     "DotNet/C_Sharp/attachments/boxing-operation-i-o-variables.gif",
     "DotNet/C_Sharp/attachments/unboxing-conversion-operation.gif",
@@ -179,7 +204,6 @@
     "DotNet/C_Sharp/attachments/Pasted image 20240320010226.png",
     "DotNet/C_Sharp/attachments/Pasted image 20240320010221.png",
     "DotNet/C_Sharp/attachments/Pasted image 20240320005650.png",
-    "DotNet/attachments/Pasted image 20240320003601.png",
     "DotNet/Untitled.canvas",
     "DotNet/C_Sharp/attachments",
     "DotNet/attachments",
@@ -187,7 +211,6 @@
     "React/attachments",
     "DotNet",
     "repository",
-    "New folder",
-    "React/Typescript"
+    "New folder"
   ]
 }
