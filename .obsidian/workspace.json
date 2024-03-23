@@ -13,28 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/A Senior Engineer's Guide to the System Design Interview 4 Parts.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "28fab7d866fb9897",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Javascript/Browser storage mechanism.md",
+                "file": "Javascript/Typeof vs instanceof.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Javascript/Browser storage mechanism.md",
+                "file": "Javascript/Typeof vs instanceof.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Javascript/Browser storage mechanism.md",
+                "file": "Javascript/Typeof vs instanceof.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Javascript/Browser storage mechanism.md"
+                "file": "Javascript/Typeof vs instanceof.md"
               }
             }
           }
@@ -161,21 +147,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "28fab7d866fb9897",
+  "active": "21b317b6c372685f",
   "lastOpenFiles": [
+    "Javascript/Basic data types.md",
+    "Javascript/Typeof vs instanceof.md",
+    "Javascript/Javascript.md",
+    "Javascript/Let vs const vs var.md",
+    "Javascript/Hoisting.md",
+    "Typescript/Untitled 1.md",
+    "Typescript/Typescript.md",
+    "Typescript",
+    "Infotrack questions.md",
+    "Javascript/BrowserStorageMechanism/Browser Storage Mechanism.md",
+    "Javascript/BrowserStorageMechanism/cookies.md",
+    "Javascript/BrowserStorageMechanism/localStorage.md",
+    "Javascript/BrowserStorageMechanism/sessionStorage.md",
     "System design/A Senior Engineer's Guide to the System Design Interview 4 Parts.md",
+    "Javascript/BrowserStorageMechanism/attachments/Pasted image 20240323225930.png",
+    "Javascript/BrowserStorageMechanism/attachments",
+    "Javascript/BrowserStorageMechanism",
+    "Javascript/Browser storage mechanism.md",
     "System design/Part 1.md",
     "System design/Part 4.md",
     "System design/Part 3.md",
     "System design/Part 2.md",
-    "Infotrack questions.md",
     "Interface vs abstract class.md",
     "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
-    "Untitled",
-    "Javascript/Javascript.md",
-    "Javascript/Browser storage mechanism.md",
     "DotNet/Event Sourcing and CQRS.md",
     "Javascript",
     "DotNet/Event Driven Architecture.md",
@@ -184,16 +183,6 @@
     "DotNet/C_Sharp/Boxing and unboxing.md",
     "DotNet/C_Sharp/Polymorphism.md",
     "DotNet/C_Sharp/readonly vs const.md",
-    "DotNet/C_Sharp/Ref vs Out.md",
-    "DotNet/C_Sharp/Reflection.md",
-    "DotNet/C_Sharp/SOLID.md",
-    "DotNet/C_Sharp/Struct vs classes.md",
-    "DotNet/ASP.NET.md",
-    "DotNet/Database stuffs.md",
-    "DotNet/Design patterns.md",
-    "DotNet/EFCore.md",
-    "DotNet/Improving performance of a system.md",
-    "DotNet/C_Sharp/Properties vs fields.md",
     "System design",
     "DotNet/C_Sharp/attachments/boxing-operation-i-o-variables.gif",
     "DotNet/C_Sharp/attachments/unboxing-conversion-operation.gif",
@@ -203,14 +192,11 @@
     "DotNet/C_Sharp/attachments/Pasted image 20240320010252.png",
     "DotNet/C_Sharp/attachments/Pasted image 20240320010226.png",
     "DotNet/C_Sharp/attachments/Pasted image 20240320010221.png",
-    "DotNet/C_Sharp/attachments/Pasted image 20240320005650.png",
     "DotNet/Untitled.canvas",
     "DotNet/C_Sharp/attachments",
     "DotNet/attachments",
     "DotNet/C_Sharp",
     "React/attachments",
-    "DotNet",
-    "repository",
-    "New folder"
+    "DotNet"
   ]
 }

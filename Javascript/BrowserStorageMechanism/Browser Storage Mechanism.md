@@ -1,0 +1,3 @@
+[[cookies]]
+[[localStorage]]
+[[sessionStorage]]
