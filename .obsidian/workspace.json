@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript/setTimeout and setInterval.md",
+                "file": "React/Typescript/No BS TS.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Javascript/setTimeout and setInterval.md",
+                "file": "React/Typescript/No BS TS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Javascript/setTimeout and setInterval.md",
+                "file": "React/Typescript/No BS TS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Javascript/setTimeout and setInterval.md"
+                "file": "React/Typescript/No BS TS.md"
               }
             }
           }
@@ -149,16 +149,27 @@
   },
   "active": "21b317b6c372685f",
   "lastOpenFiles": [
+    "React/React Home.md",
+    "Typescript/Untitled 1.md",
+    "Infotrack questions.md",
+    "Typescript/Typescript.md",
     "Javascript/'this' keyword and call(), apply(), bind().md",
-    "Javascript/setTimeout and setInterval.md",
+    "Javascript/Basic data types.md",
+    "Javascript/Objects.md",
+    "Javascript/How are methods implemented for primitives.md",
+    "Javascript/attachments/Pasted image 20240324232113.png",
+    "Javascript/attachments/Pasted image 20240324232025.png",
+    "Javascript/attachments/Pasted image 20240324232012.png",
+    "Javascript/attachments/Pasted image 20240324231948.png",
+    "Javascript/attachments/Pasted image 20240324231831.png",
+    "Javascript/attachments/Pasted image 20240324231825.png",
     "Javascript/for...in vs for...of vs forEach().md",
+    "Javascript/setTimeout and setInterval.md",
     "Javascript/Hoisting.md",
     "Javascript/Typeof vs instanceof.md",
     "Javascript/Let vs const vs var.md",
-    "Javascript/Basic data types.md",
     "Javascript/Async and Await.md",
     "Javascript/Promise.md",
-    "Javascript/Objects.md",
     "Javascript/attachments/Pasted image 20240324202653.png",
     "Javascript/attachments/Pasted image 20240324202650.png",
     "Javascript/attachments/Pasted image 20240324202405.png",
@@ -168,31 +179,20 @@
     "Javascript/Event loop.md",
     "Javascript/attachments/Pasted image 20240324202059.png",
     "Javascript/attachments",
-    "Typescript/Untitled 1.md",
-    "Typescript/Typescript.md",
     "Typescript",
-    "Infotrack questions.md",
     "Javascript/BrowserStorageMechanism/Browser Storage Mechanism.md",
     "Javascript/BrowserStorageMechanism/cookies.md",
     "Javascript/BrowserStorageMechanism/localStorage.md",
     "Javascript/BrowserStorageMechanism/sessionStorage.md",
     "System design/A Senior Engineer's Guide to the System Design Interview 4 Parts.md",
-    "Javascript/BrowserStorageMechanism/attachments/Pasted image 20240323225930.png",
     "Javascript/BrowserStorageMechanism/attachments",
     "Javascript/BrowserStorageMechanism",
     "Javascript/Browser storage mechanism.md",
     "System design/Part 1.md",
-    "System design/Part 4.md",
-    "System design/Part 3.md",
-    "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
     "Javascript",
     "System design",
-    "DotNet/C_Sharp/attachments/boxing-operation-i-o-variables.gif",
-    "DotNet/C_Sharp/attachments/unboxing-conversion-operation.gif",
-    "DotNet/C_Sharp/attachments/1690826560012.png",
-    "DotNet/attachments/ES-CQRS-Sketch-4.svg",
     "DotNet/Untitled.canvas",
     "DotNet/C_Sharp/attachments",
     "DotNet/attachments",

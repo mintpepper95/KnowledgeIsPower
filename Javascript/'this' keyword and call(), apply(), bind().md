@@ -3,7 +3,6 @@
 
 
 
-
 ## What are the difference between the 3 methods?
 
 We can set `this` to functions.
