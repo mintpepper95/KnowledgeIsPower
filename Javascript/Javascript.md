@@ -9,4 +9,13 @@ Although js can easily send/get request from server where the current page came 
 
 [[Let vs const vs var]]
 [[Hoisting]]
+[[Typeof vs instanceof]]
+[[Equality in JS]]
+[[Basic data types]]
+[[Closure]]
+[[for...in vs for...of vs forEach()]]
+[['this' keyword and call(), apply(), bind()]]
+
+
+
 

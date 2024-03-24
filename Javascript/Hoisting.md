@@ -23,7 +23,7 @@ JS also hoists function declarations ( moving them to the top of the script ).
 // An example of function hoisting
 let x = 10;
 let y = 20;
-add(x, y);
+add(x, y); // We called 'add' before its declaration
 
 function add(x, y) {
 	return x + y;
