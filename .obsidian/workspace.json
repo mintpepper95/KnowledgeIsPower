@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript/Untitled.md",
+                "file": "System design/Some general tops and the 12 technical concepts.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Javascript/Untitled.md",
+                "file": "System design/Some general tops and the 12 technical concepts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Javascript/Untitled.md",
+                "file": "System design/Some general tops and the 12 technical concepts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Javascript/Untitled.md"
+                "file": "System design/Some general tops and the 12 technical concepts.md"
               }
             }
           }
@@ -149,6 +149,11 @@
   },
   "active": "21b317b6c372685f",
   "lastOpenFiles": [
+    "System design/attachments/Pasted image 20240325224257.png",
+    "System design/attachments",
+    "System design/Part 2.md",
+    "System design/Some general tops and the 12 technical concepts.md",
+    "Javascript/Untitled.md",
     "Javascript/'this' keyword and call(), apply(), bind().md",
     "Javascript/Equality in JS.md",
     "Javascript/Event loop.md",
@@ -165,7 +170,6 @@
     "Javascript/attachments/Pasted image 20240325154039.png",
     "Javascript/attachments/Pasted image 20240325154025.png",
     "Javascript/attachments/Pasted image 20240325154019.png",
-    "Javascript/Untitled.md",
     "Infotrack questions.md",
     "React/Typescript/No BS TS.md",
     "React/React Home.md",
@@ -184,8 +188,6 @@
     "Typescript",
     "Javascript/BrowserStorageMechanism/Browser Storage Mechanism.md",
     "Javascript/BrowserStorageMechanism/cookies.md",
-    "Javascript/BrowserStorageMechanism/localStorage.md",
-    "Javascript/BrowserStorageMechanism/sessionStorage.md",
     "Javascript/BrowserStorageMechanism/attachments",
     "Javascript/BrowserStorageMechanism",
     "Untitled 2.canvas",
@@ -195,7 +197,6 @@
     "DotNet/Untitled.canvas",
     "DotNet/C_Sharp/attachments",
     "DotNet/attachments",
-    "DotNet/C_Sharp",
-    "React/attachments"
+    "DotNet/C_Sharp"
   ]
 }
