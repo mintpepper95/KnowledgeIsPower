@@ -1,5 +1,17 @@
 
 [[#APIs (REST OR RPC)]]
+[[#Db (SQL vs NoSQL)]]
+[[#Scaling]]
+[[#CAP theorem]]
+[[#Web auth and basic security]]
+[[#Load balancers]]
+[[#Caching]]
+[[#Message queues]]
+[[#Indexing]]
+[[#Failovers]]
+[[#Replication]]
+[[#Consistent hashing]]
+	What is consistent hashing? Example to achieve consistent hashing when servers are dynamic?
 
 
 In System design interviews, you are playing the role of a tech lead. System design prompts tend to be light on detail. There should be a back and forth convo about problem constraints and parameters, so avoid making assumptions. Remember there is not RIGHT way to design a system.
@@ -172,32 +184,123 @@ We can set cookies to `Secure`, such that browser can only include it in HTTPS r
 
 
 ##### Load balancers
+Helps direct requests to different servers to distribute incoming workload evenly among available servers.
 
+###### Round robin
+If there are N machines, load balancer will send request to each of them sequantially.
+
+###### Least Connection/Response time
+We send requests to machines with least connections or min response time. This is useful for incoming requests that have varying connection time and we have a set of servers are that relative similar in terms of computing resources.
+
+###### Hashing
+The key can be a request id given user's ip address. Hash will return the server id.
 
 
 ##### Caching
+Used to reduce latency of expensive computation or network calls or db queries or asset fetching.
+
+Trading off space for better performance.
+
+Caching is used for read-heavy systems, e.g.. twitter and YouTube.
+
+E.g. If there is a tweet from a very popular person, we would want to cache it everywhere ( on a device, on a CDN, on the app ), so that we can fetch it quickly for our users.
+
+A CDN is a something that's used to deliver cached data. Its purpose is to deliver web content, e.g. images, videos, assets to users quickly. They primarily handle static content that doesn't change frequently. CDNs store copies of content on distributed servers located in various places, when a user requests content, the CDN serves it from the nearest server, minimising latency and reduce load on the original server.
+
+###### Popular caching patterns
+
+1. Cache aside pattern
+	 Think memo in dp. App will try to fetch data from the cache, if cache miss (data not found), it will fetch from db/do expensive computation and then put that data back into the cache before returning the query. In this pattern we only cache the data we need. 
+	 However if lots of updates, then data can go stale. Also if lots of cache misses, then additional work as app will need to check for a cache miss, and then write the computed data back to the cache before going back to server. This actually worsens latency.
+
+2. Write-through and Write-back
+	 App directly writes data to the cache. And then cache is sync or async writes the data to the db. When cache write it sync, it's called Write-through. When cache write it async, it's called Write-back.
+
+In both patterns, we are writing all the data to the cache, which might not even be read.
+
+###### Caching on client side
+Eg. Caching thumbnails of Netflix recommendations in the device or browser. So when user visit the app again, it's quickly served from cache or local memory instead of fetching from the network.
+
+###### Cache invalidation
+We mentioned that a problem of caching is data can go stale if lots of updates to the db. Therefore it's important to expire or invalidate data from cache. Good practice to include a brief point about cache invalidation during interviews.
+
+Many policies to invalidate data from the cache, most common one is LRU ( least recently used ). The idea is that we can have a timestamp to the cached data, and discard the one that's least recently used when the cache reaches its capacity.
+
+Using LRU will result in fewer cache misses, as more commonly accessed cached data will be prioritised. We are assuming that recently accessed data will more likely to be accessed again.
+
 
 
 ##### Message queues
+Queues can send messages to multiple systems, instead of client having to send them to all the systems by itself. It de-couples client from server. Also serve as a buffer between client and server.
+
+In a queue, there are producers, message queue and consumers.
+
+Based on different implementations of message queues, there can be different combinations of the following properties
+* Guaranteed delivery
+* No dupe messages
+* Order of message is maintained
+* At least once delivery with idempotent consumers (a consumer that can safely process the same message multiple times without dupe processing)
 
 
 ##### Indexing
+Indexing is about mapping the underlying data for faster retrieval.
 
 
 ##### Failovers
-
+It's about switching to a backup or redundant system component when primary component fails or becomes unavailable. The goal is to ensure high availability and reliability by minimising downtime.
 
 ##### Replication
+Have servers ready to take over when a node fails.
+
+Replication is done to avoid a single point of failure and increase availability of the system, also to better serve global users by serving copies closest to the user by geological locations. And to increase throughput (bandwidth), such that more requests can be served.
+
+Replica - copy of data
+Leader - machines that handles write requests to data store
+Follower - machines that are replicas of the leader node, and cater to read requests.
+
+###### Sync vs async replication
+
+Sync replication - when a write request to a replica is acknowledged, so leader waits for acknowledgement from followers. This can be nice when it's vital nothing is missed, downside is slows down process.
+
+Async replication - when leader don't wait for acknowledgement from followers before marking client's write requests as successful.
+
+###### Common types of replication systems
+Single leader - a single machine acts as a leader, and all write requests ( updates to data store ) go through that machine. All other machines are for read requests.
+Leader needs to pass down info about writes to follower nodes to keep them update to date. In case leader goes down, one of follower nodes is promoted to be a leader ( failover ).
+
+
+Multi leader - More than one machine take write requests. Makes system more reliable if leader goes down. Every machines needs to catch up with writes on the leaders including leaders.
+
+
+Leaderless replication - all machines can read and write.
+
 
 
 ##### Consistent hashing
 
+Consistent hashing is a hashing technique used in distributed systems to efficiently distribute data across multiple nodes while allowing us to add/remove nodes without incurring a large performance hit. 
+
+It is commonly used in distributed caching systems, distributed databases, and content delivery networks (CDNs) to achieve load balancing, fault tolerance, and scalability.
 
 
-Daniel petrucci 
-Daniel Ko
-Ask about career growth, oppoturnities
-Infotrack awards, culture settleIT, what they are trying to
+
+![[hashing-algorithm.webp|670]]
+Consider this example where we have a cache key 1234. Normally we can just hash(key) % `n` where n is number of servers. But servers can be added/removed. We have to change `n`. And now we are getting results that are no longer consistent with our earlier hashed results because `n` has changed.
+
+We would have to relocate the existing keys into our nodes following the updated hash. This can be very expensive. And particulary bad if your node went down due to excess traffic, as now you are trying to reallocate all the keys on top of dealing with the traffic.
+
+
+![[pilot-hash.webp|550]]
+Consistent hashing works as above. Instead of having fixed number of servers. We map our hash result to a ring. Pretend ring goes through 0 to 100. We assign each node to a point on this ring. When we write or read from this cache, we plot the hash position on the ring and then go clockwise til we find next node.
+
+
+
+![[pilot-hash-3.webp|560]]
+Now, we only have to reallocate the keys assigned to the down node.
+Instead of putting a single point on the ring for each node, we can put a bunch of point for each node - virtual nodes. When one node gets knocked offline, we reallocate keys such they are even distributed among the entire system.
+
+
+
 
 
 
