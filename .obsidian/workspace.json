@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript/Promise.md",
+                "file": "Leetcode/Two Pointers/Two Pointers.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "two p",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Javascript/Promise.md",
+                "file": "Leetcode/Two Pointers/Two Pointers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Javascript/Promise.md",
+                "file": "Leetcode/Two Pointers/Two Pointers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Javascript/Promise.md"
+                "file": "Leetcode/Two Pointers/Two Pointers.md"
               }
             }
           }
@@ -149,6 +149,8 @@
   },
   "active": "21b317b6c372685f",
   "lastOpenFiles": [
+    "Leetcode/Two Pointers/Problems/167. Two Sum II - Input Array Is Sorted.md",
+    "Javascript/Promise.md",
     "Javascript/Let vs const vs var.md",
     "Javascript/Javascript.md",
     "Javascript/How are methods implemented for primitives.md",
@@ -163,22 +165,20 @@
     "Javascript/attachments/Pasted image 20240327194725.png",
     "Javascript/Prototype.md",
     "Javascript/Objects.md",
-    "Javascript/Promise.md",
     "Javascript/Hoisting.md",
     "Javascript/Event loop.md",
     "Javascript/What happens when you type a URL into the browser.md",
-    "Algorithm interview/Two Pointers/Two Pointers.md",
-    "Algorithm interview/Two Pointers/Problems/Untitled 2.md",
-    "Algorithm interview/Two Pointers/Problems/167. Two Sum II - Input Array Is Sorted.md",
-    "Algorithm interview/Two Pointers/Problems/Untitled 1.md",
+    "Leetcode/Two Pointers/Two Pointers.md",
+    "Leetcode/Two Pointers/Problems/Untitled 2.md",
+    "Leetcode/Two Pointers/Problems/Untitled 1.md",
     "Infotrack questions.md",
     "Algorithm interview/Untitled/Two Pointers.md",
-    "Algorithm interview/Two Pointers/Problems",
+    "Leetcode/Two Pointers/Problems",
     "Algorithm interview/Untitled/Problems",
-    "Algorithm interview/Two Pointers",
+    "Leetcode/Two Pointers",
     "Algorithm interview/Untitled",
-    "Algorithm interview/Topics.md",
-    "Algorithm interview",
+    "Leetcode/Topics.md",
+    "Leetcode",
     "System design/The 12 technical concepts.md",
     "System design/The 3 step framework.md",
     "System design/Designing systems.md",
