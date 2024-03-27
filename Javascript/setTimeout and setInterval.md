@@ -2,7 +2,7 @@
 [[#setTimeout]]
 [[#setTimeout is not immediate]]
 [[#How do recursively setTimeout and setInterval differ?]]
-
+[[#Passing class methods into `setTimeout`]]
 
 
 #### How do setTimeout and setInterval work in regards to event loop?
@@ -70,3 +70,35 @@ With recursive setTimeout, the delay starts to countdown after current code has 
 ![[Pasted image 20240325154025.png]]
 
 
+
+#### Passing class methods into `setTimeout`
+```ts
+class Button {
+    constructor(value) {
+        this.value = value;
+    }
+    // We lose 'this' in functions like setTimeout
+    click() {
+        alert(this.value);
+    }
+}
+
+
+let button = new Button("hello");
+// Here setTimeout() causes JS to use global scope. Meaning `this` inside click() will no longer refer to the class instance. Use arrow function instead
+setTimeout(button.click, 1000); // undefined
+
+
+// Fixed with arrow fn
+class Button {
+    constructor(value) {
+        this.value = value;
+    }
+
+    // Arrow function, this will always ref the instance
+    // So value will always be correct
+    click = () => {
+        alert(this.value);
+    }
+}
+```
