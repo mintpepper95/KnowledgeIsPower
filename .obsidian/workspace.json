@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Infotrack questions.md",
+                "file": "Algorithm interview/Two Pointers/Two Pointers.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Infotrack questions.md",
+                "file": "Algorithm interview/Two Pointers/Two Pointers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Infotrack questions.md",
+                "file": "Algorithm interview/Two Pointers/Two Pointers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Infotrack questions.md"
+                "file": "Algorithm interview/Two Pointers/Two Pointers.md"
               }
             }
           }
@@ -149,6 +149,18 @@
   },
   "active": "21b317b6c372685f",
   "lastOpenFiles": [
+    "Algorithm interview/Two Pointers/Problems/Untitled 2.md",
+    "Algorithm interview/Two Pointers/Problems/167. Two Sum II - Input Array Is Sorted.md",
+    "Algorithm interview/Two Pointers/Problems/Untitled 1.md",
+    "Algorithm interview/Two Pointers/Two Pointers.md",
+    "Infotrack questions.md",
+    "Algorithm interview/Untitled/Two Pointers.md",
+    "Algorithm interview/Two Pointers/Problems",
+    "Algorithm interview/Untitled/Problems",
+    "Algorithm interview/Two Pointers",
+    "Algorithm interview/Untitled",
+    "Algorithm interview/Topics.md",
+    "Algorithm interview",
     "System design/The 12 technical concepts.md",
     "System design/The 3 step framework.md",
     "System design/Designing systems.md",
@@ -158,7 +170,6 @@
     "System design/attachments/pilot-hash.webp",
     "System design/attachments/hashing-algorithm.webp",
     "React/React-dev-learn/Managing state.md",
-    "Infotrack questions.md",
     "System design/attachments/write-through-write-behind.webp",
     "System design/attachments/store-data-flowchart.webp",
     "System design/attachments/differences-between-sql-databases-and-nosql-databases.webp",
@@ -180,23 +191,12 @@
     "Typescript/Untitled 1.md",
     "Typescript/Typescript.md",
     "Javascript/Basic data types.md",
-    "Javascript/Objects.md",
-    "Javascript/How are methods implemented for primitives.md",
-    "Javascript/for...in vs for...of vs forEach().md",
-    "Javascript/Hoisting.md",
-    "Javascript/Let vs const vs var.md",
-    "Javascript/Javascript.md",
     "Javascript/attachments",
     "Typescript",
     "Javascript/BrowserStorageMechanism/attachments",
     "Javascript/BrowserStorageMechanism",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
-    "Javascript",
-    "System design",
-    "DotNet/Untitled.canvas",
-    "DotNet/C_Sharp/attachments",
-    "DotNet/attachments",
-    "DotNet/C_Sharp"
+    "DotNet/Untitled.canvas"
   ]
 }
