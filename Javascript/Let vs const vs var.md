@@ -2,7 +2,7 @@
 [[#let]]
 [[#const]]
 
-What's the difference between the 3 declarations?
+### What's the difference between the 3 declarations?
 
 #### var
 `var` is global when declared outside function, and it's function scoped when declared inside the function.

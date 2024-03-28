@@ -1,8 +1,14 @@
 There are different kinds of two pointers.
-* slow and fast pointer, usually for linked list
-* opposite direction two pointer, where the two pointers start off at the two ends
-* sliding window, which can have flexible size or fixed size
+* slow and fast pointer, usually for linked list, see [[]]
 
+
+
+* opposite direction two pointer, where the two pointers start off at the two ends
+[[167. Two Sum II - Input Array Is Sorted]]
+
+
+
+* sliding window, which can have flexible size or fixed size
 
 A typical sliding window looks like below
 
@@ -23,3 +29,6 @@ for end in range(len(arr)):
 return ans
 ```
 
+
+[[713. Subarray Product Less Than K]]
+[[2958. Length of Longest Subarray With at Most K Frequency]]

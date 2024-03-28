@@ -1,8 +1,5 @@
 
 
-
-
-
 #### What is closure?
 It's when a function defined inside another function, can access the variables of the outer function even after the outer function has executed.
 
