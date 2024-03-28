@@ -15,6 +15,20 @@ Although js can easily send/get request from server where the current page came 
 [[Closure]]
 [[for...in vs for...of vs forEach()]]
 [['this' keyword and call(), apply(), bind()]]
+[[Async and Await]]
+[[Classes]]
+[[Event loop]]
+[[How are methods implemented for primitives]]
+[[Objects]]
+[[Promise]]
+[[setTimeout and setInterval]]
+
+
+
+Browser stuff
+[[Browser Storage Mechanism]]
+[[What happens when you type a URL into the browser]]
+
 
 
 

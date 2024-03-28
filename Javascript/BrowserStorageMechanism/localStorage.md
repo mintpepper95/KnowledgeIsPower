@@ -7,3 +7,5 @@ localStorage.setItem(key, value);
 To see what's in `localStorage`, we can use dev tools and go to Application tab to see it.
 ![[Pasted image 20240323225930.png]]
 The only way to delete it using `localStorage.clear()` or `localStorage.removeItem()` or clear browser memory
+
+Unlike cookies they don't expire. Also not sent with every HTTP request.

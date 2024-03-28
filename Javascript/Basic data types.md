@@ -216,7 +216,7 @@ let { prop: varName = default_value, ...rest } = object;
 Nested destructuring
 ```ts
 let options = {
-    size = {
+    size: {
         width: 100,
         height: 200
     },
@@ -407,6 +407,8 @@ arr.slice([start], [end]);
 // They return the first item that satisfies the condition, else undefined
 // find returns the actual element while findIndex returns the idx
 arr.find(item => item.id == 1);
+
+// Use find when you need to find the actual element, use includes if you only want to know whether the element exists and don't care about its value
 
 
 // filter

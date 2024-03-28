@@ -72,3 +72,8 @@ setTimeout(() => console.log(6));
 console.log(7);
 // Outputs 7 immediately.
 ```
+
+
+
+
+1 7 3 5 2 6 4

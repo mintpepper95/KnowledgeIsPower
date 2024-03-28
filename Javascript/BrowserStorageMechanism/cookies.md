@@ -7,3 +7,5 @@ Cookies can be deleted when we explicit delete it or clear browser memory or whe
 Cookies are better for storing sensitive data than `localStorage` or `sessionStorage`.
 Cookies can be marked as `HttpOnly`, meaning they can only be accessed by the server and not by JS running in the browser.
 
+Cookies are primarily for server side, while local storage is for client side.
+
