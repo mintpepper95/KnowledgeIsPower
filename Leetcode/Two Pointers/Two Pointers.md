@@ -32,3 +32,7 @@ return ans
 
 [[713. Subarray Product Less Than K]]
 [[2958. Length of Longest Subarray With at Most K Frequency]]
+
+Trickier sliding window problems
+[[2962. Count Subarrays Where Max Element Appears at Least K Times]]
+
