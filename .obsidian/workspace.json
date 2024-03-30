@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "3e4ce37fd5c3e6f5",
+        "id": "47191524ee82b5eb",
         "type": "tabs",
         "children": [
           {
-            "id": "f91a2a897d714c25",
+            "id": "99fb788e15350706",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Leetcode/Two Pointers/Two Pointers.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Leetcode/Two Pointers/Two Pointers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Leetcode/Two Pointers/Two Pointers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Leetcode/Two Pointers/Two Pointers.md"
+              }
             }
           }
         ]
@@ -138,10 +147,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f91a2a897d714c25",
+  "active": "99fb788e15350706",
   "lastOpenFiles": [
     "Leetcode/Two Pointers/Problems/2962. Count Subarrays Where Max Element Appears at Least K Times.md",
     "Leetcode/Two Pointers/Problems/2958. Length of Longest Subarray With at Most K Frequency.md",
+    "2024-03-30.md",
     "Leetcode/Two Pointers/Problems/992. Subarrays with K Different Integers.md",
     "Leetcode/Two Pointers/Problems/713. Subarray Product Less Than K.md",
     "Leetcode/Two Pointers/Problems/167. Two Sum II - Input Array Is Sorted.md",
@@ -165,7 +175,6 @@
     "Javascript/for...in vs for...of vs forEach().md",
     "Javascript/Promise.md",
     "Typescript/No BS TS.md",
-    "Typescript/Typescript.md",
     "Leetcode/Intervals/Problems",
     "Leetcode/Intervals",
     "Leetcode/Heap/Problems",

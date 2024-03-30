@@ -1,6 +1,5 @@
 There are different kinds of two pointers.
-* slow and fast pointer, usually for linked list, see [[]]
-
+* slow and fast pointer, usually for linked list, see various linked list problems
 
 
 * opposite direction two pointer, where the two pointers start off at the two ends
