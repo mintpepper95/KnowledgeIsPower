@@ -11,13 +11,8 @@
             "id": "f91a2a897d714c25",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Leetcode/Two Pointers/Two Pointers.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Leetcode/Two Pointers/Two Pointers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Leetcode/Two Pointers/Two Pointers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Leetcode/Two Pointers/Two Pointers.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -150,12 +141,14 @@
   "active": "f91a2a897d714c25",
   "lastOpenFiles": [
     "Leetcode/Two Pointers/Problems/2962. Count Subarrays Where Max Element Appears at Least K Times.md",
-    "Leetcode/Two Pointers/Two Pointers.md",
-    "Leetcode/Two Pointers/Problems/167. Two Sum II - Input Array Is Sorted.md",
-    "Leetcode/Two Pointers/Problems/713. Subarray Product Less Than K.md",
     "Leetcode/Two Pointers/Problems/2958. Length of Longest Subarray With at Most K Frequency.md",
-    "Javascript/Javascript.md",
+    "Leetcode/Two Pointers/Problems/992. Subarrays with K Different Integers.md",
+    "Leetcode/Two Pointers/Problems/713. Subarray Product Less Than K.md",
+    "Leetcode/Two Pointers/Problems/167. Two Sum II - Input Array Is Sorted.md",
+    "Leetcode/Two Pointers/Two Pointers.md",
     "Leetcode/Topics.md",
+    "Leetcode/Linked List/Problems/1669. Merge In Between Linked Lists.md",
+    "Javascript/Javascript.md",
     "Javascript/Typeof vs instanceof.md",
     "Javascript/Let vs const vs var.md",
     "Javascript/Hoisting.md",
@@ -173,8 +166,6 @@
     "Javascript/Promise.md",
     "Typescript/No BS TS.md",
     "Typescript/Typescript.md",
-    "Javascript/Closure.md",
-    "Javascript/How are methods implemented for primitives.md",
     "Leetcode/Intervals/Problems",
     "Leetcode/Intervals",
     "Leetcode/Heap/Problems",

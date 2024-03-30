@@ -33,6 +33,11 @@ return ans
 [[713. Subarray Product Less Than K]]
 [[2958. Length of Longest Subarray With at Most K Frequency]]
 
-Trickier sliding window problems
+##### Trickier sliding window problems
+
+Tricky because it's tricky to define what a valid window is
 [[2962. Count Subarrays Where Max Element Appears at Least K Times]]
+
+Tricky because we need to recognise to reduce the problem to easier problem 
+[[992. Subarrays with K Different Integers]]
 
