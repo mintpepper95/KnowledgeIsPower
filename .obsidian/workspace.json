@@ -17,7 +17,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Javascript/Prototype.md",
+                    "file": "Javascript/Typeof vs instanceof.md",
                     "mode": "preview",
                     "backlinks": true,
                     "source": false
@@ -70,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "typeof",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Javascript/Prototype.md",
+                "file": "Javascript/Typeof vs instanceof.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Javascript/Prototype.md",
+                "file": "Javascript/Typeof vs instanceof.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Javascript/Prototype.md"
+                "file": "Javascript/Typeof vs instanceof.md"
               }
             }
           }
@@ -170,8 +170,11 @@
   },
   "active": "e0d0b30cb0e24b7b",
   "lastOpenFiles": [
-    "Javascript/Javascript.md",
+    "Javascript/Let vs const vs var.md",
     "Javascript/Hoisting.md",
+    "DotNet/C_Sharp/Reflection.md",
+    "Javascript/Prototype.md",
+    "Javascript/Javascript.md",
     "Javascript/Event loop.md",
     "Javascript/Equality in JS.md",
     "DotNet/Improving performance of a system.md",
@@ -185,17 +188,14 @@
     "Typescript/No BS TS.md",
     "Typescript/Typescript.md",
     "Javascript/Closure.md",
-    "Javascript/Let vs const vs var.md",
     "Javascript/How are methods implemented for primitives.md",
     "Javascript/Objects.md",
     "Javascript/Typeof vs instanceof.md",
-    "Javascript/Prototype.md",
     "Javascript/setTimeout and setInterval.md",
     "React/React Home.md",
     "React/React-dev-learn/Managing state.md",
     "React/React-dev-learn/Escape Hatches.md",
     "React/React-dev-learn/Custom Hooks.md",
-    "Leetcode/Intervals/Intervals.md",
     "Leetcode/Intervals/Problems",
     "Leetcode/Intervals",
     "Leetcode/Heap/Problems",
