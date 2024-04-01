@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/Two Pointers/Two Pointers.md",
+                "file": "Javascript/Javascript.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Leetcode/Two Pointers/Two Pointers.md",
+                "file": "Javascript/Javascript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Leetcode/Two Pointers/Two Pointers.md",
+                "file": "Javascript/Javascript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Leetcode/Two Pointers/Two Pointers.md"
+                "file": "Javascript/Javascript.md"
               }
             }
           }
@@ -149,32 +149,32 @@
   },
   "active": "99fb788e15350706",
   "lastOpenFiles": [
+    "Javascript/Closure.md",
+    "Javascript/Equality in JS.md",
+    "Javascript/'this' keyword and call(), apply(), bind().md",
+    "Javascript/Let vs const vs var.md",
+    "Javascript/What happens when you type a URL into the browser.md",
+    "Leetcode/Two Pointers/Two Pointers.md",
     "Leetcode/Two Pointers/Problems/2962. Count Subarrays Where Max Element Appears at Least K Times.md",
     "Leetcode/Two Pointers/Problems/2958. Length of Longest Subarray With at Most K Frequency.md",
     "2024-03-30.md",
     "Leetcode/Two Pointers/Problems/992. Subarrays with K Different Integers.md",
     "Leetcode/Two Pointers/Problems/713. Subarray Product Less Than K.md",
     "Leetcode/Two Pointers/Problems/167. Two Sum II - Input Array Is Sorted.md",
-    "Leetcode/Two Pointers/Two Pointers.md",
     "Leetcode/Topics.md",
     "Leetcode/Linked List/Problems/1669. Merge In Between Linked Lists.md",
     "Javascript/Javascript.md",
     "Javascript/Typeof vs instanceof.md",
-    "Javascript/Let vs const vs var.md",
     "Javascript/Hoisting.md",
     "DotNet/C_Sharp/Reflection.md",
     "Javascript/Prototype.md",
     "Javascript/Event loop.md",
-    "Javascript/Equality in JS.md",
     "DotNet/Improving performance of a system.md",
     "DotNet/Database stuffs.md",
     "DotNet/EFCore.md",
     "DotNet/Domain Driven Design - a way of building of microservice.md",
     "DotNet/ASP.NET.md",
     "Javascript/Handwriting promise.md",
-    "Javascript/for...in vs for...of vs forEach().md",
-    "Javascript/Promise.md",
-    "Typescript/No BS TS.md",
     "Leetcode/Intervals/Problems",
     "Leetcode/Intervals",
     "Leetcode/Heap/Problems",

@@ -31,5 +31,178 @@ Browser stuff
 
 
 
+#### Common JS methods
+##### Converting between different primitive types
+```ts
+// string to number
+let s = Number('123'); // 123
+let s2 = parseInt('123px'); // 12
+
+// number to string
+let s3 = 123
+s3.toString(); // 123
+
+// We can use the double exclamation marks to convert truthy/falsy values to booleans
+```
+
+##### Common array operations
+```ts
+let s = [1, 2, 3, 4, 5];
+
+// copy/slice the entire array
+let s1 = s.slice();
+// slice from and to
+let s2 = s.slice(start, end);
 
 
+// if insert to end
+s2.push(6);
+
+// if insert to start
+s2.unshift(0);
+
+// pop from end
+s2.pop();
+
+// pop from start
+s2.shift();
+
+// insert element or delete ith position in array
+// note splice works on original arr
+arr.splice(start_pos_to_modify, elements_to_delete, new_element_1, new_element_2...);
+
+let arr = [1, 2, 3, 4, 6];
+
+// [1, 2, 3, 4, 5, 6]
+arr.splice(4, 0, 5);
+
+// [1, 6]
+arr.splice(1, 4);
+```
+
+
+##### Object manipulations
+
+```ts
+
+Previously we saw methods like map.keys(), map.values(), map.entries() which return iterable. These methods are generic, so if we ever create a data structure of our own, we should implement them too.
+
+They are supported for Map, Set, Array.
+
+Plain objects also support similar methods
+
+Object.keys(obj) - returns an array of keys
+
+Object.values(obj) - return an array of values
+
+Object.entries(obj) - returns an array of [key, value] pairs
+
+let user = {
+
+    name: "John",
+
+    age: 30
+
+};
+
+Object.keys(user) // ["name", "age"]
+
+Object.values(user) // ["John", 30]
+
+Object.entries(user) // [ ["name","John"], ["age",30] ]
+
+// loop over values  
+for (let value of Object.values(user)) {  
+  alert(value); // John, then 30  
+}
+
+Just like for…in loop, above methods ignore symbolic properties  (properties that use Symbol(..) as keys)
+
+Transforming objects
+
+Objects lack many methods that exist for arrays, eg. Map, filter and others.
+
+let prices = {
+
+    banana: 1,
+
+    orange: 2,
+
+    meat: 4
+
+}
+
+let doublePrices = Object.fromEntries(
+
+    // .entries() convert to array first
+
+    // use array methods on that array, eg. map
+
+    // use Object.fromEntries(array) on resulting array to turn it back to object
+
+    Object.entries(prices).map( ([key, value]) => [key, value * 2])
+
+);
+```
+##### Map
+
+Iteration over Map and Set is always in insertion order, so these collections aren't really unordered, but we can't reorder them or directly get an elem by its position.
+
+```ts
+// Map([iterable]), receives array of iterable whose elements are size 2
+let map = new Map([[1, 2], [3, 4]]);
+
+// Basic map example
+let count = new Map();
+
+// Note set returns the map itself, so we can chain set()
+count.set('key', 'value');
+count.set('key', 'value').set('key2', 'value2').set('key3', 'value3');
+
+
+// Map[key] isn't the right way to use a Map
+// Because even though it works, it is treating map as a plain JS object, // so it implies all corresponding limitations (eg. only string/symbol keys)
+count.get('key'); // retrieve value, if not found returns undefined
+
+count.has('key'); // check if key exists, returns boolean
+
+count.delete('key'); // returns true if deleted else false
+
+// Map is an array of iterable of size 2, we can loop it
+for (let [key, value] of count) {
+	console.log(`key is ${key}, value is ${value}`);
+}
+
+// You can also use foreach on map, note value first key second 
+count.forEach((value, key) => console.log(key, value));
+
+
+// We can't use Object as a key for an Object, fine for Map.
+let john = { name: 'john' };
+let ben = { name: 'ben' };
+let obj = {};
+
+obj[ben] = 123;
+obj[john] = 234; // ben object also gets replaced
+```
+
+
+
+##### Set
+```ts
+let set = new Set(['oranges', 'apples', 'pear'])
+
+
+for (let val of set) alert(val);
+
+
+// note value argument appears twice in forEach, that's for compatibility with Map
+set.forEach((value, valueAgain, set) => {
+    alert(value);
+});
+
+set.keys() // returns an iterable
+set.values() // same as set.keys(), for compatibility with Map
+set.entries() // returns entries [value, value], for compatibility with Map
+
+```
