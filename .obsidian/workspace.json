@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript/'this' keyword and call(), apply(), bind().md",
+                "file": "Leetcode/HashTable/HashTable.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Javascript/'this' keyword and call(), apply(), bind().md",
+                "file": "Leetcode/HashTable/HashTable.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Javascript/'this' keyword and call(), apply(), bind().md",
+                "file": "Leetcode/HashTable/HashTable.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Javascript/'this' keyword and call(), apply(), bind().md"
+                "file": "Leetcode/HashTable/HashTable.md"
               }
             }
           }
@@ -149,6 +149,11 @@
   },
   "active": "99fb788e15350706",
   "lastOpenFiles": [
+    "Leetcode/HashTable/Problems/205. Isomorphic Strings.md",
+    "Leetcode/HashTable/HashTable.md",
+    "Leetcode/HashTable/Problems",
+    "Javascript/'this' keyword and call(), apply(), bind().md",
+    "Leetcode/HashTable",
     "Javascript/Async and Await.md",
     "Javascript/Basic data types.md",
     "Javascript/Classes.md",
@@ -169,13 +174,10 @@
     "Javascript/setTimeout and setInterval.md",
     "Javascript/Typeof vs instanceof.md",
     "Javascript/What happens when you type a URL into the browser.md",
-    "Javascript/'this' keyword and call(), apply(), bind().md",
     "Javascript/attachments/Pasted image 20240402121925.png",
     "Leetcode/Two Pointers/Two Pointers.md",
     "Leetcode/Two Pointers/Problems/2962. Count Subarrays Where Max Element Appears at Least K Times.md",
     "Leetcode/Two Pointers/Problems/2958. Length of Longest Subarray With at Most K Frequency.md",
-    "2024-03-30.md",
-    "Leetcode/Two Pointers/Problems/992. Subarrays with K Different Integers.md",
     "Leetcode/Intervals/Problems",
     "Leetcode/Intervals",
     "Leetcode/Heap/Problems",
@@ -187,8 +189,6 @@
     "Javascript/attachments/Pasted image 20240327194725.png",
     "Leetcode/Two Pointers/Problems",
     "Algorithm interview/Untitled/Problems",
-    "Leetcode/Two Pointers",
-    "Algorithm interview/Untitled",
     "System design/attachments/pilot-hash-3.webp",
     "System design/attachments/pilot-hash.webp",
     "System design/attachments/hashing-algorithm.webp",
