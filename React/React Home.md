@@ -1,6 +1,6 @@
 #### Home
-[[Managing state]]
+[[3. Managing state]]
 [[Custom Hooks]]
-[[Escape Hatches]]
+[[4. Escape Hatches]]
 
 
