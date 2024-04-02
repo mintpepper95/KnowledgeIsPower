@@ -132,7 +132,6 @@ new Promise(function(resolve, reject) {
         reject(new Error('Oops!'));
     }, 1000);
 }).catch(console.log);
-
 ```
 
 

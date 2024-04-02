@@ -112,7 +112,7 @@ console.log(user.ref.name);
 
 
 
-// Now works properlt
+// Now works properly
 function makeUser() {
 	return {
 		name: 'John',
@@ -134,7 +134,7 @@ In js, optional chaining returns undefined.
 
 ```ts
 // Call a fn that may not exist, if not exist returns undefined
-user.sayHi?.()'
+user.sayHi?.();
 
 // Call a property that may not exist, if not exist returns undefined
 user?.[key];

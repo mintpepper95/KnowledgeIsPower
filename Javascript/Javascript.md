@@ -81,72 +81,57 @@ arr.splice(1, 4);
 ```
 
 
-##### Object manipulations
-
-```ts
+##### Object.keys, Object.values, Object.entries, Object.fromEntries,
 
 Previously we saw methods like map.keys(), map.values(), map.entries() which return iterable. These methods are generic, so if we ever create a data structure of our own, we should implement them too.
 
-They are supported for Map, Set, Array.
 
 Plain objects also support similar methods
 
 Object.keys(obj) - returns an array of keys
-
 Object.values(obj) - return an array of values
+Object.entries(obj) - returns an array of `[key, value]` pairs
 
-Object.entries(obj) - returns an array of [key, value] pairs
-
+```ts
 let user = {
-
     name: "John",
-
     age: 30
-
 };
 
 Object.keys(user) // ["name", "age"]
-
 Object.values(user) // ["John", 30]
-
 Object.entries(user) // [ ["name","John"], ["age",30] ]
 
 // loop over values  
 for (let value of Object.values(user)) {  
-  alert(value); // John, then 30  
+  console.log(value); // John, then 30  
 }
+// Just like for…in loop, above methods ignore symbolic properties  // (properties that use Symbol(..) as keys)
+```
 
-Just like for…in loop, above methods ignore symbolic properties  (properties that use Symbol(..) as keys)
 
-Transforming objects
-
+###### Transforming objects
 Objects lack many methods that exist for arrays, eg. Map, filter and others.
-
+```ts
 let prices = {
-
     banana: 1,
-
     orange: 2,
-
     meat: 4
-
 }
+
 
 let doublePrices = Object.fromEntries(
-
     // .entries() convert to array first
-
     // use array methods on that array, eg. map
-
     // use Object.fromEntries(array) on resulting array to turn it back to object
-
-    Object.entries(prices).map( ([key, value]) => [key, value * 2])
-
+    Object.entries(prices).map( (key, value) => [key, value * 2])
 );
+
 ```
+
 ##### Map
 
-Iteration over Map and Set is always in insertion order, so these collections aren't really unordered, but we can't reorder them or directly get an elem by its position.
+Iteration over Map and Set is always in insertion order, so these collections aren't really unordered, but we can't reorder them or directly get an eleme by its position.
 
 ```ts
 // Map([iterable]), receives array of iterable whose elements are size 2
