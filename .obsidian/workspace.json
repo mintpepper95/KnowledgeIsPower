@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/React-dev-learn/3. Managing state.md",
+                "file": "Leetcode/Sorting/Problems/179. Largest Number.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/React-dev-learn/3. Managing state.md",
+                "file": "Leetcode/Sorting/Problems/179. Largest Number.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/React-dev-learn/3. Managing state.md",
+                "file": "Leetcode/Sorting/Problems/179. Largest Number.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/React-dev-learn/3. Managing state.md"
+                "file": "Leetcode/Sorting/Problems/179. Largest Number.md"
               }
             }
           }
@@ -149,8 +149,12 @@
   },
   "active": "25742dc808931c4f",
   "lastOpenFiles": [
-    "React/React-dev-learn/2. Adding Interactivity.md",
+    "Leetcode/Sorting/Untitled.md",
+    "Leetcode/Sorting/Problems/179. Largest Number.md",
+    "Leetcode/Sorting/Problems",
     "React/React-dev-learn/3. Managing state.md",
+    "Leetcode/Sorting",
+    "React/React-dev-learn/2. Adding Interactivity.md",
     "React/React-dev-learn/4. Escape Hatches.md",
     "React/React-dev-learn/1. Describing the UI.md",
     "React/React-dev-learn/Custom Hooks.md",
@@ -180,18 +184,15 @@
     "Javascript/Hoisting.md",
     "Javascript/How are methods implemented for primitives.md",
     "Javascript/Let vs const vs var.md",
-    "Javascript/Objects.md",
     "Javascript/attachments/Pasted image 20240402121925.png",
     "Leetcode/Intervals/Problems",
     "Leetcode/Intervals",
     "Leetcode/Heap/Problems",
     "Leetcode/Heap",
     "Leetcode/Linked List/Problems",
-    "Leetcode/Linked List",
     "Javascript/attachments/Pasted image 20240327200651.png",
     "Javascript/attachments/Pasted image 20240327200231.png",
     "Javascript/attachments/Pasted image 20240327194725.png",
-    "Leetcode/Two Pointers/Problems",
     "System design/attachments/pilot-hash-3.webp",
     "System design/attachments/pilot-hash.webp",
     "Untitled 2.canvas",
