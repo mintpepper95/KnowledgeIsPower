@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/React-dev-learn/1. Describing the UI.md",
+                "file": "React/React-dev-learn/3. Managing state.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/React-dev-learn/1. Describing the UI.md",
+                "file": "React/React-dev-learn/3. Managing state.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/React-dev-learn/1. Describing the UI.md",
+                "file": "React/React-dev-learn/3. Managing state.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/React-dev-learn/1. Describing the UI.md"
+                "file": "React/React-dev-learn/3. Managing state.md"
               }
             }
           }
@@ -151,13 +151,15 @@
   "lastOpenFiles": [
     "React/React-dev-learn/2. Adding Interactivity.md",
     "React/React-dev-learn/1. Describing the UI.md",
+    "React/React-dev-learn/3. Managing state.md",
+    "React/React-dev-learn/4. Escape Hatches.md",
+    "React/React-dev-learn/Custom Hooks.md",
+    "React/React-dev-learn/attachments/module_dependency_tree.webp",
+    "React/React-dev-learn/attachments/preserving_state_dom_tree.webp",
     "React/React-dev-learn/attachments/Pasted image 20240402162401.png",
     "React/React-dev-learn/attachments",
-    "React/React-dev-learn/4. Escape Hatches.md",
     "Javascript/Default vs named export.md",
     "Javascript/attachments/Pasted image 20240402161002.png",
-    "React/React-dev-learn/Custom Hooks.md",
-    "React/React-dev-learn/3. Managing state.md",
     "React/React Home.md",
     "Leetcode/HashTable/HashTable.md",
     "Leetcode/HashTable/Problems/205. Isomorphic Strings.md",
@@ -192,8 +194,6 @@
     "Leetcode/Two Pointers/Problems",
     "System design/attachments/pilot-hash-3.webp",
     "System design/attachments/pilot-hash.webp",
-    "System design/attachments/hashing-algorithm.webp",
-    "System design/attachments/write-through-write-behind.webp",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
     "DotNet/Untitled.canvas"
