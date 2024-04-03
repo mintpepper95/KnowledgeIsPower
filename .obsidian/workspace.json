@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/Sorting/Problems/179. Largest Number.md",
+                "file": "Leetcode/Sorting/Sorting.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Leetcode/Sorting/Problems/179. Largest Number.md",
+                "file": "Leetcode/Sorting/Sorting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Leetcode/Sorting/Problems/179. Largest Number.md",
+                "file": "Leetcode/Sorting/Sorting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Leetcode/Sorting/Problems/179. Largest Number.md"
+                "file": "Leetcode/Sorting/Sorting.md"
               }
             }
           }
@@ -149,8 +149,8 @@
   },
   "active": "25742dc808931c4f",
   "lastOpenFiles": [
-    "Leetcode/Sorting/Untitled.md",
     "Leetcode/Sorting/Problems/179. Largest Number.md",
+    "Leetcode/Sorting/Sorting.md",
     "Leetcode/Sorting/Problems",
     "React/React-dev-learn/3. Managing state.md",
     "Leetcode/Sorting",
