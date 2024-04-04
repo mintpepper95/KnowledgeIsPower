@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/Parenthesis/Parenthesis.md",
+                "file": "React/React-dev-learn/3. Managing state.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "default vs named ",
+                "query": "react",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "f9838370ded5a893",
@@ -86,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Leetcode/Parenthesis/Parenthesis.md",
+                "file": "React/React-dev-learn/3. Managing state.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Leetcode/Parenthesis/Parenthesis.md",
+                "file": "React/React-dev-learn/3. Managing state.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Leetcode/Parenthesis/Parenthesis.md"
+                "file": "React/React-dev-learn/3. Managing state.md"
               }
             }
           }
@@ -147,10 +148,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "25742dc808931c4f",
+  "active": "a7cafb0b48db0842",
   "lastOpenFiles": [
-    "Leetcode/Parenthesis/Problems/1614. Maximum Nesting Depth of the Parentheses.md",
+    "React/React-dev-learn/1. Describing the UI.md",
     "Leetcode/Parenthesis/Parenthesis.md",
+    "Leetcode/Parenthesis/Problems/1614. Maximum Nesting Depth of the Parentheses.md",
     "Leetcode/Untitled.md",
     "Leetcode/Parenthesis/Problems",
     "Leetcode/Parenthesis",
@@ -161,7 +163,6 @@
     "Leetcode/Sorting",
     "React/React-dev-learn/2. Adding Interactivity.md",
     "React/React-dev-learn/4. Escape Hatches.md",
-    "React/React-dev-learn/1. Describing the UI.md",
     "React/React-dev-learn/Custom Hooks.md",
     "React/React-dev-learn/attachments/module_dependency_tree.webp",
     "React/React-dev-learn/attachments/preserving_state_dom_tree.webp",
