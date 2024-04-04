@@ -13,6 +13,6 @@ for (let i of arr) {
 	console.log(i);
 }
 
-// forEach() accepts a callback fn, also ignores non-numeric properties like for...in
+// forEach() accepts a callback fn, also ignores non-numeric properties like for...of
 arr.forEach(x => console.log(x));
 ```

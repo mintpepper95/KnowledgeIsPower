@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/React-dev-learn/3. Managing state.md",
+                "file": "Javascript/Promise.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -70,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f9838370ded5a893",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/React-dev-learn/3. Managing state.md",
+                "file": "Javascript/Promise.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/React-dev-learn/3. Managing state.md",
+                "file": "Javascript/Promise.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/React-dev-learn/3. Managing state.md"
+                "file": "Javascript/Promise.md"
               }
             }
           }
@@ -148,45 +147,46 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a7cafb0b48db0842",
+  "active": "25742dc808931c4f",
   "lastOpenFiles": [
-    "React/React-dev-learn/1. Describing the UI.md",
-    "Leetcode/Parenthesis/Parenthesis.md",
-    "Leetcode/Parenthesis/Problems/1614. Maximum Nesting Depth of the Parentheses.md",
-    "Leetcode/Untitled.md",
-    "Leetcode/Parenthesis/Problems",
-    "Leetcode/Parenthesis",
-    "Leetcode/Sorting/Sorting.md",
-    "Leetcode/Sorting/Problems/179. Largest Number.md",
-    "Leetcode/Sorting/Problems",
-    "React/React-dev-learn/3. Managing state.md",
-    "Leetcode/Sorting",
-    "React/React-dev-learn/2. Adding Interactivity.md",
+    "Javascript/Prototype.md",
+    "Javascript/What happens when you type a URL into the browser.md",
+    "Javascript/Typeof vs instanceof.md",
+    "Javascript/setTimeout and setInterval.md",
+    "Javascript/Promise.md",
+    "Javascript/Objects.md",
+    "Javascript/Let vs const vs var.md",
+    "Javascript/Javascript.md",
+    "Javascript/How are methods implemented for primitives.md",
+    "Javascript/Hoisting.md",
+    "Javascript/Handwriting promise.md",
+    "Javascript/Generators.md",
+    "Javascript/for...in vs for...of vs forEach().md",
+    "Javascript/Event loop.md",
+    "Javascript/Error handling.md",
+    "Javascript/Equality in JS.md",
+    "Javascript/Default vs named export.md",
+    "Javascript/Closure.md",
+    "Javascript/Classes.md",
+    "Javascript/Basic data types.md",
+    "Javascript/'this' keyword and call(), apply(), bind().md",
+    "Javascript/BrowserStorageMechanism/Browser Storage Mechanism.md",
+    "Javascript/BrowserStorageMechanism/attachments/Pasted image 20240323225930.png",
     "React/React-dev-learn/4. Escape Hatches.md",
     "React/React-dev-learn/Custom Hooks.md",
+    "React/React-dev-learn/3. Managing state.md",
+    "React/React-dev-learn/1. Describing the UI.md",
+    "Leetcode/Parenthesis/Problems",
+    "Leetcode/Parenthesis",
+    "Leetcode/Sorting/Problems",
+    "Leetcode/Sorting",
     "React/React-dev-learn/attachments/module_dependency_tree.webp",
     "React/React-dev-learn/attachments/preserving_state_dom_tree.webp",
     "React/React-dev-learn/attachments/Pasted image 20240402162401.png",
     "React/React-dev-learn/attachments",
-    "Javascript/Default vs named export.md",
     "Javascript/attachments/Pasted image 20240402161002.png",
-    "React/React Home.md",
-    "Leetcode/HashTable/HashTable.md",
-    "Leetcode/HashTable/Problems/205. Isomorphic Strings.md",
     "Leetcode/HashTable/Problems",
-    "Javascript/'this' keyword and call(), apply(), bind().md",
     "Leetcode/HashTable",
-    "Javascript/Async and Await.md",
-    "Javascript/Basic data types.md",
-    "Javascript/Classes.md",
-    "Javascript/Closure.md",
-    "Javascript/Equality in JS.md",
-    "Javascript/Error handling.md",
-    "Javascript/Event loop.md",
-    "Javascript/for...in vs for...of vs forEach().md",
-    "Javascript/Generators.md",
-    "Javascript/Handwriting promise.md",
-    "Javascript/Javascript.md",
     "Javascript/attachments/Pasted image 20240402121925.png",
     "Leetcode/Intervals/Problems",
     "Leetcode/Intervals",
@@ -195,7 +195,6 @@
     "Javascript/attachments/Pasted image 20240327200231.png",
     "Javascript/attachments/Pasted image 20240327194725.png",
     "System design/attachments/pilot-hash-3.webp",
-    "System design/attachments/pilot-hash.webp",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
     "DotNet/Untitled.canvas"

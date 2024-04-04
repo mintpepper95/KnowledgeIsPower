@@ -43,6 +43,14 @@ let s3 = 123
 s3.toString(); // 123
 
 // We can use the double exclamation marks to convert truthy/falsy values to booleans
+
+// Min and max
+Math.min(12,2,3,4, -11);
+Math.max(12,2,3,4, -11);
+
+// Infinity
+NUMBER.POSITIVE_INFINITY;
+NUMBER.NEGATIVE_INFINITY;
 ```
 
 ##### Common array operations
@@ -179,6 +187,14 @@ let set = new Set(['oranges', 'apples', 'pear'])
 
 
 for (let val of set) alert(val);
+
+
+
+// common methods
+set.add(item);
+set.has(item); // returns boolean
+set.delete(item); // removes the element
+set.clear(); // empties set
 
 
 // note value argument appears twice in forEach, that's for compatibility with Map

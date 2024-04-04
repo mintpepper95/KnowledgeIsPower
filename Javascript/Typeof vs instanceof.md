@@ -1,14 +1,14 @@
 ```ts
 // typeof returns a string indicating the type
 let foo = 'foo';
-typeof fool; // string
+typeof foo; // string
 
 let obj = {}; // If obj is any complex type, we will get obj
 typeof obj; // object
 
 
 foo instanceof String; // false, literal string like above and String() are seperate
-foo instanceof Object; // true
+foo instanceof Object; // false
 
 
 // official behavioural error, should be null

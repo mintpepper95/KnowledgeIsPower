@@ -177,6 +177,7 @@ let [one, two, three] = new Set([1, 2, 3]);
 
 // rest '...' operator
 // You can use any name instead of 'rest' in place, juse use triple dots
+// Can also use it in function parameter
 let [name1, name2, ...rest] = ['Jason', 'Xu', 'rest1', 'rest2', 'rest3'];
 
 rest.length // 3, ['rest1', 'rest2', 'rest3']
@@ -412,7 +413,7 @@ arr.find(item => item.id == 1);
 
 
 // filter
-// returns a new arra that satisfies the filtering condition
+// returns a new array that satisfies the filtering condition
 
 
 
@@ -539,6 +540,7 @@ arr.reduce((accumulator, current) = > accumulator + current ), 0)
 
 
 // forEach modifies arr in-place
+// forEach modifies the existing array, map returns a new arr
 arr.forEach((value, key) => arr[key] = value * 2)
 ```
 
