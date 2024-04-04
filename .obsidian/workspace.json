@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/Sorting/Sorting.md",
+                "file": "Leetcode/Parenthesis/Parenthesis.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Leetcode/Sorting/Sorting.md",
+                "file": "Leetcode/Parenthesis/Parenthesis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Leetcode/Sorting/Sorting.md",
+                "file": "Leetcode/Parenthesis/Parenthesis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Leetcode/Sorting/Sorting.md"
+                "file": "Leetcode/Parenthesis/Parenthesis.md"
               }
             }
           }
@@ -149,8 +149,13 @@
   },
   "active": "25742dc808931c4f",
   "lastOpenFiles": [
-    "Leetcode/Sorting/Problems/179. Largest Number.md",
+    "Leetcode/Parenthesis/Problems/1614. Maximum Nesting Depth of the Parentheses.md",
+    "Leetcode/Parenthesis/Parenthesis.md",
+    "Leetcode/Untitled.md",
+    "Leetcode/Parenthesis/Problems",
+    "Leetcode/Parenthesis",
     "Leetcode/Sorting/Sorting.md",
+    "Leetcode/Sorting/Problems/179. Largest Number.md",
     "Leetcode/Sorting/Problems",
     "React/React-dev-learn/3. Managing state.md",
     "Leetcode/Sorting",
@@ -181,15 +186,10 @@
     "Javascript/Generators.md",
     "Javascript/Handwriting promise.md",
     "Javascript/Javascript.md",
-    "Javascript/Hoisting.md",
-    "Javascript/How are methods implemented for primitives.md",
-    "Javascript/Let vs const vs var.md",
     "Javascript/attachments/Pasted image 20240402121925.png",
     "Leetcode/Intervals/Problems",
     "Leetcode/Intervals",
     "Leetcode/Heap/Problems",
-    "Leetcode/Heap",
-    "Leetcode/Linked List/Problems",
     "Javascript/attachments/Pasted image 20240327200651.png",
     "Javascript/attachments/Pasted image 20240327200231.png",
     "Javascript/attachments/Pasted image 20240327194725.png",
