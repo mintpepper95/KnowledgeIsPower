@@ -1,5 +1,6 @@
 [[#What are custom hooks used for? Describe an example]]
 [[#Explain custom hooks let you share stateful logic, not state itself]]
+[[#When does Custom Hooks re-render and do they receive the latest props and states from component?]]
 
 
 #### What are custom hooks used for? Describe an example
