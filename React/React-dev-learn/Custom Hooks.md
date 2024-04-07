@@ -1,10 +1,11 @@
-React comes with built in Hooks like `useState`, `useContext` and `useEffect`. 
+[[#What are custom hooks used for? Describe an example]]
+[[#Explain custom hooks let you share stateful logic, not state itself]]
 
 
-
-Custom Hooks: Sharing logic between components
+#### What are custom hooks used for? Describe an example
 
 Imagine you want to warn user if their network has accidently gone off while using your app. What do you need? 
+
 You need some state in your component that tracks whether network is online. And an effect that subscribe to global online and offline events, and updates that state.
 
 ```ts
@@ -23,7 +24,7 @@ export default function StatusBar() {
     function handleOffline() {
       setIsOnline(false);
     }
-    // add event listenere
+    // add event listeners
     window.addEventListener('online', handleOnline);
     window.addEventListener('offline', handleOffline);
 
@@ -41,20 +42,12 @@ export default function StatusBar() {
 
 
 What if you want this logic in a different component?
-You want to extract the logic. So you have something like below.
+We extract the logic.
 
 In this case, you have some state, that reacts to some windows events via useEffect.
 
 ```ts
-function StatusBar() {
-	// checks if online
-	const isOnline = useOnlineStatus();
-	
-	return <h1>{isOnline ? '✅ Online' : '❌ Disconnected'}</h1>;}
-
-
-
-
+// Our hook encapsulate some states and logics for updating the state
 function useOnlineStatus() {
 	const [isOnline, setIsOnline] = useState(true);
 
@@ -79,14 +72,26 @@ function useOnlineStatus() {
 	return isOnline;
 }
 
+// Use case
+function StatusBar() {
+	// checks if online
+	const isOnline = useOnlineStatus();
+	
+	return <h1>{isOnline ? '✅ Online' : '❌ Disconnected'}</h1>;}
+}
+
+
 ```
 
 
-Convention is hook names always start with `use`, component names always start with capital letters.
+Convention is React hook names always start with `use`, React component names always start with capital letters.
 Hooks may return arbitrary values.
 
-Custom hooks let you share stateful logic, not state itself.
-Eg. in the case of `useOnlineStatus` above, each hook has its own state. They are synchronised with external value.
+
+
+
+#### Explain custom hooks let you share stateful logic, not state itself
+Eg. in the case of `useOnlineStatus` above, each `useOnlineStatus` hook has its own state. They are synchronised with external value in that hook via `addEventListener`. But they are different states.
 
 ```ts
 // This is a stateful form
@@ -125,7 +130,7 @@ export default function Form() {
 import { useFormInput } from './useFormInput.js';
 
 export default function Form() {
-  // this gives back handler that updates set, and state
+  // this gives back value and onChange
   const firstNameProps = useFormInput('Mary');
   // same here
   const lastNameProps = useFormInput('Poppins');
@@ -169,47 +174,20 @@ export function useFormInput(initialValue) {
 Custom hooks are for sharing state logic. If you want to share the state itself, lift the state up and pass it down via prop drilling.
 
 
-##### Passing reactive values between Hooks
+#### When does Custom Hooks re-render and do they receive the latest props and states from component?
 The code inside custom Hooks will re-run on every re-render of the component.
 Custom Hooks needs to be pure.
 
 As custom Hooks re-render together with component, they will receive latest prop and state.
 
-```ts
-// Custom hook of useChatRoom, takes in states
-export function useChatRoom({ serverUrl, roomId }) {
-	useEffect(() => {
-		// So if serverUrl or roomId changes, we disconnect existing side effects and reconnects
-		const options = {
-			serverUrl: serverUrl,
-			roomId: roomId
-		};
+In the code you often see side effects like `fetch` being called inside `useEffect`, that's because this will make sure it only execute when component mounts. And not cause redundant network requests when component re-renders.
 
-		const connection = createConnection(options);
-		connection.connect();
-		connect.on('message', msg => showNotification('New msg: ' + msg));
-	
-		// clean up fn
-		return () => connection.disconnect();
-	}, [roomId, serverUrl]);
-}
+`useEffect` are escape hatches. They should be reduced to minimum. When we do have to use them, we can wrap them inside custom hooks. Since implementation is sealed inside the hook, we can later refactor the code of the custom hook to get ride of `useEffect` while not affecting any consumers of the custom hook.
 
 
-// using useChatRoom custom hook
-export default function ChatRoom( { roomId }) {
-	const [serverUrl, setServerUrl] = useState('https://localhost:1234');
-
-	// It consoles logs, responding to prop and state changes
-	useChatRoom({roomId: roomId, serverUrl: serverUrl });
 
 
-	// Return some jsx based on roomId and server url
-	// We can also pass in and update state in our custom hooks via useEffect
-	
-}
 
-
-```
 
 
 A hook that returns delayed value

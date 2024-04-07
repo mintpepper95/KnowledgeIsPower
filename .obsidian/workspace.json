@@ -13,7 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript/Promise.md",
+                "file": "React/React-dev-learn/Custom Hooks.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d6d26c7addc2839d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Leetcode/Stack/Problems/678. Valid Parenthesis String.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "react",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Javascript/Promise.md",
+                "file": "React/React-dev-learn/Custom Hooks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Javascript/Promise.md",
+                "file": "React/React-dev-learn/Custom Hooks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Javascript/Promise.md"
+                "file": "React/React-dev-learn/Custom Hooks.md"
               }
             }
           }
@@ -149,11 +162,26 @@
   },
   "active": "25742dc808931c4f",
   "lastOpenFiles": [
+    "React/React-dev-learn/UseMemo and UseCallback.md",
+    "FunctionKind.md",
+    "Untitled.canvas",
+    "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
+    "Infotrack questions.md",
+    "React/React-dev-learn/Custom Hooks.md",
+    "React/React-dev-learn/4. Escape Hatches.md",
+    "React/React-dev-learn/3. Managing state.md",
+    "Leetcode/Stack/Stack.md",
+    "Leetcode/Stack/Problems/678. Valid Parenthesis String.md",
+    "Leetcode/Two Pointers/Two Pointers.md",
+    "Javascript/Promise.md",
+    "Leetcode/Stack/Problems",
+    "Leetcode/Stack/Untitled.md",
+    "Leetcode/Untitled.md",
+    "Leetcode/Stack",
     "Javascript/Prototype.md",
     "Javascript/What happens when you type a URL into the browser.md",
     "Javascript/Typeof vs instanceof.md",
     "Javascript/setTimeout and setInterval.md",
-    "Javascript/Promise.md",
     "Javascript/Objects.md",
     "Javascript/Let vs const vs var.md",
     "Javascript/Javascript.md",
@@ -163,19 +191,7 @@
     "Javascript/Generators.md",
     "Javascript/for...in vs for...of vs forEach().md",
     "Javascript/Event loop.md",
-    "Javascript/Error handling.md",
-    "Javascript/Equality in JS.md",
-    "Javascript/Default vs named export.md",
-    "Javascript/Closure.md",
-    "Javascript/Classes.md",
-    "Javascript/Basic data types.md",
-    "Javascript/'this' keyword and call(), apply(), bind().md",
-    "Javascript/BrowserStorageMechanism/Browser Storage Mechanism.md",
     "Javascript/BrowserStorageMechanism/attachments/Pasted image 20240323225930.png",
-    "React/React-dev-learn/4. Escape Hatches.md",
-    "React/React-dev-learn/Custom Hooks.md",
-    "React/React-dev-learn/3. Managing state.md",
-    "React/React-dev-learn/1. Describing the UI.md",
     "Leetcode/Parenthesis/Problems",
     "Leetcode/Parenthesis",
     "Leetcode/Sorting/Problems",
@@ -189,12 +205,9 @@
     "Leetcode/HashTable",
     "Javascript/attachments/Pasted image 20240402121925.png",
     "Leetcode/Intervals/Problems",
-    "Leetcode/Intervals",
-    "Leetcode/Heap/Problems",
     "Javascript/attachments/Pasted image 20240327200651.png",
     "Javascript/attachments/Pasted image 20240327200231.png",
     "Javascript/attachments/Pasted image 20240327194725.png",
-    "System design/attachments/pilot-hash-3.webp",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
     "DotNet/Untitled.canvas"
