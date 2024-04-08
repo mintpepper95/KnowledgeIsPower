@@ -21,6 +21,19 @@
             }
           },
           {
+            "id": "5f8d96fb733a3eba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TTD.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "d6d26c7addc2839d",
             "type": "leaf",
             "state": {
@@ -33,7 +46,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -99,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Typescript/No BS TS.md",
+                "file": "TTD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Typescript/No BS TS.md",
+                "file": "TTD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Typescript/No BS TS.md"
+                "file": "TTD.md"
               }
             }
           }
@@ -160,11 +174,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "25742dc808931c4f",
+  "active": "5f8d96fb733a3eba",
   "lastOpenFiles": [
+    "attachments/Pasted image 20240408135339.png",
+    "attachments",
+    "Typescript/No BS TS.md",
+    "TTD.md",
     "Typescript/Untitled 1.md",
     "Typescript/Typescript.md",
-    "Typescript/No BS TS.md",
     "Javascript/What happens when you type a URL into the browser.md",
     "Javascript/Promise.md",
     "Javascript/setTimeout and setInterval.md",
@@ -188,8 +205,6 @@
     "FunctionKind.md",
     "Untitled.canvas",
     "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
-    "Infotrack questions.md",
-    "React/React-dev-learn/4. Escape Hatches.md",
     "Leetcode/Stack/Problems",
     "Leetcode/Stack",
     "Javascript/BrowserStorageMechanism/attachments/Pasted image 20240323225930.png",
@@ -205,7 +220,6 @@
     "Leetcode/HashTable/Problems",
     "Leetcode/HashTable",
     "Javascript/attachments/Pasted image 20240402121925.png",
-    "Leetcode/Intervals/Problems",
     "Javascript/attachments/Pasted image 20240327200651.png",
     "Javascript/attachments/Pasted image 20240327200231.png",
     "Javascript/attachments/Pasted image 20240327194725.png",
