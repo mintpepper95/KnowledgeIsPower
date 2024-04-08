@@ -62,7 +62,7 @@ function say(phrase) {
     console.log(this.name +': ' + phrase);
 }
 let user = { name: 'Jason' };
-say.call(user, 'Hello'); // Jason: Hell
+say.call(user, 'Hello'); // Jason: Hello
 ```
 
 

@@ -57,7 +57,8 @@ await (await myAsyncFunction()).somethingElseAsync()
 
 
 #### await and event loop
-When an await is encountered in code ( either in async function or in a module ), awaited expression is executed, with all code that depends on the awaited value pushed onto the microtask queue. Main thread is then freed for next task in event loop. This happens even if awaited value is an already resolved promise or not a promise.
+
+Main thread is then freed for next task in event loop. This happens even if awaited value is an already resolved promise or not a promise.
 
 ```ts
 // Here the async fn is practically sync, as no await statements
@@ -88,6 +89,10 @@ function foo(name) {
 ```
 
 Another example.
+
+When an `await` is encountered in code (either in an async function or in a module), the awaited expression is executed, (it will return a promise instance). while all code that depends on the expression's value is paused and pushed into the microtask queue.
+
+In this case, console.log(name, 'end') depends on await.
 
 ```ts
 async function foo(name) {

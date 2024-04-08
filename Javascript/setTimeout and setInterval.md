@@ -76,6 +76,9 @@ With recursive setTimeout, the delay starts to countdown after current code has 
 class Button {
     constructor(value) {
         this.value = value;
+
+		// You would have to bind 'this' here, or use arrow syntax
+		// this.click = this.click.bind(this);
     }
     // We lose 'this' in functions like setTimeout
     click() {

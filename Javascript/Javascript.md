@@ -44,7 +44,7 @@ s3.toString(); // 123
 
 // We can use the double exclamation marks to convert truthy/falsy values to booleans
 
-// Min and max
+// Min and max, if array needs to unpack
 Math.min(12,2,3,4, -11);
 Math.max(12,2,3,4, -11);
 
@@ -109,6 +109,7 @@ let user = {
 Object.keys(user) // ["name", "age"]
 Object.values(user) // ["John", 30]
 Object.entries(user) // [ ["name","John"], ["age",30] ]
+// We can use Object.entries to loop through [idx, value] of arr
 
 // loop over values  
 for (let value of Object.values(user)) {  
