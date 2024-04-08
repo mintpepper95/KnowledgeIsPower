@@ -26,7 +26,33 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TTD.md",
+                "file": "Javascript/What happens when you type a URL into the browser.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b728bcca83e9ed38",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Javascript/Creating common html elements with JS/Basic HTML elements.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "be06a46ecd3e816f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Javascript/Creating common html elements with JS/Basic HTML elements.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -47,7 +73,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -113,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TTD.md",
+                "file": "Javascript/Creating common html elements with JS/Basic HTML elements.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TTD.md",
+                "file": "Javascript/Creating common html elements with JS/Basic HTML elements.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TTD.md"
+                "file": "Javascript/Creating common html elements with JS/Basic HTML elements.md"
               }
             }
           }
@@ -174,15 +200,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5f8d96fb733a3eba",
+  "active": "be06a46ecd3e816f",
   "lastOpenFiles": [
+    "Javascript/Creating common html elements with JS/Drag and Drop.md",
+    "Javascript/Creating common html elements with JS/Basic HTML elements.md",
+    "Javascript/Creating common html elements with JS/attachments/Pasted image 20240408220733.png",
+    "Javascript/Creating common html elements with JS/attachments",
+    "Javascript/What happens when you type a URL into the browser.md",
+    "Javascript/Creating common html elements with JS",
+    "Javascript/Error handling.md",
+    "Javascript/attachments/Pasted image 20240325171150.png",
+    "Javascript/attachments/Pasted image 20240327200651.png",
+    "Javascript/attachments/Pasted image 20240327194725.png",
+    "TTD.md",
     "attachments/Pasted image 20240408135339.png",
     "attachments",
     "Typescript/No BS TS.md",
-    "TTD.md",
     "Typescript/Untitled 1.md",
     "Typescript/Typescript.md",
-    "Javascript/What happens when you type a URL into the browser.md",
     "Javascript/Promise.md",
     "Javascript/setTimeout and setInterval.md",
     "Javascript/Typeof vs instanceof.md",
@@ -201,8 +236,6 @@
     "Javascript/Hoisting.md",
     "Javascript/Let vs const vs var.md",
     "React/React-dev-learn/Custom Hooks.md",
-    "React/React-dev-learn/UseMemo and UseCallback.md",
-    "FunctionKind.md",
     "Untitled.canvas",
     "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
     "Leetcode/Stack/Problems",
@@ -216,13 +249,6 @@
     "React/React-dev-learn/attachments/preserving_state_dom_tree.webp",
     "React/React-dev-learn/attachments/Pasted image 20240402162401.png",
     "React/React-dev-learn/attachments",
-    "Javascript/attachments/Pasted image 20240402161002.png",
-    "Leetcode/HashTable/Problems",
-    "Leetcode/HashTable",
-    "Javascript/attachments/Pasted image 20240402121925.png",
-    "Javascript/attachments/Pasted image 20240327200651.png",
-    "Javascript/attachments/Pasted image 20240327200231.png",
-    "Javascript/attachments/Pasted image 20240327194725.png",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
     "DotNet/Untitled.canvas"
