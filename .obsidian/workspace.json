@@ -52,8 +52,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/React-dev-learn/UseMemo and UseCallback.md",
-                "mode": "source",
+                "file": "React/React-dev-learn/2. Adding Interactivity.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/React-dev-learn/UseMemo and UseCallback.md",
+                "file": "React/React-dev-learn/2. Adding Interactivity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/React-dev-learn/UseMemo and UseCallback.md",
+                "file": "React/React-dev-learn/2. Adding Interactivity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/React-dev-learn/UseMemo and UseCallback.md"
+                "file": "React/React-dev-learn/2. Adding Interactivity.md"
               }
             }
           }
@@ -202,11 +202,12 @@
   },
   "active": "be06a46ecd3e816f",
   "lastOpenFiles": [
+    "React/React-dev-learn/1. Describing the UI.md",
+    "React/React-dev-learn/UseMemo and UseCallback.md",
     "React/React-dev-learn/Custom Hooks.md",
     "React/React-dev-learn/4. Escape Hatches.md",
     "React/React-dev-learn/3. Managing state.md",
     "React/React-dev-learn/2. Adding Interactivity.md",
-    "React/React-dev-learn/1. Describing the UI.md",
     "Javascript/Promise.md",
     "Javascript/setTimeout and setInterval.md",
     "Javascript/Typeof vs instanceof.md",
@@ -227,7 +228,6 @@
     "Javascript/Basic data types.md",
     "Javascript/Classes.md",
     "Javascript/Closure.md",
-    "Javascript/Default vs named export.md",
     "Javascript/BrowserStorageMechanism/attachments/Pasted image 20240323225930.png",
     "Javascript/Creating common html elements with JS/attachments/Pasted image 20240408220733.png",
     "Javascript/Creating common html elements with JS/attachments",
