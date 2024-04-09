@@ -7,12 +7,19 @@
 ```html
 <label for="cars">Choose a car:</label>
  <!-- select takes a list of options -->
-  <select name="cars" id="cars">
+  <select id="selection" name="cars" id="cars">
     <option value="volvo">Volvo</option>
     <option value="saab">Saab</option>
     <option value="opel">Opel</option>
     <option value="audi">Audi</option>
   </select>
+```
+```ts
+// firing when value changes
+let element = document.querySelector('#selection');
+element.addEventListener('change', (ev) => {
+  console.log(ev.target.value);
+})
 ```
 
 
@@ -21,7 +28,6 @@ A html link
 ```html
 <a href="https://www.google.com/">Visit Google</a>
 ```
-
 
 
 #### Label and Input
@@ -89,11 +95,13 @@ document.querySelector('.info');
 
 #### Updating element style with js
 ```ts
-
 function rotateHand(target, ratio) {
 	// target is a dom element, in this case we are setting a custom property
     target.style.setProperty('--rotation', ratio * 360);
 }
+
+// another example
+input.style.setProperty('background-color', 'red');
 ```
 
 

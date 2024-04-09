@@ -98,7 +98,7 @@ Plain objects also support similar methods
 
 Object.keys(obj) - returns an array of keys
 Object.values(obj) - return an array of values
-Object.entries(obj) - returns an array of `[key, value]` pairs
+Object.entries(obj) - returns an array of `[key, value]` pairs, you can pass it an object or an array, when you pass an array you will get index as key
 
 ```ts
 let user = {
@@ -116,6 +116,16 @@ for (let value of Object.values(user)) {
   console.log(value); // John, then 30  
 }
 // Just like for…in loop, above methods ignore symbolic properties  // (properties that use Symbol(..) as keys)
+
+
+
+// loop through index and value of an arr
+let arr = [20, 30, 40, 50];
+for (const [key, value] of arr.entries()) {
+	console.log(key, value);
+}
+
+
 ```
 
 
