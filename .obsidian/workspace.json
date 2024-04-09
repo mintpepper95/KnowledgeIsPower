@@ -53,7 +53,7 @@
               "type": "markdown",
               "state": {
                 "file": "React/React-dev-learn/UseMemo and UseCallback.md",
-                "mode": "preview",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
@@ -205,6 +205,7 @@
     "React/React-dev-learn/Custom Hooks.md",
     "React/React-dev-learn/4. Escape Hatches.md",
     "React/React-dev-learn/3. Managing state.md",
+    "React/React-dev-learn/UseMemo and UseCallback.md",
     "React/React-dev-learn/2. Adding Interactivity.md",
     "React/React-dev-learn/1. Describing the UI.md",
     "Javascript/Creating common html elements with JS/Basic HTML elements.md",
@@ -235,7 +236,6 @@
     "Javascript/Classes.md",
     "Javascript/'this' keyword and call(), apply(), bind().md",
     "Javascript/for...in vs for...of vs forEach().md",
-    "Javascript/Generators.md",
     "Untitled.canvas",
     "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
     "Leetcode/Stack/Problems",
