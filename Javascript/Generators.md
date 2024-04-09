@@ -49,13 +49,13 @@ for (let value of gen) {
 We use `yield* some_generator()` to delegate to another generator, it means we yield each element from `some_generator` until it exhausts, then resume producing its values.
 
 ```ts
-function * anotherGenerator(i) {
+function* anotherGenerator(i) {
   yield i + 1;
   yield i + 2;
   yield i + 3;
 }
 
-function * generator(i) {
+function* generator(i) {
   yield* anotherGenerator(i);
 
   yield 5;

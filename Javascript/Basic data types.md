@@ -472,6 +472,7 @@ let a = (1 + 2, 3 + 4);
 
 ##### Double negation
 Used to convert a non-boolean into a boolean
+Inner exclamation checks element == false, outer exclamation flips the result
 ```ts
 // first negation will return false, second negation will return the inverse, which is true
 console.log(!!'asdadsa');
@@ -523,7 +524,7 @@ const sayHello = ( function() {
 
 
 ##### First class functions
-Means fn can be treated like variables, we can assign them, push them to arrays, pass them as parameters to other functions, and return fn from fn.
+Means fn can be treated like objects, we can assign them, push them to arrays, pass them as parameters to other functions, and return fn from fn.
 
 
 ##### Higher order functions
@@ -534,7 +535,7 @@ Takes functions as arguments, or returns functions. E.g. map, filter, reduce, fo
 let arr = [1, 2, 3, 4, 5];
 
 // accumulator is initially 0
-arr.reduce((accumulator, current) = > accumulator + current ), 0)
+arr.reduce((accumulator, current) => accumulator + current ), 0)
 
 // without initial value, the first element becomes the initial value
 

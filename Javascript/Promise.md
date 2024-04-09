@@ -101,6 +101,8 @@ console.log('hej');
 ##### Then
 `then` method runs when a promise is settled, it has two arguments, a fn that runs when promise is resolved, and another fn that runs when promise is rejected. `then` always returns a promise.
 
+
+
 If any exception is raised inside a promise or a then, it's treated as a rejection.
 ![[Pasted image 20240325171505.png|500]]
 

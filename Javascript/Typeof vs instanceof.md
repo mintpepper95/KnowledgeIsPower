@@ -7,7 +7,7 @@ let obj = {}; // If obj is any complex type, we will get obj
 typeof obj; // object
 
 
-foo instanceof String; // false, literal string like above and String() are seperate
+foo instanceof String; // false, literal string like above and String() are not the same
 foo instanceof Object; // false
 
 

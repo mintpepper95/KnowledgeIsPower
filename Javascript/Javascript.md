@@ -124,8 +124,6 @@ let arr = [20, 30, 40, 50];
 for (const [key, value] of arr.entries()) {
 	console.log(key, value);
 }
-
-
 ```
 
 

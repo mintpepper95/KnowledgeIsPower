@@ -153,6 +153,7 @@ By default, all members in TS and JS are public.
 
 JS has no access modifiers, unlike TS.
 
+In C#, by default, classes are internal and class members are private.
 
 
 #### Extending built-in class
