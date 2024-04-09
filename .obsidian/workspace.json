@@ -52,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript/Promise.md",
+                "file": "React/React-dev-learn/UseMemo and UseCallback.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -139,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Javascript/Promise.md",
+                "file": "React/React-dev-learn/UseMemo and UseCallback.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Javascript/Promise.md",
+                "file": "React/React-dev-learn/UseMemo and UseCallback.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Javascript/Promise.md"
+                "file": "React/React-dev-learn/UseMemo and UseCallback.md"
               }
             }
           }
@@ -202,11 +202,16 @@
   },
   "active": "be06a46ecd3e816f",
   "lastOpenFiles": [
+    "React/React-dev-learn/Custom Hooks.md",
+    "React/React-dev-learn/4. Escape Hatches.md",
+    "React/React-dev-learn/3. Managing state.md",
+    "React/React-dev-learn/2. Adding Interactivity.md",
+    "React/React-dev-learn/1. Describing the UI.md",
+    "Javascript/Promise.md",
     "Javascript/setTimeout and setInterval.md",
     "Javascript/Typeof vs instanceof.md",
     "Javascript/What happens when you type a URL into the browser.md",
     "Javascript/Prototype.md",
-    "Javascript/Promise.md",
     "Javascript/Objects.md",
     "Javascript/Javascript.md",
     "Javascript/How are methods implemented for primitives.md",
@@ -223,11 +228,6 @@
     "Javascript/Classes.md",
     "Javascript/Closure.md",
     "Javascript/Default vs named export.md",
-    "Javascript/Equality in JS.md",
-    "Javascript/Creating common html elements with JS/Drag and Drop.md",
-    "Javascript/Creating common html elements with JS/Basic HTML elements.md",
-    "Javascript/BrowserStorageMechanism/Browser Storage Mechanism.md",
-    "Javascript/BrowserStorageMechanism/sessionStorage.md",
     "Javascript/BrowserStorageMechanism/attachments/Pasted image 20240323225930.png",
     "Javascript/Creating common html elements with JS/attachments/Pasted image 20240408220733.png",
     "Javascript/Creating common html elements with JS/attachments",
