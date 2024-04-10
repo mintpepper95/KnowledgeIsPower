@@ -7,6 +7,20 @@ A user class creates a function named User, and stores its methods, getters, set
 ![[Pasted image 20240327194725.png]]
 
 ```ts
+// You need to use the 'this' keyword inside the method, unlike C# which you don't
+class Book {  
+	 author;  
+	 title;  
+	 readCount;
+	 
+	 constructor(author, title) {  
+	   this.author = author;  
+	   this.title = title;  
+	   this.readCount = 0;  
+	 }
+ }
+ 
+
 class User {
     constructor(name) { this.name = name; }
     sayHi() { alert(this.name); }
