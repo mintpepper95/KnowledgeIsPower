@@ -1,35 +1,27 @@
-Webpack is a file bundler.
+Typescript compiler compiles ts into js.
 
-1. find the entry file and load its contents into memory
-2. match certain text within the content and evaluate those (for e.g. @import)
-3. find the dependencies based on previous evaluation and do the same with them
-4. stitch them all into a bundle in memory
-5. write the results to file system
+Babel transpiles JS into highly supported JS that's supported by the browser.
 
-When you examine the above steps closely, this resonates with what a Java compiler(or any compiler) does. There are differences of course but those don't matter to understand loaders and plugins.
 
----
+#### Webpack
+Webpack is a file bundler. There are alternatives like vite.
 
-Loaders:
+Imagine without webpack, we would have a bunch of scripts. And then we have to insert those script tags to our html page. And they have to be imported in a carefully chosen order, because you have to make sure utility function is available before use.
 
-are here because webpack promises to bundle together any file type.
+That's a lot of script tags!
+If the order is not correct, then code may break!
+![[1676127300188.png|500]] 
 
-Since webpack at its core is only capable enough to bundle js files, this promise meant that the webpack core team had to incorporate build flows which allowed external code to transform a particular file type in a way that webpack could consume.
+It would be better if each file can tell us what other file it requires (its dependencies) and we can use that mapping. This is where Webpack comes in. It builds a dependency graph of all files (not just code, but other assets) and their deps, and bundle all the files into one or more bundles.
 
-These external code are called loaders and they typically run during step 1 and 3 above. Thus, since the stage at which these loaders need to run is obvious, they don't require hooks and neither do they influence the build process(since the build or bundle only happens at step 4).
+Now we have only 1 js file we need to include, all deps are bundled inside this file.
+![[1676128445375.png|500]]
 
-So Loaders prepare the stage for compilation and they sort of extend the flexibility of the webpack compiler.
 
----
+#### Loader
+Webpack at its core is only capable to bundle js/json files.
 
-Plugins:
+We use loaders to parse static resources like stylesheets and images and output them as javascript modules before they get bundled. Eg, we have basic loaders like style-loader, css-loader, sass-loader etc.
 
-are here because even though webpack doesn't directly promise variable output, the world wants it and webpack does allow it.
-
-Since webpack at its core is just a bundler and yet goes through several steps and sub-steps in doing so, these steps can be utilised to build in additional functionality.
-
-The production build process(minifying and writing to file system), which is a native capability of webpack compiler, for e.g., can be treated as an extension of its core capability(which is just bundling) and can be treated like a native plugin. Had they not provided it, someone else would have done it.
-
-Looking at the native plugin above, it appears as if the webpack bundling or compilation can be broken down into core bundling process, plus a lot of native plugin processes which we can turn off or customise or extend. This meant allowing external code to join in the bundling process at specific points that they can choose from (called hooks).
-
-Plugins therefore influence the output and sort of extend the capability of webpack compiler.
+#### Plugins
+Plugins influence the output and extend the capability of webpack compiler. Eg. optimization, minifying , injection of env variables etc.

@@ -28,7 +28,7 @@ Although js can easily send/get request from server where the current page came 
 Browser stuff
 [[Browser Storage Mechanism]]
 [[What happens when you type a URL into the browser]]
-
+[[Loader vs plugin]]
 
 
 #### Common JS methods

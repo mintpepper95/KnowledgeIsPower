@@ -1,5 +1,6 @@
 [[#Explain how class keyword related to function?]]
 
+---
 
 #### Explain how class keyword related to function?
 A user class creates a function named User, and stores its methods, getters, setters inside `User.prototype`
