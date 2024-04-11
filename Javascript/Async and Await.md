@@ -121,4 +121,13 @@ function foo(name) {
     console.log(name, "end");
   });
 }
+
+
+// Another example
+async function fn() {
+  await console.log('hello world');
+}
+fn();
+console.log('yay');
+// hello world will print first, then yay
 ```

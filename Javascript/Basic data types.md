@@ -401,7 +401,7 @@ arr.slice([start], [end]);
 
 
 // indexOf, includes
-// They work similar to String
+// They work similar to String,
 
 
 // find and findIndex
@@ -413,7 +413,9 @@ arr.find(item => item.id == 1);
 
 
 // filter
-// returns a new array that satisfies the filtering condition
+// returns a new array that satisfies the filtering condition, so it returns an array
+// find returns the first element
+
 
 
 
@@ -510,7 +512,7 @@ Can be used to create closure
 
 ```ts
 // Note message not accesible outside the fn
-const sayHello = ( function() {
+const sayHello = (function() {
 	let message = 'Hello';
 
 	function sayHello() {

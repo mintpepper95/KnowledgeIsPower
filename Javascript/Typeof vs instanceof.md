@@ -10,6 +10,10 @@ typeof obj; // object
 foo instanceof String; // false, literal string like above and String() are not the same
 foo instanceof Object; // false
 
+let fn = () => {};
+typeof fn; // function
+fn instanceof Function // true;
+
 
 // official behavioural error, should be null
 typeof null; // object
