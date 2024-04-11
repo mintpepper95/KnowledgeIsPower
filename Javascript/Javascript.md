@@ -28,7 +28,7 @@ Although js can easily send/get request from server where the current page came 
 Browser stuff
 [[Browser Storage Mechanism]]
 [[What happens when you type a URL into the browser]]
-[[Loader vs plugin]]
+[[Webpack notes]]
 
 
 #### Common JS methods
@@ -56,6 +56,10 @@ NUMBER.NEGATIVE_INFINITY;
 ##### Common array operations
 ```ts
 let s = [1, 2, 3, 4, 5];
+
+// Note JS don't support negative indexing
+s[-1]; // Doesn't work!!!
+
 
 // copy/slice the entire array
 let s1 = s.slice();

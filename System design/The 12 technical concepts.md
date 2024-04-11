@@ -14,12 +14,15 @@
 	What is consistent hashing? Example to achieve consistent hashing when servers are dynamic?
 
 
+---
+
+#### Some general tips
 In System design interviews, you are playing the role of a tech lead. System design prompts tend to be light on detail. There should be a back and forth convo about problem constraints and parameters, so avoid making assumptions. Remember there is not RIGHT way to design a system.
 
 A common failure point occurs when candidate don't make decisions. Candidates will say we could use this or that, and these are the pros and cons... **We also need to say, based on all the trade-offs, we will use that.** We need to make decisions and explain why.
 
 Say generic name of a component, eg. a message queue, and not something specific like Kafka, unless you know how it works.
-#### What to say when you don't know something
+##### What to say when you don't know something
 E.g. You are asked about loading balancers. 
 You only know very basics.
 You can say things like 
@@ -28,7 +31,7 @@ You can say things like
 * This reminds me of...
 * This is super interesting, tell me more
 
-#### Push back against interviewer
+##### Push back against interviewer
 E.g. Interviewer says I wouldn't use a cache. You can say, sure, we don't have to use it. I think it's useful because xxx, so why not, do you think there's a better way to approach this. Always acknowledge and affirm your interviewer by starting with words like sure, ok and yes. You can then say I'm sorry, but if we don't use cache wouldn't that result in xxx. Use collaborative languages like we or let's. 
 
 It's more important to cover everything broadly than it is to explain things in detail. You can 'handwave' some detailed stuff to avoid getting derailed.
@@ -37,7 +40,7 @@ A lot of candidate fail because they expect 'warm' interviewers and don't know h
 
 Cold interviewers get turned off when you constantly check in with them by asking questions. They would prefer you to proceed without involving them much.
 
-You can try say things like 'correct me if I'm wrong, but I think we can do xxx becaue of yyy'. 'Stop me if I'm going off track, I think the next thing to do is X because of Y.'
+You can try say things like 'correct me if I'm wrong, but I think we can do xxx because of yyy'. 'Stop me if I'm going off track, I think the next thing to do is X because of Y.'
 
 
 
@@ -50,7 +53,6 @@ When we design API, we need to explore the architectures, review their strengths
 
 ##### REST
 HTTP Verbs
-
 * Uniform interface, provides a structured way of getting and modifying info from your db.
 * Client only needs to know the resource urls and what actions the endpoint supports. Meaning client and server can evolve separately.
 * Stateless, each request must contain all info necessary to be understood by the server, rather than the server remembering prior requests. Stateless helps in scaling API to millions of concurrent users. Also less complex and easier to cache.
@@ -187,7 +189,7 @@ We can set cookies to `Secure`, such that browser can only include it in HTTPS r
 Helps direct requests to different servers to distribute incoming workload evenly among available servers.
 
 ###### Round robin
-If there are N machines, load balancer will send request to each of them sequantially.
+If there are N machines, load balancer will send request to each of them sequentially.
 
 ###### Least Connection/Response time
 We send requests to machines with least connections or min response time. This is useful for incoming requests that have varying connection time and we have a set of servers are that relative similar in terms of computing resources.

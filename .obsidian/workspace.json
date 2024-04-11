@@ -52,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript/Classes.md",
+                "file": "System design/The 12 technical concepts.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -139,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Javascript/Classes.md",
+                "file": "System design/The 12 technical concepts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Javascript/Classes.md",
+                "file": "System design/The 12 technical concepts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Javascript/Classes.md"
+                "file": "System design/The 12 technical concepts.md"
               }
             }
           }
@@ -202,6 +202,20 @@
   },
   "active": "be06a46ecd3e816f",
   "lastOpenFiles": [
+    "System design/A Senior Engineer's Guide to the System Design Interview 4 Parts.md",
+    "System design/Designing systems.md",
+    "System design/The 12 technical concepts.md",
+    "System design/The 3 step framework.md",
+    "Javascript/Javascript.md",
+    "Javascript/Web misc/Webpack notes.md",
+    "Javascript/Web misc/sessionStorage.md",
+    "Javascript/Web misc/cookies.md",
+    "Javascript/Web misc/localStorage.md",
+    "Leetcode/Stack/Problems/402. Remove K Digits.md",
+    "Leetcode/Stack/Stack.md",
+    "Leetcode/Stack/Problems/678. Valid Parenthesis String.md",
+    "Leetcode/Sorting/Sorting.md",
+    "Javascript/Classes.md",
     "Javascript/Closure.md",
     "Javascript/Default vs named export.md",
     "Javascript/Equality in JS.md",
@@ -212,24 +226,10 @@
     "Javascript/Handwriting promise.md",
     "Javascript/Hoisting.md",
     "Javascript/How are methods implemented for primitives.md",
-    "Javascript/Javascript.md",
     "Javascript/Let vs const vs var.md",
     "Javascript/Objects.md",
-    "Javascript/Promise.md",
-    "Javascript/Prototype.md",
-    "Javascript/Typeof vs instanceof.md",
-    "Javascript/setTimeout and setInterval.md",
-    "Javascript/What happens when you type a URL into the browser.md",
-    "Javascript/Classes.md",
-    "Javascript/Basic data types.md",
-    "Javascript/Async and Await.md",
-    "Javascript/'this' keyword and call(), apply(), bind().md",
-    "Javascript/Web misc/Loader vs plugin.md",
     "Javascript/Web misc/attachments/1676128445375.png",
     "Javascript/Web misc/attachments/1676127300188.png",
-    "Javascript/Web misc/Browser Storage Mechanism.md",
-    "Javascript/Web misc/sessionStorage.md",
-    "Leetcode/Sorting/Problems/950. Reveal Cards In Increasing Order.md",
     "Javascript/Web misc/attachments/Pasted image 20240323225930.png",
     "Javascript/Creating common html elements with JS/attachments/Pasted image 20240408220733.png",
     "Javascript/Creating common html elements with JS/attachments",
