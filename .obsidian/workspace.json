@@ -52,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/The 12 technical concepts.md",
+                "file": "Leetcode/Stack/Stack.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -139,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "System design/The 12 technical concepts.md",
+                "file": "Leetcode/Stack/Stack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "System design/The 12 technical concepts.md",
+                "file": "Leetcode/Stack/Stack.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "System design/The 12 technical concepts.md"
+                "file": "Leetcode/Stack/Stack.md"
               }
             }
           }
@@ -202,18 +202,19 @@
   },
   "active": "be06a46ecd3e816f",
   "lastOpenFiles": [
+    "Leetcode/Stack/Problems/678. Valid Parenthesis String.md",
+    "Leetcode/Stack/Problems/402. Remove K Digits.md",
+    "Leetcode/Stack/Problems/42. Trapping Rain Water.md",
+    "Leetcode/Stack/Stack.md",
+    "System design/The 12 technical concepts.md",
     "System design/A Senior Engineer's Guide to the System Design Interview 4 Parts.md",
     "System design/Designing systems.md",
-    "System design/The 12 technical concepts.md",
     "System design/The 3 step framework.md",
     "Javascript/Javascript.md",
     "Javascript/Web misc/Webpack notes.md",
     "Javascript/Web misc/sessionStorage.md",
     "Javascript/Web misc/cookies.md",
     "Javascript/Web misc/localStorage.md",
-    "Leetcode/Stack/Problems/402. Remove K Digits.md",
-    "Leetcode/Stack/Stack.md",
-    "Leetcode/Stack/Problems/678. Valid Parenthesis String.md",
     "Leetcode/Sorting/Sorting.md",
     "Javascript/Classes.md",
     "Javascript/Closure.md",
@@ -227,7 +228,6 @@
     "Javascript/Hoisting.md",
     "Javascript/How are methods implemented for primitives.md",
     "Javascript/Let vs const vs var.md",
-    "Javascript/Objects.md",
     "Javascript/Web misc/attachments/1676128445375.png",
     "Javascript/Web misc/attachments/1676127300188.png",
     "Javascript/Web misc/attachments/Pasted image 20240323225930.png",
