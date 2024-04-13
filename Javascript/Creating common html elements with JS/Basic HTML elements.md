@@ -75,9 +75,9 @@ function keypress(event) {
 
 
 
-// input events are fired when input changes
+// 'input' events are fired when input changes
 
-// change events are fired when input change + lose focus
+// 'change' events are fired when input change + lose focus
 // OR select change option
 ```
 

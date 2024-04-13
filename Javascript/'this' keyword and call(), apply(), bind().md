@@ -49,15 +49,6 @@ console.log(food.name);
 ```
 ###### And Another
 ```ts
-function sayHi() {
-    console.log(this.name);
-}
-
-let user = { name: 'John' };
-let admin = { name: 'Tom' };
-sayHi.call(user); // John
-sayHi.call(admin); // Tom
-
 function say(phrase) {
     console.log(this.name +': ' + phrase);
 }
