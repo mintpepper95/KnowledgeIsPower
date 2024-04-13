@@ -52,8 +52,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript/Javascript.md",
-                "mode": "preview",
+                "file": "Leetcode/Stack/Stack.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "monot",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -139,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Javascript/Javascript.md",
+                "file": "Leetcode/Stack/Stack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Javascript/Javascript.md",
+                "file": "Leetcode/Stack/Stack.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Javascript/Javascript.md"
+                "file": "Leetcode/Stack/Stack.md"
               }
             }
           }
@@ -202,6 +202,9 @@
   },
   "active": "be06a46ecd3e816f",
   "lastOpenFiles": [
+    "Leetcode/Stack/Problems/1475. Final Prices With a Special Discount in a Shop.md",
+    "Leetcode/Stack/Stack.md",
+    "Javascript/Javascript.md",
     "Javascript/Basic data types.md",
     "Javascript/Async and Await.md",
     "Javascript/'this' keyword and call(), apply(), bind().md",
@@ -221,13 +224,10 @@
     "DotNet/Design patterns.md",
     "DotNet/Database stuffs.md",
     "DotNet/ASP.NET.md",
-    "Leetcode/Stack/Stack.md",
     "Leetcode/Stack/Problems/678. Valid Parenthesis String.md",
     "Leetcode/Stack/Problems/402. Remove K Digits.md",
     "Leetcode/Stack/Problems/42. Trapping Rain Water.md",
     "System design/The 12 technical concepts.md",
-    "System design/A Senior Engineer's Guide to the System Design Interview 4 Parts.md",
-    "System design/Designing systems.md",
     "Javascript/Web misc/attachments/1676128445375.png",
     "Javascript/Web misc/attachments/1676127300188.png",
     "Javascript/Web misc/attachments/Pasted image 20240323225930.png",
