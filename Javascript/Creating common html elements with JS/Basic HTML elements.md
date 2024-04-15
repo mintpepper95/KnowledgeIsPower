@@ -13,13 +13,21 @@
     <option value="opel">Opel</option>
     <option value="audi">Audi</option>
   </select>
+
+
+// Adding event listener via attribute
+<input type="text" oninput="myFunction()">
+<select onchange="myFunction()">
 ```
 ```ts
-// firing when value changes
+// Adding via method
 let element = document.querySelector('#selection');
 element.addEventListener('change', (ev) => {
   console.log(ev.target.value);
 })
+
+
+
 ```
 
 
@@ -65,6 +73,11 @@ field.removeAttribute('readonly');
 
 // set class name
 label.setAttribute('class', 'hi-class');
+
+// we can set multiple class names by seperating via space
+label.setAttribute('class', 'class1 class2 class3');
+
+
 input.setAttribute('name', 'input_name');
 
 

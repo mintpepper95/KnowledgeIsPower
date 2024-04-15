@@ -52,8 +52,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSS/Selectors.md",
-                "mode": "source",
+                "file": "Javascript/Javascript.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSS/Selectors.md",
+                "file": "Javascript/Javascript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSS/Selectors.md",
+                "file": "Javascript/Javascript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSS/Selectors.md"
+                "file": "Javascript/Javascript.md"
               }
             }
           }
@@ -202,35 +202,35 @@
   },
   "active": "be06a46ecd3e816f",
   "lastOpenFiles": [
+    "Javascript/'this' keyword and call(), apply(), bind().md",
+    "Javascript/What happens when you type a URL into the browser.md",
+    "Javascript/Web misc/sessionStorage.md",
+    "Javascript/Web misc/localStorage.md",
+    "Javascript/Web misc/cookies.md",
+    "Javascript/Web misc/Webpack notes.md",
+    "Javascript/Web misc/Browser Storage Mechanism.md",
+    "Javascript/Creating common html elements with JS/Drag and Drop.md",
+    "Javascript/Creating common html elements with JS/Basic HTML elements.md",
+    "CSS/Selectors.md",
     "CSS/Positioning.md",
     "CSS/Custom properties.md",
     "CSS/The Box Model.md",
     "CSS/Grid.md",
     "CSS/Flexbox.md",
     "Untitled.md",
-    "CSS/Selectors.md",
     "CSS/CSS Summary.md",
     "CSS/attachments/cssspecificity-calc-1_kqzhog.webp",
     "CSS/attachments",
     "CSS.md",
     "CSS",
-    "Javascript/Creating common html elements with JS/Basic HTML elements.md",
     "Javascript/Javascript.md",
     "Leetcode/Stack/Stack.md",
     "Leetcode/Stack/Problems/1475. Final Prices With a Special Discount in a Shop.md",
     "Javascript/Basic data types.md",
     "Javascript/Async and Await.md",
-    "Javascript/'this' keyword and call(), apply(), bind().md",
-    "Javascript/Web misc/Webpack notes.md",
-    "Javascript/Web misc/sessionStorage.md",
-    "Javascript/Web misc/localStorage.md",
-    "Javascript/Web misc/cookies.md",
-    "Javascript/Web misc/Browser Storage Mechanism.md",
-    "Javascript/Creating common html elements with JS/Drag and Drop.md",
     "DotNet/Improving performance of a system.md",
     "DotNet/Event Sourcing and CQRS.md",
     "DotNet/Event Driven Architecture.md",
-    "DotNet/EFCore code first vs database first.md",
     "Javascript/Web misc/attachments/1676128445375.png",
     "Javascript/Web misc/attachments/1676127300188.png",
     "Javascript/Web misc/attachments/Pasted image 20240323225930.png",
