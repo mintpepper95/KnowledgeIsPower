@@ -30,6 +30,11 @@ A html link
 ```
 
 
+#### Stylesheet
+```html
+<link rel="stylesheet" href="./index.css" type="css"/>
+```
+
 #### Label and Input
 This is how we create labels and inputs in html.
 Input can have optional type attribute, such as `radio`, `checkbox`, `password`.
@@ -38,6 +43,8 @@ Input can have optional type attribute, such as `radio`, `checkbox`, `password`.
   <!--for attribute specifies the name of input label is bound to -->
   <label for="cheese">Do you like cheese?</label>
   <input name="cheese" id="cheese" />
+
+
 
 ```
 
@@ -56,9 +63,18 @@ field.setAttribute('readonly', true);
 field.removeAttribute('readonly');
 
 
+// set class name
+label.setAttribute('class', 'hi-class');
+input.setAttribute('name', 'input_name');
+
+
 // creating a line break element and appending it to a form element
 let br = document.createElement('br');
 form.append(br);
+
+
+// adding to body
+document.body.appendChild(form);
 ```
 
 #### Event listener
