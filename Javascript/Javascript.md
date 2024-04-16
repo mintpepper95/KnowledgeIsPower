@@ -179,7 +179,8 @@ for (let [key, value] of count) {
 	console.log(`key is ${key}, value is ${value}`);
 }
 
-// You can also use foreach on map, note value first key second 
+// You can also use foreach on map, note value first key second
+// value first and key second for arr.ForEach() as well
 count.forEach((value, key) => console.log(key, value));
 
 

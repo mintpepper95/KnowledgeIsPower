@@ -17,7 +17,7 @@
 ---
 
 #### Some general tips
-In System design interviews, you are playing the role of a tech lead. System design prompts tend to be light on detail. There should be a back and forth convo about problem constraints and parameters, so avoid making assumptions. Remember there is not RIGHT way to design a system.
+In System design interviews, you are playing the role of a tech lead. System design prompts tend to be light on detail. There should be a back and forth convo about problem constraints and parameters, so avoid making assumptions. Remember there is no RIGHT way to design a system.
 
 A common failure point occurs when candidate don't make decisions. Candidates will say we could use this or that, and these are the pros and cons... **We also need to say, based on all the trade-offs, we will use that.** We need to make decisions and explain why.
 

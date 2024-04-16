@@ -124,6 +124,8 @@ This affects its behaviour with `new` keyword. When a regular fn executes with `
 
 Derived constructors don't do this, expects parent constructor to do this. So parent constructor has to be called, else `this` won't be created. If derived class has no constructor (can happen when parent has parameter less constructor), then parent constructor is called.
 
+There is no difference between no constructor and empty parameterless constructor.
+
 ```ts
 class Animal {
     name = 'animal';

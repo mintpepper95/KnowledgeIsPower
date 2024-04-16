@@ -52,21 +52,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript/Javascript.md",
+                "file": "React/React-dev-learn/4. Escape Hatches.md",
                 "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d6d26c7addc2839d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Leetcode/Stack/Problems/678. Valid Parenthesis String.md",
-                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
@@ -139,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Javascript/Javascript.md",
+                "file": "React/React-dev-learn/4. Escape Hatches.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Javascript/Javascript.md",
+                "file": "React/React-dev-learn/4. Escape Hatches.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Javascript/Javascript.md"
+                "file": "React/React-dev-learn/4. Escape Hatches.md"
               }
             }
           }
@@ -202,35 +189,37 @@
   },
   "active": "be06a46ecd3e816f",
   "lastOpenFiles": [
-    "Javascript/'this' keyword and call(), apply(), bind().md",
-    "Javascript/What happens when you type a URL into the browser.md",
-    "Javascript/Web misc/sessionStorage.md",
-    "Javascript/Web misc/localStorage.md",
-    "Javascript/Web misc/cookies.md",
-    "Javascript/Web misc/Webpack notes.md",
-    "Javascript/Web misc/Browser Storage Mechanism.md",
-    "Javascript/Creating common html elements with JS/Drag and Drop.md",
-    "Javascript/Creating common html elements with JS/Basic HTML elements.md",
-    "CSS/Selectors.md",
-    "CSS/Positioning.md",
-    "CSS/Custom properties.md",
-    "CSS/The Box Model.md",
-    "CSS/Grid.md",
-    "CSS/Flexbox.md",
-    "Untitled.md",
-    "CSS/CSS Summary.md",
+    "React/React-dev-learn/3. Managing state.md",
+    "React/React-dev-learn/2. Adding Interactivity.md",
+    "React/React-dev-learn/1. Describing the UI.md",
+    "System design/The 12 technical concepts.md",
+    "System design/The 3 step framework.md",
+    "System design/A Senior Engineer's Guide to the System Design Interview 4 Parts.md",
+    "System design/Designing systems.md",
+    "Leetcode/Graph and Trees/Graph and Trees.md",
+    "Leetcode/Graph and Trees/Problems/623. Add One Row to Tree.md",
+    "Leetcode/Stack/Problems/678. Valid Parenthesis String.md",
+    "Leetcode/Graph and Trees/Problems",
+    "Javascript/Objects.md",
+    "Leetcode/Graph and Trees",
+    "Leetcode/Untitled.md",
+    "Javascript/Prototype.md",
+    "Javascript/Promise.md",
+    "Javascript/Handwriting promise.md",
+    "Javascript/Hoisting.md",
+    "Javascript/How are methods implemented for primitives.md",
+    "Javascript/Javascript.md",
+    "Javascript/Let vs const vs var.md",
+    "Javascript/setTimeout and setInterval.md",
+    "Javascript/Typeof vs instanceof.md",
+    "Javascript/Generators.md",
+    "Javascript/for...in vs for...of vs forEach().md",
+    "Javascript/Event loop.md",
+    "Javascript/Error handling.md",
+    "Javascript/Equality in JS.md",
     "CSS/attachments/cssspecificity-calc-1_kqzhog.webp",
     "CSS/attachments",
-    "CSS.md",
     "CSS",
-    "Javascript/Javascript.md",
-    "Leetcode/Stack/Stack.md",
-    "Leetcode/Stack/Problems/1475. Final Prices With a Special Discount in a Shop.md",
-    "Javascript/Basic data types.md",
-    "Javascript/Async and Await.md",
-    "DotNet/Improving performance of a system.md",
-    "DotNet/Event Sourcing and CQRS.md",
-    "DotNet/Event Driven Architecture.md",
     "Javascript/Web misc/attachments/1676128445375.png",
     "Javascript/Web misc/attachments/1676127300188.png",
     "Javascript/Web misc/attachments/Pasted image 20240323225930.png",
@@ -247,8 +236,6 @@
     "Leetcode/Stack/Problems",
     "Leetcode/Stack",
     "Leetcode/Parenthesis/Problems",
-    "Leetcode/Parenthesis",
-    "Leetcode/Sorting/Problems",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
     "DotNet/Untitled.canvas"
