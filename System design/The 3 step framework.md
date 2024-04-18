@@ -254,4 +254,91 @@ We may want both. We want consistency for product transactions, while flexible a
 ###### Entities to store
 This is where we design our database schema
 
+Accounts: id, name, surname
+Tweets: id, content, author_id, media_url
+
+Be mindful of get all access patterns, these usually need to be guarded by paging. Also it maybe very expensive.
+
+###### Microservices
+
+Caching - are there any access patterns that would benefit from caching results in-memory. Note not all systems require caching.
+
+Only consider cache when all 3 below is true
+* Computation is costly
+* Result doesn't change often
+* Objects we are caching are read often
+
+Redis is a way to cache parts of your db in memory for faster access.
+Just say add a cache if you don't know Redis.
+
+Caching's downsides includes introducing replication of data, which may introduce inconsistencies as cache maybe out of date. 
+
+
+Load balancing
+Helps us scale horizontally and maintain high availability.
+
+2 benefits
+* Horizontal scaling - we can add more servers to handle more load
+* High availability - Available even if some servers go down due to fault or maintenance
+
+
+##### End-to-end example
+Design interview.io
+
+###### Step 1: Requirements
+
+2 main business objects - users and interviews.
+
+We can start asking questions. E.g. Do we need to save video recordings? How do we match interviewers and interviewees? 
+
+From interviewer's answer, we need to track the following info.
+
+User (name, surname, pseudo name, availability)
+Interview (interviewer, interviewee, video recording, programming language)
+Booking (time, interviewer, interviewee)
+
+Now let's talk about access patterns.
+Given a user, get all interviews they took part in.
+See showcased interviews.
+Set availability.
+Book interview.
+Join interview.
+
+Non-function requirements
+Availability as platform needs to be up for candidates to do interviews.
+We might also want good audio quality as a non-functional requirement.
+
+For code execution, we want to execute code in isolation. Candidate submission should have no side effects on the system.
+
+###### Step 2: Data Types, API and scale
+
+Data Types
+![[Pasted image 20240418172732.png|500]]
+
+REST API
+![[Pasted image 20240418172755.png|500]]
+
+Scale
+Ask how many interviews do we expect a day, how long is an interview. What do we need to store as part of recording (e.g. just audio and coder pad)
+
+###### Step3: Design
+Now we talk about where we want to store the data and how.
+Maybe a table?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
