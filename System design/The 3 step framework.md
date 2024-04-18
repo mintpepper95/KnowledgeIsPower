@@ -174,4 +174,84 @@ What volumes of requests do we support?
 
 ###### What data types does the system needs?
 
+There are two types of data we may need
+1. Structured data - accounts, tweets, likes
+2. Media and blobs - images, videos etc
+
+###### What does the API look like
+Most time user will interact system through  HTTPS requests, so think that.
+
+E.g. In case of Twitter
+
+![[Pasted image 20240418114327.png|500]]
+
+###### What volume of requests do we need to support?
+Is the system read heavy or write heavy?
+
+Which endpoints are likely to be called more frequently?
+
+In the case of Twitter, it would be read heavy.
+
+If you are not sure, you can ask interviewer something like what's the behaviour of a typical user using this app? Or what does distribution of requests look like?
+
+
+
+
+In the case of code deployment system.
+
+![[Pasted image 20240418114744.png|500]]
+Some good questions to ask about.
+How many machines do we deploy the artifacts to?
+How many artifacts do we expect to deploy daily?
+
+
+##### Design
+Once we know our cases and what to optimise for. We can design.
+Want speed? Use a cache. Want availability? Put some redundancy>
+
+Here we will focus about storage and microservices.
+
+Storage - We know the data we want to store, where do we store it?
+
+Microservices - How do we store and retrieve our data to give it to the API?
+
+![[Pasted image 20240418115142.png|500]]
+
+###### Data Storage
+
+Blob storage
+If you have any media/blobs to store. We can store them in blob storage, E.g, Amazon S3. In the case of twitter, media from tweets can be stored in a blob storage.
+
+We may also want to couple the blob storage with a CDN.
+
+
+Database
+
+Relational vs Non-relational
+
+![[sql-vs-no-sql.webp|500]]
+
+We can also tell the interviewer about potential downsides of the one we pick.
+If we picked relational, we can say the database will have a more rigid structure, so harder to incorporate changes, and we also need to scale up vertically, rather than dividing the work over more servers.
+
+If we picked non-relational, we can say that we can scale horizontally but at the cost of not having ACID guarantees. So assuming no need for strong consistency.
+
+In the case of Twitter, we probably don't need strong consistency. It's fine there's a delay for some users to see the tweets, same for seeing likes and followers. Eventual consistency is fine.
+
+Twitter actually moved from MySQL to NoSQL seeking better scalability and availability. NoSQL typically have better availability.
+
+
+Example - Design a bank system
+Strong consistency is needed. Needs ACID guarantees, so pick SQL.
+
+Example - Design a system to help doctors diagnose potential illness given symptoms
+This is mainly a querying system. Data will be unstructured. So pick NoSQL, as we are fine with eventual consistency.
+
+Example - Amazon
+We may want both. We want consistency for product transactions, while flexible about it for product catalog. So we can use SQL for purchase and stock, NoSQL for product catalog.
+
+
+###### Entities to store
+This is where we design our database schema
+
 
