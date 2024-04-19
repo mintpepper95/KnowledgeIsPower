@@ -327,6 +327,137 @@ Maybe a table?
 
 
 
+---
+##### Practical examples
+
+###### Paste bin
+
+1. Functional Requirements
+
+User can add a Paste: send in the text and get back a short, unique url (id)
+A user can view a Paste knowing its url
+Author of a Paste can delete it.
+Author should be able to see all the Pastes they have created.
+No editing Paste after creating.
+
+2. Non-functional Requirements
+Availability - service should be up 24/7 ideally. 
+Consistency - Pastes should not change/disappear. They should only be removed by owner or the platform.
+Durability - If parts of system go down, we need to try to preserve contents of Paste. By that we mean we don't want to store all Pastes on one server/single db in a single geographical location.
+Scalability: System should not break under heavy load.
+Latency: Retrieving a Paste by ID should be relatively fast.
+
+Once you think you've gathered all the requirements, you can check with the interviewer by asking something like 'Are there any requirements I have overlooked' to confirm you have all the requirements.
+
+In most cases, like here where you have an action for each functional requirement. We can simply use REST API. 
+
+However, there are some cases where REST API are not suitable
+* When real time responses /streaming are required.
+* When one request can conflict with many others, eg. Ticketmaster, where a large number of users could be competing for same resource.
+
+
+
+Common ways to ensure a system is highly available include:
+
+- Load balancers and CDN to less load on servers
+- Investing in redundancy by leveraging **database replication, regions, and availability zones**
+- Protecting the system from failures and atypical behaviours by utilizing **circuit breakers, rate limiting, load shedding, and retries**
+
+
+To make sure the system is durable, we should be able to migrate service to a new machine without losing vital data. We can achieve this via
+* Backups
+* Storing data across multiple disks rather than on a single disk*
+* Quickly replicating data to other servers in related systems for extra redundancy, so if your entire system goes down, you'll still have copies of your data in other systems.
+
+
+Deciding between strong consistency and eventual consistency
+Ask yourself, would it be fine if data in my system was occasionally wrong for a split second or so?
+
+ACID talks about transaction guarantees without context of database.
+CAP is about trade-offs in distributed systems, mostly around nodes always being the latest values and system always being available.
+
+
+E.g. A chat app
+
+User A sends a message to our servers, we have it hit on the load balancer first to avoid make sure servers aren't overloaded.
+
+When a server receives a message, they will store data in the database, which is also behind a load balancer, as we don't want to overload the database.
+
+User B can access messages by reading from servers through load balancer.
+
+![[aol-desktop-diagram.webp]]
+
+How does User B know it's time to receive data?
+
+###### Short Polling, Long Polling and WebSockets
+Are we there yet?
+
+Short Polling
+Wait for a set interval and keep asking a server until a response is received. Eg, weather widget updates every x minute.
+
+Long Polling
+Server holds the line until it has something to share, avoiding constant check-ins. Used when real time updates matter, and we want to minimise unnecessary requests.
+
+It's however resource intensive.
+
+WebSockets
+With WebSockets, we can have arbitrary lengths of time pass without needing to worry about connection timeout like long polling. It enables real time communication between clients and servers without the need for continuous polling.
+
+###### What is a CDN? How is it different to load balancers? Which sits first?
+CDN - geographically distributed group of servers that caches static content close to end users. They do not host content. CDN like CloudFront sits in front of everything, if its cache misses  then you go to load balancer which will direct your request to the origin server, else served from cache.
+
+The TTL (Time to Live) value determines how long content should be stored in a  cache before it's considered stale and needs to be fetched again from origin server.
+CDN used to improve website performance for a global audience.
+While load balancers are used to handle high traffic website.
+
+
+###### Db caching
+For anything dynamic, better having multiple servers behind a load balancer. Note if all those servers interact with the same db, there will still be a bottleneck.
+
+In this case, we can apply caching (using a cache like redis to reduce number of times we need to query from the db) or db sharding. 
+
+E.g. In the case of insta, does it make sense to SELECT COUNT* how many people liked a photo? No, you just increment counter by 1 for each like. So when you like a post, it increments count in cache and then does a fire and forget to request db to record the mutation.
+
+
+
+
+##### Design Ticketmaster
+
+System should be have consistency under concurrency (users fighting for 1 seat in a concert). Note very read intensive.
+
+We always start by asking about requirements.
+
+Functional Requirements
+User can book tickets for a specific show.
+User can book more than 1 ticket at same time.
+User can book specific seats, or request N seats together.
+Users are given x time after selecting seats to pay for them.
+During this time, seats are reserved, other users should see these seats as unavailable.
+The seats will return to the pool if user aborts the transaction or time expires.
+Shows may offer zones where N tickets can be sold, e.g. a dance floor.
+
+Non-functional Requirements
+Consistency - can't sell same seat twice, return seats to pool quickly.
+
+Responsiveness - Seat map should reflect actual occupancy at all times.
+
+Availability - Not lose data on tickets sold. Eventual consistency, if things break then user will see data that's slightly stale, but they won't notice system is down.
+
+In the case of Ticketmaster, we aim for our system to be horizontally scalable. E.g. having separate replicated DB and servers to handle the more important shows.
+In terms of CAP, this basically eliminates P part.
+
+E.g. Have replicas for our databases. If one db goes down, we just spin up the same service from a backup db shard. E.g., leader-follower replication. Leader goes down, then a follower is promoted to the leader.
+
+![[markov-diagram.webp]]
+
+
+
+Another example of designing the same Ticketmaster system
+
+![[1 _Z-hvLz3d15IgOOCwn_zkA.webp]]
+
+
+
 
 
 
