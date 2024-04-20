@@ -52,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/Graph and Trees/Graph and Trees.md",
+                "file": "React/React-dev-learn/1. Describing the UI.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Leetcode/Graph and Trees/Graph and Trees.md",
+                "file": "React/React-dev-learn/1. Describing the UI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Leetcode/Graph and Trees/Graph and Trees.md",
+                "file": "React/React-dev-learn/1. Describing the UI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Leetcode/Graph and Trees/Graph and Trees.md"
+                "file": "React/React-dev-learn/1. Describing the UI.md"
               }
             }
           }
@@ -189,9 +189,13 @@
   },
   "active": "be06a46ecd3e816f",
   "lastOpenFiles": [
+    "React/React-dev-learn/4. Escape Hatches.md",
+    "React/React-dev-learn/3. Managing state.md",
+    "React/React-dev-learn/2. Adding Interactivity.md",
+    "React/React-dev-learn/1. Describing the UI.md",
+    "Leetcode/Graph and Trees/Graph and Trees.md",
     "Leetcode/Graph and Trees/Problems/1992. Find All Groups of Farmland.md",
     "Leetcode/Graph and Trees/Problems/623. Add One Row to Tree.md",
-    "Leetcode/Graph and Trees/Graph and Trees.md",
     "System design/The 3 step framework.md",
     "System design/The 12 technical concepts.md",
     "System design/Front-end system design examples.md",
@@ -207,10 +211,6 @@
     "System design/attachments/Pasted image 20240418114744.png",
     "System design/attachments/Pasted image 20240418114327.png",
     "System design/attachments/Pasted image 20240417190718.png",
-    "React/React-dev-learn/4. Escape Hatches.md",
-    "React/React-dev-learn/3. Managing state.md",
-    "React/React-dev-learn/2. Adding Interactivity.md",
-    "React/React-dev-learn/1. Describing the UI.md",
     "Leetcode/Stack/Problems/678. Valid Parenthesis String.md",
     "Leetcode/Graph and Trees/Problems",
     "Javascript/Objects.md",
