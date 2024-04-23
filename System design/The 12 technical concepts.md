@@ -116,7 +116,7 @@ Typically SQL has slower writing than NoSQL db due to the way data is stored. No
 SQL ensures ACID.
 1. Atomicity - transaction completes in its entirety without failure, else transaction is reverted. No case where only half the writes are applied.
 2. Consistency - SQL has strong consistency, achieved by locking certain parts of db when it's been written, forcing other requests to wait. NoSQL have eventual consistency by default, meaning your query maybe stale before it becomes consistent. This means SQL will have much higher latency. Customer experience might not require strong consistency.
-3. Isolation - All read and write requests within a transaction are not impacted by other transactions.
+3. Isolation - All read and write requests within a transaction are not impacted by other transactions. So executing transactions concurrently has same results as executing them serially.
 4. Durability - In case of failure of a given transaction, data is not lost and can be recovered.
 
 
@@ -125,8 +125,17 @@ SQL ensures ACID.
 
 
 
-
 ##### Scaling
+
+First let's talk about performance vs scalability.
+
+Performance problem - your system is slow for a single user
+Scalability problem - your system is fast for a single user, but slow under heavy load
+
+Latency - time required to perform some action
+Throughput - number of actions we can execute  per unit of time
+
+
 
 Two major ways to scale. 
 Vertical scaling is making server more powerful so it can handle more loads. 
@@ -151,14 +160,22 @@ In interview they will ask how to scale to a larger number of users. Do not assu
 ##### CAP theorem
 Consistency, Availability, Partition tolerance.
 
-CAP is about trade-offs between the above when designing a distributed system
-* Consistency means every node in the network will have access to the same data
-* Availability means system is always available to the users
-* Partition tolerance means in case of fault in network/communication, system will still work
+CAP is about trade-offs between the above when designing a distributed system (interconnected nodes that share data)
+* Consistency means every node in the network will have access to the same data, so we will always get the latest data
+* Availability means system is always available to the users, even if some nodes go down.
+* Partition tolerance means in case of fault in network/communication, e,g, some nodes can't communicate with each other, system will still work.
+
+###### Trade-off
+CA (consistency and availability) - Data is consistent between all nodes as long as all nodes online. However if partition then breaks.
+
+CP (Consistency and partition tolerance) - Data is consistent between all nodes, and has partition tolerance ( no de-sync ), however system becomes unavailable if nodes go down.
+
+AP (Availability and partition tolerance) - Nodes remain online even if they can't communicate, so data is de-sync. However the system is available.
 
 In most cases, fault tolerance is necessary. So choice is to decided whether consistency or availability is more important.
 
 For systems like financial systems, consistency is very important. For others like TikTok, where it's okay for some users to get access to videos later, we try to aim availability.
+
 
 
 ##### Web auth and basic security
@@ -186,7 +203,7 @@ We can set cookies to `Secure`, such that browser can only include it in HTTPS r
 
 
 ##### Load balancers
-Helps direct requests to different servers to distribute incoming workload evenly among available servers.
+Helps direct requests to different servers to distribute incoming workload evenly among available servers. Helps with horizontal scaling, improving performance and availability,
 
 ###### Round robin
 If there are N machines, load balancer will send request to each of them sequentially.
@@ -207,7 +224,13 @@ Caching is used for read-heavy systems, e.g.. twitter and YouTube.
 
 E.g. If there is a tweet from a very popular person, we would want to cache it everywhere ( on a device, on a CDN, on the app ), so that we can fetch it quickly for our users.
 
-A CDN is a something that's used to deliver cached data. Its purpose is to deliver web content, e.g. images, videos, assets to users quickly. They primarily handle static content that doesn't change frequently. CDNs store copies of content on distributed servers located in various places, when a user requests content, the CDN serves it from the nearest server, minimising latency and reduce load on the original server.
+Client caching - caching on client side
+
+CDN caching - A CDN is a something that's used to deliver cached data. Its purpose is to deliver web content, e.g. images, videos, assets to users quickly. They primarily handle static content that doesn't change frequently. CDNs store copies of content on distributed servers located in various places, when a user requests content, the CDN serves it from the nearest server in terms of geographic, minimising latency and reduce load on the original server.
+
+Application Caching
+Redis which sits between server and db.
+
 
 ###### Popular caching patterns
 
@@ -249,10 +272,17 @@ Indexing is about mapping the underlying data for faster retrieval.
 
 
 ##### Failovers
+One of the ways to support high availability.
+
 It's about switching to a backup or redundant system component when primary component fails or becomes unavailable. The goal is to ensure high availability and reliability by minimising downtime.
 
+
 ##### Replication
+Another complementary way to support high availability.
+
 Have servers ready to take over when a node fails.
+
+Useful for scaling relational DB
 
 Replication is done to avoid a single point of failure and increase availability of the system, also to better serve global users by serving copies closest to the user by geological locations. And to increase throughput (bandwidth), such that more requests can be served.
 

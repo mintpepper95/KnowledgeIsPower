@@ -5,3 +5,9 @@ When you type a url in the browser, the following happens
 3. Browser sends HTTP request to the server to request contents of the page.
 4. Server process request and sends back a response.
 5. Browser renders the content
+
+
+
+
+#### Domain name system (DNS)
+Translates a domain name to an IP address. Your router or ISP provides info about which DNS to contact when doing a look up. 
