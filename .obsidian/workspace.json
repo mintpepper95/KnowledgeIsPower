@@ -21,7 +21,7 @@
             }
           },
           {
-            "id": "dba4c5dd690510dd",
+            "id": "e6d589dfa1ca4a14",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,9 +32,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e6b677176748959b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CSS/Positioning.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -100,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Atlassian.md",
+                "file": "CSS/Positioning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Atlassian.md",
+                "file": "CSS/Positioning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Atlassian.md"
+                "file": "CSS/Positioning.md"
               }
             }
           }
@@ -161,55 +174,55 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dba4c5dd690510dd",
+  "active": "e6b677176748959b",
   "lastOpenFiles": [
-    "TTD.md",
+    "CSS/Custom CSS properties.md",
+    "CSS/Custom properties.md",
+    "CSS/Flexbox.md",
+    "CSS/Media queries.md",
+    "CSS/Positioning.md",
+    "CSS/The Box Model.md",
+    "CSS/Selectors.md",
+    "CSS/Grid.md",
+    "CSS/CSS Summary.md",
+    "CSS/attachments/Pasted image 20240427200724.png",
+    "CSS/attachments/Pasted image 20240427200504.png",
+    "CSS/attachments/Pasted image 20240427195914.png",
+    "CSS/attachments/Pasted image 20240427195901.png",
+    "CSS/attachments/Pasted image 20240427195803.png",
+    "CSS/attachments/Pasted image 20240427195412.png",
+    "CSS/attachments/Pasted image 20240427193119.png",
+    "CSS/attachments/Pasted image 20240427192406.png",
+    "CSS/attachments/Pasted image 20240427191859.png",
+    "CSS/attachments/Flexbox-vs-CSS-Grid.webp",
+    "Javascript/JS Projects/Implement Load More button in JS.md",
+    "Javascript/JS Projects/Project lists.md",
+    "Untitled.md",
+    "Javascript/Untitled",
     "Atlassian.md",
+    "Javascript/JS Project.md",
+    "Javascript/JS Projects/Untitled",
+    "Javascript/JS Projects",
+    "Javascript/Async and Await.md",
+    "Javascript/'this' keyword and call(), apply(), bind().md",
+    "FunctionKind.md",
+    "TTD.md",
+    "Leetcode/DP/Problems/2370. Longest Ideal Subsequence.md",
+    "Leetcode/DP/DP.md",
+    "Leetcode/HashTable/HashTable.md",
+    "Leetcode/DP/Problems",
+    "Leetcode/DP/Problems.md",
+    "Leetcode/Intervals/Intervals.md",
+    "Leetcode/DP",
+    "Leetcode/Topics.md",
     "System design/The 12 technical concepts.md",
     "System design/The 3 step framework.md",
-    "Javascript/Creating common html elements with JS/Basic HTML elements.md",
-    "Javascript/What happens when you type a URL into the browser.md",
-    "System design/Scalability for dummies.md",
-    "System design/Front-end system design examples.md",
-    "Leetcode/Graph and Trees/Problems/310. Minimum Height Trees.md",
-    "System design/A Senior Engineer's Guide to the System Design Interview 4 Parts.md",
-    "Typescript/No BS TS.md",
-    "Leetcode/Graph and Trees/Problems/1992. Find All Groups of Farmland.md",
-    "Leetcode/Graph and Trees/Problems/752. Open the Lock.md",
-    "Leetcode/Graph and Trees/Problems/623. Add One Row to Tree.md",
-    "Leetcode/Graph and Trees/Graph and Trees.md",
-    "React/React-dev-learn/UseMemo and UseCallback.md",
-    "React/React-dev-learn/Custom Hooks.md",
-    "React/React-dev-learn/4. Escape Hatches.md",
-    "React/React-dev-learn/1. Describing the UI.md",
-    "React/React-dev-learn/2. Adding Interactivity.md",
-    "React/React-dev-learn/3. Managing state.md",
-    "[752. Open the Lock.md",
-    "React/React-dev-learn/attachments/0 4Dsb0smecDtvTosK.webp",
-    "System design/attachments/1 _Z-hvLz3d15IgOOCwn_zkA.webp",
-    "System design/attachments/markov-diagram.webp",
-    "System design/attachments/aol-desktop-diagram.webp",
-    "System design/attachments/Pasted image 20240418172755.png",
-    "System design/attachments/Pasted image 20240418172732.png",
-    "System design/attachments/sql-vs-no-sql.webp",
-    "System design/attachments/Pasted image 20240418115142.png",
-    "System design/attachments/Pasted image 20240418114744.png",
-    "System design/attachments/Pasted image 20240418114327.png",
-    "Leetcode/Stack/Problems/678. Valid Parenthesis String.md",
     "Leetcode/Graph and Trees/Problems",
-    "Javascript/Objects.md",
     "Leetcode/Graph and Trees",
-    "Leetcode/Untitled.md",
-    "Javascript/Prototype.md",
     "CSS/attachments",
     "CSS",
     "Javascript/Creating common html elements with JS/attachments",
-    "Javascript/Creating common html elements with JS",
-    "attachments",
     "Untitled.canvas",
-    "Leetcode/Stack/Problems",
-    "Leetcode/Stack",
-    "Leetcode/Parenthesis/Problems",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
     "DotNet/Untitled.canvas"
