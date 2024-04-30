@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/DP/Problems/514. Freedom Trail.md",
+                "file": "CSS/CSS Custom properties.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Leetcode/DP/Problems/514. Freedom Trail.md",
+                "file": "CSS/CSS Custom properties.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Leetcode/DP/Problems/514. Freedom Trail.md",
+                "file": "CSS/CSS Custom properties.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Leetcode/DP/Problems/514. Freedom Trail.md"
+                "file": "CSS/CSS Custom properties.md"
               }
             }
           }
@@ -176,27 +176,29 @@
   },
   "active": "e6b677176748959b",
   "lastOpenFiles": [
-    "Leetcode/DP/Problems/2370. Longest Ideal Subsequence.md",
-    "Leetcode/DP/Problems/514. Freedom Trail.md",
-    "CSS/Positioning.md",
-    "CSS/Custom CSS properties.md",
-    "CSS/Custom properties.md",
-    "CSS/Flexbox.md",
-    "CSS/Media queries.md",
-    "CSS/The Box Model.md",
-    "CSS/Selectors.md",
-    "CSS/Grid.md",
     "CSS/CSS Summary.md",
-    "CSS/attachments/Pasted image 20240427200724.png",
-    "CSS/attachments/Pasted image 20240427200504.png",
-    "CSS/attachments/Pasted image 20240427195914.png",
-    "CSS/attachments/Pasted image 20240427195901.png",
-    "CSS/attachments/Pasted image 20240427195803.png",
-    "CSS/attachments/Pasted image 20240427195412.png",
-    "CSS/attachments/Pasted image 20240427193119.png",
-    "CSS/attachments/Pasted image 20240427192406.png",
-    "CSS/attachments/Pasted image 20240427191859.png",
-    "CSS/attachments/Flexbox-vs-CSS-Grid.webp",
+    "CSS/Custom CSS properties.md",
+    "CSS/Flexbox.md",
+    "CSS/Grid.md",
+    "CSS/Media queries.md",
+    "CSS/Positioning.md",
+    "CSS/Selectors.md",
+    "CSS/Specificity.md",
+    "CSS/The Box Model.md",
+    "CSS/attachments/Pasted image 20240430230039.png",
+    "CSS/attachments/Pasted image 20240430230011.png",
+    "CSS/attachments/Pasted image 20240430225950.png",
+    "CSS/attachments/Pasted image 20240430225043.png",
+    "CSS/attachments/Pasted image 20240430225020.png",
+    "CSS/attachments/Pasted image 20240430224916.png",
+    "CSS/attachments/Pasted image 20240430224819.png",
+    "CSS/attachments/Pasted image 20240430222834.png",
+    "CSS/attachments/Pasted image 20240430222614.png",
+    "CSS/attachments/Pasted image 20240430222546.png",
+    "CSS/CSS Custom properties.md",
+    "2024-03-30.md",
+    "Leetcode/DP/Problems/514. Freedom Trail.md",
+    "Leetcode/DP/Problems/2370. Longest Ideal Subsequence.md",
     "Javascript/JS Projects/Implement Load More button in JS.md",
     "Javascript/JS Projects/Project lists.md",
     "Untitled.md",
@@ -213,10 +215,7 @@
     "Leetcode/HashTable/HashTable.md",
     "Leetcode/DP/Problems",
     "Leetcode/DP/Problems.md",
-    "Leetcode/Intervals/Intervals.md",
     "Leetcode/DP",
-    "Leetcode/Topics.md",
-    "System design/The 12 technical concepts.md",
     "Leetcode/Graph and Trees/Problems",
     "Leetcode/Graph and Trees",
     "CSS/attachments",
