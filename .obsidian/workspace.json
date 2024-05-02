@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSS/CSS Custom properties.md",
+                "file": "Atlassian.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSS/CSS Custom properties.md",
+                "file": "Atlassian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSS/CSS Custom properties.md",
+                "file": "Atlassian.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSS/CSS Custom properties.md"
+                "file": "Atlassian.md"
               }
             }
           }
@@ -176,6 +176,7 @@
   },
   "active": "e6b677176748959b",
   "lastOpenFiles": [
+    "CSS/CSS Custom properties.md",
     "CSS/CSS Summary.md",
     "CSS/Custom CSS properties.md",
     "CSS/Flexbox.md",
@@ -195,7 +196,6 @@
     "CSS/attachments/Pasted image 20240430222834.png",
     "CSS/attachments/Pasted image 20240430222614.png",
     "CSS/attachments/Pasted image 20240430222546.png",
-    "CSS/CSS Custom properties.md",
     "2024-03-30.md",
     "Leetcode/DP/Problems/514. Freedom Trail.md",
     "Leetcode/DP/Problems/2370. Longest Ideal Subsequence.md",

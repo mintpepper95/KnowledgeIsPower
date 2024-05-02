@@ -2,6 +2,10 @@ error handling, caching, semantic HTML tags?
 
 
 
+You get an end point and have to load some data from it and do a load more button
+
+
+
 
 Two one-hour interviews with engineers. The first was where I had to build out a feature according to a brief/mock design, and the second one involved updating a block of code based on verbal instructions.
 
