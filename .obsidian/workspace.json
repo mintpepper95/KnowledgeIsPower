@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript/Basic data types.md",
+                "file": "Javascript/Radios.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Javascript/Basic data types.md",
+                "file": "Javascript/Radios.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Javascript/Basic data types.md",
+                "file": "Javascript/Radios.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Javascript/Basic data types.md"
+                "file": "Javascript/Radios.md"
               }
             }
           }
@@ -149,6 +149,9 @@
   },
   "active": "be06a46ecd3e816f",
   "lastOpenFiles": [
+    "Javascript/What happens when you type a URL into the browser.md",
+    "Javascript/Radios.md",
+    "Javascript/Basic data types.md",
     "Javascript/Javascript.md",
     "Javascript/How are methods implemented for primitives.md",
     "Javascript/Hoisting.md",
@@ -167,14 +170,11 @@
     "Javascript/JS Projects/Project lists.md",
     "Javascript/JS Projects/Implement Load More button in JS.md",
     "Javascript/'this' keyword and call(), apply(), bind().md",
-    "Javascript/Basic data types.md",
     "Javascript/Objects.md",
     "Javascript/setTimeout and setInterval.md",
     "Javascript/Promise.md",
     "Javascript/Prototype.md",
     "Javascript/for...in vs for...of vs forEach().md",
-    "Javascript/Event loop.md",
-    "TTD.md",
     "CSS/Case studies/Examples/attachments/Pasted image 20240503162713.png",
     "CSS/Case studies/Examples/attachments/Pasted image 20240503162643.png",
     "CSS/Case studies/Examples/attachments",
