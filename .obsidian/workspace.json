@@ -13,41 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TTD.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e6d589dfa1ca4a14",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Atlassian.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e6b677176748959b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CSS/Case studies/Examples/Load more button.md",
+                "file": "Javascript/Basic data types.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -76,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dns",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -113,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSS/Case studies/Examples/Load more button.md",
+                "file": "Javascript/Basic data types.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSS/Case studies/Examples/Load more button.md",
+                "file": "Javascript/Basic data types.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSS/Case studies/Examples/Load more button.md"
+                "file": "Javascript/Basic data types.md"
               }
             }
           }
@@ -174,28 +147,39 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e6b677176748959b",
+  "active": "be06a46ecd3e816f",
   "lastOpenFiles": [
-    "CSS/Case studies/Examples/Holy Grail.md",
-    "CSS/Case studies/Examples/Load more button.md",
+    "Javascript/Javascript.md",
+    "Javascript/How are methods implemented for primitives.md",
+    "Javascript/Hoisting.md",
+    "Javascript/Equality in JS.md",
+    "Javascript/Error handling.md",
+    "Javascript/Default vs named export.md",
+    "Javascript/Closure.md",
+    "Javascript/Classes.md",
+    "Javascript/Async and Await.md",
+    "Javascript/Let vs const vs var.md",
+    "Javascript/Handwriting promise.md",
+    "Javascript/Generators.md",
+    "Javascript/Creating common html elements with JS/Basic HTML elements.md",
+    "Untitled.md",
+    "Javascript/Creating common html elements with JS/Drag and Drop.md",
+    "Javascript/JS Projects/Project lists.md",
+    "Javascript/JS Projects/Implement Load More button in JS.md",
+    "Javascript/'this' keyword and call(), apply(), bind().md",
+    "Javascript/Basic data types.md",
+    "Javascript/Objects.md",
+    "Javascript/setTimeout and setInterval.md",
+    "Javascript/Promise.md",
+    "Javascript/Prototype.md",
+    "Javascript/for...in vs for...of vs forEach().md",
+    "Javascript/Event loop.md",
+    "TTD.md",
     "CSS/Case studies/Examples/attachments/Pasted image 20240503162713.png",
     "CSS/Case studies/Examples/attachments/Pasted image 20240503162643.png",
     "CSS/Case studies/Examples/attachments",
-    "CSS/Case studies/Case studies.md",
     "CSS/Case studies/Examples",
-    "CSS/Accessibility.md",
     "CSS/Case studies",
-    "Atlassian.md",
-    "CSS/CSS Custom properties.md",
-    "CSS/CSS Summary.md",
-    "CSS/Custom CSS properties.md",
-    "CSS/Flexbox.md",
-    "CSS/Grid.md",
-    "CSS/Media queries.md",
-    "CSS/Positioning.md",
-    "CSS/Selectors.md",
-    "CSS/Specificity.md",
-    "CSS/The Box Model.md",
     "CSS/attachments/Pasted image 20240430230039.png",
     "CSS/attachments/Pasted image 20240430230011.png",
     "CSS/attachments/Pasted image 20240430225950.png",
@@ -204,20 +188,9 @@
     "CSS/attachments/Pasted image 20240430224916.png",
     "CSS/attachments/Pasted image 20240430224819.png",
     "CSS/attachments/Pasted image 20240430222834.png",
-    "2024-03-30.md",
-    "Leetcode/DP/Problems/514. Freedom Trail.md",
-    "Leetcode/DP/Problems/2370. Longest Ideal Subsequence.md",
-    "Javascript/JS Projects/Implement Load More button in JS.md",
-    "Javascript/JS Projects/Project lists.md",
-    "Untitled.md",
     "Javascript/Untitled",
-    "Javascript/JS Project.md",
     "Javascript/JS Projects/Untitled",
     "Javascript/JS Projects",
-    "Javascript/Async and Await.md",
-    "Javascript/'this' keyword and call(), apply(), bind().md",
-    "FunctionKind.md",
-    "TTD.md",
     "Leetcode/DP/Problems",
     "Leetcode/DP",
     "Leetcode/Graph and Trees/Problems",

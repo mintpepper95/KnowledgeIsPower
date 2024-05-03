@@ -3,6 +3,8 @@
 [[#How to access custom properties in JS?]]
 [[#How to set values of custom properties in js?]]
 
+https://css-tricks.com/updating-a-css-variable-with-javascript/
+
 ---
 #### What is a custom CSS property and why should we use it?
 Properties that are prefixed with `--`, e.g. `--name` are custom properties which can be used in other declarations with `var()`.
@@ -63,3 +65,5 @@ setInterval(() => {
     hours_hand.style.setProperty('--rotate', hours_ratio * 360);
 }, 1000)
 ```
+
+
