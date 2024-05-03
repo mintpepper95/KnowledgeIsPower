@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Atlassian.md",
+                "file": "CSS/Case studies/Examples/Load more button.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Atlassian.md",
+                "file": "CSS/Case studies/Examples/Load more button.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Atlassian.md",
+                "file": "CSS/Case studies/Examples/Load more button.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Atlassian.md"
+                "file": "CSS/Case studies/Examples/Load more button.md"
               }
             }
           }
@@ -176,6 +176,16 @@
   },
   "active": "e6b677176748959b",
   "lastOpenFiles": [
+    "CSS/Case studies/Examples/Holy Grail.md",
+    "CSS/Case studies/Examples/Load more button.md",
+    "CSS/Case studies/Examples/attachments/Pasted image 20240503162713.png",
+    "CSS/Case studies/Examples/attachments/Pasted image 20240503162643.png",
+    "CSS/Case studies/Examples/attachments",
+    "CSS/Case studies/Case studies.md",
+    "CSS/Case studies/Examples",
+    "CSS/Accessibility.md",
+    "CSS/Case studies",
+    "Atlassian.md",
     "CSS/CSS Custom properties.md",
     "CSS/CSS Summary.md",
     "CSS/Custom CSS properties.md",
@@ -194,8 +204,6 @@
     "CSS/attachments/Pasted image 20240430224916.png",
     "CSS/attachments/Pasted image 20240430224819.png",
     "CSS/attachments/Pasted image 20240430222834.png",
-    "CSS/attachments/Pasted image 20240430222614.png",
-    "CSS/attachments/Pasted image 20240430222546.png",
     "2024-03-30.md",
     "Leetcode/DP/Problems/514. Freedom Trail.md",
     "Leetcode/DP/Problems/2370. Longest Ideal Subsequence.md",
@@ -203,7 +211,6 @@
     "Javascript/JS Projects/Project lists.md",
     "Untitled.md",
     "Javascript/Untitled",
-    "Atlassian.md",
     "Javascript/JS Project.md",
     "Javascript/JS Projects/Untitled",
     "Javascript/JS Projects",
@@ -211,16 +218,10 @@
     "Javascript/'this' keyword and call(), apply(), bind().md",
     "FunctionKind.md",
     "TTD.md",
-    "Leetcode/DP/DP.md",
-    "Leetcode/HashTable/HashTable.md",
     "Leetcode/DP/Problems",
-    "Leetcode/DP/Problems.md",
     "Leetcode/DP",
     "Leetcode/Graph and Trees/Problems",
     "Leetcode/Graph and Trees",
-    "CSS/attachments",
-    "CSS",
-    "Javascript/Creating common html elements with JS/attachments",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
