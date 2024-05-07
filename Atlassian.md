@@ -22,6 +22,19 @@ The system design one, be careful what you say. If you mention something that yo
 For the values and management interviews, just make sure you prepare examples where you were challenged or had a difficult time. My mistake was that all my examples were too positive, so when they asked for a more negative example, I couldn't think of anyon the spot that I can demonstrate learning from.
 
 
+front end sys design
+I didn’t find any specific format/material for front end system design. But i find the material from [https://www.frontendinterviewhandbook.com/](https://www.frontendinterviewhandbook.com/) are quite helpful. During the interview, the interviewer was polite and he asked about my experience. Then he asked me to design a feature which consists of list of task and for each task will have multiple tags. I took some time and asked all the possible questions to the interviewer and then started design via the online [https://witeboard.com/](https://witeboard.com/). At first i designed the components (checkbox and tags) for the task feature and then designed the API’s, Data model for the feature. The interviewer asked few questions about the desing and i was able to provide a answers in a optimal way. Overall i felt the interview went normal.
+
+
+https://medium.com/@stylus07/atlassian-interview-experience-e51cb1f0735b
+
+
+https://github.com/sadanandpai/frontend-mini-challenges
+
+https://frontendpro.hashnode.dev/frontend-interview-experience-at-atlassian
+
+https://learnersbucket.com/tech/frontend-interview-process-at-atlassian/
+
 
 
 
