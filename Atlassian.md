@@ -1,6 +1,10 @@
 error handling, caching, semantic HTML tags?
 
 
+On culture interview，there was one question that I found hard to give an example is to describe about a time when you receive negative feedback from someone and how you reacted to it.
+
+
+
 
 You get an end point and have to load some data from it and do a load more button
 

@@ -457,6 +457,23 @@ Note [[for...in vs for...of vs forEach()]], for...in loops all properties.
 
 
 
+##### Some more notes on `includes()`
+```ts
+let arr = [null, null, null, null, 'X', null, null, null, null]; 
+let result = arr.includes('X'); // true
+
+
+let result = arr.includes((sqr) => sqr == 'X'); // false
+let result = arr.includes((sqr) => sqr === 'X'); // false
+
+// When you use arrow fn as argument of includes, 
+// you are checking each element against this function, of course none of the element inside this array is an fn s false
+
+// use some instead
+let result = arr.some(sqr => sqr == 'X'); 
+```
+
+
 
 ##### Chained assignments
 ```ts
