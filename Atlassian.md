@@ -1,3 +1,48 @@
+marked down for not having semantic HTML
+
+In Browser coding interview I was asked to develop a dynamic hierarchical menu where it can have multiple levels. In Javascript coding interview, I was asked to develop an API that retrieves the Menu option and according to access rights route to the specific page.
+
+
+Browser Coding - Create a file directory structure using some JSON data provided Javascript Interview - Make an async promise call from a function and display data in paginated format. Then kept scaling up the question.
+
+
+-Build a UI to list and update task - Create a promise function to get dynamic feature
+
+
+
+
+
+
+UI coding question: print a navigation menu with categories and children using your framework of choice. You will need a recursive solution. How would you highlight only the "active" item and expand only the path that contains the active item. 
+
+JS question: implement a JS solution for fetching/reading feature flags from an API. How would you improve performance, caching, share across different apps,... 
+
+Systems design: jira active sprint board, what components would you use, how would you optimize the FE loading of thousands/millions of jira tickets, how would you measure performance. 
+
+Advice to candidates: a lot of emphasis around not just giving a solution but presenting alternatives with pros and cons. Speak your mind.
+
+
+
+
+
+For Javascript coding, I got to create a simple function for run a feature flag. You'll be given a mock API (just a function that return promise basically) and you need to create a production-ready code for consuming it. 
+
+For javascript coding, make sure you cover all of the programming best practice like good variable naming, good structure of the class (if you're using class) or good function organisation (follow SOLID principle), add unit test, etc. 
+
+
+For Browser coding, you can use framework if you want, I used React as well. 
+For browser coding, if you're using React, follow a good practice around component structure, accesibility (use semantic html instead of just div all over the places and ARIA- attributes)
+
+
+
+
+https://gist.github.com/ankitbtanna/e8d4a2acefc7be5d5376f271be46302c
+
+
+
+
+
+
 error handling, caching, semantic HTML tags?
 
 
@@ -6,18 +51,12 @@ On culture interview，there was one question that I found hard to give an examp
 
 
 
-You get an end point and have to load some data from it and do a load more button
-
-
-
-
-Two one-hour interviews with engineers. The first was where I had to build out a feature according to a brief/mock design, and the second one involved updating a block of code based on verbal instructions.
-
-
-
-
 Browser coding interview - build a navigation tree 
+UI coding question: print a navigation menu with categories and children using your framework of choice. You will need a recursive solution. How would you highlight only the "active" item and expand only the path that contains the active item. 
+
 Javascript coding interview - build a feature flag library 
+
+Highly relevant:
 System design interview - basically the active sprint view of JIRA A bit of wait here because they need to match you with a team that needs someone that matches your skill level and interests 
 Values - go through each of the company value and talk about your experience in the past and what you have learned from your mistakes. Management - similar to the values one but more free flowing. You get to meet your future team lead here.
 
@@ -58,47 +97,56 @@ Round
 
 
 
+
+
+
 Divided into 5 parts - 3 technical (browser coding, javascript interview and system design) and 2 non-technical (management and values interview). 
 
 The questions they started with were pretty easy for any software engineer working with frontend technologies but they scale them up twice as they go and expect a P4 (senior software engineer) to at least be able to solve the first level of scale up. 
 
 Management and Values interviews were consisting of the general "tell me about a time when..." kind of questions and tries to find our involvement in different processes. (too bad if you have not been in serious conflicts coz then you cannot give much real examples of your involvement in them). All in all the interview process was good but they expect a lot out of this role even when they say they don't expect us to check all the boxes.
 
+
+HIGHLY RELEVANT
 Browser Coding - Create a file directory structure using some JSON data provided Javascript Interview - Make an async promise call from a function and display data in paginated format. Then kept scaling up the question.
 
 
 
 
-
-UI coding question: print a navigation menu with categories and children using your framework of choice. You will need a recursive solution. How would you highlight only the "active" item and expand only the path that contains the active item. 
-
-JS question: implement a JS solution for fetching/reading feature flags from an API. How would you improve performance, caching, share across different apps,... 
-
+Highly relevant:
 Systems design: jira active sprint board, what components would you use, how would you optimize the FE loading of thousands/millions of jira tickets, how would you measure performance. 
 
 Advice for the company: although the process is great, I don't think it's great for a full-stack developer. Also, I felt I was not explicitly asked or guided around some things I was expected to talk about but apparently I didn't. Advice to candidates: a lot of emphasis around not just giving a solution but presenting alternatives with pros and cons. Speak your mind.
 
 
+I applied through their website. Got an email from one of their recruiters a few days later and kicked off the interview process: Initial call with the recruiter 
+Browser coding interview - build a navigation tree 
+Javascript coding interview - build a feature flag library System design interview - basically the active sprint view of JIRA 
 
+Values - go through each of the company value and talk about your experience in the past and what you have learned from your mistakes. Management - similar to the values one but more free flowing. You get to meet your future team lead here. There were also 3 prep meetings with the recruiter 1 before the coding interviews, 1 before system design, and 1 before value & management.
 
-
-
-#### Karat round
-
-They gave an image URL and I need to make the same UI as it is. there were 6 points there I need to fulfill those. **a.** one placeholder inside the input that needs to align to the left with bold. **b**. there was one button that should be on the right side of the input without any gap between them. **c.** the height and width should be different from the actual height and width of the input. **d.** color of the border and button should be different from the basic colors.
-
-
-Given an API returning a list of todos, we want to fetch the list, create a separate block for each user, and display their todos in the appropriate block. Use this endpoint URL to get the todos: [https://dummyjson.com/todos?limit=10&skip=80.](https://dummyjson.com/todos?limit=10&skip=80.) It will return the following structure with a total of 10 todos: { “todos”: [ { “id”: 1, “todo”: “Do something nice for someone I care about”, “completed”: true, “userId”: 26 }, ], } Each block should contain the userId as the title of the block and the list of todos.
 
 
 JS, implement Tic Tac Toe in React and plain JS
 Two player, one user one bot
 
+Relevant
 create a feature flag component in React that consumes a feature’s API and conditionally renders UI based on the value of the feature.
 
 
 System design
 data model, request and response payload, and state management with state normalization. The question was based on high-level UI design.
+
+https://www.ayushsaini.com/blog/atlassian-interview-experience-software-engineer
+
+https://medium.com/@stylus07/atlassian-interview-experience-e51cb1f0735b
+
+
+
+Designing a Kanban board
+
+
+manager interview mention scaling
 
 
 
@@ -174,9 +222,6 @@ Management interview  is conducted by the Hiring Manager and if they do not like
 
 
 
-Build collapsible menu ui based on their brief
-
-
 
 
 System design
@@ -185,9 +230,6 @@ The question was about designing a system where a user could tag their Atlassian
 
 
 
-
-Load more
-https://webdesign.tutsplus.com/how-to-implement-a-load-more-button-with-vanilla-javascript--cms-42080t
 
 
 Atlassian tagged LC
@@ -199,7 +241,6 @@ https://leetcode.com/discuss/study-guide/1616482/system-design-rate-limiter
 How to design a Tagging system. Discuss: the API, the data structure, scaling it up, how would you generate daily "trending tags".
 
 
-System design of a crawler bot
 
 
-
+The System Design interview is the next round. I needed to draw on a whiteboard to talk about the design of an Atlassian product UI. A lot of details about components, how to manage data, what API is needed, etc... The values interview is next; you need to prepare some examples in your experience to show you match their values. Then management interview with your future manager. Some overlapping questions, also some questions about the latest tech trends, what you did in a project, teamwork, etc. This round is the hardest one, in my opinion, very open-ended and covers broad topics.
