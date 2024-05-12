@@ -15,7 +15,39 @@ Browser Coding - Create a file directory structure using some JSON data provided
 
 UI coding question: print a navigation menu with categories and children using your framework of choice. You will need a recursive solution. How would you highlight only the "active" item and expand only the path that contains the active item. 
 
+
 JS question: implement a JS solution for fetching/reading feature flags from an API. How would you improve performance, caching, share across different apps,... 
+
+
+For Javascript coding, I got to create a simple function for run a feature flag. You'll be given a mock API (just a function that return promise basically) and you need to create a production-ready code for consuming it. 
+
+
+
+
+For javascript coding, make sure you cover all of the programming best practice like good variable naming, good structure of the class (if you're using class) or good function organisation (follow SOLID principle), add unit test, etc. 
+
+For Browser coding, you can use framework if you want, I used React as well. 
+For browser coding, if you're using React, follow a good practice around component structure, accesibility (use semantic html instead of just div all over the places and ARIA- attributes)
+
+
+Browser Coding - Create a file directory structure using some JSON data provided Javascript Interview - Make an async promise call from a function and display data in paginated format. Then kept scaling up the question.
+
+
+Browser coding interview - build a navigation tree 
+Javascript coding interview - build a feature flag library
+
+
+JS, implement Tic Tac Toe in React and plain JS
+Two player, one user one bot
+
+
+Javascript coding interview - build a feature flag library 
+create a feature flag component in React that consumes a feature’s API and conditionally renders UI based on the value of the feature.
+
+
+
+
+
 
 Systems design: jira active sprint board, what components would you use, how would you optimize the FE loading of thousands/millions of jira tickets, how would you measure performance. 
 
@@ -25,13 +57,12 @@ Advice to candidates: a lot of emphasis around not just giving a solution but pr
 
 
 
-For Javascript coding, I got to create a simple function for run a feature flag. You'll be given a mock API (just a function that return promise basically) and you need to create a production-ready code for consuming it. 
-
-For javascript coding, make sure you cover all of the programming best practice like good variable naming, good structure of the class (if you're using class) or good function organisation (follow SOLID principle), add unit test, etc. 
 
 
-For Browser coding, you can use framework if you want, I used React as well. 
-For browser coding, if you're using React, follow a good practice around component structure, accesibility (use semantic html instead of just div all over the places and ARIA- attributes)
+
+
+
+
 
 
 
@@ -51,10 +82,9 @@ On culture interview，there was one question that I found hard to give an examp
 
 
 
-Browser coding interview - build a navigation tree 
-UI coding question: print a navigation menu with categories and children using your framework of choice. You will need a recursive solution. How would you highlight only the "active" item and expand only the path that contains the active item. 
 
-Javascript coding interview - build a feature flag library 
+
+
 
 Highly relevant:
 System design interview - basically the active sprint view of JIRA A bit of wait here because they need to match you with a team that needs someone that matches your skill level and interests 
@@ -108,7 +138,7 @@ Management and Values interviews were consisting of the general "tell me about a
 
 
 HIGHLY RELEVANT
-Browser Coding - Create a file directory structure using some JSON data provided Javascript Interview - Make an async promise call from a function and display data in paginated format. Then kept scaling up the question.
+
 
 
 
@@ -127,11 +157,10 @@ Values - go through each of the company value and talk about your experience in 
 
 
 
-JS, implement Tic Tac Toe in React and plain JS
-Two player, one user one bot
+
 
 Relevant
-create a feature flag component in React that consumes a feature’s API and conditionally renders UI based on the value of the feature.
+
 
 
 System design
@@ -244,3 +273,15 @@ How to design a Tagging system. Discuss: the API, the data structure, scaling it
 
 
 The System Design interview is the next round. I needed to draw on a whiteboard to talk about the design of an Atlassian product UI. A lot of details about components, how to manage data, what API is needed, etc... The values interview is next; you need to prepare some examples in your experience to show you match their values. Then management interview with your future manager. Some overlapping questions, also some questions about the latest tech trends, what you did in a project, teamwork, etc. This round is the hardest one, in my opinion, very open-ended and covers broad topics.
+
+
+
+
+
+
+How did you contribute to the end to end lifecycle of a project from start to finish?
+Describe a time you managed conflict within your team.
+describe about a time when you receive negative feedback from someone and how you reacted to it.
+What is your proudest achievement?
+tell me a complex project you have managed
+
