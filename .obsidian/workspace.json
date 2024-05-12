@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Atlassian.md",
-                "mode": "source",
+                "file": "React/React-dev-learn/1. Describing the UI.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
@@ -62,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "includes",
+                "query": "key",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +79,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -99,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Atlassian.md",
+                "file": "React/React-dev-learn/1. Describing the UI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Atlassian.md",
+                "file": "React/React-dev-learn/1. Describing the UI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Atlassian.md"
+                "file": "React/React-dev-learn/1. Describing the UI.md"
               }
             }
           }
@@ -162,12 +163,12 @@
   },
   "active": "be06a46ecd3e816f",
   "lastOpenFiles": [
+    "Javascript/JS Projects/Tic Tac Toe in React.md",
+    "Atlassian.md",
     "Javascript/Basic data types.md",
     "VSCode shortcuts.md",
-    "Javascript/JS Projects/Tic Tac Toe in React.md",
     "Javascript/JS Projects/Project lists.md",
     "Javascript/JS Projects/Implement Load More button in JS.md",
-    "Atlassian.md",
     "Javascript/Radios.md",
     "Javascript/What happens when you type a URL into the browser.md",
     "Javascript/Javascript.md",
