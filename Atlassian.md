@@ -12,6 +12,12 @@ Browser Coding - Create a file directory structure using some JSON data provided
 
 
 
+Feature flag
+1. How would you store the value so that once you get the value, you dont have to call the API again (to reduce the traffic)? 2. what's the benefit of cacheing? (Less traffic. fast response) 3. what's the disadvantage of cacheing? (You can't get the updated value) 4. How would you handle error when API is down and you can't get the flag value. Would you retry several times? etc.
+2. 
+
+
+
 
 UI coding question: print a navigation menu with categories and children using your framework of choice. You will need a recursive solution. How would you highlight only the "active" item and expand only the path that contains the active item. 
 
