@@ -1,3 +1,15 @@
+
+Page Tree
+Feature flag component
+Tic Tac Toe
+Todo List
+Api Client ( js )
+
+
+
+
+
+
 marked down for not having semantic HTML
 
 In Browser coding interview I was asked to develop a dynamic hierarchical menu where it can have multiple levels. In Javascript coding interview, I was asked to develop an API that retrieves the Menu option and according to access rights route to the specific page.
@@ -14,7 +26,8 @@ Browser Coding - Create a file directory structure using some JSON data provided
 
 Feature flag
 1. How would you store the value so that once you get the value, you dont have to call the API again (to reduce the traffic)? 2. what's the benefit of cacheing? (Less traffic. fast response) 3. what's the disadvantage of cacheing? (You can't get the updated value) 4. How would you handle error when API is down and you can't get the flag value. Would you retry several times? etc.
-2. 
+
+1. 
 
 
 

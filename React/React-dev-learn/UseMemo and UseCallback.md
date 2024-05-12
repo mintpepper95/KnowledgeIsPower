@@ -4,6 +4,12 @@
 [[#When do React components re-renders and what is React.memo? How does React.memo know when props has changed? When to use React.memo? Does it affect state?]]
 
 
+
+Basically React.memo is a HOC that wraps around a component, and force it to not trigger a re-render if prop is not changed ( recall a re-render could be triggered if parent changes of if context changes )
+
+
+
+
 For performance optimisations.
 
 #### useMemo(fn, deps)
@@ -91,6 +97,11 @@ const memoFnReturn = useMemo(fn, [dep]) // return memoized value, 42
 
 
 #### When do React components re-renders and what is React.memo? How does React.memo know when props has changed? When to use React.memo? Does it affect state?
+
+
+
+https://medium.com/geekculture/great-confusion-about-react-memoization-methods-react-memo-usememo-usecallback-a10ebdd3a316
+
 
 Recall react components re-renders when its state or prop changes. But it will also re-render when it's parent re-renders, in this last case where it re-renders due to parent, we can optimise performance with `React.memo`.
 
