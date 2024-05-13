@@ -36,8 +36,6 @@ UI coding question: print a navigation menu with categories and children using y
 
 
 JS question: implement a JS solution for fetching/reading feature flags from an API. How would you improve performance, caching, share across different apps,... 
-
-
 For Javascript coding, I got to create a simple function for run a feature flag. You'll be given a mock API (just a function that return promise basically) and you need to create a production-ready code for consuming it. 
 
 
@@ -61,6 +59,7 @@ Two player, one user one bot
 
 
 Javascript coding interview - build a feature flag library 
+
 create a feature flag component in React that consumes a feature’s API and conditionally renders UI based on the value of the feature.
 
 

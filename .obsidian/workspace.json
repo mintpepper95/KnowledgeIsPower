@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Atlassian.md",
+                "file": "Atlassian kit/FeatureFlag JS.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Atlassian.md",
+                "file": "Atlassian kit/FeatureFlag JS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Atlassian.md",
+                "file": "Atlassian kit/FeatureFlag JS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Atlassian.md"
+                "file": "Atlassian kit/FeatureFlag JS.md"
               }
             }
           }
@@ -149,6 +149,11 @@
   },
   "active": "be06a46ecd3e816f",
   "lastOpenFiles": [
+    "Atlassian kit/tree.md",
+    "Atlassian kit/js API endpoint testing.md",
+    "Atlassian kit/FeatureFlag JS.md",
+    "Atlassian.md",
+    "Atlassian kit",
     "React/React-dev-learn/UseMemo and UseCallback.md",
     "React/React-dev-learn/Custom Hooks.md",
     "React/React-dev-learn/4. Escape Hatches.md",
@@ -157,7 +162,6 @@
     "React/React Home.md",
     "VSCode shortcuts.md",
     "React/React Routing.md",
-    "Atlassian.md",
     "React/React-dev-learn/1. Describing the UI.md",
     "Javascript/JS Projects/Tic Tac Toe in React.md",
     "Javascript/Basic data types.md",
@@ -172,9 +176,6 @@
     "Javascript/Error handling.md",
     "Javascript/Default vs named export.md",
     "Javascript/Closure.md",
-    "Javascript/Classes.md",
-    "Javascript/Async and Await.md",
-    "Javascript/Let vs const vs var.md",
     "CSS/Case studies/Examples/attachments/Pasted image 20240503162713.png",
     "CSS/Case studies/Examples/attachments/Pasted image 20240503162643.png",
     "CSS/Case studies/Examples/attachments",
@@ -194,7 +195,6 @@
     "Leetcode/DP/Problems",
     "Leetcode/DP",
     "Leetcode/Graph and Trees/Problems",
-    "Leetcode/Graph and Trees",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
