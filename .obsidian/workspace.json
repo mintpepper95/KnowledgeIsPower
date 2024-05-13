@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Atlassian kit/FeatureFlag JS.md",
+                "file": "Atlassian.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Atlassian kit/FeatureFlag JS.md",
+                "file": "Atlassian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Atlassian kit/FeatureFlag JS.md",
+                "file": "Atlassian.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Atlassian kit/FeatureFlag JS.md"
+                "file": "Atlassian.md"
               }
             }
           }
@@ -149,9 +149,13 @@
   },
   "active": "be06a46ecd3e816f",
   "lastOpenFiles": [
-    "Atlassian kit/tree.md",
-    "Atlassian kit/js API endpoint testing.md",
+    "Atlassian kit/Tic Tac Toe.md",
+    "Atlassian kit/page tree.md",
+    "Atlassian kit/js Blog API.md",
     "Atlassian kit/FeatureFlag JS.md",
+    "Javascript/Jest/Introduction into testing with JEST.md",
+    "Javascript/Untitled.md",
+    "Javascript/Jest",
     "Atlassian.md",
     "Atlassian kit",
     "React/React-dev-learn/UseMemo and UseCallback.md",
@@ -173,9 +177,6 @@
     "Javascript/How are methods implemented for primitives.md",
     "Javascript/Hoisting.md",
     "Javascript/Equality in JS.md",
-    "Javascript/Error handling.md",
-    "Javascript/Default vs named export.md",
-    "Javascript/Closure.md",
     "CSS/Case studies/Examples/attachments/Pasted image 20240503162713.png",
     "CSS/Case studies/Examples/attachments/Pasted image 20240503162643.png",
     "CSS/Case studies/Examples/attachments",
@@ -189,7 +190,6 @@
     "CSS/attachments/Pasted image 20240430224916.png",
     "CSS/attachments/Pasted image 20240430224819.png",
     "CSS/attachments/Pasted image 20240430222834.png",
-    "Javascript/Untitled",
     "Javascript/JS Projects/Untitled",
     "Javascript/JS Projects",
     "Leetcode/DP/Problems",
