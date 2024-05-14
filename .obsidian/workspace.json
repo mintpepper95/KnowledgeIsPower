@@ -13,14 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Atlassian kit/Tic Tac Toe.md",
+                "file": "React/React Routing.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "76c43b8e085163cb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Atlassian.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Atlassian kit/Tic Tac Toe.md",
+                "file": "Atlassian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Atlassian kit/Tic Tac Toe.md",
+                "file": "Atlassian.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Atlassian kit/Tic Tac Toe.md"
+                "file": "Atlassian.md"
               }
             }
           }
@@ -147,10 +161,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "be06a46ecd3e816f",
+  "active": "76c43b8e085163cb",
   "lastOpenFiles": [
-    "Atlassian kit/todo.md",
+    "React/React Routing.md",
     "Atlassian kit/Tic Tac Toe.md",
+    "Atlassian kit/todo.md",
     "Atlassian kit/page tree.md",
     "Atlassian.md",
     "Javascript/JS Projects/Project lists.md",
@@ -167,7 +182,6 @@
     "React/React-dev-learn/2. Adding Interactivity.md",
     "React/React Home.md",
     "VSCode shortcuts.md",
-    "React/React Routing.md",
     "React/React-dev-learn/1. Describing the UI.md",
     "Javascript/JS Projects/Tic Tac Toe in React.md",
     "Javascript/Basic data types.md",

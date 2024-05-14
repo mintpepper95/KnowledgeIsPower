@@ -67,7 +67,7 @@ create a feature flag component in React that consumes a feature’s API and con
 
 
 
-Systems design: jira active sprint board, what components would you use, how would you optimize the FE loading of thousands/millions of jira tickets, how would you measure performance. 
+Systems design: ·jira active sprint board·, what components would you use, how would you optimize the FE loading of thousands/millions of jira tickets, how would you measure performance. 
 
 Advice to candidates: a lot of emphasis around not just giving a solution but presenting alternatives with pros and cons. Speak your mind.
 
@@ -96,9 +96,6 @@ error handling, caching, semantic HTML tags?
 
 
 On culture interview，there was one question that I found hard to give an example is to describe about a time when you receive negative feedback from someone and how you reacted to it.
-
-
-
 
 
 
@@ -182,7 +179,18 @@ Relevant
 
 
 System design
-data model, request and response payload, and state management with state normalization. The question was based on high-level UI design.
+The system design was more focused on the data model, request and response payload, and state management with state normalization. The question was based on high-level UI design.
+
+- Gather all the requirements
+    
+- Design a good architecture
+    
+- Define API contracts & data models
+    
+- State implementation & normalization
+    
+- Scalability & optimizations
+
 
 https://www.ayushsaini.com/blog/atlassian-interview-experience-software-engineer
 
@@ -190,10 +198,58 @@ https://medium.com/@stylus07/atlassian-interview-experience-e51cb1f0735b
 
 
 
+Ask lots of clarifying questions to establish the scope.  
+Think about aspects like reliability, scalability, security, observability through the process. You don’t need to get it right in the first go. But we want to see if you’re thinking about these aspects regarding your solution.  
+Learn common system design concepts such as when would you use a load balancer, what kind of database is suitable for various cases, whether or how would you do caching etc. These are very basic but I’ve seen people often mess these up as an interviewer.
+
+
+Used Radio framework. Dedicated last 20 minutes purely on question specific optimization strategie
+
+
+
 Designing a Kanban board
 
 
 manager interview mention scaling
+
+
+
+
+
+#### **Hiring Manager Interview**
+
+Duration: 60 mins
+
+Difficulty: Medium
+
+Type: Conversation
+
+This interview was with the hiring manager. It started with the typical "Tell me about yourself" and scenario-based questions. Most of the questions were open-ended and I was supposed to answer them with my experiences from the previous projects and companies.
+
+#### [](https://frontendpro.hashnode.dev/frontend-interview-experience-at-atlassian#heading-values-interview "Permalink")
+
+#### **Values Interview**
+
+Duration: 45 mins
+
+Difficulty: Easy - Medium
+
+Type: Conversation
+
+This interview was based on the values at Atlassian. How do I fit into their values and for me to understand the values at Atlassian? I was asked scenario-based questions and it was more of a discussion.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -224,6 +280,11 @@ To address these issues:
 - Always fetch data from trusted sources and validate inputs on the server-side as well.
 
 By addressing these concerns, you can enhance the security of your JavaScript code.
+
+
+
+
+
 
 
 
