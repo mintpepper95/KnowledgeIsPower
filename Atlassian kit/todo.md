@@ -1,1 +1,1 @@
-How to sort list by property
+How to sort list by name, 
