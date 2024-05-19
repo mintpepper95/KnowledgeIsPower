@@ -8,33 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "be06a46ecd3e816f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React/React Routing.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "76c43b8e085163cb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Atlassian kit/MJS files.md",
+                "file": "Atlassian kit/js Blog API.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Atlassian kit/MJS files.md",
+                "file": "Atlassian kit/js Blog API.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Atlassian kit/MJS files.md",
+                "file": "Atlassian kit/js Blog API.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Atlassian kit/MJS files.md"
+                "file": "Atlassian kit/js Blog API.md"
               }
             }
           }
@@ -163,17 +149,21 @@
   },
   "active": "76c43b8e085163cb",
   "lastOpenFiles": [
-    "Atlassian kit/Building an API client in JS.md",
-    "Atlassian kit/MJS files.md",
-    "Atlassian kit/Cached API call.md",
-    "Atlassian kit/todo.md",
-    "Atlassian kit/js Blog API.md",
-    "Atlassian.md",
-    "React/React Routing.md",
-    "Atlassian kit/Tic Tac Toe.md",
-    "Atlassian kit/page tree.md",
-    "Javascript/JS Projects/Project lists.md",
+    "Atlassian kit/attachments/Pasted image 20240519184017.png",
+    "Atlassian kit/attachments/Pasted image 20240519183638.png",
+    "Atlassian kit/attachments/Pasted image 20240519183634.png",
+    "Atlassian kit/attachments",
     "Atlassian kit/FeatureFlag JS.md",
+    "Atlassian kit/Cached API call.md",
+    "Atlassian kit/Building an API client in JS.md",
+    "Atlassian kit/page tree.md",
+    "Atlassian kit/MJS files.md",
+    "Atlassian kit/todo.md",
+    "Atlassian kit/Tic Tac Toe.md",
+    "Atlassian kit/js Blog API.md",
+    "React/React Routing.md",
+    "Atlassian.md",
+    "Javascript/JS Projects/Project lists.md",
     "Javascript/Jest/Introduction into testing with JEST.md",
     "Javascript/Untitled.md",
     "Javascript/Jest",
@@ -190,7 +180,6 @@
     "Javascript/Basic data types.md",
     "Javascript/JS Projects/Implement Load More button in JS.md",
     "Javascript/Radios.md",
-    "Javascript/What happens when you type a URL into the browser.md",
     "CSS/Case studies/Examples/attachments/Pasted image 20240503162713.png",
     "CSS/Case studies/Examples/attachments/Pasted image 20240503162643.png",
     "CSS/Case studies/Examples/attachments",
@@ -202,13 +191,10 @@
     "CSS/attachments/Pasted image 20240430225043.png",
     "CSS/attachments/Pasted image 20240430225020.png",
     "CSS/attachments/Pasted image 20240430224916.png",
-    "CSS/attachments/Pasted image 20240430224819.png",
-    "CSS/attachments/Pasted image 20240430222834.png",
     "Javascript/JS Projects/Untitled",
     "Javascript/JS Projects",
     "Leetcode/DP/Problems",
     "Leetcode/DP",
-    "Leetcode/Graph and Trees/Problems",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
