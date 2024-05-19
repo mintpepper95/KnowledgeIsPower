@@ -35,3 +35,6 @@ Ask whether we should use nav + ul + a href
 
 Placeholder link
 `<a href="#">Future Link</a>`
+
+
+a tags can't be a descendant of a tag. Use like a span/div instead.
