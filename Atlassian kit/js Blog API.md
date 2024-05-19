@@ -23,3 +23,11 @@ Without a main parameter, we have to import our package be specifying the actual
 However if we set main as `main": "lib/module.js`
 Then we would only have to import our module like `require('my-npm-module')`
 
+
+Comments:
+needs to learn how to setup project
+make sure all parameters are of correct value
+how to implement retry
+how to properly throw error
+utc timestamp
+
