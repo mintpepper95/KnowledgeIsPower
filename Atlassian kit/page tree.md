@@ -1,4 +1,4 @@
-typing prop - how??
+
 
 dynamic class??
 
@@ -22,11 +22,16 @@ Think how to expand, where to put useMouseEnter/Leave, and semantic html
 
 ```html
 // if we want to use nav
-<nav>
-<a href="/html/">HTML</a> |
-<a href="/css/">CSS</a> |
-<a href="/js/">JavaScript</a> |
-<a href="/python/">Python</a>
+<nav class="crumbs">
+  <ol>
+    <li class="crumb"><a href="#">Bikes</a></li>
+    <li class="crumb"><a href="#">BMX</a></li>
+    <li class="crumb">Jump Bike 3000</li>
+  </ol>
 </nav>
 ```
 
+Ask whether we should use nav + ul + a href
+
+Placeholder link
+`<a href="#">Future Link</a>`
