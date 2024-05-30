@@ -13,10 +13,14 @@ Api Client ( js )
 
 marked down for not having semantic HTML
 
-In Browser coding interview I was asked to develop a dynamic hierarchical menu where it can have multiple levels. In Javascript coding interview, I was asked to develop an API that retrieves the Menu option and according to access rights route to the specific page.
-
-
 Browser Coding - Create a file directory structure using some JSON data provided Javascript Interview - Make an async promise call from a function and display data in paginated format. Then kept scaling up the question.
+
+
+In Browser coding interview I was asked to develop a dynamic hierarchical menu where it can have multiple levels. 
+
+In Javascript coding interview, I was asked to develop an API that retrieves the Menu option and according to access rights route to the specific page.
+
+
 
 
 -Build a UI to list and update task - Create a promise function to get dynamic feature
@@ -48,8 +52,6 @@ For Browser coding, you can use framework if you want, I used React as well.
 For browser coding, if you're using React, follow a good practice around component structure, accesibility (use semantic html instead of just div all over the places and ARIA- attributes)
 
 
-Browser Coding - Create a file directory structure using some JSON data provided Javascript Interview - Make an async promise call from a function and display data in paginated format. Then kept scaling up the question.
-
 
 Browser coding interview - build a navigation tree 
 Javascript coding interview - build a feature flag library
@@ -62,6 +64,7 @@ Two player, one user one bot
 Javascript coding interview - build a feature flag library 
 
 create a feature flag component in React that consumes a feature’s API and conditionally renders UI based on the value of the feature.
+
 
 
 
