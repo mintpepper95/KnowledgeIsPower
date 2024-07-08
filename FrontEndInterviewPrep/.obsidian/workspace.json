@@ -1,0 +1,198 @@
+{
+  "main": {
+    "id": "513b17afcfb1da43",
+    "type": "split",
+    "children": [
+      {
+        "id": "36dec5390834b796",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b2f4420bb133b069",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Front end system design.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "39f9bb7e1a91586a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Polling, long polling, websocket and webhook.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ff3fee7149f2bbf5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interviews/Chat application.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8dde18edcd7fc535",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interviews/Facebook news feed.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f135293580cc26b1",
+    "type": "split",
+    "children": [
+      {
+        "id": "b75e98fbc1575787",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "610ca8194e507949",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "317b4e8395040c7e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "615bfc94cccc5dd9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "df84ecfd2cf84eab",
+    "type": "split",
+    "children": [
+      {
+        "id": "373f62b450b4c4cc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0429495b56abbb2f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Front end system design.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "b2f4420bb133b069",
+  "lastOpenFiles": [
+    "Polling, long polling, websocket and webhook.md",
+    "Pasted image 20240610190551.png",
+    "Pasted image 20240610161553.png",
+    "Pasted image 20240610185507.png",
+    "Pasted image 20240610190333.png",
+    "Trello.md",
+    "Multipart form data.md",
+    "Manager Interview.md",
+    "JIRA front end architecture.md",
+    "Front end system design.md",
+    "Performance/Tree shaking.md",
+    "Performance/Route based splitting.md",
+    "Performance/React.lazy vs Suspense.md",
+    "Performance/Performance Summary.md",
+    "Performance/Performance.md",
+    "Performance/List Virtualisation.md",
+    "Performance/Import on Interaction.md",
+    "Performance/Import on Visibility.md",
+    "Performance/Dynamic import.md",
+    "Performance/Compressing Javascript.md",
+    "Performance/Bundle splitting.md",
+    "Performance/ARIA.md",
+    "Interviews/Trello as an example.md",
+    "Interviews/Notion.md",
+    "Interviews/Facebook news feed.md",
+    "Interviews/Front end system design.md",
+    "Interviews/Chat application.md",
+    "dp_1.webm",
+    "bundle_1.webm",
+    "Performance/Preload.md",
+    "Performance/Prefetch.md",
+    "Pasted image 20240610161356.png",
+    "Pasted image 20240601203735.png",
+    "dp1.webm",
+    "tree-shaking.webm",
+    "Pasted image 20240608162939.png",
+    "Pasted image 20240601201956.png",
+    "import_on_visibility.webm",
+    "Pasted image 20240608164159.png",
+    "Pasted image 20240608203645.png",
+    "dp_2.webm",
+    "Interviews",
+    "Performance/attachments",
+    "Performance"
+  ]
+}

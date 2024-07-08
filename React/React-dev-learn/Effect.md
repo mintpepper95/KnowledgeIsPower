@@ -1,0 +1,323 @@
+
+
+---
+
+#### How does effect fill in gap between rendering and event handling and when is it run?
+
+Rendering must be pure in React. Event handlers is where we store side effects. Eg. Submitting an HTTP request or navigate user to another screen etc.
+
+In the case of a chat room, we must connect to the server whenever the component is visible on screen. Or think some other examples where we need to load data from external endpoint to display it in the component.
+
+Connecting to a chat server ( or loading data ) can not be done at rendering level, because render must be pure. It also can't be done at event handler level, because it's not caused by a particular event.
+
+Effects let you specify side effects caused by rendering itself ( means it fires during an render, which can be triggered due to a variety of reasons ), rather than some event.
+
+Effects run at the end of a commit (trigger, render, commit) after a rendering.
+
+
+
+#### Writing an Effect
+
+Consider a video player.
+`<video>` tag does not have an `isPlaying` prop.
+Only way to control is is to manually call `play()` or `pause()` methods on the DOM element.
+
+We need an effect to sync `isPlaying` prop with the video element.
+
+```ts
+// Incorrect example
+import { useState, useRef, useEffect} from 'react';
+
+const VideoPlayer = ({src, isPlaying}) => {
+	const ref = useRef(null);
+
+	// THIS IS WRONG! rendering should be pure and should not contain side effects that involves the DOM.
+	// Also the first time this component is called, its DOM does not exist yet.
+	if (isPlaying) {
+		// Calling this while rendering is NOT allowed
+		ref.current.play();
+	} else {
+		// Calling this while rendering is NOT allowed
+		ref.current.pause();
+	}
+
+	return <video ref={ref} src={src} loop playsInline />;
+}
+
+
+
+// Correct example, React will update the screen first, then run the effect.
+const VideoPlayer = ({src, isPlaying}) => {
+	const ref = useRef(null);
+
+	// We use effect to sync component with browser media API 
+	useEffect(() => {
+		if (isPlaying) {
+			// because the effect is run after a render, ref won't be null
+			ref.current.play();
+		} else {
+			ref.current.pause();
+		}
+	});
+	
+	return <video ref={ref} src={src} loop playsInline />;
+}
+
+```
+
+#### Effect can cause inf loop
+Effect runs after a render. Setting state in it will trigger another render, causing an inf loop.
+
+```ts
+useEffect(() => {
+	setCount(count + 1);
+})
+```
+
+
+#### Effect dependencies
+We may not want to run effect after every render.
+
+Empty render meaning only running on the initial render/mount.
+By including props and states in the deps array, we only run the effect if they change.
+
+React will skip re-running the effect if all the deps are the same. React compares by using `Object.is()`, so if you use arrays and objects don't mutate them, rather re-create them.
+
+```ts
+useEffect(() => {
+	//...
+}, []);
+```
+
+Note the thing about empty deps array, is that if a parent component up the tree renders the component conditionally, the component maybe unmounted and then mounted again, therefore performing the side effect again.
+
+
+#### Why is ref not needed in the useEffect dep array
+This is because `ref` object has a stable identity. It guarantees we get the same object from same `useRef` call on every render. It never changes, so it will never cause Effect to re-run, so it doesn't matter if we don't include it ( we can of course include it ).
+
+Likewise the set functions from `useState` will also have stable identities, so those can be omitted from the deps array too.
+
+If the ref comes from a parent component, we would have to specify it in the deps array. Because we don't know whether component component always passes the same ref, or maybe it passes one of the refs conditionally.
+
+
+#### cleanup functions
+
+Imagine in the case of `ChatRoom` component. We connect to server during mount. Then user go to another page, this will make `ChatRoom` unmount. User go to `ChatRoom` again, this would setup a second connection, but first connection is still there! The connections will keep pile up!
+
+React will call cleanup each time before effect is run again and one final time when component unmounts.
+
+Notice when it cleans up, the variables in that cleanup will be tied to the render in which the cleanup function is defined in.
+
+
+```ts
+useEffect(() => {
+	const connection = createConneciton();
+	connection.connect();
+
+	// cleanup
+	return () => {
+		connection.disconnect();
+	}
+})
+```
+
+
+#### Don't use refs to prevent Effects from firing
+
+```ts
+const connectionRef = useRef(null);
+
+// Here we are trying to use ref to prevent effect from running more than once
+// However, when user navigates away, the connection is not closed and when they navigate back a new connection will be created.
+useEffect(() => {
+	if (!connectionRef.current) {
+		connectionRef.current = createConnection();
+		connectionRef.current.connect();
+	}
+}, []);
+```
+
+
+
+#### Controlling non-React widgets
+
+Sometimes you need to add UI widgets not written in React.
+Consider a map component, it has a `setZoomLevel()` method, and we want it to be in sync with a variable called `zoomLevel`.
+
+```ts
+useEffect(() => {
+	const map = mapRef.current;
+	map.setZoomLevel(zoomLevel);
+}, [zoomLevel]);
+```
+Note here we don't have any cleanup function. React can call the effect multiple times, because it's okay because calling `setZoomLevel()` with same value will not do anything - idempotent.
+
+Some APIS may not allow you to call twice, eg. a `showModal()` may not be callable again until we call `close()`. In this case, we would need to implement the cleanup function.
+
+```ts
+useEffect(() => {
+	const dialog = dialogRef.current;
+	dialog.showModal();
+	return () => dialog.close();
+})
+```
+
+
+#### Subscribing to events
+
+If your effect subscribes to something, cleanup function should unsubscribe.
+```ts
+useEffect(() => {
+	function handleScroll(e) {
+		console.log(window.scrollX, window.scrollY);
+	}
+
+	window.addEventListener('scroll', handleScroll);
+
+	// In the re-render, before effect is called again, we call cleanup here
+	return () => window.removeEventListener('scroll', handleScroll);
+}, []);
+```
+
+#### Animations
+If your effect animates something, clean up should reset it.
+
+```ts
+useEffect(() => {
+	const node = ref.current;
+	node.style.opacity = 1;
+	return () => { node.style.opacity = 0; };
+}, []);
+```
+
+#### Fetching data
+If your effect fetches something, cleanup should either abort fetch or ignore result.
+
+Here we make sure ignore further request.
+```ts
+useEffect(() => {
+	let ignore = false;
+
+	async function startFetching() {
+		const json = await fetchTodos(userId);
+		if (!ignore) {
+			setTodos(json);
+		}
+	}
+
+	startFetching();
+
+	return () => ignore = true;
+
+}, [userId])
+```
+
+#### Downside of fetching directly in effect
+
+Fetch may create `network waterfalls`, you render parent component, it fetches some data, renders child components, they start fetching their data.
+
+This may be significantly slower than fetching all data in parallel.
+
+Fetching directly in effects means we don't preload or cache data. If component unmounts, then we would need to fetch again.
+
+
+#### Sending analytics
+
+In dev, `logVisit` will call twice for the url, React team recommend keeping it as it is. There is no user-visible behaviour difference between logging once and twice.
+
+Ideally, `logVisit` should not do anything in dev.
+
+```ts
+useEffect(() => {
+	logVisit(url);
+}, [url])
+```
+
+
+#### Not an effect, buying a product
+Sometimes, even if your write a cleanup function, there's no way to prevent effect from running twice.
+
+Eg. Maybe your effect sends a POST request to buy a product.
+```ts
+// WRONG, effect will fire twice in dev
+useEffect(() => {
+	fetch('/api/buy', { method: 'POST' });
+}, []);
+```
+This logic shouldn't be in an effect. You don't want to buy the product when a component re-renders, you want to buy it when user clicks on Buy button. Buying is a specific interaction and should be a side effect inside the event.
+
+
+Consider the component below, in which order will the 3 console logs print when it re-renders due to text change?
+```ts
+function Playground() {
+  const [text, setText] = useState('a');
+
+  useEffect(() => {
+    function onTimeout() {
+      console.log('⏰ ' + text);
+    }
+
+    console.log('🔵 Schedule "' + text + '" log');
+    const timeoutId = setTimeout(onTimeout, 3000);
+
+    return () => {
+      console.log('🟡 Cancel "' + text + '" log');
+      clearTimeout(timeoutId);
+    };
+  }, [text]);
+```
+
+Ans : cancel, schedule, alarm
+
+
+Generally, we want to be able to cancel a side effect if another one is fired.
+
+Because an effect from previous render ( eg. an async one ) may still run when the component has re-rendered. And then that effect can potentially update the state to an incorrect one. 
+
+```ts
+// With Strict Mode, React will remounts each component once in dev, this will cause interval to be setup twice. In StrictMode, React will perform a double render od components and execute lifecycle methods like `useEffect` twice during the initial mounting phase. This behaviour is part of React's consistency checks to catch unintended side effects.
+
+
+
+// The real issue is we don't cancel an interval during remount.
+
+import { useState, useEffect } from 'react';
+
+export default function Counter() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    function onTick() {
+      setCount(c => c + 1);
+    }
+
+	// Without cancelling, setInterval would be setup twice in dev StrictMode, leading to double invocation
+    const intervalId = setInterval(onTick, 1000);
+    return () => clearInterval(intervalId);
+  }, []);
+
+  return <h1>{count}</h1>;
+}
+```
+
+
+
+Read Dan
+https://overreacted.io/a-complete-guide-to-useeffect/#dont-lie-to-react-about-dependencies
+
+
+
+
+
+
+
+
+
+
+#### Not needing effect
+
+#### Lifecycle of effect
+
+#### Separating Events from Effects
+
+#### Removing Effect dependencies

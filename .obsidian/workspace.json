@@ -13,7 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Atlassian.md",
+                "file": "FrontEndInterviewPrep/Trello.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cae59297c5210192",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Atlassian kit/Cached API call.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Atlassian.md",
+                "file": "FrontEndInterviewPrep/Trello.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Atlassian.md",
+                "file": "FrontEndInterviewPrep/Trello.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Atlassian.md"
+                "file": "FrontEndInterviewPrep/Trello.md"
               }
             }
           }
@@ -149,21 +162,23 @@
   },
   "active": "76c43b8e085163cb",
   "lastOpenFiles": [
-    "VSCode shortcuts.md",
-    "Atlassian kit/Cached API call.md",
-    "Atlassian kit/FeatureFlag JS.md",
+    "2024-03-30.md",
+    "FrontEndInterviewPrep/JIRA front end architecture.md",
+    "FrontEndInterviewPrep/Front end system design.md",
+    "Atlassian kit/js Blog API.md",
     "Atlassian kit/Building an API client in JS.md",
+    "Atlassian kit/attachments/Pasted image 20240519184017.png",
     "Atlassian kit/page tree.md",
+    "Atlassian kit/Cached API call.md",
+    "Atlassian kit/attachments/Pasted image 20240519183634.png",
+    "Atlassian kit/MJS files.md",
+    "Atlassian.md",
+    "VSCode shortcuts.md",
+    "Atlassian kit/FeatureFlag JS.md",
     "Atlassian kit/Pagination.md",
     "Atlassian kit/Tic Tac Toe.md",
     "Atlassian kit/todo.md",
-    "Atlassian kit/js Blog API.md",
-    "Atlassian kit/MJS files.md",
-    "Atlassian.md",
-    "2024-03-30.md",
-    "Atlassian kit/attachments/Pasted image 20240519184017.png",
     "Atlassian kit/attachments/Pasted image 20240519183638.png",
-    "Atlassian kit/attachments/Pasted image 20240519183634.png",
     "Atlassian kit/attachments",
     "React/React Routing.md",
     "Javascript/JS Projects/Project lists.md",
@@ -179,8 +194,6 @@
     "React/React Home.md",
     "React/React-dev-learn/1. Describing the UI.md",
     "Javascript/JS Projects/Tic Tac Toe in React.md",
-    "Javascript/Basic data types.md",
-    "Javascript/JS Projects/Implement Load More button in JS.md",
     "CSS/Case studies/Examples/attachments/Pasted image 20240503162713.png",
     "CSS/Case studies/Examples/attachments/Pasted image 20240503162643.png",
     "CSS/Case studies/Examples/attachments",
