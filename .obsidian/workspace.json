@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FrontEndInterviewPrep/Trello.md",
+                "file": "DotNet/ASP.NET.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FrontEndInterviewPrep/Trello.md",
+                "file": "DotNet/ASP.NET.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FrontEndInterviewPrep/Trello.md",
+                "file": "DotNet/ASP.NET.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FrontEndInterviewPrep/Trello.md"
+                "file": "DotNet/ASP.NET.md"
               }
             }
           }
@@ -162,6 +162,26 @@
   },
   "active": "76c43b8e085163cb",
   "lastOpenFiles": [
+    "Typescript/Untitled 1.md",
+    "Typescript/Typescript.md",
+    "Typescript/No BS TS.md",
+    "React/React Home.md",
+    "React/React Routing.md",
+    "React/React-dev-learn/UseMemo and UseCallback.md",
+    "React/React-dev-learn/Effect.md",
+    "React/React-dev-learn/Custom Hooks.md",
+    "React/React-dev-learn/4. Escape Hatches.md",
+    "React/React-dev-learn/3. Managing state.md",
+    "React/React-dev-learn/2. Adding Interactivity.md",
+    "React/React-dev-learn/1. Describing the UI.md",
+    "React/React-dev-learn/attachments/preserving_state_dom_tree.webp",
+    "React/React-dev-learn/attachments/Pasted image 20240402162401.png",
+    "React/React-dev-learn/attachments/module_dependency_tree.webp",
+    "React/React-dev-learn/attachments/0 4Dsb0smecDtvTosK.webp",
+    "React/attachments/Pasted image 20240319022748.png",
+    "FunctionKind.md",
+    "VSCode shortcuts.md",
+    "FrontEndInterviewPrep/Trello.md",
     "2024-03-30.md",
     "FrontEndInterviewPrep/JIRA front end architecture.md",
     "FrontEndInterviewPrep/Front end system design.md",
@@ -173,37 +193,17 @@
     "Atlassian kit/attachments/Pasted image 20240519183634.png",
     "Atlassian kit/MJS files.md",
     "Atlassian.md",
-    "VSCode shortcuts.md",
     "Atlassian kit/FeatureFlag JS.md",
     "Atlassian kit/Pagination.md",
-    "Atlassian kit/Tic Tac Toe.md",
-    "Atlassian kit/todo.md",
     "Atlassian kit/attachments/Pasted image 20240519183638.png",
     "Atlassian kit/attachments",
-    "React/React Routing.md",
-    "Javascript/JS Projects/Project lists.md",
-    "Javascript/Jest/Introduction into testing with JEST.md",
-    "Javascript/Untitled.md",
     "Javascript/Jest",
     "Atlassian kit",
-    "React/React-dev-learn/UseMemo and UseCallback.md",
-    "React/React-dev-learn/Custom Hooks.md",
-    "React/React-dev-learn/4. Escape Hatches.md",
-    "React/React-dev-learn/3. Managing state.md",
-    "React/React-dev-learn/2. Adding Interactivity.md",
-    "React/React Home.md",
-    "React/React-dev-learn/1. Describing the UI.md",
-    "Javascript/JS Projects/Tic Tac Toe in React.md",
     "CSS/Case studies/Examples/attachments/Pasted image 20240503162713.png",
     "CSS/Case studies/Examples/attachments/Pasted image 20240503162643.png",
     "CSS/Case studies/Examples/attachments",
     "CSS/Case studies/Examples",
     "CSS/Case studies",
-    "CSS/attachments/Pasted image 20240430230039.png",
-    "CSS/attachments/Pasted image 20240430230011.png",
-    "CSS/attachments/Pasted image 20240430225950.png",
-    "CSS/attachments/Pasted image 20240430225043.png",
-    "CSS/attachments/Pasted image 20240430225020.png",
     "Javascript/JS Projects/Untitled",
     "Javascript/JS Projects",
     "Leetcode/DP/Problems",
