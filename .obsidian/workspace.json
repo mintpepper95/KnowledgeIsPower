@@ -21,6 +21,19 @@
             }
           },
           {
+            "id": "48824dd90dbb135a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "React/React-dev-learn/Effect/3. Removing Effect dependencies.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "cae59297c5210192",
             "type": "leaf",
             "state": {
@@ -33,7 +46,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -99,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DotNet/ASP.NET.md",
+                "file": "React/React-dev-learn/Effect/3. Removing Effect dependencies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DotNet/ASP.NET.md",
+                "file": "React/React-dev-learn/Effect/3. Removing Effect dependencies.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DotNet/ASP.NET.md"
+                "file": "React/React-dev-learn/Effect/3. Removing Effect dependencies.md"
               }
             }
           }
@@ -160,17 +174,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "76c43b8e085163cb",
+  "active": "48824dd90dbb135a",
   "lastOpenFiles": [
+    "React/React-dev-learn/Effect/2. Separating Events from Effects.md",
+    "React/React-dev-learn/Effect/3. Removing Effect dependencies.md",
+    "React/React-dev-learn/Effect/1. Lifecycle of Reactive Effects.md",
+    "React/React-dev-learn/5. Effect.md",
+    "React/React-dev-learn/4. Escape Hatches.md",
+    "React/React-dev-learn/Effect",
+    "Untitled",
+    "React/React-dev-learn/Custom Hooks.md",
+    "React/React-dev-learn/UseMemo and UseCallback.md",
     "Typescript/Untitled 1.md",
     "Typescript/Typescript.md",
     "Typescript/No BS TS.md",
     "React/React Home.md",
     "React/React Routing.md",
-    "React/React-dev-learn/UseMemo and UseCallback.md",
-    "React/React-dev-learn/Effect.md",
-    "React/React-dev-learn/Custom Hooks.md",
-    "React/React-dev-learn/4. Escape Hatches.md",
     "React/React-dev-learn/3. Managing state.md",
     "React/React-dev-learn/2. Adding Interactivity.md",
     "React/React-dev-learn/1. Describing the UI.md",
@@ -192,9 +211,6 @@
     "Atlassian kit/Cached API call.md",
     "Atlassian kit/attachments/Pasted image 20240519183634.png",
     "Atlassian kit/MJS files.md",
-    "Atlassian.md",
-    "Atlassian kit/FeatureFlag JS.md",
-    "Atlassian kit/Pagination.md",
     "Atlassian kit/attachments/Pasted image 20240519183638.png",
     "Atlassian kit/attachments",
     "Javascript/Jest",
@@ -206,8 +222,6 @@
     "CSS/Case studies",
     "Javascript/JS Projects/Untitled",
     "Javascript/JS Projects",
-    "Leetcode/DP/Problems",
-    "Leetcode/DP",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
