@@ -77,3 +77,22 @@ app.MapControllers();
 
 app.Run();
 ```
+
+
+#### Model binding
+Basically converting http rquest data to .Net objects or complex types (models).
+The benefit of model binding is it reduces chance of errors and improves readability.
+
+```csharp
+// https://contoso.com/api/pets/2?DogsOnly=true
+
+[HttpGet("{id}")]
+public ActionResult<Pet> GetById(int id, bool dogsOnly)
+```
+
+By default, model binding gets data in the form of key value pair from searching through following sources in an http request.
+1. form fields [FromForm]
+2. request body [FromBody]
+3. route data [FromRoute]
+4. query string params [FromQuery]
+If not correct, we can use an attribute to specify the source.

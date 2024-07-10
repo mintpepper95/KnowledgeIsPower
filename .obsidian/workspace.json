@@ -59,8 +59,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -126,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Operation Health.md",
+                "file": "DotNet/ASP.NET/ASP.NET.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Operation Health.md",
+                "file": "DotNet/ASP.NET/ASP.NET.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Operation Health.md"
+                "file": "DotNet/ASP.NET/ASP.NET.md"
               }
             }
           }
@@ -187,8 +186,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4e58c60086f191aa",
+  "active": "76c43b8e085163cb",
   "lastOpenFiles": [
+    "Operation Health.md",
     "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
     "DotNet/ASP.NET/ASP.NET.md",
     "DotNet/Improving performance of a system.md",
@@ -200,7 +200,6 @@
     "DotNet/Design patterns.md",
     "DotNet/Database stuffs.md",
     "DotNet/C_Sharp/Attributes.md",
-    "Operation Health.md",
     "DotNet/ASP.NET/attachments/Pasted image 20240710124057.png",
     "DotNet/ASP.NET/attachments/Pasted image 20240710121337.png",
     "DotNet/ASP.NET/attachments/Pasted image 20240710121129.png",
@@ -228,7 +227,6 @@
     "React/React-dev-learn/attachments/module_dependency_tree.webp",
     "React/React-dev-learn/attachments/0 4Dsb0smecDtvTosK.webp",
     "React/attachments/Pasted image 20240319022748.png",
-    "Atlassian kit/attachments/Pasted image 20240519184017.png",
     "Atlassian kit/attachments",
     "Javascript/Jest",
     "Atlassian kit",
