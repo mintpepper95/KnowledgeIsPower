@@ -17,5 +17,6 @@ It involves
 
 
 * Investment income stream
+     Stocks/ETFs
 * Relationship Satisfaction
 * Self realisation
