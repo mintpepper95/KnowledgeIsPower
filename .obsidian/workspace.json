@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DotNet/ASP.NET.md",
+                "file": "DotNet/ASP.NET/ASP.NET.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Operation Health.md",
+                "file": "DotNet/ASP.NET/ASP.NET.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -110,7 +110,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "f9838370ded5a893",
@@ -126,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Operation Health.md",
+                "file": "DotNet/ASP.NET/ASP.NET.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Operation Health.md",
+                "file": "DotNet/ASP.NET/ASP.NET.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Operation Health.md"
+                "file": "DotNet/ASP.NET/ASP.NET.md"
               }
             }
           }
@@ -189,8 +190,26 @@
   },
   "active": "4e58c60086f191aa",
   "lastOpenFiles": [
-    "React/React-dev-learn/UseMemo and UseCallback.md",
+    "DotNet/ASP.NET/attachments/Pasted image 20240710124057.png",
+    "DotNet/ASP.NET/attachments/Pasted image 20240710121337.png",
+    "DotNet/ASP.NET/attachments/Pasted image 20240710121129.png",
+    "DotNet/ASP.NET/attachments/Pasted image 20240710120952.png",
+    "DotNet/ASP.NET/attachments",
+    "DotNet/ASP.NET",
+    "DotNet/C_Sharp/EF Core.md",
+    "DotNet/C_Sharp/C_Sharp.md",
+    "Interface vs abstract class.md",
+    "DotNet/Improving performance of a system.md",
+    "DotNet/Event Sourcing and CQRS.md",
+    "DotNet/Event Driven Architecture.md",
+    "DotNet/EFCore code first vs database first.md",
+    "DotNet/EFCore.md",
+    "DotNet/Domain Driven Design - a way of building of microservice.md",
+    "DotNet/Design patterns.md",
+    "DotNet/Database stuffs.md",
+    "DotNet/ASP.NET/ASP.NET.md",
     "Operation Health.md",
+    "React/React-dev-learn/UseMemo and UseCallback.md",
     "Untitled.md",
     "React/React-dev-learn/4. Escape Hatches.md",
     "React/React-dev-learn/Effect/5. Removing Effect dependencies.md",
@@ -204,37 +223,19 @@
     "Typescript/Untitled 1.md",
     "Typescript/Typescript.md",
     "Typescript/No BS TS.md",
-    "React/React Home.md",
-    "React/React Routing.md",
-    "React/React-dev-learn/3. Managing state.md",
-    "React/React-dev-learn/2. Adding Interactivity.md",
-    "React/React-dev-learn/1. Describing the UI.md",
     "React/React-dev-learn/attachments/preserving_state_dom_tree.webp",
     "React/React-dev-learn/attachments/Pasted image 20240402162401.png",
     "React/React-dev-learn/attachments/module_dependency_tree.webp",
     "React/React-dev-learn/attachments/0 4Dsb0smecDtvTosK.webp",
     "React/attachments/Pasted image 20240319022748.png",
-    "FunctionKind.md",
-    "VSCode shortcuts.md",
-    "FrontEndInterviewPrep/Trello.md",
-    "2024-03-30.md",
-    "FrontEndInterviewPrep/JIRA front end architecture.md",
-    "FrontEndInterviewPrep/Front end system design.md",
-    "Atlassian kit/js Blog API.md",
-    "Atlassian kit/Building an API client in JS.md",
     "Atlassian kit/attachments/Pasted image 20240519184017.png",
     "Atlassian kit/attachments/Pasted image 20240519183634.png",
-    "Atlassian kit/attachments/Pasted image 20240519183638.png",
     "Atlassian kit/attachments",
     "Javascript/Jest",
     "Atlassian kit",
-    "CSS/Case studies/Examples/attachments/Pasted image 20240503162713.png",
-    "CSS/Case studies/Examples/attachments/Pasted image 20240503162643.png",
     "CSS/Case studies/Examples/attachments",
     "CSS/Case studies/Examples",
     "CSS/Case studies",
-    "Javascript/JS Projects/Untitled",
-    "Javascript/JS Projects",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",

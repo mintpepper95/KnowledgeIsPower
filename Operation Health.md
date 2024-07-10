@@ -4,4 +4,3 @@ It involves
 * Investment income stream
 * Relationship Satisfaction
 * Self realisation
-*
