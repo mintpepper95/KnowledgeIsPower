@@ -24,3 +24,7 @@ To remove a bad migration that hasn't applied yet, do
 #### SQL injection
 ![[Pasted image 20240711021411.png]]
 
+
+
+#### Automapper
+automapper
