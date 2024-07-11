@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DotNet/EFCore/Untitled.md",
+                "file": "DotNet/C_Sharp/LINQ fundamentals.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -125,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DotNet/EFCore/Untitled.md",
+                "file": "DotNet/C_Sharp/LINQ fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DotNet/EFCore/Untitled.md",
+                "file": "DotNet/C_Sharp/LINQ fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DotNet/EFCore/Untitled.md"
+                "file": "DotNet/C_Sharp/LINQ fundamentals.md"
               }
             }
           }
@@ -188,12 +188,13 @@
   },
   "active": "76c43b8e085163cb",
   "lastOpenFiles": [
+    "DotNet/EFCore/Untitled.md",
+    "DotNet/C_Sharp/LINQ fundamentals.md",
     "DotNet/EFCore/attachments/Pasted image 20240711144056.png",
     "DotNet/EFCore/attachments/Pasted image 20240711021411.png",
     "DotNet/EFCore/attachments/Pasted image 20240711021347.png",
     "DotNet/EFCore/attachments",
     "DotNet/Event Driven Architecture.md",
-    "DotNet/EFCore/Untitled.md",
     "DotNet/EFCore.md",
     "DotNet/EFCore",
     "2024-03-30.md",
@@ -230,7 +231,6 @@
     "React/React-dev-learn/Custom Hooks.md",
     "React/React-dev-learn/attachments/preserving_state_dom_tree.webp",
     "React/React-dev-learn/attachments/Pasted image 20240402162401.png",
-    "React/React-dev-learn/attachments/module_dependency_tree.webp",
     "Atlassian kit/attachments",
     "Javascript/Jest",
     "Atlassian kit",

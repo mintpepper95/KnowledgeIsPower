@@ -53,3 +53,27 @@ Here if we mark `includePointsOfInterest` as `[FromBody]` it would not work.
 ##### Searching, Filtering and Paging
 Search is like searching for substring. It allows you to search for things that may exist in the collection.
 Filtering is like filtering all cities with name Sydney. It allows you to be precise.
+
+#### Deferred Execution
+By working with `IQueryable`, we can build the query bit by bit, and then execute when we really need it, rather than build a query and execute, and then execute again etc.
+
+Execution is deferred until query is iterated over. Query is iterated over when
+* foreach loop
+* ToList or ToListAsync or ToArray etc
+* SingletonQueries - Average, Count, FirstOrDefault
+
+So something like `query.Where(xxx => yyy)` is not executed until for example `FirstOrDefault` is called
+
+
+##### Paging
+Collections may grow very large. We can implement paging on them.
+
+Paging params are typically passed through query param
+`https://host/api/cities?pageNumber=1&pageSize=5`
+
+We want to make sure paging goes all the way to the db, otherwise we would still be fetching many many resources from the db which adds to performance.
+
+We can use `Skip` and `Take` for paging data, they are both part of LINQ's deferred executions. They do not invoke the query immediately, instead modifying underlying query.
+
+
+
