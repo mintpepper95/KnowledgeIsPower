@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DotNet/C_Sharp/LINQ fundamentals.md",
+                "file": "DotNet/Clean Architecture.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -88,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "remove unne",
+                "query": "domain drive",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -105,7 +105,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -125,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DotNet/C_Sharp/LINQ fundamentals.md",
+                "file": "DotNet/Clean Architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DotNet/C_Sharp/LINQ fundamentals.md",
+                "file": "DotNet/Clean Architecture.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DotNet/C_Sharp/LINQ fundamentals.md"
+                "file": "DotNet/Clean Architecture.md"
               }
             }
           }
@@ -188,8 +189,16 @@
   },
   "active": "76c43b8e085163cb",
   "lastOpenFiles": [
-    "DotNet/EFCore/Untitled.md",
+    "DotNet/attachments/Pasted image 20240711191433.png",
+    "DotNet/attachments/Pasted image 20240711191346.png",
+    "DotNet/attachments/domain-driven-design-microservice 1.png",
+    "DotNet/attachments/1_YVxaXqiIYskqPauNKZ2OSA.png",
+    "DotNet/Domain Driven Design - a way of building of microservice.md",
+    "DotNet/Clean Architecture.md",
+    "DotNet/attachments/Pasted image 20240711185620.png",
+    "DotNet/attachments/Pasted image 20240711185556.png",
     "DotNet/C_Sharp/LINQ fundamentals.md",
+    "DotNet/EFCore/Untitled.md",
     "DotNet/EFCore/attachments/Pasted image 20240711144056.png",
     "DotNet/EFCore/attachments/Pasted image 20240711021411.png",
     "DotNet/EFCore/attachments/Pasted image 20240711021347.png",
@@ -205,14 +214,10 @@
     "DotNet/Improving performance of a system.md",
     "DotNet/Event Sourcing and CQRS.md",
     "DotNet/EFCore code first vs database first.md",
-    "DotNet/Domain Driven Design - a way of building of microservice.md",
     "DotNet/Design patterns.md",
     "DotNet/Database stuffs.md",
     "DotNet/C_Sharp/Attributes.md",
     "DotNet/ASP.NET/attachments/Pasted image 20240710124057.png",
-    "DotNet/ASP.NET/attachments/Pasted image 20240710121337.png",
-    "DotNet/ASP.NET/attachments/Pasted image 20240710121129.png",
-    "DotNet/ASP.NET/attachments/Pasted image 20240710120952.png",
     "DotNet/ASP.NET/attachments",
     "DotNet/ASP.NET",
     "DotNet/C_Sharp/EF Core.md",
@@ -225,12 +230,8 @@
     "React/React-dev-learn/Effect/4. Separating Events from Effects.md",
     "React/React-dev-learn/Effect/3. Lifecycle of Reactive Effects.md",
     "React/React-dev-learn/Effect/2. No need Effect.md",
-    "React/React-dev-learn/Effect/1. Effect.md",
     "React/React-dev-learn/Effect",
     "Untitled",
-    "React/React-dev-learn/Custom Hooks.md",
-    "React/React-dev-learn/attachments/preserving_state_dom_tree.webp",
-    "React/React-dev-learn/attachments/Pasted image 20240402162401.png",
     "Atlassian kit/attachments",
     "Javascript/Jest",
     "Atlassian kit",
