@@ -28,3 +28,23 @@ To remove a bad migration that hasn't applied yet, do
 
 #### Automapper
 automapper
+
+
+
+ActionResult vs IActionResult
+
+- **Use `IActionResult` when:**
+    
+    - You want the flexibility to return different types of responses.
+    - You don't need the benefits of type inference and strong typing.
+- **Use `ActionResult<T>` when:**
+    
+    - You want to take advantage of strong typing and type inference.
+    - You want to improve API documentation and client code generation.
+    - You are returning a specific type but might also return other `ActionResult` types (like `NotFound`, `BadRequest`, etc.).
+
+
+If you have a parameter in controller without specifying source, it's assumed to be a query string.
+`GetCity(int id, bool includePointsOfInterest = false)`
+Here if we mark `includePointsOfInterest` as `[FromBody]` it would not work.
+`[FromBody]` needs to be marked on complex objects.
