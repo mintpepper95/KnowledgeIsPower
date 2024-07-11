@@ -48,3 +48,8 @@ If you have a parameter in controller without specifying source, it's assumed to
 `GetCity(int id, bool includePointsOfInterest = false)`
 Here if we mark `includePointsOfInterest` as `[FromBody]` it would not work.
 `[FromBody]` needs to be marked on complex objects.
+
+
+##### Searching, Filtering and Paging
+Search is like searching for substring. It allows you to search for things that may exist in the collection.
+Filtering is like filtering all cities with name Sydney. It allows you to be precise.
