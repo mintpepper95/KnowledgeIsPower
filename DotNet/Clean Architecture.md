@@ -41,5 +41,27 @@ If we look at a particular command/query handler, we will see all the dependenci
 
 Use fluid validation instead of data annotations.
 
+Infrastructure layer
+Where DbContext, repository implementation lives
+And services relating to other infra lives, eg. email service.
+
+
+Domain Services - Encapsulate business logic that deals with domain objects, focus is business rules
+
+Application services - Logic concerning application workflow
+
+
+
+DotNet
+JsonProperty - deserialising/serialising json
+DDD
+
+including `[ApiController]` has the following advantages
+* parameters are inferred from request content type, simple type assumed to be from query string, complex type assumed from body
+* support multipart/form-data
+* Automatic model validation based on data annotations
+* Understanding stream reader
+* 
+
 
 

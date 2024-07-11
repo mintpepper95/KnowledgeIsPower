@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DotNet/Clean Architecture.md",
+                "file": "React/React-dev-learn/4. Escape Hatches.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -88,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "domain drive",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -105,8 +105,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -126,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DotNet/Clean Architecture.md",
+                "file": "React/React-dev-learn/4. Escape Hatches.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DotNet/Clean Architecture.md",
+                "file": "React/React-dev-learn/4. Escape Hatches.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DotNet/Clean Architecture.md"
+                "file": "React/React-dev-learn/4. Escape Hatches.md"
               }
             }
           }
@@ -189,12 +188,15 @@
   },
   "active": "76c43b8e085163cb",
   "lastOpenFiles": [
+    "React/React-dev-learn/3. Managing state.md",
+    "React/React-dev-learn/4. Escape Hatches.md",
+    "DotNet/Domain Driven Design - a way of building of microservice.md",
+    "DotNet/Domain Driven Design.md",
+    "DotNet/Clean Architecture.md",
     "DotNet/attachments/Pasted image 20240711191433.png",
     "DotNet/attachments/Pasted image 20240711191346.png",
     "DotNet/attachments/domain-driven-design-microservice 1.png",
     "DotNet/attachments/1_YVxaXqiIYskqPauNKZ2OSA.png",
-    "DotNet/Domain Driven Design - a way of building of microservice.md",
-    "DotNet/Clean Architecture.md",
     "DotNet/attachments/Pasted image 20240711185620.png",
     "DotNet/attachments/Pasted image 20240711185556.png",
     "DotNet/C_Sharp/LINQ fundamentals.md",
@@ -217,7 +219,6 @@
     "DotNet/Design patterns.md",
     "DotNet/Database stuffs.md",
     "DotNet/C_Sharp/Attributes.md",
-    "DotNet/ASP.NET/attachments/Pasted image 20240710124057.png",
     "DotNet/ASP.NET/attachments",
     "DotNet/ASP.NET",
     "DotNet/C_Sharp/EF Core.md",
@@ -225,11 +226,9 @@
     "Interface vs abstract class.md",
     "React/React-dev-learn/UseMemo and UseCallback.md",
     "Untitled.md",
-    "React/React-dev-learn/4. Escape Hatches.md",
     "React/React-dev-learn/Effect/5. Removing Effect dependencies.md",
     "React/React-dev-learn/Effect/4. Separating Events from Effects.md",
     "React/React-dev-learn/Effect/3. Lifecycle of Reactive Effects.md",
-    "React/React-dev-learn/Effect/2. No need Effect.md",
     "React/React-dev-learn/Effect",
     "Untitled",
     "Atlassian kit/attachments",
