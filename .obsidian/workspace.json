@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/React-dev-learn/4. Escape Hatches.md",
+                "file": "System design/Online bidding.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -125,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/React-dev-learn/4. Escape Hatches.md",
+                "file": "System design/Online bidding.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/React-dev-learn/4. Escape Hatches.md",
+                "file": "System design/Online bidding.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/React-dev-learn/4. Escape Hatches.md"
+                "file": "System design/Online bidding.md"
               }
             }
           }
@@ -188,8 +188,9 @@
   },
   "active": "76c43b8e085163cb",
   "lastOpenFiles": [
-    "React/React-dev-learn/3. Managing state.md",
     "React/React-dev-learn/4. Escape Hatches.md",
+    "System design/Online bidding.md",
+    "React/React-dev-learn/3. Managing state.md",
     "DotNet/Domain Driven Design - a way of building of microservice.md",
     "DotNet/Domain Driven Design.md",
     "DotNet/Clean Architecture.md",
@@ -228,7 +229,6 @@
     "Untitled.md",
     "React/React-dev-learn/Effect/5. Removing Effect dependencies.md",
     "React/React-dev-learn/Effect/4. Separating Events from Effects.md",
-    "React/React-dev-learn/Effect/3. Lifecycle of Reactive Effects.md",
     "React/React-dev-learn/Effect",
     "Untitled",
     "Atlassian kit/attachments",
