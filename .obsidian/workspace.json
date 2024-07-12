@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DotNet/Domain Driven Design In Practice.md",
+                "file": "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -125,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DotNet/Domain Driven Design In Practice.md",
+                "file": "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DotNet/Domain Driven Design In Practice.md",
+                "file": "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DotNet/Domain Driven Design In Practice.md"
+                "file": "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md"
               }
             }
           }
@@ -188,21 +188,23 @@
   },
   "active": "76c43b8e085163cb",
   "lastOpenFiles": [
-    "DotNet/attachments/Pasted image 20240712181928.png",
-    "DotNet/attachments/Pasted image 20240712181634.png",
-    "DotNet/attachments/Pasted image 20240712180715.png",
-    "DotNet/attachments/Pasted image 20240712180455.png",
-    "DotNet/attachments/Pasted image 20240712180421.png",
-    "DotNet/attachments/Pasted image 20240712180334.png",
-    "DotNet/attachments/Pasted image 20240712180324.png",
-    "DotNet/attachments/Pasted image 20240712175647.png",
-    "DotNet/attachments/Pasted image 20240712174048.png",
-    "DotNet/attachments/Pasted image 20240712173743.png",
-    "DotNet/attachments/Pasted image 20240712160414.png",
+    "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
+    "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
+    "DotNet/C_Sharp/C_Sharp courses",
+    "DotNet/Domain Driven Design In Practice.md",
+    "DotNet/attachments/Pasted image 20240713020109.png",
+    "DotNet/Domain Driven Design - a way of building of microservice.md",
+    "DotNet/attachments/Pasted image 20240713015412.png",
+    "DotNet/attachments/Pasted image 20240713015358.png",
+    "DotNet/attachments/Pasted image 20240713015206.png",
+    "DotNet/attachments/Pasted image 20240713015123.png",
+    "DotNet/attachments/Pasted image 20240713015046.png",
+    "DotNet/attachments/Pasted image 20240713015036.png",
+    "DotNet/attachments/Pasted image 20240713014410.png",
+    "DotNet/attachments/Pasted image 20240713012940.png",
+    "DotNet/attachments/Pasted image 20240713012814.png",
     "DotNet/Database stuffs.md",
     "DotNet/Design patterns.md",
-    "DotNet/Domain Driven Design - a way of building of microservice.md",
-    "DotNet/Domain Driven Design In Practice.md",
     "System design/Online bidding.md",
     "React/React-dev-learn/4. Escape Hatches.md",
     "React/React-dev-learn/3. Managing state.md",
@@ -228,12 +230,10 @@
     "Interface vs abstract class.md",
     "React/React-dev-learn/UseMemo and UseCallback.md",
     "Untitled.md",
-    "React/React-dev-learn/Effect/5. Removing Effect dependencies.md",
     "React/React-dev-learn/Effect",
     "Untitled",
     "Atlassian kit/attachments",
     "Javascript/Jest",
-    "Atlassian kit",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",

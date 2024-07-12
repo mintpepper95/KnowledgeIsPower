@@ -138,6 +138,142 @@ We can of course omit the `AggregateRoot` base if it's not needed in your domain
 Note here we mark Slots as protected as they should ideally not be directly accessible. 
 We can then have methods inside that class that extract info from Slots.
 
+ Note for our Slot class, we can extract Snack, Quantity and Price into a Value Object since these 3 are mostly used together
+Before
+![[Pasted image 20240713001653.png]]
+
+After
+![[Pasted image 20240713001810.png]]
+
+Our new Value Object SnackPile
+Note when we update - subtract, we create a new Value Object rather than update
+
+Quantity and Price can't be negative, Price can't be less than 1 cent, since we are using a decimal here.
+![[Pasted image 20240713002230.png]]
+
+
+#### Additional requirements
+Implementing missing requirement
+* inserted money is sufficient for buying a snack
+* Snack pile should not be empty when buying
+* Return the change - upon further analysis, this rule is more complex, in this case we want snack machine to maintain smaller denomination money as much as possible. Meaning that if a snack is $1, and user inserts, 4 * 25 cents AND $1, it should return $1. IE. It should return money with highest denomination
+* We shouldn't allow purchase if we don't have enough change inside machine to return
+
+To accommodate the new requirement, we just need to track how much Money user inserted, we don't care about the actual type, because we will return money with highest denomination.
+
+![[Pasted image 20240713003324.png]]
+
+### Repositories
+Domain model
+![[Pasted image 20240713004031.png]]
+
+Database
+![[Pasted image 20240713004139.png|500]]
+
+We use repositories to persisting our entities.
+There should be a repository per each aggregate.
+In our case, there should be two of them because we have two aggregates.
+SnackMachineRepository - so when we call the repo, it should include the slots as well
+SnackRepository
+
+#### Getting a sub entity
+So if we want a sub entity, like for example a particular Slot. we can implement a method in the SnackMachineRepository that returns the *snack machine holding that Slot*. Persistence of sub entities should also be behind the scene.
+
+### The second bounded context
+
+New Task - ATM machine
+This model allows user to withdraw cash with their bank cards
+
+* ATM should dispense cash
+* Charge from user bank card + fee
+* Track money charged
+
+Bounded contexts means separating the models into smaller pieces.
+They define the ubiquitous language, meaning the language only has to be consistent inside the same bounded context.
+
+Bounded context span across the entire onion architecture, meaning that we would want to define another project/microservice for another bounded context.
+
+We use a `context map` to map the connections between different bounded contexts.
+
+#### Bounded contexts vs subdomains
+Subdomain is a sub domain of the problem. It's usually defined not by devs, but rather domain experts.
+Bounded context is a sub context of the solution.
+Ideally they should be one to one.
+
+#### Context map
+
+![[Pasted image 20240713011502.png|500]]
+ATM and Snack machine shares Money.
+
+Code for business logics and utility shouldn't be reused in most case.
+
+If we do need to use it, eg. Money, we can extract to a shared kernel.
+
+The root aggregate, ATM, would look like this.
+![[Pasted image 20240713012814.png]]
+
+ATM table in the db would look like this
+
+![[Pasted image 20240713012940.png|400]]
+
+### Domain events
+
+Let's say now we want a new requirement, to track user payments and move money from snack machine to ATM.
+
+We need a new subdomain/bounded context. Let's call it management.
+
+Let's say the money charged from ATM goes to office bank account. And when we transfer money from snack machine to ATM, we don't do it directly, but move it to office bank account first and then send it to ATM.
+
+Our new updated context map
+
+![[Pasted image 20240713014410.png|500]]
+
+Let's introduce an `HeadOffice` entity.
+
+Domain event - Describe an event for our domain. They are used to de-couple bounded contexts.
+
+In this case, domain events will help ATM decouple from Management bounded context. Because sending money from ATM to HeadOffice should not be the responsibility of the ATM as it violates single responsibility.
+
+
+#### Handling domain events the classical way
+
+We define an `IDomainEvent` interface. 
+
+We define an `IHandler` interface that derives from a particular domain event.
+
+![[Pasted image 20240713015046.png]]
+
+Eg. Balance changed event.
+We need both the event and a handler.
+
+![[Pasted image 20240713015123.png|500]]
+
+Handler
+![[Pasted image 20240713015206.png|600]]
+
+To raise the events, we introduce a static `DomainEvents` class.
+![[Pasted image 20240713015358.png]]
+![[Pasted image 20240713015412.png]]
+This approach violates two principles
+* Layers in onion architecture should only know themselves and lower layer ones. Here ATM entity works with domain events that belongs at a higher level
+* Doesn't fit into Unit Of Work. We raise a domain event, and validates and saves to datatbase. But what if validation fails, domain event would be processed.
+
+
+#### A better approach to handling events
+Entities should be responsible for creating an event only, while delegating the raising to infrastructure.
+
+So our entities that inherits this AggregateRoot is no longer responsible for dispatching it, only creating it.
+
+### Further enhancements
+
+Factories - class for creating domain entities
+
+Domain services - containers for domain logic, process logic that doesn't belong to entities or value objects. 
+
+
+
+
+
 
 
 
