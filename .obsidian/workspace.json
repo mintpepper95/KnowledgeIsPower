@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
+                "file": "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -88,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "solid",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -105,11 +105,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "f9838370ded5a893",
@@ -125,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
+                "file": "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
+                "file": "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md"
+                "file": "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md"
               }
             }
           }
@@ -188,21 +190,23 @@
   },
   "active": "76c43b8e085163cb",
   "lastOpenFiles": [
-    "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
+    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713202449.png",
+    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713202407.png",
+    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713202347.png",
+    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713202319.png",
+    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713200744.png",
+    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713200114.png",
+    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713200013.png",
+    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713195935.png",
+    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713195146.png",
+    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713195045.png",
+    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713194939.png",
+    "DotNet/C_Sharp/C_Sharp courses/attachments",
     "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
+    "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
     "DotNet/C_Sharp/C_Sharp courses",
     "DotNet/Domain Driven Design In Practice.md",
-    "DotNet/attachments/Pasted image 20240713020109.png",
     "DotNet/Domain Driven Design - a way of building of microservice.md",
-    "DotNet/attachments/Pasted image 20240713015412.png",
-    "DotNet/attachments/Pasted image 20240713015358.png",
-    "DotNet/attachments/Pasted image 20240713015206.png",
-    "DotNet/attachments/Pasted image 20240713015123.png",
-    "DotNet/attachments/Pasted image 20240713015046.png",
-    "DotNet/attachments/Pasted image 20240713015036.png",
-    "DotNet/attachments/Pasted image 20240713014410.png",
-    "DotNet/attachments/Pasted image 20240713012940.png",
-    "DotNet/attachments/Pasted image 20240713012814.png",
     "DotNet/Database stuffs.md",
     "DotNet/Design patterns.md",
     "System design/Online bidding.md",
@@ -229,11 +233,9 @@
     "DotNet/C_Sharp/C_Sharp.md",
     "Interface vs abstract class.md",
     "React/React-dev-learn/UseMemo and UseCallback.md",
-    "Untitled.md",
     "React/React-dev-learn/Effect",
     "Untitled",
     "Atlassian kit/attachments",
-    "Javascript/Jest",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
