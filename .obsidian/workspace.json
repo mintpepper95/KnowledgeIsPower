@@ -21,6 +21,32 @@
             }
           },
           {
+            "id": "4fd71676b6707ae4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ac1e4ac93d3ad59c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "System design/Online bidding.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "48824dd90dbb135a",
             "type": "leaf",
             "state": {
@@ -59,7 +85,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -88,7 +115,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "system design",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -125,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
+                "file": "System design/Online bidding.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
+                "file": "System design/Online bidding.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +192,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md"
+                "file": "System design/Online bidding.md"
               }
             }
           }
@@ -186,12 +213,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "76c43b8e085163cb",
+  "active": "ac1e4ac93d3ad59c",
   "lastOpenFiles": [
+    "System design/The 3 step framework.md",
+    "DotNet/C_Sharp/C_Sharp courses/Reducing cognitive load.md",
+    "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
+    "WooliesX Csharp.md",
+    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240715141613.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240715102807.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240715102610.png",
     "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
-    "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713233220.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713232928.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713232900.png",
@@ -199,8 +230,6 @@
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713232343.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713232202.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713231921.png",
-    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713231803.png",
-    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713231632.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments",
     "DotNet/C_Sharp/C_Sharp courses",
     "DotNet/Domain Driven Design In Practice.md",
@@ -229,8 +258,6 @@
     "DotNet/ASP.NET",
     "DotNet/C_Sharp/EF Core.md",
     "DotNet/C_Sharp/C_Sharp.md",
-    "Interface vs abstract class.md",
-    "React/React-dev-learn/UseMemo and UseCallback.md",
     "React/React-dev-learn/Effect",
     "Untitled",
     "Atlassian kit/attachments",
