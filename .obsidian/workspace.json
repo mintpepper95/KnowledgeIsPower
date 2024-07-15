@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "dc2f0d708d1da9a7",
+        "id": "341b53fe5aadb2e1",
         "type": "tabs",
         "children": [
           {
-            "id": "b8abfdb99afc745d",
+            "id": "bbaff6a1ff6bd06a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "System design/Examples/Online bidding.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "System design/Examples/Online bidding.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "System design/Examples/Online bidding.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "System design/Examples/Online bidding.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -148,12 +139,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b8abfdb99afc745d",
+  "active": "bbaff6a1ff6bd06a",
   "lastOpenFiles": [
-    "System design/Front-end system design examples.md",
-    "System design/Scalability for dummies.md",
     "System design/Examples/attachments/excali1.excalidraw",
     "System design/Examples/Online bidding.md",
+    "System design/Front-end system design examples.md",
+    "System design/Scalability for dummies.md",
     "System design/Examples/attachments/excali1.svg",
     "System design/Examples/attachments",
     "System design/Online bidding.md",
