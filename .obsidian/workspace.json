@@ -11,8 +11,10 @@
             "id": "bbaff6a1ff6bd06a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "excalidraw",
+              "state": {
+                "file": "System design/Examples/attachments/excali1.excalidraw"
+              }
             }
           }
         ]
@@ -81,6 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "System design/Examples/attachments/excali1.excalidraw",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "System design/Examples/attachments/excali1.excalidraw",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +122,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "System design/Examples/attachments/excali1.excalidraw"
+              }
             }
           }
         ]
@@ -141,14 +147,16 @@
   },
   "active": "bbaff6a1ff6bd06a",
   "lastOpenFiles": [
-    "System design/Examples/attachments/excali1.excalidraw",
     "System design/Examples/Online bidding.md",
     "System design/Front-end system design examples.md",
+    "System design/Some additional notes.md",
+    "System design/attachments/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_loxqc71ei86bovy7bjis.avif",
+    "System design/attachments/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_hbtqnb9vajxpq8acbgx2.avif",
+    "System design/Examples/attachments/excali1.excalidraw",
     "System design/Scalability for dummies.md",
     "System design/Examples/attachments/excali1.svg",
     "System design/Examples/attachments",
     "System design/Online bidding.md",
-    "System design/Some additional notes.md",
     "System design/Examples",
     "System design/attachments/Pasted image 20240715224537.png",
     "System design/attachments/message-queue-as-load-balancer.png",
@@ -170,8 +178,6 @@
     "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
     "WooliesX Csharp.md",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240715141613.png",
-    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240715102807.png",
-    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240715102610.png",
     "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
     "DotNet/C_Sharp/C_Sharp courses/attachments",
     "DotNet/C_Sharp/C_Sharp courses",

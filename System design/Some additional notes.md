@@ -67,3 +67,10 @@ It's not good for real time communication because there is a potential delay bet
 ![[message-queue-as-load-balancer.png]]
 
 
+---
+
+API Gateway vs Load Balancer
+
+![[https___dev-to-uploads.s3.amazonaws.com_uploads_articles_hbtqnb9vajxpq8acbgx2.avif]]
+
+![[https___dev-to-uploads.s3.amazonaws.com_uploads_articles_loxqc71ei86bovy7bjis.avif]]
