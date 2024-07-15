@@ -16,3 +16,4 @@ Design a bidding system
 * High availability
 * High consistency - bidding part should be highly consistent. Bidders shouldn't be able to bid on un-available items. It's okay for new items to take some time before they become available for bidders.
 
+Talk about entities and API
