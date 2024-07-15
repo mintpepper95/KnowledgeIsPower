@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
+                "file": "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -88,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "solid",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -105,13 +105,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f9838370ded5a893",
@@ -127,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
+                "file": "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
+                "file": "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md"
+                "file": "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md"
               }
             }
           }
@@ -190,6 +188,10 @@
   },
   "active": "76c43b8e085163cb",
   "lastOpenFiles": [
+    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240715102807.png",
+    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240715102610.png",
+    "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
+    "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713233220.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713232928.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713232900.png",
@@ -199,11 +201,7 @@
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713231921.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713231803.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713231632.png",
-    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713231602.png",
-    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713231548.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments",
-    "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
-    "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
     "DotNet/C_Sharp/C_Sharp courses",
     "DotNet/Domain Driven Design In Practice.md",
     "DotNet/Domain Driven Design - a way of building of microservice.md",
