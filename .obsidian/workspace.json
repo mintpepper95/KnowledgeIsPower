@@ -4,37 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "07b764ac319cce8b",
+        "id": "dc2f0d708d1da9a7",
         "type": "tabs",
         "children": [
           {
-            "id": "061b69e1164b361b",
+            "id": "b8abfdb99afc745d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/Scalability for dummies.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5a96eef05cd35975",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "System design/Some additional notes.md",
+                "file": "System design/Examples/Online bidding.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "System design/Some additional notes.md",
+                "file": "System design/Examples/Online bidding.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "System design/Some additional notes.md",
+                "file": "System design/Examples/Online bidding.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "System design/Some additional notes.md"
+                "file": "System design/Examples/Online bidding.md"
               }
             }
           }
@@ -158,18 +144,24 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5a96eef05cd35975",
+  "active": "b8abfdb99afc745d",
   "lastOpenFiles": [
+    "System design/Front-end system design examples.md",
+    "System design/Scalability for dummies.md",
+    "System design/Examples/attachments/excali1.excalidraw",
+    "System design/Examples/Online bidding.md",
+    "System design/Examples/attachments/excali1.svg",
+    "System design/Examples/attachments",
+    "System design/Online bidding.md",
+    "System design/Some additional notes.md",
+    "System design/Examples",
     "System design/attachments/Pasted image 20240715224537.png",
     "System design/attachments/message-queue-as-load-balancer.png",
     "System design/attachments/https-api-gateway-load-balancer-service-registry.png",
-    "System design/Scalability for dummies.md",
-    "System design/Some additional notes.md",
-    "System design/Front-end system design examples.md",
-    "System design/Online bidding.md",
     "System design/The 12 technical concepts.md",
     "System design/The 3 step framework.md",
     "FrontEndInterviewPrep/Interviews/Facebook news feed.md",
@@ -190,8 +182,6 @@
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240715102807.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240715102610.png",
     "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
-    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713233220.png",
-    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713232928.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments",
     "DotNet/C_Sharp/C_Sharp courses",
     "DotNet/Domain Driven Design In Practice.md",
@@ -200,15 +190,11 @@
     "DotNet/Design patterns.md",
     "React/React-dev-learn/4. Escape Hatches.md",
     "React/React-dev-learn/3. Managing state.md",
-    "DotNet/Clean Architecture.md",
     "DotNet/EFCore/attachments",
     "DotNet/EFCore",
     "Untitled 1",
     "DotNet/ASP.NET/attachments",
     "DotNet/ASP.NET",
-    "React/React-dev-learn/Effect",
-    "Untitled",
-    "Atlassian kit/attachments",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
