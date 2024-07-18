@@ -15,5 +15,6 @@ BFS to find min # of moves
 This question is about finding the min height tree -> which is really about finding the longest path, we find the mid point in such paths by keep eliminating the leaves until there is only 1 or 2 nodes left
 [[310. Minimum Height Trees]]
 
-
+Really just a DFS algo with tracking root of the current traversal
+[[1110. Delete Nodes And Return Forest]]
 

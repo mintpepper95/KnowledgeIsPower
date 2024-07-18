@@ -4,16 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "341b53fe5aadb2e1",
+        "id": "491a5b972c203dbc",
         "type": "tabs",
         "children": [
           {
-            "id": "bbaff6a1ff6bd06a",
+            "id": "4172bd2450dd5473",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "System design/Examples/attachments/excali1.excalidraw"
+                "file": "Leetcode/Graph and Trees/Graph and Trees.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
@@ -83,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "System design/Examples/attachments/excali1.excalidraw",
+                "file": "Leetcode/Graph and Trees/Graph and Trees.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "System design/Examples/attachments/excali1.excalidraw",
+                "file": "Leetcode/Graph and Trees/Graph and Trees.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "System design/Examples/attachments/excali1.excalidraw"
+                "file": "Leetcode/Graph and Trees/Graph and Trees.md"
               }
             }
           }
@@ -145,14 +148,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "bbaff6a1ff6bd06a",
+  "active": "4172bd2450dd5473",
   "lastOpenFiles": [
+    "Leetcode/Graph and Trees/Problems/1110. Delete Nodes And Return Forest.md",
+    "Leetcode/Graph and Trees/Graph and Trees.md",
+    "System design/Examples/attachments/excali1.excalidraw",
     "System design/Examples/Online bidding.md",
     "System design/Front-end system design examples.md",
     "System design/Some additional notes.md",
     "System design/attachments/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_loxqc71ei86bovy7bjis.avif",
     "System design/attachments/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_hbtqnb9vajxpq8acbgx2.avif",
-    "System design/Examples/attachments/excali1.excalidraw",
     "System design/Scalability for dummies.md",
     "System design/Examples/attachments/excali1.svg",
     "System design/Examples/attachments",
@@ -186,7 +191,6 @@
     "DotNet/Database stuffs.md",
     "DotNet/Design patterns.md",
     "React/React-dev-learn/4. Escape Hatches.md",
-    "React/React-dev-learn/3. Managing state.md",
     "DotNet/EFCore/attachments",
     "DotNet/EFCore",
     "Untitled 1",
