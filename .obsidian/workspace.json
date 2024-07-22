@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DotNet/C_Sharp/1. C_Sharp Basics.md",
+                "file": "DotNet/C_Sharp/C_Sharp concepts/Generics.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "delegate",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,8 +66,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DotNet/C_Sharp/1. C_Sharp Basics.md",
+                "file": "DotNet/C_Sharp/C_Sharp concepts/Generics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DotNet/C_Sharp/1. C_Sharp Basics.md",
+                "file": "DotNet/C_Sharp/C_Sharp concepts/Generics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DotNet/C_Sharp/1. C_Sharp Basics.md"
+                "file": "DotNet/C_Sharp/C_Sharp concepts/Generics.md"
               }
             }
           }
@@ -149,11 +148,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "91d6b3a7f854a1fd",
+  "active": "6a5f6063dc952c9c",
   "lastOpenFiles": [
-    "DotNet/C_Sharp/Struct vs classes.md",
+    "DotNet/C_Sharp/C_Sharp concepts/Class, Partial classes, Static modifiers and Polymorphism.md",
+    "DotNet/C_Sharp/C_Sharp concepts/Static modifier.md",
+    "DotNet/C_Sharp/C_Sharp concepts/Generics.md",
+    "DotNet/C_Sharp/C_Sharp concepts/Properties over fields.md",
+    "DotNet/C_Sharp/C_Sharp concepts/readonly vs const.md",
+    "DotNet/C_Sharp/C_Sharp concepts/Pass by value vs Pass by ref.md",
+    "DotNet/C_Sharp/Threading.md",
     "DotNet/C_Sharp/1. C_Sharp Basics.md",
     "DotNet/C_Sharp/C_Sharp.md",
+    "DotNet/C_Sharp/Struct vs classes.md",
     "DotNet/C_Sharp/Ref vs Out.md",
     "DotNet/ASP.NET/ASP.NET Core Web API Deep dive.md",
     "DotNet/ASP.NET/Created vs CreatedAtAction vs CreatedAtRoute.md",
@@ -163,10 +169,6 @@
     "DotNet/ASP.NET/attachments/Pasted image 20240720002209.png",
     "DotNet/C_Sharp/C_Sharp courses/Reducing cognitive load.md",
     "DotNet/Clean Architecture.md",
-    "DotNet/C_Sharp/C_Sharp concepts/readonly vs const.md",
-    "DotNet/C_Sharp/C_Sharp concepts/Generics.md",
-    "DotNet/C_Sharp/C_Sharp concepts/Properties over fields.md",
-    "DotNet/C_Sharp/C_Sharp concepts/Pass by value vs Pass by ref.md",
     "DotNet/C_Sharp/C_Sharp concepts",
     "DotNet/C_Sharp/attachments/CSHARPDATATYPESCHART.png",
     "DotNet/C_Sharp/attachments/Pasted image 20240719222854.png",
@@ -181,10 +183,7 @@
     "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
     "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
     "Leetcode/Graph and Trees/Graph and Trees.md",
-    "Leetcode/Graph and Trees/Problems/1110. Delete Nodes And Return Forest.md",
     "System design/Examples/attachments/excali1.excalidraw",
-    "System design/Examples/Online bidding.md",
-    "System design/Front-end system design examples.md",
     "System design/attachments/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_loxqc71ei86bovy7bjis.avif",
     "System design/attachments/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_hbtqnb9vajxpq8acbgx2.avif",
     "System design/Examples/attachments/excali1.svg",

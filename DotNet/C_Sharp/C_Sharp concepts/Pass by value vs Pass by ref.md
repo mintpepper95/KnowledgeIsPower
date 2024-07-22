@@ -3,6 +3,8 @@ In this case, it means the reference itself is copied.
 So because the copied reference still points to the same object, hence we can modify it.
 However if we change the reference to point to a different object, original is not affected outside the function.
 
+To allow pass for reference, use `ref` or `out` keywords.
+
 ```cs
 public Book {
 	public string name;
@@ -24,3 +26,6 @@ public Book {
 }
 
 ```
+
+#### Out vs Ref
+Having `out` instead of `ref` on parameters allows you to pass variables not yet declared with values, however the function must assign those `out` parameters values otherwise error.
