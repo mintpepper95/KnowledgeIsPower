@@ -38,3 +38,24 @@ void change_name(Book b1) {
 
  * In method overloading (same method name different signature), methods can't be overloaded if one method takes an argument as ref, and another takes an argument as out. It's only possible when one method takes input with ref/out and the other takes input without ref/out.
 
+
+```cs
+exmaple usage of out
+static void readPerson(out string name, out int age) {
+	name = "Jackson";
+	age = 10;
+}
+
+// usage, here it reads the name and age and assign it to the passed in variables
+string initialName;
+int initialAge;
+readPerson(out initialName, out initialAge);
+
+
+// same as above even if we assign the variabnles initially
+string initialName = "Tom";
+int initialAge = 11;
+readPerson(out initialName, out initialAge);
+
+```
+

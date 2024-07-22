@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "491a5b972c203dbc",
+        "id": "602170084fecb4a6",
         "type": "tabs",
         "children": [
           {
-            "id": "4172bd2450dd5473",
+            "id": "6a5f6063dc952c9c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DotNet/ASP.NET/ASP.NET Core Web API Deep dive.md",
+                "file": "DotNet/C_Sharp/1. C_Sharp Basics.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "delegate",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,7 +66,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -86,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DotNet/ASP.NET/ASP.NET Core Web API Deep dive.md",
+                "file": "DotNet/C_Sharp/1. C_Sharp Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DotNet/ASP.NET/ASP.NET Core Web API Deep dive.md",
+                "file": "DotNet/C_Sharp/1. C_Sharp Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DotNet/ASP.NET/ASP.NET Core Web API Deep dive.md"
+                "file": "DotNet/C_Sharp/1. C_Sharp Basics.md"
               }
             }
           }
@@ -148,10 +149,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4172bd2450dd5473",
+  "active": "91d6b3a7f854a1fd",
   "lastOpenFiles": [
-    "DotNet/ASP.NET/Created vs CreatedAtAction vs CreatedAtRoute.md",
+    "DotNet/C_Sharp/Struct vs classes.md",
+    "DotNet/C_Sharp/1. C_Sharp Basics.md",
+    "DotNet/C_Sharp/C_Sharp.md",
+    "DotNet/C_Sharp/Ref vs Out.md",
     "DotNet/ASP.NET/ASP.NET Core Web API Deep dive.md",
+    "DotNet/ASP.NET/Created vs CreatedAtAction vs CreatedAtRoute.md",
     "DotNet/ASP.NET/pluralsight/ASP.NET Core Web API Best Practices.md",
     "DotNet/ASP.NET/ASP.NET.md",
     "DotNet/ASP.NET/pluralsight",
@@ -162,18 +167,14 @@
     "DotNet/C_Sharp/C_Sharp concepts/Generics.md",
     "DotNet/C_Sharp/C_Sharp concepts/Properties over fields.md",
     "DotNet/C_Sharp/C_Sharp concepts/Pass by value vs Pass by ref.md",
-    "DotNet/C_Sharp/1. C_Sharp Basics.md",
     "DotNet/C_Sharp/C_Sharp concepts",
     "DotNet/C_Sharp/attachments/CSHARPDATATYPESCHART.png",
     "DotNet/C_Sharp/attachments/Pasted image 20240719222854.png",
     "DotNet/C_Sharp/Attributes.md",
-    "DotNet/C_Sharp/C_Sharp.md",
     "DotNet/C_Sharp/LINQ fundamentals.md",
     "DotNet/C_Sharp/Namespace.md",
     "DotNet/C_Sharp/NET Framework vs NET Core.md",
     "DotNet/C_Sharp/Properties vs fields.md",
-    "DotNet/C_Sharp/Ref vs Out.md",
-    "DotNet/C_Sharp/Struct vs classes.md",
     "DotNet/C_Sharp/SOLID.md",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713190336.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713184706.png",
