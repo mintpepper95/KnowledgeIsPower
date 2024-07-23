@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DotNet/C_Sharp/C_Sharp courses/Untitled.md",
+                "file": "DotNet/C_Sharp/C_Sharp courses/3. LINQ.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DotNet/C_Sharp/C_Sharp courses/Untitled.md",
+                "file": "DotNet/C_Sharp/C_Sharp courses/3. LINQ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DotNet/C_Sharp/C_Sharp courses/Untitled.md",
+                "file": "DotNet/C_Sharp/C_Sharp courses/3. LINQ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DotNet/C_Sharp/C_Sharp courses/Untitled.md"
+                "file": "DotNet/C_Sharp/C_Sharp courses/3. LINQ.md"
               }
             }
           }
@@ -150,8 +150,9 @@
   },
   "active": "6a5f6063dc952c9c",
   "lastOpenFiles": [
+    "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
+    "DotNet/C_Sharp/C_Sharp courses/3. LINQ.md",
     "DotNet/C_Sharp/C_Sharp courses/Reducing cognitive load.md",
-    "DotNet/C_Sharp/C_Sharp courses/Untitled.md",
     "DotNet/C_Sharp/C_Sharp concepts/Async.md",
     "DotNet/C_Sharp/C_Sharp concepts/read vs const.md",
     "DotNet/C_Sharp/C_Sharp concepts/Delegates.md",
@@ -182,7 +183,6 @@
     "DotNet/C_Sharp/Attributes.md",
     "DotNet/C_Sharp/LINQ fundamentals.md",
     "DotNet/C_Sharp/Namespace.md",
-    "DotNet/C_Sharp/NET Framework vs NET Core.md",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713190336.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713184706.png",
     "System design/Examples/attachments/excali1.excalidraw",
