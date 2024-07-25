@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "clean arc",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f9838370ded5a893",
@@ -151,9 +150,10 @@
   },
   "active": "6a5f6063dc952c9c",
   "lastOpenFiles": [
+    "DotNet/Clean Architecture.md",
+    "DotNet/C_Sharp/C_Sharp courses/3. LINQ.md",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240724174242.png",
     "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
-    "DotNet/C_Sharp/C_Sharp courses/3. LINQ.md",
     "DotNet/C_Sharp/C_Sharp courses/Reducing cognitive load.md",
     "DotNet/C_Sharp/C_Sharp concepts/Async.md",
     "DotNet/C_Sharp/C_Sharp concepts/read vs const.md",
@@ -178,7 +178,6 @@
     "DotNet/ASP.NET/ASP.NET.md",
     "DotNet/ASP.NET/pluralsight",
     "DotNet/ASP.NET/attachments/Pasted image 20240720002209.png",
-    "DotNet/Clean Architecture.md",
     "DotNet/C_Sharp/C_Sharp concepts",
     "DotNet/C_Sharp/attachments/CSHARPDATATYPESCHART.png",
     "DotNet/C_Sharp/attachments/Pasted image 20240719222854.png",
@@ -192,7 +191,6 @@
     "System design/Examples/attachments/excali1.svg",
     "System design/Examples/attachments",
     "System design/Examples",
-    "System design/attachments/Pasted image 20240715224537.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments",
     "DotNet/C_Sharp/C_Sharp courses",
     "DotNet/EFCore/attachments",
