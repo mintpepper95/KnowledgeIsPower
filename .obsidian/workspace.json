@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WooliesX Csharp.md",
+                "file": "React/React-dev-learn/3. Managing state.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WooliesX Csharp.md",
+                "file": "React/React-dev-learn/3. Managing state.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WooliesX Csharp.md",
+                "file": "React/React-dev-learn/3. Managing state.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WooliesX Csharp.md"
+                "file": "React/React-dev-learn/3. Managing state.md"
               }
             }
           }
@@ -150,6 +150,16 @@
   },
   "active": "6a5f6063dc952c9c",
   "lastOpenFiles": [
+    "React/React-dev-learn/2. Adding Interactivity.md",
+    "React/React-dev-learn/3. Managing state.md",
+    "React/React-dev-learn/UseMemo and UseCallback.md",
+    "React/React-dev-learn/1. Describing the UI.md",
+    "React/React-dev-learn/Effect/2. No need Effect.md",
+    "React/React-dev-learn/Effect/1. Effect.md",
+    "React/React-dev-learn/Effect/5. Removing Effect dependencies.md",
+    "React/React-dev-learn/Effect/4. Separating Events from Effects.md",
+    "React/React-dev-learn/Effect/3. Lifecycle of Reactive Effects.md",
+    "WooliesX Csharp.md",
     "DotNet/C_Sharp/C_Sharp courses/3. LINQ.md",
     "DotNet/Clean Architecture.md",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240724174242.png",
@@ -169,20 +179,11 @@
     "DotNet/C_Sharp/C_Sharp concepts/readonly vs const.md",
     "DotNet/C_Sharp/C_Sharp concepts/Pass by value vs Pass by ref.md",
     "DotNet/C_Sharp/Threading.md",
-    "DotNet/C_Sharp/C_Sharp.md",
-    "DotNet/C_Sharp/Struct vs classes.md",
-    "DotNet/C_Sharp/Ref vs Out.md",
-    "DotNet/ASP.NET/ASP.NET Core Web API Deep dive.md",
-    "DotNet/ASP.NET/Created vs CreatedAtAction vs CreatedAtRoute.md",
-    "DotNet/ASP.NET/pluralsight/ASP.NET Core Web API Best Practices.md",
-    "DotNet/ASP.NET/ASP.NET.md",
     "DotNet/ASP.NET/pluralsight",
     "DotNet/ASP.NET/attachments/Pasted image 20240720002209.png",
     "DotNet/C_Sharp/C_Sharp concepts",
     "DotNet/C_Sharp/attachments/CSHARPDATATYPESCHART.png",
     "DotNet/C_Sharp/attachments/Pasted image 20240719222854.png",
-    "DotNet/C_Sharp/Attributes.md",
-    "DotNet/C_Sharp/LINQ fundamentals.md",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713190336.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713184706.png",
     "System design/Examples/attachments/excali1.excalidraw",
