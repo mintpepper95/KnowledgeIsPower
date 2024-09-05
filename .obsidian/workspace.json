@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "034b5b9f99f2eaba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DotNet/MongoDB/MongoDB with ASP.NET.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/React-dev-learn/3. Managing state.md",
+                "file": "DotNet/MongoDB/MongoDB with ASP.NET.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/React-dev-learn/3. Managing state.md",
+                "file": "DotNet/MongoDB/MongoDB with ASP.NET.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/React-dev-learn/3. Managing state.md"
+                "file": "DotNet/MongoDB/MongoDB with ASP.NET.md"
               }
             }
           }
@@ -148,8 +162,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6a5f6063dc952c9c",
+  "active": "034b5b9f99f2eaba",
   "lastOpenFiles": [
+    "DotNet/MongoDB/MongoDB with ASP.NET.md",
+    "DotNet/MongoDB",
     "React/React-dev-learn/2. Adding Interactivity.md",
     "React/React-dev-learn/3. Managing state.md",
     "React/React-dev-learn/UseMemo and UseCallback.md",
@@ -178,7 +194,6 @@
     "DotNet/C_Sharp/C_Sharp concepts/Static modifier.md",
     "DotNet/C_Sharp/C_Sharp concepts/readonly vs const.md",
     "DotNet/C_Sharp/C_Sharp concepts/Pass by value vs Pass by ref.md",
-    "DotNet/C_Sharp/Threading.md",
     "DotNet/ASP.NET/pluralsight",
     "DotNet/ASP.NET/attachments/Pasted image 20240720002209.png",
     "DotNet/C_Sharp/C_Sharp concepts",
@@ -195,7 +210,6 @@
     "DotNet/C_Sharp/C_Sharp courses/attachments",
     "DotNet/C_Sharp/C_Sharp courses",
     "DotNet/EFCore/attachments",
-    "DotNet/EFCore",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
