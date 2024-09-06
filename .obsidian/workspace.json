@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DotNet/MongoDB/MongoDB with ASP.NET.md",
+                "file": "Leetcode/Math/Math.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DotNet/MongoDB/MongoDB with ASP.NET.md",
+                "file": "Leetcode/Math/Math.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DotNet/MongoDB/MongoDB with ASP.NET.md",
+                "file": "Leetcode/Math/Math.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DotNet/MongoDB/MongoDB with ASP.NET.md"
+                "file": "Leetcode/Math/Math.md"
               }
             }
           }
@@ -164,6 +164,13 @@
   },
   "active": "034b5b9f99f2eaba",
   "lastOpenFiles": [
+    "Leetcode/Parenthesis/Parenthesis.md",
+    "Leetcode/Math/Math.md",
+    "Leetcode/Math/Problems/2028. Find Missing Observations.md",
+    "Leetcode/Linked List/Linked List.md",
+    "Leetcode/Topics.md",
+    "Leetcode/Math/Problems",
+    "Leetcode/Math",
     "DotNet/MongoDB/MongoDB with ASP.NET.md",
     "DotNet/MongoDB",
     "React/React-dev-learn/2. Adding Interactivity.md",
@@ -189,11 +196,6 @@
     "DotNet/C_Sharp/C_Sharp concepts/Exception Handling.md",
     "DotNet/C_Sharp/C_Sharp concepts/attachments/Pasted image 20240723022806.png",
     "DotNet/C_Sharp/C_Sharp concepts/attachments",
-    "DotNet/C_Sharp/C_Sharp concepts/Properties over fields.md",
-    "DotNet/C_Sharp/C_Sharp concepts/Generics.md",
-    "DotNet/C_Sharp/C_Sharp concepts/Static modifier.md",
-    "DotNet/C_Sharp/C_Sharp concepts/readonly vs const.md",
-    "DotNet/C_Sharp/C_Sharp concepts/Pass by value vs Pass by ref.md",
     "DotNet/ASP.NET/pluralsight",
     "DotNet/ASP.NET/attachments/Pasted image 20240720002209.png",
     "DotNet/C_Sharp/C_Sharp concepts",
@@ -208,8 +210,6 @@
     "System design/Examples/attachments",
     "System design/Examples",
     "DotNet/C_Sharp/C_Sharp courses/attachments",
-    "DotNet/C_Sharp/C_Sharp courses",
-    "DotNet/EFCore/attachments",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
