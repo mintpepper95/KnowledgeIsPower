@@ -41,16 +41,34 @@
             "id": "e3e356bbcfa0584f",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.7.4"
+                "file": "WooliesX Csharp.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Release Notes 1.7.4"
+              "title": "WooliesX Csharp"
+            }
+          },
+          {
+            "id": "990d5676050fee12",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Operation Health 2025.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Operation Health 2025"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -122,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/React-dev-learn/3. Managing state.md",
+                "file": "Operation Health 2025.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +150,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 3. Managing state"
+              "title": "Backlinks for Operation Health 2025"
             }
           },
           {
@@ -141,12 +159,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/React-dev-learn/3. Managing state.md",
+                "file": "Operation Health 2025.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 3. Managing state"
+              "title": "Outgoing links from Operation Health 2025"
             }
           },
           {
@@ -168,10 +186,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/React-dev-learn/3. Managing state.md"
+                "file": "Operation Health 2025.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 3. Managing state"
+              "title": "Outline of Operation Health 2025"
             }
           }
         ]
@@ -192,8 +210,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e3e356bbcfa0584f",
+  "active": "990d5676050fee12",
   "lastOpenFiles": [
+    "Operation Spark.md",
+    "Operation Health 2025.md",
+    "VSCode shortcuts.md",
+    "WooliesX Csharp.md",
     "Leetcode/Parenthesis/Parenthesis.md",
     "Leetcode/Math/Math.md",
     "Leetcode/Math/Problems/2028. Find Missing Observations.md",
@@ -212,7 +234,6 @@
     "React/React-dev-learn/Effect/5. Removing Effect dependencies.md",
     "React/React-dev-learn/Effect/4. Separating Events from Effects.md",
     "React/React-dev-learn/Effect/3. Lifecycle of Reactive Effects.md",
-    "WooliesX Csharp.md",
     "DotNet/C_Sharp/C_Sharp courses/3. LINQ.md",
     "DotNet/Clean Architecture.md",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240724174242.png",
@@ -221,9 +242,6 @@
     "DotNet/C_Sharp/C_Sharp concepts/Async.md",
     "DotNet/C_Sharp/C_Sharp concepts/read vs const.md",
     "DotNet/C_Sharp/C_Sharp concepts/Delegates.md",
-    "DotNet/C_Sharp/1. C_Sharp Basics.md",
-    "DotNet/C_Sharp/C_Sharp concepts/Class, Partial classes, Static modifiers and Polymorphism.md",
-    "DotNet/C_Sharp/C_Sharp concepts/Exception Handling.md",
     "DotNet/C_Sharp/C_Sharp concepts/attachments/Pasted image 20240723022806.png",
     "DotNet/C_Sharp/C_Sharp concepts/attachments",
     "DotNet/ASP.NET/pluralsight",
