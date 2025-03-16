@@ -13,13 +13,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/React-dev-learn/3. Managing state.md",
+                "file": "Javascript/Creating common html elements with JS/Basic HTML elements.md",
                 "mode": "source",
+                "source": false,
                 "backlinks": true,
-                "source": false
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
-              "title": "3. Managing state"
+              "title": "Basic HTML elements"
             }
           },
           {
@@ -58,7 +67,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Operation Health 2025.md",
+                "file": "Atlassian.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -73,23 +82,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Operation Health 2025"
-            }
-          },
-          {
-            "id": "08f1559b2056e98c",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.9"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.9"
+              "title": "Atlassian"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -121,7 +117,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "clean arc",
+                "query": "form ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -142,7 +138,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -232,11 +229,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "08f1559b2056e98c",
+  "active": "91d6b3a7f854a1fd",
   "lastOpenFiles": [
-    "Operation Spark.md",
-    "Operation Health 2025.md",
+    "Javascript/Javascript.md",
+    "Javascript/Basic data types.md",
+    "Javascript/Classes.md",
+    "Javascript/Creating common html elements with JS/Basic HTML elements.md",
+    "Javascript/Creating common html elements with JS/Drag and Drop.md",
+    "Javascript/Creating common html elements with JS/attachments/Pasted image 20240408220733.png",
+    "Javascript/JS Projects/Implement Load More button in JS.md",
+    "Javascript/JS Projects/Project lists.md",
+    "Javascript/JS Projects/Tic Tac Toe in React.md",
+    "React/React-dev-learn/3. Managing state.md",
+    "Atlassian.md",
     "VSCode shortcuts.md",
+    "Operation Health 2025.md",
+    "Operation Spark.md",
     "WooliesX Csharp.md",
     "Leetcode/Parenthesis/Parenthesis.md",
     "Leetcode/Math/Math.md",
@@ -248,22 +256,12 @@
     "DotNet/MongoDB/MongoDB with ASP.NET.md",
     "DotNet/MongoDB",
     "React/React-dev-learn/2. Adding Interactivity.md",
-    "React/React-dev-learn/3. Managing state.md",
     "React/React-dev-learn/UseMemo and UseCallback.md",
     "React/React-dev-learn/1. Describing the UI.md",
     "React/React-dev-learn/Effect/2. No need Effect.md",
     "React/React-dev-learn/Effect/1. Effect.md",
     "React/React-dev-learn/Effect/5. Removing Effect dependencies.md",
-    "React/React-dev-learn/Effect/4. Separating Events from Effects.md",
-    "React/React-dev-learn/Effect/3. Lifecycle of Reactive Effects.md",
-    "DotNet/C_Sharp/C_Sharp courses/3. LINQ.md",
-    "DotNet/Clean Architecture.md",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240724174242.png",
-    "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
-    "DotNet/C_Sharp/C_Sharp courses/Reducing cognitive load.md",
-    "DotNet/C_Sharp/C_Sharp concepts/Async.md",
-    "DotNet/C_Sharp/C_Sharp concepts/read vs const.md",
-    "DotNet/C_Sharp/C_Sharp concepts/Delegates.md",
     "DotNet/C_Sharp/C_Sharp concepts/attachments/Pasted image 20240723022806.png",
     "DotNet/C_Sharp/C_Sharp concepts/attachments",
     "DotNet/ASP.NET/pluralsight",
@@ -276,7 +274,6 @@
     "System design/Examples/attachments/excali1.excalidraw",
     "System design/attachments/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_loxqc71ei86bovy7bjis.avif",
     "System design/attachments/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_hbtqnb9vajxpq8acbgx2.avif",
-    "System design/Examples/attachments/excali1.svg",
     "System design/Examples/attachments",
     "System design/Examples",
     "DotNet/C_Sharp/C_Sharp courses/attachments",

@@ -160,9 +160,8 @@ let remain_time_in_seconds = remain_time_in_milliseconds / 1000;
 
 let minutes = Math.floor(remain_time_in_seconds / 60);
 let seconds = Math.floor(remain_time_in_seconds % 60);
-
-
-
-
-
 ```
+
+
+
+### Forms and selecting forms

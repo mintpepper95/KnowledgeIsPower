@@ -371,3 +371,20 @@ tell me a complex project you have managed
 
 
 
+What is the difference between script, script async and script defer
+
+script is the default that block the HTML until script loads, script async load in the background while HTML is parsing, as soon the script loads, it get executed while pausing the HTML meanwhile. the script defer, script load in the BG while the HTML is parsing, the script get executed after the HTML is fully loaded
+
+
+
+
+### Building a interactive JIRA velocity bar chart
+
+https://www.youtube.com/watch?v=-wow5ApdZ0Y
+
+### 
+
+
+
+
+
