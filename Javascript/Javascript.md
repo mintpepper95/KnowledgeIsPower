@@ -35,7 +35,7 @@ Browser stuff
 ##### Converting between different primitive types
 ```ts
 // string to number
-let s = Number('123'); // 123
+let s = Number('123'); // 123, if pass other than number then NaN
 let s2 = parseInt('123px'); // 12
 
 // number to string
@@ -145,7 +145,8 @@ let doublePrices = Object.fromEntries(
     // .entries() convert to array first
     // use array methods on that array, eg. map
     // use Object.fromEntries(array) on resulting array to turn it back to object
-    Object.entries(prices).map( (key, value) => [key, value * 2])
+    // note destructure correct;y with square brackets
+    Object.entries(prices).map(([key, value]) => [key, value * 2])
 );
 
 ```

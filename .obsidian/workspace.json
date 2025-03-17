@@ -8,67 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6a5f6063dc952c9c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Javascript/Creating common html elements with JS/Basic HTML elements.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Basic HTML elements"
-            }
-          },
-          {
-            "id": "034b5b9f99f2eaba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Leetcode/Math/Math.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Math"
-            }
-          },
-          {
-            "id": "e3e356bbcfa0584f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WooliesX Csharp.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "WooliesX Csharp"
-            }
-          },
-          {
             "id": "990d5676050fee12",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Atlassian.md",
-                "mode": "source",
+                "file": "Javascript/Radios.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -82,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Atlassian"
+              "title": "Radios"
             }
           }
         ]
@@ -117,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "form ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -138,8 +84,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -229,38 +174,39 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "91d6b3a7f854a1fd",
+  "active": "990d5676050fee12",
   "lastOpenFiles": [
+    "Javascript/Prototype.md",
+    "Javascript/Promise.md",
+    "Javascript/Objects.md",
+    "Javascript/Let vs const vs var.md",
     "Javascript/Javascript.md",
-    "Javascript/Basic data types.md",
-    "Javascript/Classes.md",
-    "Javascript/Creating common html elements with JS/Basic HTML elements.md",
-    "Javascript/Creating common html elements with JS/Drag and Drop.md",
-    "Javascript/Creating common html elements with JS/attachments/Pasted image 20240408220733.png",
-    "Javascript/JS Projects/Implement Load More button in JS.md",
-    "Javascript/JS Projects/Project lists.md",
-    "Javascript/JS Projects/Tic Tac Toe in React.md",
-    "React/React-dev-learn/3. Managing state.md",
+    "Javascript/Hoisting.md",
+    "Javascript/Handwriting promise.md",
+    "Javascript/Generators.md",
+    "Javascript/How are methods implemented for primitives.md",
+    "Javascript/What happens when you type a URL into the browser.md",
+    "Javascript/Untitled.md",
     "Atlassian.md",
-    "VSCode shortcuts.md",
+    "FunctionKind.md",
+    "Interface vs abstract class.md",
     "Operation Health 2025.md",
     "Operation Spark.md",
+    "VSCode shortcuts.md",
     "WooliesX Csharp.md",
-    "Leetcode/Parenthesis/Parenthesis.md",
-    "Leetcode/Math/Math.md",
-    "Leetcode/Math/Problems/2028. Find Missing Observations.md",
-    "Leetcode/Linked List/Linked List.md",
-    "Leetcode/Topics.md",
+    "TTD.md",
+    "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
+    "Javascript/Async and Await.md",
+    "Javascript/Basic data types.md",
+    "Javascript/'this' keyword and call(), apply(), bind().md",
+    "Javascript/Creating common html elements with JS/Drag and Drop.md",
+    "Javascript/Creating common html elements with JS/Basic HTML elements.md",
+    "Javascript/Closure.md",
+    "Javascript/Classes.md",
+    "Javascript/Creating common html elements with JS/attachments/Pasted image 20240408220733.png",
     "Leetcode/Math/Problems",
     "Leetcode/Math",
-    "DotNet/MongoDB/MongoDB with ASP.NET.md",
     "DotNet/MongoDB",
-    "React/React-dev-learn/2. Adding Interactivity.md",
-    "React/React-dev-learn/UseMemo and UseCallback.md",
-    "React/React-dev-learn/1. Describing the UI.md",
-    "React/React-dev-learn/Effect/2. No need Effect.md",
-    "React/React-dev-learn/Effect/1. Effect.md",
-    "React/React-dev-learn/Effect/5. Removing Effect dependencies.md",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240724174242.png",
     "DotNet/C_Sharp/C_Sharp concepts/attachments/Pasted image 20240723022806.png",
     "DotNet/C_Sharp/C_Sharp concepts/attachments",
@@ -273,7 +219,6 @@
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713184706.png",
     "System design/Examples/attachments/excali1.excalidraw",
     "System design/attachments/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_loxqc71ei86bovy7bjis.avif",
-    "System design/attachments/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_hbtqnb9vajxpq8acbgx2.avif",
     "System design/Examples/attachments",
     "System design/Examples",
     "DotNet/C_Sharp/C_Sharp courses/attachments",
