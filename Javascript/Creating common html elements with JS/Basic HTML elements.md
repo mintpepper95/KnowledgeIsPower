@@ -5,6 +5,7 @@
 ![[Pasted image 20240408220733.png]]
 
 ```html
+// 'for' in label is used together with 'id' in select/input
 <label for="cars">Choose a car:</label>
  <!-- select takes a list of options -->
   <select id="selection" name="cars" id="cars">
