@@ -222,3 +222,53 @@ set.values() // same as set.keys(), for compatibility with Map
 set.entries() // returns entries [value, value], for compatibility with Map
 
 ```
+
+##### Radios
+
+Creating a basic set of radios, they must have same name if you want to define a radio group, where you can only select one radio from a group.
+
+The id of radio is used by label to associate labels with radio buttons.
+
+If we omit value for radios, then when submitting form data, the value `on` is assigned.
+
+Note we have a default checked state, to select a radio button by default.
+
+```html
+     <div>
+      <input type="radio" name='shoes' id ='adidass' value='adidas' checked />
+      <label for="adidass">Adidas shoes</label>
+
+      <input type="radio" name='shoes' id='nike' value='nike'>
+      <label for="nike">Nike shoes</label>
+
+      <input type="radio" name='shoes' id="puma" value="puma">
+      <label for="puma">Puma shoes</label>
+     </div>
+```
+
+###### Select radio using query selector
+
+For a radio group, if we want to add same event listeners to all of them. We can achieve this with `querySelectorAll` then `forEach`
+
+To manually reset radio group, we can loop through all the radios, and set `checked` to false. Or just reset entire form if it's in a form.
+
+```js
+// getting radio group
+let radios = document.querySelectorAll('input[type="radio"][name="shoes"]);
+
+radios.forEach(radio => {
+  radio.addEventListener("change", (ev) => {
+	  // with change, ev.target.checked will always be true since 'change' only fires when new selection is made
+    if (ev.target.value === "nike") {
+      console.log("nike is selected");
+    } else {
+      console.log("nike is de-selected");
+    }
+  });
+});
+
+
+// advanced query selector
+// grabs all inputs, ":not()" excludes checkbox type inputs
+document.querySelectorAll('input:not([type="checkbox"])');
+```

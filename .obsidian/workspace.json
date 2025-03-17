@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript/Radios.md",
-                "mode": "preview",
+                "file": "Javascript/Atlassian HTML.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -28,7 +28,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Radios"
+              "title": "Atlassian HTML"
+            }
+          },
+          {
+            "id": "cb607a10a56bb6b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Javascript/Javascript.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Javascript"
             }
           }
         ]
@@ -176,11 +200,12 @@
   },
   "active": "990d5676050fee12",
   "lastOpenFiles": [
+    "Javascript/Javascript.md",
+    "Javascript/Atlassian HTML.md",
     "Javascript/Prototype.md",
     "Javascript/Promise.md",
     "Javascript/Objects.md",
     "Javascript/Let vs const vs var.md",
-    "Javascript/Javascript.md",
     "Javascript/Hoisting.md",
     "Javascript/Handwriting promise.md",
     "Javascript/Generators.md",
@@ -202,7 +227,6 @@
     "Javascript/Creating common html elements with JS/Drag and Drop.md",
     "Javascript/Creating common html elements with JS/Basic HTML elements.md",
     "Javascript/Closure.md",
-    "Javascript/Classes.md",
     "Javascript/Creating common html elements with JS/attachments/Pasted image 20240408220733.png",
     "Leetcode/Math/Problems",
     "Leetcode/Math",

@@ -1,19 +1,4 @@
-```html
-<div class="input-container">
-        <label>I Have Passive Income</label>
-        <input type="radio" name="passiveIncome">
-</div>
 
-<div class="input-container">
-        <label>I Don't Have Passive Income</label>
-        <input type="radio" name="passiveIncome">
-</div>
-
-
-// update radio button
-      
-
-```
 
 
 ```
