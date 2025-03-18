@@ -246,6 +246,21 @@ Note we have a default checked state, to select a radio button by default.
      </div>
 ```
 
+Another example with checkbox
+```js
+// note label.for and input.id is same, linked, clicking on label will toggle checkbox
+<label for='bool'>Please accept this</label>
+<input id='bool' type='checkbox'>
+
+
+
+let checkbox = document.querySelector('input[type="checkbox"][id="bool"]');
+
+// add event listener
+checkbox.addEventListener("change", (ev) => {
+  console.log(ev.target.checked);
+});
+```
 ###### Select radio using query selector
 
 For a radio group, if we want to add same event listeners to all of them. We can achieve this with `querySelectorAll` then `forEach`
@@ -271,6 +286,12 @@ radios.forEach(radio => {
 // query selector using 'not'
 // grabs all inputs, ":not()" excludes checkbox type inputs
 document.querySelectorAll('input:not([type="checkbox"])');
+
+
+// css query, grav all number class elments during hover, exclude ones with 'active' class
+.number:hover:not(.active) {
+  background-color: cornflowerblue;
+}
 ```
 
 
@@ -316,4 +337,8 @@ sampleInput.style.visibility = 'hidden';   
 
 // use textContent when you are trying to alter text, use innerText for grabbing text
 sampleInput.parentElement.innerText = 'updated';
+
+
+
+
 ```
