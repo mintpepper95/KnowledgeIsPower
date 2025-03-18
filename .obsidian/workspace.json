@@ -55,7 +55,8 @@
               "title": "Javascript"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -87,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "classList",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -108,7 +109,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -198,10 +200,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "990d5676050fee12",
+  "active": "cb607a10a56bb6b8",
   "lastOpenFiles": [
-    "Javascript/Javascript.md",
     "Javascript/Atlassian HTML.md",
+    "Javascript/Javascript.md",
     "Javascript/Prototype.md",
     "Javascript/Promise.md",
     "Javascript/Objects.md",

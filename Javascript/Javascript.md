@@ -272,3 +272,34 @@ radios.forEach(radio => {
 // grabs all inputs, ":not()" excludes checkbox type inputs
 document.querySelectorAll('input:not([type="checkbox"])');
 ```
+
+
+##### classList
+Allows you to add and remove classes on elements
+
+`classList` is more more flexibility than `className`, `className` will treat the class as an string whereas `classList` allows you to modify individual classes.
+```js
+// Recall .class to select based on class, #id to select based on id
+const div = document.querySelector('div');
+
+// add a class
+div.classList.add('highlight');
+
+// remove a class
+div.classList.remove('hidden');
+
+// toggle a calss
+div.classList.toggle('dark-mode');
+
+
+
+// Input stuff
+const sampleInput = document.querySelector('#ln');
+
+// disabling
+sampleInput.disabled = true;
+
+// focusing
+sampleInput.focus = true;
+
+```
