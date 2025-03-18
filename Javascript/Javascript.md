@@ -268,7 +268,7 @@ radios.forEach(radio => {
 });
 
 
-// advanced query selector
+// query selector using 'not'
 // grabs all inputs, ":not()" excludes checkbox type inputs
 document.querySelectorAll('input:not([type="checkbox"])');
 ```
@@ -302,4 +302,18 @@ sampleInput.disabled = true;
 // focusing
 sampleInput.focus = true;
 
+// accessing parent element, null if node has no parent
+sampleInput.parentElement.classList.add('invalid');
+
+// accessing style
+sampleInput.parentElement.style.color = 'red';
+
+// visiblity
+sampleInput.style.visibility = 'hidden';   
+
+// updating text
+// in most cases, use textContent as it's faster, innerText retrieves only visible text, textContent retrieves all texts, whether text is rendered or not (text maybe not rendered due to display: hidden)
+
+// use textContent when you are trying to alter text, use innerText for grabbing text
+sampleInput.parentElement.innerText = 'updated';
 ```

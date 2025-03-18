@@ -1,4 +1,23 @@
+Creating a basic set of radios, they must have same name if you want to define a radio group, where you can only select one radio from a group.
 
+The id of radio is used by label to associate labels with radio buttons.
+
+If we omit value for radios, then when submitting form data, the value `on` is assigned.
+
+Note we have a default checked state, to select a radio button by default.
+
+```html
+     <div>
+      <input type="radio" name='shoes' id ='adidass' value='adidas' checked />
+      <label for="adidass">Adidas shoes</label>
+
+      <input type="radio" name='shoes' id='nike' value='nike'>
+      <label for="nike">Nike shoes</label>
+
+      <input type="radio" name='shoes' id="puma" value="puma">
+      <label for="puma">Puma shoes</label>
+     </div>
+```
 
 
 ```
@@ -81,7 +100,6 @@ function isValid(value) {
   if (!(/^[a-z0-9]+$/i).test(value)) {
 
     return false;
-
   }
 
   if (value.length > 10 || value.length < 3) {
