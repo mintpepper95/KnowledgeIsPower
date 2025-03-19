@@ -185,13 +185,13 @@ for (let [key, value] of count) {
 count.forEach((value, key) => console.log(key, value));
 
 
-// We can't use Object as a key for an Object, fine for Map.
+// We can't use Object as a key for an Object, only primitive values, fine for Map.
 let john = { name: 'john' };
 let ben = { name: 'ben' };
 let obj = {};
 
 obj[ben] = 123;
-obj[john] = 234; // ben object also gets replaced
+obj[john] = 234; // ben object also gets replaced, because key is string due to coercion when we set the keys, "[object Object]"
 ```
 
 

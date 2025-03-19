@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript/Equality in JS.md",
+                "file": "Javascript/Atlassian HTML.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Equality in JS"
+              "title": "Atlassian HTML"
             }
           },
           {
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript/Javascript.md",
+                "file": "Javascript/What happens when you type a URL into the browser.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,10 +52,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Javascript"
+              "title": "What happens when you type a URL into the browser"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -87,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "type coer",
+                "query": "select",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -108,8 +109,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -199,35 +199,36 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "990d5676050fee12",
+  "active": "cb607a10a56bb6b8",
   "lastOpenFiles": [
-    "Javascript/Atlassian HTML.md",
-    "Javascript/Javascript.md",
+    "Javascript/setTimeout and setInterval.md",
+    "Javascript/Untitled.md",
+    "Javascript/Classes.md",
+    "Javascript/Generators.md",
     "Javascript/Prototype.md",
     "Javascript/Promise.md",
     "Javascript/Objects.md",
     "Javascript/Let vs const vs var.md",
+    "Javascript/Javascript.md",
+    "Javascript/How are methods implemented for primitives.md",
     "Javascript/Hoisting.md",
     "Javascript/Handwriting promise.md",
-    "Javascript/Generators.md",
-    "Javascript/How are methods implemented for primitives.md",
-    "Javascript/What happens when you type a URL into the browser.md",
-    "Javascript/Untitled.md",
+    "Javascript/for...in vs for...of vs forEach().md",
+    "Javascript/Event loop.md",
+    "Javascript/Error handling.md",
+    "Javascript/Equality in JS.md",
+    "Javascript/Default vs named export.md",
+    "Javascript/Closure.md",
+    "Javascript/Basic data types.md",
+    "Javascript/Atlassian HTML.md",
     "Atlassian.md",
+    "Javascript/attachments/Pasted image 20250320004226.png",
+    "FrontEndInterviewPrep/Interviews/Facebook news feed.md",
+    "Javascript/What happens when you type a URL into the browser.md",
     "FunctionKind.md",
     "Interface vs abstract class.md",
     "Operation Health 2025.md",
-    "Operation Spark.md",
-    "VSCode shortcuts.md",
-    "WooliesX Csharp.md",
-    "TTD.md",
     "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
-    "Javascript/Async and Await.md",
-    "Javascript/Basic data types.md",
-    "Javascript/'this' keyword and call(), apply(), bind().md",
-    "Javascript/Creating common html elements with JS/Drag and Drop.md",
-    "Javascript/Creating common html elements with JS/Basic HTML elements.md",
-    "Javascript/Closure.md",
     "Javascript/Creating common html elements with JS/attachments/Pasted image 20240408220733.png",
     "Leetcode/Math/Problems",
     "Leetcode/Math",
@@ -243,7 +244,6 @@
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713190336.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713184706.png",
     "System design/Examples/attachments/excali1.excalidraw",
-    "System design/attachments/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_loxqc71ei86bovy7bjis.avif",
     "System design/Examples/attachments",
     "System design/Examples",
     "DotNet/C_Sharp/C_Sharp courses/attachments",

@@ -24,3 +24,5 @@ Any falsy values such `0`, `undefined`, `null`, `NaN`  becomes false when casted
 2. If one operand is an object and the other is a primitive (like a number or string), JavaScript will attempt to call the `valueOf()` or `toString()` methods of the object to convert it to a primitive value.
     
 3. If both operands are objects (or arrays), JavaScript will compare their references, not their contents.
+
+
