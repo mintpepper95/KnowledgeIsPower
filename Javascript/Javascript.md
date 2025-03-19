@@ -339,6 +339,10 @@ sampleInput.style.visibility = 'hidden';   
 sampleInput.parentElement.innerText = 'updated';
 
 
+// hide and show elements
+sampleInput.style.display = "block";
+
+sampleInput.style.display = "none";
 
 
 ```

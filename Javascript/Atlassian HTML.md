@@ -47,6 +47,9 @@ We identified the following issues that need fixing:
 
 */
 
+
+use hidden
+
   
 
 const isEmployed = document.querySelector("input[type=checkbox]");
