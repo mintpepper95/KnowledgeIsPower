@@ -282,7 +282,12 @@ undefined + 12 // NaN
 
 
 
-// cors in fetch  
+// cors in fetch
+
+
+
+
+// closure
 
 
 

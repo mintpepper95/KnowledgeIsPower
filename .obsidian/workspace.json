@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript/Atlassian HTML.md",
+                "file": "Javascript/Equality in JS.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Atlassian HTML"
+              "title": "Equality in JS"
             }
           },
           {
@@ -87,7 +87,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dummy",
+                "query": "type coer",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -201,8 +201,8 @@
   },
   "active": "990d5676050fee12",
   "lastOpenFiles": [
-    "Javascript/Javascript.md",
     "Javascript/Atlassian HTML.md",
+    "Javascript/Javascript.md",
     "Javascript/Prototype.md",
     "Javascript/Promise.md",
     "Javascript/Objects.md",
