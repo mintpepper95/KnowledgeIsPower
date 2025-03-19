@@ -251,3 +251,40 @@ button.addEventListener('click', fetchTodos);
 
 */
 ```
+
+
+
+
+### hacky js stuff
+```js
+// hacky stuff
+[1] > true, array [1] gets converted to a primitive string, but since '>' requires numbers, it gets converted to a numeric 1, 1 > true, true is also 1, so 1 > 1 means false
+
+
+
+
+// also fine to have things like
+true ++ 12 // invalid
+true + +12 // valid
+
+
+
+
+[] + 12 // "12"
+
+
+undefined + 12 // NaN
+
+
+"number" + 15 + 3 // "number153"
+
+
+
+
+
+// cors in fetch  
+
+
+
+
+```

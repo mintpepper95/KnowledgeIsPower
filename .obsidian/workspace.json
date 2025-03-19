@@ -55,8 +55,7 @@
               "title": "Javascript"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -200,10 +199,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cb607a10a56bb6b8",
+  "active": "990d5676050fee12",
   "lastOpenFiles": [
-    "Javascript/Atlassian HTML.md",
     "Javascript/Javascript.md",
+    "Javascript/Atlassian HTML.md",
     "Javascript/Prototype.md",
     "Javascript/Promise.md",
     "Javascript/Objects.md",
