@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript/What happens when you type a URL into the browser.md",
+                "file": "Javascript/Classes.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "What happens when you type a URL into the browser"
+              "title": "Classes"
             }
           }
         ],
@@ -88,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "select",
+                "query": "getOwnPropertyNames",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,7 +109,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -199,35 +200,35 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cb607a10a56bb6b8",
+  "active": "91d6b3a7f854a1fd",
   "lastOpenFiles": [
+    "Javascript/Atlassian HTML.md",
+    "Javascript/Async and Await.md",
+    "Javascript/Basic data types.md",
+    "Javascript/Handwriting promise.md",
+    "Javascript/Hoisting.md",
+    "Javascript/How are methods implemented for primitives.md",
+    "Javascript/Javascript.md",
+    "Javascript/Classes.md",
+    "Javascript/What happens when you type a URL into the browser.md",
     "Javascript/setTimeout and setInterval.md",
     "Javascript/Untitled.md",
-    "Javascript/Classes.md",
     "Javascript/Generators.md",
     "Javascript/Prototype.md",
     "Javascript/Promise.md",
     "Javascript/Objects.md",
     "Javascript/Let vs const vs var.md",
-    "Javascript/Javascript.md",
-    "Javascript/How are methods implemented for primitives.md",
-    "Javascript/Hoisting.md",
-    "Javascript/Handwriting promise.md",
     "Javascript/for...in vs for...of vs forEach().md",
     "Javascript/Event loop.md",
     "Javascript/Error handling.md",
     "Javascript/Equality in JS.md",
     "Javascript/Default vs named export.md",
     "Javascript/Closure.md",
-    "Javascript/Basic data types.md",
-    "Javascript/Atlassian HTML.md",
     "Atlassian.md",
     "Javascript/attachments/Pasted image 20250320004226.png",
     "FrontEndInterviewPrep/Interviews/Facebook news feed.md",
-    "Javascript/What happens when you type a URL into the browser.md",
     "FunctionKind.md",
     "Interface vs abstract class.md",
-    "Operation Health 2025.md",
     "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
     "Javascript/Creating common html elements with JS/attachments/Pasted image 20240408220733.png",
     "Leetcode/Math/Problems",

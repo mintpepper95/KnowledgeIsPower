@@ -31,12 +31,15 @@ class User {
 alert(typeof User); // function
 
 // Or more precisely, the constructor method
+// Constructor is used to create instances of User
+// while User.constructor will refer to the 
 alert(User === User.prototype.constructor); // true
 
 // The methods are in User.prototype, e.g:
 alert(User.prototype.sayHi); // alert(this.name);
 
 // there are exactly two methods in the prototype
+// `getOwnPropertyNames` returns all properties of object, while Object.keys() returns only the enumerable ones
 alert(Object.getOwnPropertyNames(User.prototype)); // constructor, sayHi
 ```
 
