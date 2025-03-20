@@ -9,11 +9,7 @@ A user class creates a function named User, and stores its methods, getters, set
 
 ```ts
 // You need to use the 'this' keyword inside the method, unlike C# which you don't
-class Book {  
-	 author;  
-	 title;  
-	 readCount;
-	 
+class Book {
 	 constructor(author, title) {  
 	   this.author = author;  
 	   this.title = title;  
@@ -23,8 +19,13 @@ class Book {
  
 
 class User {
-    constructor(name) { this.name = name; }
-    sayHi() { alert(this.name); }
+    constructor(name) { 
+	    this.name = name; 
+	}
+    
+    sayHi() { // in js classes, methods don't require 'function' keyword
+	    alert(this.name); 
+	}
 }
 
 // Class is a function
@@ -64,11 +65,11 @@ let user = new User("John");
 user.sayHi();
 ```
 There are some differences
-1. A function created by 'class' is labelled by a special internal property `FunctionKind:classConstructor`. JS check for this property in several places. Unlike a regular function, it must be called with new.
+1. A function created by 'class' is labelled by a special internal property `FunctionKind:classConstructor`. JS check for this property in several places. Unlike a regular function, it must be called with new or else `TypeError`. For functions, if we call without `new` keyword, there won't be values returned.
 
-3. Class methods are non-enumerable. The enumerable flag is set to false for all methods in the 'prototype'. Meaning for…in over an object won't get us the class methods.
+2. Class methods are non-enumerable. The enumerable flag is set to false for all methods in the `prototype` property. Meaning for…in over an object won't get us the class methods.
 
-5. Classes always use strict, all code inside class construct is auto in strict mode.
+3. Classes always use strict, all code inside class construct is auto in strict mode.
 
 
 We can assign class to variables and return class.
@@ -97,7 +98,7 @@ let r = new ReturnedClass()
 
 #### Class inheritance and prototype
 ![[Pasted image 20240327200231.png]]
-We can see that class fields are set on individual objects, not in the prototype`
+We can see that instance fields are set on individual objects, not in the prototype. Only class fields are in the prototype.
 ```ts
 class User {
     name = "John";
@@ -110,11 +111,17 @@ alert(User.prototype.name); // undefined
 
 
 ![[Pasted image 20240327200651.png|600]]
-A derived class such as Rabbit will have access to all methods in Animal. The `extends` keyword set `Rabbit.prototype.[[Prototype]]` to `Animal.prototype`.
 
-Overriding a method - override a base class method with same signature in derived class
+Above diagram is saying `Rabbit.prototype` will point to a prototype, which contains constructor and all class methods and variables. Same with `Animal`.
 
-```ts
+`Rabbit` instance `__proto__` will also point to the prototype.
+
+`Rabbit.prototype`'s prototype will point to `Animal.prototype` as `Rabbit` extends `Animal`. Meaning `Rabbit` will have access to all methods in `Animal`. The `extends` keyword set `Rabbit.prototype.[[Prototype]]` to `Animal.prototype`.
+
+
+
+```js
+// Overriding a method - override a base class method with same signature in derived class
 stop() {
 	// can call base class method
 	super.stop();
@@ -125,9 +132,9 @@ stop() {
 In JS, distinction between derived constructor and other functions. Derived constructors have a special internal property called `[[ConstructorKind]]:"derived"`.
 This affects its behaviour with `new` keyword. When a regular fn executes with `new`, it creates an empty object and assigns it to `this`.
 
-Derived constructors don't do this, expects parent constructor to do this. So parent constructor has to be called, else `this` won't be created. If derived class has no constructor (can happen when parent has parameter less constructor), then parent constructor is called.
+Derived constructors don't do this, expects parent constructor to do this. So parent constructor has to be called, else `this` won't be created. `If derived class has no constructor (when parent has parameter-less constructor), then parent constructor is called.`
 
-There is no difference between no constructor and empty parameterless constructor.
+There is no difference between no constructor and empty parameter-less constructor.
 
 ```ts
 class Animal {
@@ -145,6 +152,8 @@ new Rabbit(); // animal
 ```
 
 #### Static methods and properties
+
+Static properties and methods are stored on the class itself, not in `Class.prototype`.
 
 ```ts
 class Article {
@@ -164,7 +173,47 @@ class Article {
 
 let article = Article.createTodays();
 alert( article.title ); // Today's digest
+
 ```
+
+
+#### Prototype vs proto and Object.getPrototypeOf()
+
+To put simply, prototype exists on constructors. `__proto__` exists on instances.
+
+`prototype` is a property of constructor functions and classes.
+It's used to define shared methods and properties that instances inherit.
+So any instances created with `new className()` will inherit from `className.prototype`.
+
+`__proto__` is a property of instances, that points to the prototype of their constructor.
+
+```js
+user = new User();
+
+user.__proto__ === User.prototype; // true
+User.prototype.__proto__ = Object.prototype; // true
+Object.prototype === null; // Object.prototype is the root prototype
+
+
+// Prototype exist on functions as well
+function Car(model) {
+	this.model = model;
+}
+
+Car.prototype.constructor; // function Car(model)
+car.__proto__ == Car.prototype; // true
+
+
+// obj don't have prototype, will be undefined
+Object.getPrototypeOf(obj) === obj.prototype // false
+
+// think of getPrototypeOf() as __proto__, but readonly
+// __proto__ is now deprecated
+Object.getPrototypeOf(obj) === MyConstructor.prototype // true
+```
+
+
+
 
 
 

@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript/Classes.md",
+                "file": "WooliesX Csharp.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Classes"
+              "title": "WooliesX Csharp"
             }
           }
         ],
@@ -88,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "getOwnPropertyNames",
+                "query": "__proto__",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,8 +109,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -200,36 +199,36 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "91d6b3a7f854a1fd",
+  "active": "cb607a10a56bb6b8",
   "lastOpenFiles": [
-    "Javascript/Atlassian HTML.md",
+    "Interface vs abstract class.md",
+    "Javascript/'this' keyword and call(), apply(), bind().md",
     "Javascript/Async and Await.md",
-    "Javascript/Basic data types.md",
-    "Javascript/Handwriting promise.md",
-    "Javascript/Hoisting.md",
-    "Javascript/How are methods implemented for primitives.md",
-    "Javascript/Javascript.md",
-    "Javascript/Classes.md",
+    "Atlassian kit/attachments/Pasted image 20240519184017.png",
+    "Atlassian kit/Cached API call.md",
+    "Atlassian kit/FeatureFlag JS.md",
+    "Atlassian kit/js Blog API.md",
+    "Atlassian kit/MJS files.md",
+    "Atlassian kit/page tree.md",
+    "Atlassian kit/Pagination.md",
+    "Atlassian kit/Tic Tac Toe.md",
+    "Atlassian kit/todo.md",
+    "Atlassian kit/Building an API client in JS.md",
     "Javascript/What happens when you type a URL into the browser.md",
+    "TTD.md",
+    "VSCode shortcuts.md",
+    "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
+    "Operation Health 2025.md",
+    "FunctionKind.md",
+    "Atlassian.md",
+    "Javascript/Classes.md",
+    "Javascript/Basic data types.md",
+    "Javascript/Atlassian HTML.md",
     "Javascript/setTimeout and setInterval.md",
-    "Javascript/Untitled.md",
-    "Javascript/Generators.md",
-    "Javascript/Prototype.md",
     "Javascript/Promise.md",
     "Javascript/Objects.md",
-    "Javascript/Let vs const vs var.md",
-    "Javascript/for...in vs for...of vs forEach().md",
-    "Javascript/Event loop.md",
-    "Javascript/Error handling.md",
-    "Javascript/Equality in JS.md",
-    "Javascript/Default vs named export.md",
     "Javascript/Closure.md",
-    "Atlassian.md",
     "Javascript/attachments/Pasted image 20250320004226.png",
-    "FrontEndInterviewPrep/Interviews/Facebook news feed.md",
-    "FunctionKind.md",
-    "Interface vs abstract class.md",
-    "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
     "Javascript/Creating common html elements with JS/attachments/Pasted image 20240408220733.png",
     "Leetcode/Math/Problems",
     "Leetcode/Math",
@@ -243,7 +242,6 @@
     "DotNet/C_Sharp/attachments/CSHARPDATATYPESCHART.png",
     "DotNet/C_Sharp/attachments/Pasted image 20240719222854.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713190336.png",
-    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20240713184706.png",
     "System design/Examples/attachments/excali1.excalidraw",
     "System design/Examples/attachments",
     "System design/Examples",
