@@ -532,6 +532,9 @@ specificity
 
 box-width: margin/padding/border/width
 
+div>span
+
+p>span
 
 media query - screen orientation
 
