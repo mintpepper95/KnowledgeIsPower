@@ -269,15 +269,18 @@ null gets coerced to 0 when to number.
 undefined gets coerced to NaN when to number.
 
 
-`[]` coerced into empty stirng ""
+`[]` coerced into empty string ""
 `{}` coerced into `[object Object]`
 
 ```js
 '5' > 3 // true, '5' coerced into 5
 true > 0 // true, true coerced to 1
-5 == [5] // true
+5 == [5] // true, because [5].toString() gives "5"
 "5,12" == [5,12] // true, because [5,12] converts to primitive, which is stirng, "5,12"
 null > 0 // false, null is coerced to 0 in numerical context
+
+
+"5,12" - true // non-number string - 0 will be NaN
 
 undefined > 0 // undefined gets converted NaN, what is less than any numbers
 undefined + 12 // NaN
@@ -299,7 +302,7 @@ true + +12 // valid, 13
 
 // [] is empty array, which is an object,it will be coerced into empty string "", string + number is string
 [] + 12 // "12"
-[] - 12 // -12
+[] - 12 // since it's subtraction, [] coerced into 0, 0 - 12 = -12
 [] == "0" // false, [] is coerced to "", which isn't "0" 
 [] == 0   // true,  [] is coerced to "", then coerced to "0" since comparing to a number
 
@@ -315,7 +318,13 @@ vs + 123 // "[object Object]123"
 [1, {}, 3].toString() // '1,[object Object],3'
 
 
+// if at start, empty, if after, treated as string '[object Object]'
 {} + 'hello' // NaN, since {} is at start, it's seen as an empty code block, which is nothing, so essentially + 'hello', which is NaN
+
+
++ 'hello' // NaN
++'hello' // NaN
+++'hello' // NaN
 ```
 
 
@@ -325,7 +334,7 @@ Ensure that the API you are fetching data from allows requests from your domain.
 
 E.g I'm on page `https://youtube.com`, and I'm making a fetch request to `https://meta.com`, a different origin.
 
-For a cross origin request, browser will check if `meta.com` allows requests from `youtube.com` . It does this by adding `Origin` header in its request ( browser does this automatically ) . Server checks `Origin` header and see if request is allowed., if server agrees to accept, it adds a special header `Access-Control-Allow-Origin` to the response. Browser checks this header, if missing, it blocks access to the response, and we see CORS error.
+For a cross origin request, browser will check if `meta.com` allows requests from `youtube.com` . It does this by adding `Origin` header in its request ( browser does this automatically ) . The meta server checks `Origin` header and see if request is allowed., if server agrees to accept, it adds a special header `Access-Control-Allow-Origin` to the response. Browser checks this header, if missing or header mismatch the origin, it blocks access to the response, and we see CORS error.
 
 ![[Pasted image 20250320004226.png]]
 
@@ -345,7 +354,7 @@ Safe
 Unsafe
 * PATCH, PUT, DELETE
 
-For unsafe requests, browser does not make such requests right away, it sends a `preflight` request to ask for permission. If server agrees to serve the requests, it respond with an empty body and status 200 and headers. Then browsaer makes the actual request if preflight is successful.
+For unsafe requests, browser does not make such requests right away, it sends a `preflight` request to ask for permission. If server agrees to serve the requests, it respond with an empty body and status 200 and headers. Then browser automatically makes the actual request if preflight is successful.
 
 Note server will still add `Access-Control-Allow-Origin` header to main response. Successful preflight does not relieve it.
 
@@ -386,7 +395,7 @@ function Car(make, model) {
 // However this removes original Car.prototype, which includes the constructor, meaning Car.prototype.constructor will point to function Vehicle() and not function Car()
 Car.prototype = Object.create(Vehicle.prototype);
 
-// Add back the correct constructor
+// Add back the correct constructor, as Vehicle.prototype does not have Car constructor
 Car.prototype.constructor = Car;
 
 Car.prototype.describe = function() {
@@ -396,4 +405,120 @@ Car.prototype.describe = function() {
 
 const myCar = new Car('Toyota', 'Corolla');
 console.log(myCar.describe()); // This is a vehicle made by Toyota
+```
+
+
+### Test html
+```html
+
+
+
+<form id='my-form'>
+  <input type='checkbox' id='is-employed'>
+  <label id='is-employed-label'>Is Employed</label>
+  
+  <br>
+  <br>
+  <div>
+    <label for='email'>Email</label>
+    <input type='text' id='email'>
+  </div>
+ 
+  <br>
+  <div>
+    <label for='phone-number'>Phone Number</label>
+    <input type='text' id='phone-number'>
+  </div>
+
+  <br>
+  <div>
+    <label for='name'>Company Name</label>
+    <input type='text' id='name'>
+  </div>
+  
+  
+  <div style='display: none'>
+  <input type='radio' id='income-source' />
+  <label>My income source</label>
+  </div>
+  
+  <div style='display: none'>
+  <input type='checkbox' id='income-source-alt' />
+  <label>I have passive income</label>
+  </div>
+
+  
+  <br>
+  <button type='submit'>
+   Submit
+  </button>
+  
+  
+</form>
+
+
+```
+
+js
+```js
+let throttle = false;
+let email = document.querySelector('#email');
+// throttle below
+email.addEventListener('input', ev => {
+	if (!throttle) {
+  	throttle = true;
+    setTimeout(() => {
+  	console.log(ev.target.value)
+  	throttle = false;
+  }, 1000);
+  }
+});
+
+let checkbox = document.querySelector('#is-employed');
+checkbox.addEventListener('change', () => {
+  let company_name_input = document.querySelector('#name');
+	if (!checkbox.checked) {
+    company_name_input.value = '';
+  	company_name_input.disabled = true;
+    
+     // hide my income sources
+    let income_source = document.querySelector('#income-source').parentElement;
+    income_source.style.display = 'none';
+    // show alt
+    let income_source_alt = document.querySelector('#income-source-alt').parentElement;
+    income_source_alt.style.display = 'block';
+  
+  } else {
+  	company_name_input.disabled = false;
+    
+    // show income sources
+    let income_source = document.querySelector('#income-source').parentElement;
+    income_source.style.display = 'block';
+    // show alt
+    let income_source_alt = document.querySelector('#income-source-alt').parentElement;
+    income_source_alt.style.display = 'none';
+  }
+});
+
+
+
+
+
+let form = document.querySelector('form');
+form.addEventListener('submit', (e) => {
+  let inputs = document.querySelectorAll('input:not([type="checkbox"])');
+  inputs.forEach(input => {
+  	// check if empty and not disabled, then highlight
+    if (input.value === '' && input.disabled == false) {
+    	// add highlight to parent
+      input.parentElement.classList.add('highlight');
+    } else {
+    	input.parentElement.classList.remove('highlight');
+    }
+  })
+  
+ // checks input empty, if empty highlight the label
+  e.preventDefault();
+})
+
 ```
