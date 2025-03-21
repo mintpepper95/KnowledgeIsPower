@@ -1,9 +1,15 @@
-[[#Creating an object]]
+[[#Creating an object, add and remove properties]]
+[[#Can we use reserved key words like for, let, return for Object keys and variables?]]
 [[#Accessing objects with square brackets and dot]]
 [[#hasOwnProperty vs In]]
+[[#Object.assign vs Object.create]]
+[[#Copying nested objects]]
+[[#'this' keyword]]
+[[#Optional chaining]]
 
+---
 
-#### Creating an object
+#### Creating an object, add and remove properties
 Object can be created with constructor syntax or object literal syntax.
 
 ```ts
@@ -17,17 +23,26 @@ let user2 =  {
 // We can also add/remove property
 user.isAdmin = true;
 delete user.age;
+
+// Properties aren't ordered
+// Keys can only be strings and numbers
 ```
-Properties aren't ordered.
+
+
+---
+
+#### Can we use reserved key words like for, let, return for Object keys and variables?
 Objects can use reserved words like `for`, `let`, `return` as keys, but we can't use reserved words for variables. 
 
+
+---
 
 #### Accessing objects with square brackets and dot
 Square brackets allows us to use string, result of expressions or variables as key.
 Dot has to be the property name, else value will be undefined. 
 So dot for static keys, square brackets for dynamic keys.
 
-
+---
 #### hasOwnProperty vs In
 ```ts
 // If key is found somewhere in the prototype chain
@@ -51,7 +66,9 @@ o.hasOwnProperty('gender'); // false
 'gender' in o; // true
 ```
 
-#### Object.assign
+
+---
+#### Object.assign vs Object.create
 For merging properties to target
 ```ts
 let user = { name: 'Jason' };
@@ -77,21 +94,38 @@ let clone = Object.assign({}, user);
 
 // This will update the property in clone as well, since the copied property is a reference
 user.size.weight++;
+
+
+
+// Object.assign vs Object.create
+// Object.assign(target, source, sourc2...) is for copying all enumerable own properties from source to targert
+// Object.create() creates a new object that inherits from the prototype object
+
+let person = {
+	name: 'Jason'
+}
+
+let new_person = Object.create(person);
+
+new_person.__proto__ === person;
+// name property does NOT exist in new_person, it exist in person, and JS needs to follow the prototype chain to find it
+
 ```
 
+---
 #### Object.entries
 ```ts
 // returns a list of key value pairs
 Object.entries(user);
 ```
 
-
-#### Copying objects
+---
+#### Copying nested objects
 Both `Object.assign` and  `{...obj}` can only copy non-nested objects.
 We can use `JSON.stringify()` to copy nested objects without functions.
 
-
-#### this
+---
+#### 'this' keyword 
 In js, `this` is evaluated at run time, it's value is the object before the dot.
 Unlike in other languages, where `this` always ref the object where method is defined.
 Arrow fn have no `this`, `this` inside arrow fn will be taken from outer scope.
@@ -127,7 +161,7 @@ let user = makeUser();
 user.ref().name; // John
 ```
 
-
+---
 #### Optional chaining
 In `C#` optional chaining returns null.
 In js, optional chaining returns undefined.

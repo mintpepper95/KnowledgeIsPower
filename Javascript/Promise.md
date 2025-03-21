@@ -2,7 +2,7 @@
 [[#Thread vs Process]]
 [[#What is callback hell?]]
 
-
+---
 #### Async and event loop
 Main thread is the single thread in the browser that runs all JS code.
 If main thread is executing then event loop is unable to run code and browser will appear frozen.

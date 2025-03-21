@@ -66,7 +66,7 @@ With recursive setTimeout, the delay starts to countdown after current code has 
 ![[Pasted image 20240325154039.png]]
 
 
-`setInerval` includes time to execute the current code. 
+`setInterval` includes time to execute the current code. 
 ![[Pasted image 20240325154025.png]]
 
 

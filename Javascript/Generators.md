@@ -32,9 +32,10 @@ let three = g.next(); // three = { value: 3, done: true }
 
 ```ts
 function* generator() {
-	yield 1;
-	yield 2;
-	yield 3;
+	yield 1; // yield returns { value: 1, done: false}
+	yield 2; // yield returns { value: 2, done: false}
+	yield 3; // yield returns { value: 3, done: false}
+	// further next() returns {value: undefined, done: true }
 }
 
 
@@ -45,6 +46,7 @@ for (let value of gen) {
 }
 ```
 
+So difference is one more call is required for `done` to return true if using `yield` instead of `return`.
 #### Yield*
 We use `yield* some_generator()` to delegate to another generator, it means we yield each element from `some_generator` until it exhausts, then resume producing its values.
 
@@ -56,6 +58,7 @@ function* anotherGenerator(i) {
 }
 
 function* generator(i) {
+	// if this generator is already 'done', then we would skip it
   yield* anotherGenerator(i);
 
   yield 5;
@@ -75,10 +78,13 @@ for (let i = 0; i < 7; i++) {
 We can also pass values into generators, the value we pass in becomes the result of yield.
 ```ts
 function* gen() {
+	// parameter we pass to `next()` becomes result of yield
     let ask1 = yield "2+7= ?";
-    alert(ask1);
+    console.log(ask1);
+
+	// parameter we pass to `next()` becomes result of yield
     let ask2 = yield "3*3= ?";
-    alert(ask2);
+    console.log(ask2);
 }
 
 let generator = gen();

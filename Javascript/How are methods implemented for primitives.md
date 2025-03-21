@@ -1,3 +1,4 @@
+
 Recall in js primitives are just values.
 So how can we access properties if they are just values?
 ```
@@ -14,7 +15,9 @@ let str = 'hello';
 str.test = 5;
 console.log(str.test);
 ```
-A: When you attempt to assign a property (`test`) to a primitive string using dot notation or bracket notation, JS temporarily converts the primitive string into a String object, adds the property to that object, and then discards the object. This means that the property `test` is added to a temporary String object, not to the original primitive string `str`. So undefined.
+A: When you attempt to assign a property (`test`) to a primitive string using dot notation or square bracket notation, JS temporarily converts the primitive string into a String object, adds the property to that object, and then discards the object. 
+
+This means that the property `test` is added to a temporary String object, not to the original primitive string `str`. So undefined.
 
 
 
