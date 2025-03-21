@@ -522,3 +522,16 @@ form.addEventListener('submit', (e) => {
 })
 
 ```
+
+
+
+
+### css
+
+specificity
+
+box-width: margin/padding/border/width
+
+
+media query - screen orientation
+
