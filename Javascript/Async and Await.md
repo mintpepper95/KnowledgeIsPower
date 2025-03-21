@@ -50,11 +50,6 @@ async function time_test() {
 }
 ```
 
-#### Chaining async and await
-```ts
-await (await myAsyncFunction()).somethingElseAsync()
-```
-
 
 #### await and event loop
 
@@ -86,18 +81,35 @@ function foo(name) {
 		resolve();
 	})
 }
+
+
+
+
+// Another example
+let foo = async (x) => {
+    console.log(`foo ${x}`);
+    return x;
+}
+
+foo(1).then(y => console.log(`foo then: ${y}`));
+console.log('hello world');
+
+// Output
+// foo 1
+// hello world
+// foo then: 1
 ```
 
 Another example.
 
-When an `await` is encountered in code (either in an async function or in a module), the awaited expression is executed, (it will return a promise instance). while all code that depends on the expression's value is paused and pushed into the microtask queue.
+When an `await` is encountered in code (either in an async function or in a module), `the awaited expression is executed`, (it will return a promise instance). while all code that depends on the expression's value is paused and pushed into the microtask queue.
 
 In this case, console.log(name, 'end') depends on await.
 
 ```ts
 async function foo(name) {
   console.log(name, "start");
-  // all code that depends on await is pushed to microtask queue
+  // blocking, all code that depends on await is pushed to microtask queue
   await console.log(name, "middle");
   console.log(name, "end");
 }
@@ -121,13 +133,4 @@ function foo(name) {
     console.log(name, "end");
   });
 }
-
-
-// Another example
-async function fn() {
-  await console.log('hello world');
-}
-fn();
-console.log('yay');
-// hello world will print first, then yay
 ```

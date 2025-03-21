@@ -11,7 +11,7 @@ We use generators for lazy evaluation.
 function* generateSequence() {
 	yield 1;
 	yield 2;
-	return 3;
+	return 3; // no more values can be yielded
 }
 
 // Note code execution has not started yet

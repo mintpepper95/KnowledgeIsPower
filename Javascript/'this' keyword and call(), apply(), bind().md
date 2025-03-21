@@ -1,10 +1,11 @@
 [[#What are the difference between the 3 methods?]]
 
 
-
 ## What are the difference between the 3 methods?
 
 They all allow us to set `this` to functions.
+
+`call()` takes in a number of parameters. `apply()` takes in an iterable for second parameter.  Both execute immediately.  `bind()` is similarly to `call()`, but assigns the function to another function to be executed later.
 ### Call()
 Replaces 'this' inside the fn with whatever you assign it.
 ![[Pasted image 20240324202405.png]]

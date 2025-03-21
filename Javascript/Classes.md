@@ -17,57 +17,68 @@ class Book {
 	 }
  }
  
-
 class User {
-    constructor(name) { 
+	// constructor exists in User.prototype
+    constructor(name) {
+	    // name exists in User instance 
 	    this.name = name; 
 	}
-    
+
+	// hello exists in User instance
+	hello = () => {};
+
+	// sayHi exists in User.prototype
     sayHi() { // in js classes, methods don't require 'function' keyword
 	    alert(this.name); 
 	}
 }
 
-// Class is a function
+// Class is the constructor function
 alert(typeof User); // function
-
-// Or more precisely, the constructor method
-// Constructor is used to create instances of User
-// while User.constructor will refer to the 
 alert(User === User.prototype.constructor); // true
 
 // The methods are in User.prototype, e.g:
 alert(User.prototype.sayHi); // alert(this.name);
 
 // there are exactly two methods in the prototype
-// `getOwnPropertyNames` returns all properties of object, while Object.keys() returns only the enumerable ones
-alert(Object.getOwnPropertyNames(User.prototype)); // constructor, sayHi
+// `getOwnPropertyNames` returns all properties of that object, while Object.keys() returns only the enumerable ones
+console.log(Object.getOwnPropertyNames(User.prototype)); // constructor, sayHi
+
+console.log(Object.getOwnPropertyNames(user)); // name and hello
 ```
 
-However, class is more than syntactic sugar.
+#### Class with pure functions
 ```ts
 // rewriting class User in pure functions
+// note we don't need to create constructor
 
 // 1. Create constructor function
 function User(name) {
+	// This property belongs to an instance of User
     this.name = name;
+    // This method also belongs to an instance of User
+	this.goodbye = () => console.log(`goodbye ${this.name}`);
 }
 
-// a function prototype has "constructor" property by default,
-// so we don't need to create it
+
 // 2. Add the method to prototype
 User.prototype.sayHi = function() {
-    alert(this.name);
+    console.log(this.name);
 };
+// User.prototype will have sayHi, but it won't have `name`
+// User instances will have name and goodbye()
 
 // Usage:
 let user = new User("John");
 user.sayHi();
 ```
+
+
+#### class vs pure functions
 There are some differences
 1. A function created by 'class' is labelled by a special internal property `FunctionKind:classConstructor`. JS check for this property in several places. Unlike a regular function, it must be called with new or else `TypeError`. For functions, if we call without `new` keyword, there won't be values returned.
 
-2. Class methods are non-enumerable. The enumerable flag is set to false for all methods in the `prototype` property. Meaning for…in over an object won't get us the class methods.
+2. Class methods are non-enumerable. The enumerable flag is set to false for all methods in the `prototype` property. Meaning for…in over an object won't get us the class methods. Eg. For `User`, `sayHi` won't show up in a for...in loop (`name` and `goodbye` will ) because class methods are non-enumerable.
 
 3. Classes always use strict, all code inside class construct is auto in strict mode.
 
@@ -97,19 +108,11 @@ let r = new ReturnedClass()
 
 
 #### Class inheritance and prototype
+
+Animal prototype
 ![[Pasted image 20240327200231.png]]
-We can see that instance fields are set on individual objects, not in the prototype. Only class fields are in the prototype.
-```ts
-class User {
-    name = "John";
-}
 
-let user = new User();
-alert(user.name); // John
-alert(User.prototype.name); // undefined
-```
-
-
+Rabbit prototype
 ![[Pasted image 20240327200651.png|600]]
 
 Above diagram is saying `Rabbit.prototype` will point to a prototype, which contains constructor and all class methods and variables. Same with `Animal`.
@@ -172,7 +175,8 @@ class Article {
 }
 
 let article = Article.createTodays();
-alert( article.title ); // Today's digest
+console.log(Article); // You will see `publisher` and `createTodays`
+console.log( article.title ); // Today's digest
 
 ```
 
@@ -205,7 +209,7 @@ car.__proto__ == Car.prototype; // true
 
 
 // obj don't have prototype, will be undefined
-Object.getPrototypeOf(obj) === obj.prototype // false
+obj.prototype === Object.getPrototypeOf(obj) // false
 
 // think of getPrototypeOf() as __proto__, but readonly
 // __proto__ is now deprecated
