@@ -6,17 +6,20 @@
 #### What is a pseudo class element? What is a pseudo element?
 A pseudo class element selects an element under a specific state. Single colon.
 ```css
-a:hover
+a:hover /* 011, as 1 pseudo class, 1 elements (the 'a') */
 a:visited
 
 /* selects all li elements that are second within its parent */
 li:nth-child(2)
 
-/* find any article that is a first child (direct or descendent) */
+/* find any article that is a first child */
 article:first-child {
     font-weight: bold
 }
 ```
+
+
+
 
 A pseudo element selects a specific part of an element. Double colon.
 ```css
@@ -48,7 +51,13 @@ div div li:nth-child(2) a:hover {
 div div .nav:nth-child(2) a:hover {
 	border: 10px double black;
 }
+
+
+/* something like div.nav - selects only div elements with class nav */
 ```
+
+![[Pasted image 20250325022318.png]]
+
 ![[Pasted image 20240430222834.png|300]]
 
 

@@ -34,10 +34,10 @@ You can turn on border-box at the root or under a specific scope
 
 
 Border Box
-Includes padding, but not margin
+Includes padding and border, but not margin
 ![[Pasted image 20240430225020.png|350]]
 
-Normal Box
+Normal Box - content-box
 Padding and margin are both excluded
 ![[Pasted image 20240430225043.png|350]]
 

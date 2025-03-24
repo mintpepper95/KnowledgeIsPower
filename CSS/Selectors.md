@@ -5,7 +5,7 @@
 span.highlight {}
 
 
-/* select anything that has class 'notebox' and class 'warning' 
+/* select anything that has class 'notebox' AND class 'warning' 
 e.g. <div class="notebox warning"> */
 .notebox.warning {
     border-color: orange,
