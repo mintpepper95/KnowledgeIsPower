@@ -66,6 +66,10 @@ p {
 ![[Pasted image 20250325011235.png]]
 
 Combining selectors
+
+Elements that are orange and with class `small`
+![[Pasted image 20250325093053.png]]
+
 ![[Pasted image 20250325011439.png]]
 
 
@@ -79,7 +83,7 @@ Targets all elements inside plates
 
 Adjacent sibling
 
-A + B, selects all B elements that directly follows after A, that's on the same level.
+A + B, selects all the first B element that directly follows after A, that's on the same level.
 
 General sibling
 
@@ -87,6 +91,8 @@ A ~ B
 
 Here, select all chopstick elements that are after food, note chopstick has to be on the same level as food, and can't be nested inside food.
 ![[Pasted image 20250325012144.png]]
+
+![[Pasted image 20250325093420.png]]
 
 
 
@@ -97,12 +103,14 @@ First-child pseudo selector
 p:first-child, selects any p elements that are first child of another element.
 
 
-// select orange inside p elements that are first-child of some elements.
+// select orange inside plate elements that are first-child of some elements.
+012
 plate:first-child orange {
   color: orange;
 }
 
 // Select orange that are first child, and they have to be nested inside plate
+012
 plate orange:first-child
 
 
@@ -112,6 +120,7 @@ Nth-child pseudo selector
 
 
 Last-child pseudo selector
+011
 bento:nth-last-child(3)
 
 

@@ -60,10 +60,15 @@ We can use it to group related things.
 ```
 
 
-#### When to use aside?
+#### When to use aside and main?
+##### Aside
 Used to identify contents related to the primary content of the webpage, but does not constitute the primary content. E.g. Author info, related links, related content, ads are examples.
 
 Things like article data, and post specific navigation (like next post or previous post) are not good uses of `aside` elements.
+
+##### Main
+The `<main>` tag specifies the main content of a document.
+The content inside the `<main>` element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.
 
 ```html
 <main>

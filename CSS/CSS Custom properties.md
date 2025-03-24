@@ -36,6 +36,7 @@ Note custom properties are case sensitive, so `--my-color` != `--my-Color`.
 #### How to access custom properties in JS?
 ```ts
 // retrieve css property as string
+// custom css variables aren't as js properties like elem.style.color
 window.getComputedStyle(element).getPropertyValue('--some_var');
 ```
 
