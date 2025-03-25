@@ -28,6 +28,26 @@ d > 1; // false, we convert object to primitive first, in this case, '[object Ob
 d > "123"; // true, as we first convert d to the string '[object Object]'
 
 // If the result of `valueOf()` is not a primitive (like a string or number), it will fall back to the `toString()` method.
+
+
+// A few words about null
+// ">"  performs type coercion which coerces null into a number
+null >= 0; // true
+
+// No type coercion here
+null == 0; // false
+
+null == null && null == undefined; // true
+
+// false, '0', [], "" all coerces to 0 when coercing into number
+
+
+
+"6xas" < Infinity
+// "6xas" converts to NaN, any comparison with Nan is always false, except below
+
+NaN !== NaN; // true
+
 ```
 
 With strict equality, it first checks whether the type differ. If differ return false. If the type match, then it checks if the values are the same or not.

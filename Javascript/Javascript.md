@@ -142,10 +142,10 @@ let prices = {
 
 
 let doublePrices = Object.fromEntries(
-    // .entries() convert to array first
+    // .entries() convert to array first, [0: prices[0], 1: prices[1]...]
     // use array methods on that array, eg. map
     // use Object.fromEntries(array) on resulting array to turn it back to object
-    // note destructure correct;y with square brackets
+    // note destructure correctly with square brackets
     Object.entries(prices).map(([key, value]) => [key, value * 2])
 );
 

@@ -79,7 +79,7 @@ We can also pass values into generators, the value we pass in becomes the result
 ```ts
 function* gen() {
 	// parameter we pass to `next()` becomes result of yield
-    let ask1 = yield "2+7= ?";
+    let ask1 = yield "2+2= ?";
     console.log(ask1);
 
 	// parameter we pass to `next()` becomes result of yield

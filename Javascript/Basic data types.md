@@ -152,9 +152,6 @@ let arr = ['Jason', 'Xu'];
 // assigning variables to arr elements
 let [firstName, lastName] = arr;
 
-let user = [];
-[user.name, user.surname] = arr;
-
 
 // default values
 // name is Jason, surname is No
@@ -176,7 +173,7 @@ let [one, two, three] = new Set([1, 2, 3]);
 
 
 // rest '...' operator
-// You can use any name instead of 'rest' in place, juse use triple dots
+// You can use any name instead of 'rest' in place, juse use triple dots, remaining elements captured into an array
 // Can also use it in function parameter
 let [name1, name2, ...rest] = ['Jason', 'Xu', 'rest1', 'rest2', 'rest3'];
 
@@ -236,7 +233,7 @@ let {
     items: [item1, item2],
     title = 'Menu' // not present in object
 
-}
+} = options;
 // title => Menu
 // width => 100
 // height => 200
@@ -442,8 +439,8 @@ let str = arr.join(';'); // A;B;C
 
 
 // Array.isArray()
-Typeof {} // returns object
-Typeof []  // returns object
+typeof {} // returns object
+typeof []  // returns object
 
 Array.isArray( {} ) // false
 Array.isArray( [] ) // true
@@ -460,6 +457,8 @@ Note [[for...in vs for...of vs forEach()]], for...in loops all properties.
 ##### Some more notes on `includes()`
 ```ts
 let arr = [null, null, null, null, 'X', null, null, null, null]; 
+
+// 'includes' can also take an element, where 'some' takes a fn
 let result = arr.includes('X'); // true
 
 
@@ -467,8 +466,7 @@ let result = arr.includes((sqr) => sqr == 'X'); // false
 let result = arr.includes((sqr) => sqr === 'X'); // false
 
 // When you use arrow fn as argument of includes, 
-// you are checking each element against this function, of course none of the element inside this array is an fn s false
-
+// you are checking each element against this function
 // use some instead
 let result = arr.some(sqr => sqr == 'X'); 
 ```
@@ -486,6 +484,9 @@ a, b, c, d = 4;
 ```ts
 // allows use to evaluate severa expressions, however only last result is returned, here a is 7
 let a = (1 + 2, 3 + 4);
+
+// same below
+let b = (2, 7); // b is 7
 ```
 
 

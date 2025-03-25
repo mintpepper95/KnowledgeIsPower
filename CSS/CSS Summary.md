@@ -256,6 +256,11 @@ div div .nav:nth-child(2) a:hover {
 	border: 10px double black;
 }
 
+
+
+/* specificity, 0011, as 1 element, 1 attribute */
+input[type="checkbox"]
+
 ```
 
 
