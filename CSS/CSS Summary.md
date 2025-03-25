@@ -153,8 +153,14 @@ Selects span elements, given they are the last element inside some other elments
 ![[Pasted image 20250325020007.png]]
 
 
-apple:not(.small, .medium)
+**apple:not(.small, .medium)**
+This is a valid syntax.
+011, one pseudo class selector `:not(.small, .medium)` and one element, note not itself doesn't count as pseudo element
+
 Selects all apples elements if those apples not of class small or medium
+
+
+
 
 
 Attribute selector

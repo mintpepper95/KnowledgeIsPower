@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSS/CSS Summary.md",
+                "file": "Javascript/Atlassian HTML.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "CSS Summary"
+              "title": "Atlassian HTML"
             }
           },
           {
@@ -200,6 +200,8 @@
   },
   "active": "cb607a10a56bb6b8",
   "lastOpenFiles": [
+    "CSS/CSS Summary.md",
+    "CSS/attachments/Pasted image 20250326100536.png",
     "CSS/Custom CSS properties.md",
     "CSS/Flexbox.md",
     "CSS/Grid.md",
@@ -225,7 +227,6 @@
     "Javascript/Equality in JS.md",
     "Javascript/Default vs named export.md",
     "Javascript/Closure.md",
-    "Javascript/Classes.md",
     "CSS/attachments/Pasted image 20250325093420.png",
     "CSS/attachments/Pasted image 20250325093409.png",
     "CSS/attachments/Pasted image 20250325093053.png",
@@ -235,7 +236,6 @@
     "CSS/attachments/Pasted image 20250325020007.png",
     "CSS/attachments/Pasted image 20250325015408.png",
     "CSS/attachments/Pasted image 20250325012144.png",
-    "CSS/attachments/Pasted image 20250325011835.png",
     "Leetcode/Math/Problems",
     "Leetcode/Math",
     "DotNet/MongoDB",
