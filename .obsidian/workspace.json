@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript/Let vs const vs var.md",
+                "file": "Javascript/Atlassian HTML.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Let vs const vs var"
+              "title": "Atlassian HTML"
             }
           },
           {
@@ -200,19 +200,22 @@
   },
   "active": "cb607a10a56bb6b8",
   "lastOpenFiles": [
+    "Javascript/Basic data types.md",
+    "Javascript/What happens when you type a URL into the browser.md",
+    "Javascript/setTimeout and setInterval.md",
+    "Javascript/Equality in JS.md",
+    "Javascript/Error handling.md",
+    "Javascript/for...in vs for...of vs forEach().md",
+    "Javascript/Handwriting promise.md",
+    "Javascript/Let vs const vs var.md",
     "Javascript/Javascript.md",
     "Javascript/How are methods implemented for primitives.md",
     "Javascript/Hoisting.md",
-    "Javascript/Handwriting promise.md",
     "Javascript/Generators.md",
-    "Javascript/for...in vs for...of vs forEach().md",
     "Javascript/Event loop.md",
-    "Javascript/Error handling.md",
-    "Javascript/Equality in JS.md",
     "Javascript/Default vs named export.md",
     "Javascript/Closure.md",
     "Javascript/Classes.md",
-    "Javascript/Basic data types.md",
     "Javascript/Atlassian HTML.md",
     "Javascript/Async and Await.md",
     "Javascript/'this' keyword and call(), apply(), bind().md",
@@ -223,9 +226,6 @@
     "CSS/CSS Custom properties.md",
     "CSS/Flexbox.md",
     "CSS/Custom CSS properties.md",
-    "CSS/CSS Summary.md",
-    "CSS/Media queries.md",
-    "CSS/Grid.md",
     "CSS/attachments/Pasted image 20250326100536.png",
     "CSS/attachments/Pasted image 20250325093420.png",
     "CSS/attachments/Pasted image 20250325093409.png",

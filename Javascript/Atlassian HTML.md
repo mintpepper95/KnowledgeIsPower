@@ -575,3 +575,4 @@ media query - screen orientation
 }
 ```
 
+### Open link in new tab or window
