@@ -54,6 +54,16 @@
               "icon": "lucide-file",
               "title": "CSS Custom properties"
             }
+          },
+          {
+            "id": "2b3e7446e86bf74e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
         ]
       }
@@ -87,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "shift",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -108,7 +118,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -200,6 +211,8 @@
   },
   "active": "cb607a10a56bb6b8",
   "lastOpenFiles": [
+    "Javascript/Atlassian HTML.md",
+    "CSS/CSS Custom properties.md",
     "Javascript/Basic data types.md",
     "Javascript/What happens when you type a URL into the browser.md",
     "Javascript/setTimeout and setInterval.md",
@@ -216,14 +229,12 @@
     "Javascript/Default vs named export.md",
     "Javascript/Closure.md",
     "Javascript/Classes.md",
-    "Javascript/Atlassian HTML.md",
     "Javascript/Async and Await.md",
     "Javascript/'this' keyword and call(), apply(), bind().md",
     "CSS/The Box Model.md",
     "CSS/Specificity.md",
     "CSS/Selectors.md",
     "CSS/Positioning.md",
-    "CSS/CSS Custom properties.md",
     "CSS/Flexbox.md",
     "CSS/Custom CSS properties.md",
     "CSS/attachments/Pasted image 20250326100536.png",
