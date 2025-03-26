@@ -7,6 +7,9 @@ Loose equality performs type coercion before comparison.
 let a = '0';
 let b = 0;
 
+
+// Rule of conversion - convert from object to string, then string to number if necessary
+
 // Double equality performs type coercion before comparison
 // Here 'a' is converted to number before comparison.
 a == b; // true
@@ -16,7 +19,7 @@ let a = 'ABC';
 let b = 1;
 let c = '1'
 
-a > b; // false, since one of them is a number, js will attempt to convert other into a number, which makes 'a' NaN since invalid number, which is smaller than everything, so false
+a > b; // false, since one of them is a number, js will attempt to convert other into a number, which makes a `NaN` since invalid number, which is smaller than everything, so false
 
 a > c // true, since both string, compared char by char, in Unicode numbers are before letters, so 'A' > '1' 
 
@@ -41,6 +44,7 @@ null == null && null == undefined; // true
 
 // false, '0', [], "" all coerces to 0 when coercing into number
 
+undefined == undefined
 
 
 "6xas" < Infinity

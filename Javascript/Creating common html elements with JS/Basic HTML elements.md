@@ -169,6 +169,6 @@ let seconds = Math.floor(remain_time_in_seconds % 60);
 
 ```js
 // getting select tag value that with name = 'car'
-document.querySelector('select[name='car']')
+document.querySelector('select[name="car"]')
 
 ```

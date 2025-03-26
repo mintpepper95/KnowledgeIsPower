@@ -6,6 +6,10 @@ If we omit value for radios, then when submitting form data, the value `on` is a
 
 Note we have a default checked state, to select a radio button by default.
 
+When you add event listener with `change` event to radios belong to same names, only the radio that is selected will invoke it's listening method.
+
+So if you want to update other radio buttons you have to query them and update them individually inside the listening code.
+
 ```html
      <div>
       <input type="radio" name='shoes' id ='adidass' value='adidas' checked />
@@ -18,6 +22,7 @@ Note we have a default checked state, to select a radio button by default.
       <label for="puma">Puma shoes</label>
      </div>
 ```
+
 
 
 ```
@@ -273,6 +278,14 @@ undefined gets coerced to NaN when to number.
 `{}` coerced into `[object Object]`
 
 ```js
+// any number plus a string is a string
+let m = 123;
+m + 1; // "1231"
+1 + m; // "1123"
+// for minus symbol, it'll be coerced into a number
+
+
+
 '5' > 3 // true, '5' coerced into 5
 true > 0 // true, true coerced to 1
 5 == [5] // true, because [5].toString() gives "5"
@@ -290,19 +303,21 @@ undefined + 12 // NaN
 
 new String('str') == 'str'; // true, object is converted to a primitive value 'str'
 
+new Number('6') == 6; // true
+new Number('6') == '6'; // true
 
 [5] == [5] // false, not same instance
 { a: 'a' } == { a: 'a' } // also false, same as above
 
 
 // also fine to have things like
-true ++ 12 // invalid
+true ++ 12 // Uncaught syntax error
 true + +12 // valid, 13
 12 - +true // valid, 11 as true gets coerced to 1
 
 // [] is empty array, which is an object,it will be coerced into empty string "", string + number is string
 [] + 12 // "12"
-[] - 12 // since it's subtraction, [] coerced into 0, 0 - 12 = -12
+[] - 12 // since it's subtraction, [] coerced into empty string, emp string coerces into 0, 0 - 12 = -12
 [] == "0" // false, [] is coerced to "", which isn't "0" 
 [] == 0   // true,  [] is coerced to "", then coerced to "0" since comparing to a number
 
@@ -325,6 +340,13 @@ vs + 123 // "[object Object]123"
 + 'hello' // NaN
 +'hello' // NaN
 ++'hello' // NaN
+
+
+
+// boolean, 0 coerce into false
+'0' == false;
+'' == false;
+
 ```
 
 
@@ -537,4 +559,19 @@ div>span
 p>span
 
 media query - screen orientation
+
+```css
+/* if exceed 600px, and orientation is landscape */
+@media (min-width: 600px) and (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+}
+```
 

@@ -37,7 +37,7 @@ Math.floor();
 Math.ceil();
 
 // Round to nearest
-Math.round(3.5); //4
+Math.round(3.5); // 4
 
 
 let num = 12.345;
@@ -173,7 +173,7 @@ let [one, two, three] = new Set([1, 2, 3]);
 
 
 // rest '...' operator
-// You can use any name instead of 'rest' in place, juse use triple dots, remaining elements captured into an array
+// You can use any name instead of 'rest' in place, juse use triple dots, remaining elements captured into an array, empty array if no more elements
 // Can also use it in function parameter
 let [name1, name2, ...rest] = ['Jason', 'Xu', 'rest1', 'rest2', 'rest3'];
 
@@ -182,7 +182,7 @@ rest.length // 3, ['rest1', 'rest2', 'rest3']
 
 
 ##### Object destructuring
-We can use it to extra only what we need.
+We can use it to extract only what we need.
 ```ts
 // Basic syntax
 let { var1, var2 } = { var1: …, var2: … }
@@ -272,7 +272,7 @@ let student = {
     wife: null
 };
 let json = JSON.stringify(student);
-alert( typeof jason); // string
+alert( typeof json); // string
 /* 
 {
 "name": "John",

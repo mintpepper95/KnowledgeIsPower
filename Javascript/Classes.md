@@ -214,6 +214,16 @@ obj.prototype === Object.getPrototypeOf(obj) // false
 // think of getPrototypeOf() as __proto__, but readonly
 // __proto__ is now deprecated
 Object.getPrototypeOf(obj) === MyConstructor.prototype // true
+
+
+
+
+// class.toString()
+// imagine an empty User class
+class User {}
+
+let mm = User.toString(); // mm gets assigned "class User{}"
+mm == "class User{}" // true
 ```
 
 
