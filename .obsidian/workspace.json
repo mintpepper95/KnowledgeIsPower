@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript/Atlassian HTML.md",
+                "file": "DotNet/Design patterns.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Atlassian HTML"
+              "title": "Design patterns"
             }
           },
           {
@@ -97,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "shift",
+                "query": "adapto",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -118,8 +118,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -209,34 +208,38 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cb607a10a56bb6b8",
+  "active": "a7cafb0b48db0842",
   "lastOpenFiles": [
-    "Javascript/Atlassian HTML.md",
-    "CSS/CSS Custom properties.md",
-    "Javascript/Basic data types.md",
-    "Javascript/What happens when you type a URL into the browser.md",
-    "Javascript/setTimeout and setInterval.md",
-    "Javascript/Equality in JS.md",
-    "Javascript/Error handling.md",
-    "Javascript/for...in vs for...of vs forEach().md",
-    "Javascript/Handwriting promise.md",
-    "Javascript/Let vs const vs var.md",
-    "Javascript/Javascript.md",
-    "Javascript/How are methods implemented for primitives.md",
-    "Javascript/Hoisting.md",
-    "Javascript/Generators.md",
-    "Javascript/Event loop.md",
-    "Javascript/Default vs named export.md",
-    "Javascript/Closure.md",
-    "Javascript/Classes.md",
-    "Javascript/Async and Await.md",
-    "Javascript/'this' keyword and call(), apply(), bind().md",
-    "CSS/The Box Model.md",
-    "CSS/Specificity.md",
-    "CSS/Selectors.md",
-    "CSS/Positioning.md",
-    "CSS/Flexbox.md",
-    "CSS/Custom CSS properties.md",
+    "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
+    "Operation Spark.md",
+    "FunctionKind.md",
+    "Interface vs abstract class.md",
+    "Operation Health 2025.md",
+    "TTD.md",
+    "WooliesX Csharp.md",
+    "React/React-dev-learn/1. Describing the UI.md",
+    "FrontEndInterviewPrep/Performance/ARIA.md",
+    "FrontEndInterviewPrep/Performance/Compressing Javascript.md",
+    "FrontEndInterviewPrep/Performance/Bundle splitting.md",
+    "FrontEndInterviewPrep/dp_1.webm",
+    "FrontEndInterviewPrep/Polling, long polling, websocket and webhook.md",
+    "FrontEndInterviewPrep/Trello.md",
+    "FrontEndInterviewPrep/bundle_1.webm",
+    "FrontEndInterviewPrep/dp1.webm",
+    "FrontEndInterviewPrep/Front end system design.md",
+    "FrontEndInterviewPrep/JIRA front end architecture.md",
+    "FrontEndInterviewPrep/Manager Interview.md",
+    "FrontEndInterviewPrep/Multipart form data.md",
+    "FrontEndInterviewPrep/dp_2.webm",
+    "FrontEndInterviewPrep/Interviews/Trello as an example.md",
+    "FrontEndInterviewPrep/Interviews/Notion.md",
+    "FrontEndInterviewPrep/Interviews/Chat application.md",
+    "React/React-dev-learn/2. Adding Interactivity.md",
+    "React/React-dev-learn/Effect/3. Lifecycle of Reactive Effects.md",
+    "React/React-dev-learn/Effect/4. Separating Events from Effects.md",
+    "React/React-dev-learn/Effect/5. Removing Effect dependencies.md",
+    "React/React-dev-learn/Effect/1. Effect.md",
+    "System design/The 3 step framework.md",
     "CSS/attachments/Pasted image 20250326100536.png",
     "CSS/attachments/Pasted image 20250325093420.png",
     "CSS/attachments/Pasted image 20250325093409.png",
@@ -253,10 +256,6 @@
     "DotNet/C_Sharp/C_Sharp concepts/attachments",
     "DotNet/ASP.NET/pluralsight",
     "DotNet/C_Sharp/C_Sharp concepts",
-    "System design/Examples/attachments/excali1.excalidraw",
-    "System design/Examples/attachments",
-    "System design/Examples",
-    "DotNet/C_Sharp/C_Sharp courses/attachments",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",

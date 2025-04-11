@@ -207,11 +207,12 @@ How many artifacts do we expect to deploy daily?
 
 ##### Design
 Once we know our cases and what to optimise for. We can design.
-Want speed? Use a cache. Want availability? Put some redundancy>
+Want speed? Use a cache. Want availability? Put some redundancy
 
 Here we will focus about storage and microservices.
 
 Storage - We know the data we want to store, where do we store it?
+
 
 Microservices - How do we store and retrieve our data to give it to the API?
 
