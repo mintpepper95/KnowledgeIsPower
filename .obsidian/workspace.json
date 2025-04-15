@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DotNet/Design patterns.md",
+                "file": "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Design patterns"
+              "title": "2. Refactoring to SOLID"
             }
           },
           {
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSS/CSS Custom properties.md",
+                "file": "React/React-dev-learn/Custom Hooks.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "CSS Custom properties"
+              "title": "Custom Hooks"
             }
           },
           {
@@ -65,7 +65,8 @@
               "title": "New tab"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "adapto",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -208,8 +209,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a7cafb0b48db0842",
+  "active": "4842a7227c7e10af",
   "lastOpenFiles": [
+    "React/React-dev-learn/4. Escape Hatches.md",
+    "React/React-dev-learn/3. Managing state.md",
+    "React/React-dev-learn/2. Adding Interactivity.md",
+    "React/React-dev-learn/1. Describing the UI.md",
+    "CSS/CSS Custom properties.md",
+    "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
+    "DotNet/Design patterns.md",
     "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
     "Operation Spark.md",
     "FunctionKind.md",
@@ -217,7 +225,6 @@
     "Operation Health 2025.md",
     "TTD.md",
     "WooliesX Csharp.md",
-    "React/React-dev-learn/1. Describing the UI.md",
     "FrontEndInterviewPrep/Performance/ARIA.md",
     "FrontEndInterviewPrep/Performance/Compressing Javascript.md",
     "FrontEndInterviewPrep/Performance/Bundle splitting.md",
@@ -234,12 +241,7 @@
     "FrontEndInterviewPrep/Interviews/Trello as an example.md",
     "FrontEndInterviewPrep/Interviews/Notion.md",
     "FrontEndInterviewPrep/Interviews/Chat application.md",
-    "React/React-dev-learn/2. Adding Interactivity.md",
     "React/React-dev-learn/Effect/3. Lifecycle of Reactive Effects.md",
-    "React/React-dev-learn/Effect/4. Separating Events from Effects.md",
-    "React/React-dev-learn/Effect/5. Removing Effect dependencies.md",
-    "React/React-dev-learn/Effect/1. Effect.md",
-    "System design/The 3 step framework.md",
     "CSS/attachments/Pasted image 20250326100536.png",
     "CSS/attachments/Pasted image 20250325093420.png",
     "CSS/attachments/Pasted image 20250325093409.png",
@@ -249,7 +251,6 @@
     "CSS/attachments/Pasted image 20250325021527.png",
     "CSS/attachments/Pasted image 20250325020007.png",
     "CSS/attachments/Pasted image 20250325015408.png",
-    "CSS/attachments/Pasted image 20250325012144.png",
     "Leetcode/Math/Problems",
     "Leetcode/Math",
     "DotNet/MongoDB",
