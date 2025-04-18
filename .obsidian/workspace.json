@@ -73,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "className",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +94,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -184,7 +185,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cb607a10a56bb6b8",
+  "active": "91d6b3a7f854a1fd",
   "lastOpenFiles": [
     "Javascript/JS Projects/Tic Tac Toe in React.md",
     "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
