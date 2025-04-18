@@ -37,8 +37,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/React-dev-learn/Custom Hooks.md",
-                "mode": "source",
+                "file": "Javascript/JS Projects/Tic Tac Toe in React.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Custom Hooks"
+              "title": "Tic Tac Toe in React"
             }
           },
           {
@@ -98,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "vite",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -119,7 +119,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -211,10 +212,14 @@
   },
   "active": "4842a7227c7e10af",
   "lastOpenFiles": [
-    "React/React-dev-learn/4. Escape Hatches.md",
-    "React/React-dev-learn/3. Managing state.md",
-    "React/React-dev-learn/2. Adding Interactivity.md",
     "React/React-dev-learn/1. Describing the UI.md",
+    "React/React-dev-learn/2. Adding Interactivity.md",
+    "React/React-dev-learn/3. Managing state.md",
+    "React/React-dev-learn/Custom Hooks.md",
+    "React/React-dev-learn/4. Escape Hatches.md",
+    "React/React-dev-learn/UseMemo and UseCallback.md",
+    "React/React Home.md",
+    "React/React Routing.md",
     "CSS/CSS Custom properties.md",
     "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
     "DotNet/Design patterns.md",
@@ -238,10 +243,6 @@
     "FrontEndInterviewPrep/Manager Interview.md",
     "FrontEndInterviewPrep/Multipart form data.md",
     "FrontEndInterviewPrep/dp_2.webm",
-    "FrontEndInterviewPrep/Interviews/Trello as an example.md",
-    "FrontEndInterviewPrep/Interviews/Notion.md",
-    "FrontEndInterviewPrep/Interviews/Chat application.md",
-    "React/React-dev-learn/Effect/3. Lifecycle of Reactive Effects.md",
     "CSS/attachments/Pasted image 20250326100536.png",
     "CSS/attachments/Pasted image 20250325093420.png",
     "CSS/attachments/Pasted image 20250325093409.png",
