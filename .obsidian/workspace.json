@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/React-dev-learn/1. Describing the UI.md",
+                "file": "FrontEndInterviewPrep/Performance/Bundle splitting.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "1. Describing the UI"
+              "title": "Bundle splitting"
             }
           },
           {
@@ -73,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "className",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,8 +94,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -185,18 +184,23 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "91d6b3a7f854a1fd",
+  "active": "cb607a10a56bb6b8",
   "lastOpenFiles": [
-    "Javascript/JS Projects/Tic Tac Toe in React.md",
-    "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
+    "React/React-dev-learn/Effect/1. Effect.md",
+    "React/React-dev-learn/Effect/5. Removing Effect dependencies.md",
+    "React/React-dev-learn/Effect/4. Separating Events from Effects.md",
+    "React/React-dev-learn/Effect/3. Lifecycle of Reactive Effects.md",
+    "React/React-dev-learn/Effect/2. No need Effect.md",
     "React/React-dev-learn/1. Describing the UI.md",
+    "React/React Routing.md",
+    "React/React Home.md",
     "React/React-dev-learn/2. Adding Interactivity.md",
     "React/React-dev-learn/3. Managing state.md",
-    "React/React-dev-learn/Custom Hooks.md",
     "React/React-dev-learn/4. Escape Hatches.md",
+    "React/React-dev-learn/Custom Hooks.md",
     "React/React-dev-learn/UseMemo and UseCallback.md",
-    "React/React Home.md",
-    "React/React Routing.md",
+    "Javascript/JS Projects/Tic Tac Toe in React.md",
+    "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
     "CSS/CSS Custom properties.md",
     "DotNet/Design patterns.md",
     "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
@@ -210,13 +214,8 @@
     "FrontEndInterviewPrep/Performance/Compressing Javascript.md",
     "FrontEndInterviewPrep/Performance/Bundle splitting.md",
     "FrontEndInterviewPrep/dp_1.webm",
-    "FrontEndInterviewPrep/Polling, long polling, websocket and webhook.md",
-    "FrontEndInterviewPrep/Trello.md",
     "FrontEndInterviewPrep/bundle_1.webm",
     "FrontEndInterviewPrep/dp1.webm",
-    "FrontEndInterviewPrep/Front end system design.md",
-    "FrontEndInterviewPrep/JIRA front end architecture.md",
-    "FrontEndInterviewPrep/Manager Interview.md",
     "FrontEndInterviewPrep/dp_2.webm",
     "CSS/attachments/Pasted image 20250326100536.png",
     "CSS/attachments/Pasted image 20250325093420.png",
