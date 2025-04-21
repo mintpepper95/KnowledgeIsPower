@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/React-dev-learn/4. Escape Hatches.md",
+                "file": "React/React-dev-learn/Effect/1. Effect.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,10 +52,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "4. Escape Hatches"
+              "title": "1. Effect"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -87,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "stale ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -198,10 +199,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cb607a10a56bb6b8",
+  "active": "2b3e7446e86bf74e",
   "lastOpenFiles": [
+    "React/React-dev-learn/UseMemo and UseCallback.md",
+    "React/React-dev-learn/Custom Hooks.md",
+    "React/React-dev-learn/2. Adding Interactivity.md",
     "React/React-dev-learn/4. Escape Hatches.md",
     "React/React-dev-learn/3. Managing state.md",
+    "React/React-dev-learn/attachments/Pasted image 20250421151052.png",
     "FrontEndInterviewPrep/Performance/Bundle splitting.md",
     "React/React-dev-learn/Effect/1. Effect.md",
     "React/React-dev-learn/Effect/5. Removing Effect dependencies.md",
@@ -211,9 +216,6 @@
     "React/React-dev-learn/1. Describing the UI.md",
     "React/React Routing.md",
     "React/React Home.md",
-    "React/React-dev-learn/2. Adding Interactivity.md",
-    "React/React-dev-learn/Custom Hooks.md",
-    "React/React-dev-learn/UseMemo and UseCallback.md",
     "Javascript/JS Projects/Tic Tac Toe in React.md",
     "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
     "CSS/CSS Custom properties.md",
@@ -226,7 +228,6 @@
     "TTD.md",
     "WooliesX Csharp.md",
     "FrontEndInterviewPrep/Performance/ARIA.md",
-    "FrontEndInterviewPrep/Performance/Compressing Javascript.md",
     "FrontEndInterviewPrep/dp_1.webm",
     "FrontEndInterviewPrep/bundle_1.webm",
     "FrontEndInterviewPrep/dp1.webm",
@@ -239,7 +240,6 @@
     "CSS/attachments/Pasted image 20250325022318.png",
     "CSS/attachments/Pasted image 20250325021527.png",
     "CSS/attachments/Pasted image 20250325020007.png",
-    "CSS/attachments/Pasted image 20250325015408.png",
     "Leetcode/Math/Problems",
     "Leetcode/Math",
     "DotNet/MongoDB",
