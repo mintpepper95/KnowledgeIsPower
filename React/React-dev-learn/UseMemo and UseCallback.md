@@ -31,6 +31,23 @@ const allPrimes = React.useMemo(() => {
   return result;
 // selectedNum is the component state, essentially the input for this fn
 }, [selectedNum]);
+
+
+
+// Another example
+import { useMemo, useState } from 'react';
+
+const TodoList = ({ todos, filter }) => {
+	const [newToDo, setNewTodo] = useState('');
+
+	// getFilteredTodos may be an expensive call, so we don't want to call it every time component re-renders unless we have to (when todos.filter changes)
+	// memoise computed value
+	const visibleTodos = useMemo(() => {
+		return getFilteredTodos(todos, filter);
+	}, [todos, filter])
+
+	// ...
+}
 ```
 
 
