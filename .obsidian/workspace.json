@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/React-dev-learn/Effect/2. You might not need an Effect.md",
+                "file": "React/React-dev-learn/Effect/1. Effect.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2. You might not need an Effect"
+              "title": "1. Effect"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "stale ",
+                "query": "useeffect",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -176,9 +176,22 @@
   },
   "active": "2b3e7446e86bf74e",
   "lastOpenFiles": [
-    "React/React-dev-learn/UseMemo and UseCallback.md",
     "React/React-dev-learn/Effect/2. You might not need an Effect.md",
     "React/React-dev-learn/Effect/1. Effect.md",
+    "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
+    "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
+    "DotNet/C_Sharp/1. C_Sharp Basics.md",
+    "DotNet/C_Sharp/C_Sharp courses/Reducing cognitive load.md",
+    "DotNet/C_Sharp/C_Sharp courses/3. LINQ.md",
+    "DotNet/C_Sharp/C_Sharp concepts/readonly vs const.md",
+    "DotNet/C_Sharp/C_Sharp concepts/read vs const.md",
+    "DotNet/C_Sharp/C_Sharp concepts/Properties over fields.md",
+    "DotNet/C_Sharp/C_Sharp concepts/Pass by value vs Pass by ref.md",
+    "DotNet/C_Sharp/C_Sharp concepts/Generics.md",
+    "DotNet/C_Sharp/C_Sharp concepts/Exception Handling.md",
+    "DotNet/C_Sharp/C_Sharp concepts/Class, Partial classes, Static modifiers and Polymorphism.md",
+    "DotNet/C_Sharp/C_Sharp concepts/Async.md",
+    "React/React-dev-learn/UseMemo and UseCallback.md",
     "React/React-dev-learn/3. Managing state.md",
     "React/React-dev-learn/Effect/3. Lifecycle of Reactive Effects.md",
     "React/React-dev-learn/Effect/5. Removing Effect dependencies.md",
@@ -190,19 +203,7 @@
     "FrontEndInterviewPrep/Performance/Bundle splitting.md",
     "React/React-dev-learn/1. Describing the UI.md",
     "React/React Routing.md",
-    "React/React Home.md",
-    "Javascript/JS Projects/Tic Tac Toe in React.md",
-    "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
-    "CSS/CSS Custom properties.md",
-    "DotNet/Design patterns.md",
     "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
-    "Operation Spark.md",
-    "FunctionKind.md",
-    "Interface vs abstract class.md",
-    "Operation Health 2025.md",
-    "TTD.md",
-    "WooliesX Csharp.md",
-    "FrontEndInterviewPrep/Performance/ARIA.md",
     "FrontEndInterviewPrep/dp_1.webm",
     "FrontEndInterviewPrep/bundle_1.webm",
     "FrontEndInterviewPrep/dp1.webm",
