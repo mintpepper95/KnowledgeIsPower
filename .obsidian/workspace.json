@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/React-dev-learn/Effect/2. You might not need an Effect.md",
+                "file": "React/React-dev-learn/Custom Hooks.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2. You might not need an Effect"
+              "title": "Custom Hooks"
             }
           }
         ]
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/React-dev-learn/Effect/2. You might not need an Effect.md",
+                "file": "React/React-dev-learn/Custom Hooks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2. You might not need an Effect"
+              "title": "Backlinks for Custom Hooks"
             }
           },
           {
@@ -176,8 +176,11 @@
   },
   "active": "2b3e7446e86bf74e",
   "lastOpenFiles": [
-    "React/React-dev-learn/Effect/1. Effect.md",
+    "React/React-dev-learn/Effect/5. Removing Effect dependencies.md",
+    "React/React-dev-learn/Effect/4. Separating Events from Effects.md",
+    "React/React-dev-learn/Effect/3. Lifecycle of Reactive Effects.md",
     "React/React-dev-learn/Effect/2. You might not need an Effect.md",
+    "React/React-dev-learn/Effect/1. Effect.md",
     "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
     "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
     "DotNet/C_Sharp/1. C_Sharp Basics.md",
@@ -193,9 +196,6 @@
     "DotNet/C_Sharp/C_Sharp concepts/Async.md",
     "React/React-dev-learn/UseMemo and UseCallback.md",
     "React/React-dev-learn/3. Managing state.md",
-    "React/React-dev-learn/Effect/3. Lifecycle of Reactive Effects.md",
-    "React/React-dev-learn/Effect/5. Removing Effect dependencies.md",
-    "React/React-dev-learn/Effect/4. Separating Events from Effects.md",
     "React/React-dev-learn/Custom Hooks.md",
     "React/React-dev-learn/2. Adding Interactivity.md",
     "React/React-dev-learn/4. Escape Hatches.md",
