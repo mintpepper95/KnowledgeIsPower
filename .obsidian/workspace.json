@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/React-dev-learn/Custom Hooks.md",
+                "file": "Atlassian.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Custom Hooks"
+              "title": "Atlassian"
             }
           }
         ]
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/React-dev-learn/Custom Hooks.md",
+                "file": "Atlassian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Custom Hooks"
+              "title": "Backlinks for Atlassian"
             }
           },
           {
@@ -176,6 +176,8 @@
   },
   "active": "2b3e7446e86bf74e",
   "lastOpenFiles": [
+    "React/React-dev-learn/UseMemo and UseCallback.md",
+    "React/React-dev-learn/Custom Hooks.md",
     "React/React-dev-learn/Effect/5. Removing Effect dependencies.md",
     "React/React-dev-learn/Effect/4. Separating Events from Effects.md",
     "React/React-dev-learn/Effect/3. Lifecycle of Reactive Effects.md",
@@ -194,9 +196,7 @@
     "DotNet/C_Sharp/C_Sharp concepts/Exception Handling.md",
     "DotNet/C_Sharp/C_Sharp concepts/Class, Partial classes, Static modifiers and Polymorphism.md",
     "DotNet/C_Sharp/C_Sharp concepts/Async.md",
-    "React/React-dev-learn/UseMemo and UseCallback.md",
     "React/React-dev-learn/3. Managing state.md",
-    "React/React-dev-learn/Custom Hooks.md",
     "React/React-dev-learn/2. Adding Interactivity.md",
     "React/React-dev-learn/4. Escape Hatches.md",
     "React/React-dev-learn/attachments/Pasted image 20250421151052.png",
