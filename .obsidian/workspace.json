@@ -88,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "atlassian",
+                "query": "atlass",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -202,6 +202,7 @@
   },
   "active": "e68fbf0a2ca4ba08",
   "lastOpenFiles": [
+    "Atlassian kit/FeatureFlag JS.md",
     "Atlassian kit/js Blog API.md",
     "Atlassian.md",
     "React/React-dev-learn/UseMemo and UseCallback.md",
@@ -228,7 +229,6 @@
     "React/React-dev-learn/2. Adding Interactivity.md",
     "React/React-dev-learn/4. Escape Hatches.md",
     "React/React-dev-learn/attachments/Pasted image 20250421151052.png",
-    "FrontEndInterviewPrep/Performance/Bundle splitting.md",
     "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
     "FrontEndInterviewPrep/dp_1.webm",
     "FrontEndInterviewPrep/bundle_1.webm",
