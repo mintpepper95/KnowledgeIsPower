@@ -3,12 +3,12 @@
 2. We can use import syntax with mjs file, 
 `import { simpleFetch } from './simple-fetch/index.mjs'`
 
-1. Create a nodejs project with `npm i`
-2. Paste simple-fetch into the root
-3. Go to package.json, and create a start cmd under scripts section
+3. Create a nodejs project with `npm init`
+4. Paste simple-fetch into the root
+5. Go to package.json, and create a start cmd under scripts section
  ![[Pasted image 20240519183638.png]]
-4. Add `"type": "module"` to package.json to be able to use import statements. This will ensure all js and mjs files are interpreted as ES modules.
-5. Install additional packages such as jest `npm install --save-dev jest` and localStorage, we use the flag `save-dev` because we don't need it for prod, only for testing under dev env.
+6. Add `"type": "module"` to package.json to be able to use import statements. This will ensure all js and mjs files are interpreted as ES modules.
+7. Install additional packages such as jest `npm install --save-dev jest` and localStorage, we use the flag `save-dev` because we don't need it for prod, only for testing under dev env.
 
 
 ##### Start parameter

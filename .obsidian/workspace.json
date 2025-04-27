@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Atlassian.md",
+                "file": "Atlassian kit/js Blog API.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Atlassian"
+              "title": "js Blog API"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "useeffect",
+                "query": "mjs",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,7 +84,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -104,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Atlassian.md",
+                "file": "Atlassian kit/js Blog API.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Atlassian"
+              "title": "Backlinks for js Blog API"
             }
           },
           {
@@ -176,6 +177,7 @@
   },
   "active": "2b3e7446e86bf74e",
   "lastOpenFiles": [
+    "Atlassian.md",
     "React/React-dev-learn/UseMemo and UseCallback.md",
     "React/React-dev-learn/Custom Hooks.md",
     "React/React-dev-learn/Effect/5. Removing Effect dependencies.md",
@@ -202,7 +204,6 @@
     "React/React-dev-learn/attachments/Pasted image 20250421151052.png",
     "FrontEndInterviewPrep/Performance/Bundle splitting.md",
     "React/React-dev-learn/1. Describing the UI.md",
-    "React/React Routing.md",
     "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
     "FrontEndInterviewPrep/dp_1.webm",
     "FrontEndInterviewPrep/bundle_1.webm",
