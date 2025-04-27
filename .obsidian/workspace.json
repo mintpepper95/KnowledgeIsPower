@@ -54,9 +54,33 @@
               "icon": "lucide-file",
               "title": "Atlassian"
             }
+          },
+          {
+            "id": "2cd7d46f84a1b45a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Atlassian kit/FeatureFlag JS.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "FeatureFlag JS"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -88,7 +112,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "atlass",
+                "query": "jest",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -130,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Atlassian.md",
+                "file": "Atlassian kit/FeatureFlag JS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +164,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Atlassian"
+              "title": "Backlinks for FeatureFlag JS"
             }
           },
           {
@@ -200,11 +224,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e68fbf0a2ca4ba08",
+  "active": "2cd7d46f84a1b45a",
   "lastOpenFiles": [
-    "Atlassian kit/FeatureFlag JS.md",
     "Atlassian kit/js Blog API.md",
     "Atlassian.md",
+    "Atlassian kit/FeatureFlag JS.md",
     "React/React-dev-learn/UseMemo and UseCallback.md",
     "React/React-dev-learn/Custom Hooks.md",
     "React/React-dev-learn/Effect/5. Removing Effect dependencies.md",

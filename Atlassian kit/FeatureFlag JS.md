@@ -17,6 +17,9 @@ Note `!obj` does not work with empty object, we have to use `Object.keys(obj).le
 #### Running a particular jest test
 use `test.only()` instead of `test`
 
+#### Running a particular test file
+`npm run test -- test_file_name`
+
 
 
 ##### Writing a jest test for the API
