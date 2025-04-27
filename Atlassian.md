@@ -3,8 +3,40 @@ Tic Tac Toe
 Todo List
 Feature flag client - react
 
-Feature flag client
+Feature flag client, possibly local storage
 Api Client ( js )
+
+
+
+Build a A/B testing SDK
+
+
+
+
+
+Browser Coding Round where the interviewer asked to design a form or search bar like that and after that 2) Javascript Round , where interviewer gave a code snippet and with the help of promise/async -await approach how to handle api calls
+
+
+
+dynamically implementing a bar graph for browser coding
+
+
+
+
+
+Javascript Coding Round -I was given an hour to develop a tic-tac-toe application I was allowed to utilize React and other JavaScript frameworks. They wanted to see how well I could write code, so they asked me a few questions about the solution's approach. I was also free to use Google to find any API references.  
+  
+Machine Coding Round - For the first five to ten minutes, I was asked simple Javascript questions. After that, I received the problem statement, which instructed me to build a "publisher-subscriber library."In an hour, I was supposed to write and test the code.
+
+
+
+Culture Fit Round - The majority of the questions were not technical. I was questioned about things like how I would handle disagreements with my manager, team leader, and myself.
+
+
+
+
+
+System design, a web crawler, which I had studied for. It was a custom web crawler, you can submit a list of URLs (100 urls max) and it wound find all images in any pages associated with the urls. But, this was more of a code design. Didn't care about throughput, storage capacity, endpoint security, load balancing, or flow of data through the system. They gave 3 endpoints and wanted you to design the crawler itself, how would it crawl the pages, and find the images. More like psuedo coding, but with graphical boxes. Not what I was expecting or prepared for.
 
 
 
@@ -19,6 +51,12 @@ Browser Coding - Create a file directory structure using some JSON data provided
 In Browser coding interview I was asked to develop a dynamic hierarchical menu where it can have multiple levels. 
 
 In Javascript coding interview, I was asked to develop an API that retrieves the Menu option and according to access rights route to the specific page.
+
+
+JS problem solving
+I was asked to [create an analytics SDK](https://learnersbucket.com/examples/interview/create-analytics-sdk-in-javascript) that will be used to collect the analytics throughout the components in the application and batch send them to the server.
+
+Asked me which design pattern you would use for SDK as a single instance should be used throughout the app, I answered as [singleton design pattern](https://learnersbucket.com/examples/interview/singleton-design-pattern-in-javascript).
 
 
 
@@ -384,6 +422,85 @@ https://www.youtube.com/watch?v=-wow5ApdZ0Y
 
 ### 
 
+### Interview Questions
+
+- Can you find if there any security issue in <THIS> javascript code? 
+- Create a feature flag component in React that consumes a feature’s API and conditionally renders UI based on the value of the feature.
+- What’s the most complex project you’ve worked on? 
+- Tell me about a time you solved a conflict.
+- What is the difference between script, script async and script defer?
+- Design the UI/UX experience of a Jira board (personal and team).
+- Build out a feature based on the brief/mock.
+- Can you describe a situation where you had a difference of opinion with a colleague or team member? 
+- Have you ever given constructive criticism to a colleague? 
+- Can you tell me about a time when a change you made resulted in an issue for customers?
+
+## System Design
+
+### Overview
+
+This 60-minute interview will center on designing a technical solution to a real-world problem. Atlassian uses this round to evaluate your technical depth, architectural thinking, and ability to handle real-world challenges. You’ll be presented with a broad problem statement—something like "Design a notification system for a SaaS product" or "Architect a collaborative document-editing application". 
+
+The interviewer is not looking for a perfect design—they’re assessing:
+
+- **Your thought process**: How do you approach the problem?
+- **Decision-making**: Why did you choose a particular architecture or technology?
+- **Operational considerations**: How do you ensure scalability, reliability, and maintainability?
+
+### Tips
+
+Here are our top tips for this round:
+
+- Tip #1: If something isn’t clear, don’t guess—ask. What are the must-have features? What kind of scale are we designing for? Are there specific constraints or assumptions? This will not just help you avoid assumptions but also shows that you’re thinking from the user and business perspective.
+- Tip #2: Break the system into logical components (e.g., frontend, backend, database, caching, APIs). Draw a high-level architecture on a virtual whiteboard or paper (depending on the format). Label the key components and data flow. For instance, in a notification system, you might outline: Notification service (backend), Message queues for async processing, and Push notification gateways. Then, pick one or two critical components to discuss in detail. For example: The database: Should we use SQL or NoSQL? How do we handle high write loads? And so on.
+- Tip #3: Every decision has trade-offs—acknowledge them. And be vocal about it. Fir instance, “I’m choosing a NoSQL database here because it handles unstructured data better and scales horizontally.”Discuss how you’d monitor system health (e.g., logging, metrics, alerts).
+- Tip #4: Once you’ve laid out the design, ask, “How can we improve this?” Optimize for cost, performance, simplicity, etc based on feedback
+
+## Management Interview
+
+### Overview
+
+The Management Interview is a decisive round that tests your leadership style, collaboration skills, and decision-making approach. This 60-minute session is scenario-based, so expect questions that require you to pull from real-world experiences. It's typically conducted by and Engineering Manager or the Vice President.
+
+In a nutshell, they want to know:
+
+- Can you navigate team dynamics and resolve conflicts?
+- How do you balance the expectations of stakeholders while keeping your team aligned and motivated?
+- Do you take ownership of outcomes, even in challenging situations?
+
+**Expert Tip:** The key here is to connect your past successes (and challenges) to the principles of effective teamwork and leadership. Share examples where you’ve worked with designers, engineers, or stakeholders to align on priorities or overcome challenges. And be honest about it: don't shy away from tough scenarios. If you’ve made a decision that didn’t pan out, explain what you learned and how you adjusted your approach in future projects. We'd recommended using the Situation-Task-Action-Result framework to structure your responses.
+
+## Values Interview
+
+### Overview
+
+Atlassian takes its company values seriously, and this interview is designed to see how well you align with them. You can expect prompts like:
+
+- Tell me about a time you disagreed with a team member. How did you resolve it?
+- Describe a moment when you identified an inefficiency and improved it.
+
+Now, Atlassian has 5 Core Values:
+
+- Open Company, No Bullsh!t
+- Play, As a Team
+- Be the Change You Seek
+- Build with Heart and Balance
+- Don’t #@!% the Customer
+
+Analyse your past experiences and reflect on those where these values played a role. For instance, a time when you perhaps prioritized customer experience or drove change in a challenging environment.
+
+**Pro Tip:** Atlassian wants to see authenticity. If you’re asked something like, “How do you deal with failure?” don’t just say, “I learn from it.” Share an honest story where you failed, owned up to it, and grew as a result. 
+
+For instance: _“I once underestimated the time needed for a project, and it impacted delivery. I immediately communicated the delay, took responsibility, and reorganized the team’s efforts to minimize impact. It taught me the importance of better scoping and setting realistic expectations upfront.”_
+
+### Atlassian Frontend Engineer Roles and Responsibilities
+
+Following are the roles and responsibilities of a Atlassian Frontend Engineer:
+
+- You’ll be building cutting-edge web applications, focusing on creating efficient, reusable front-end systems that scale. 
+- Expect to dive into code reviews and design discussions, where you’ll help shape the product and ensure the tech behind it is rock-solid.
+- On the technical side, you’ll analyze system functions, optimize performance, and implement new features that go from controller-level logic all the way up to the UI. 
+- You’ll be collaborating closely with Product Managers, UX designers, and backend engineers to make sure your frontend solutions are in sync with the broader product vision.
 
 
 
