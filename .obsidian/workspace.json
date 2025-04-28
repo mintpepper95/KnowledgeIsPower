@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/React-dev-learn/1. Describing the UI.md",
+                "file": "Javascript/JS Projects/Tic Tac Toe in React.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,20 +28,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "1. Describing the UI"
+              "title": "Tic Tac Toe in React"
             }
           },
           {
             "id": "8322e8429c4754fe",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Atlassian.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Atlassian"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -73,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "react",
+                "query": "atlassian",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -185,9 +200,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2b3e7446e86bf74e",
+  "active": "8322e8429c4754fe",
   "lastOpenFiles": [
+    "Javascript/JS Projects/Tic Tac Toe in React.md",
     "Atlassian.md",
+    "React/React-dev-learn/1. Describing the UI.md",
     "WooliesX Csharp.md",
     "Javascript/Promise.md",
     "Javascript/Jest/Introduction into testing with JEST.md",
@@ -211,8 +228,6 @@
     "DotNet/C_Sharp/C_Sharp concepts/Properties over fields.md",
     "DotNet/C_Sharp/C_Sharp concepts/Pass by value vs Pass by ref.md",
     "DotNet/C_Sharp/C_Sharp concepts/Generics.md",
-    "DotNet/C_Sharp/C_Sharp concepts/Exception Handling.md",
-    "DotNet/C_Sharp/C_Sharp concepts/Class, Partial classes, Static modifiers and Polymorphism.md",
     "React/React-dev-learn/attachments/Pasted image 20250421151052.png",
     "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
     "FrontEndInterviewPrep/dp_1.webm",
