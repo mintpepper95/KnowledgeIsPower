@@ -14,6 +14,8 @@ Build a A/B testing SDK
 
 
 
+
+
 Browser Coding Round where the interviewer asked to design a form or search bar like that and after that 2) Javascript Round , where interviewer gave a code snippet and with the help of promise/async -await approach how to handle api calls
 
 
@@ -21,7 +23,7 @@ Browser Coding Round where the interviewer asked to design a form or search bar 
 dynamically implementing a bar graph for browser coding
 
 
-
+https://learnersbucket.com/examples/interview/create-analytics-sdk-in-javascript/
 
 
 Javascript Coding Round -I was given an hour to develop a tic-tac-toe application I was allowed to utilize React and other JavaScript frameworks. They wanted to see how well I could write code, so they asked me a few questions about the solution's approach. I was also free to use Google to find any API references.  
