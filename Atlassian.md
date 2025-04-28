@@ -12,6 +12,12 @@ Build a A/B testing SDK
 
 
 
+### Building a interactive JIRA velocity bar chart
+
+https://www.youtube.com/watch?v=-wow5ApdZ0Y
+
+
+
 
 
 
@@ -417,10 +423,47 @@ script is the default that block the HTML until script loads, script async load 
 
 
 
+### System Design Round
 
-### Building a interactive JIRA velocity bar chart
+This was the 4th round of the interview process. It was again a 60-minute round but it didn't involve coding.
 
-https://www.youtube.com/watch?v=-wow5ApdZ0Y
+A typical frontend systems design round involves solving a frontend problem with more focus on the architecture and the design of the app. As soon as I was given the problem, I jumped straight into the process (as I know from my previous interview experiences that this round usually takes me a lot of time since there is no clear way to end the solution)
+
+You are supposed to cover a lot in this round as this helps them understand (to an extent) that you know how to build systems efficiently.
+
+I followed the _RADIO_ framework for the system design problem I was given.
+
+- R → At first, you start by gathering the requirements (functional & non-functional) of the system to design
+- A → then you create a high-level design/architecture of the system, this part helps you identify the core components of the app
+- D → defining the data flow & model, state management & normalization
+- I → API definition, endpoints, payload, request & responses
+- O → optimization & scaling
+
+You can learn more about the RADIO framework on the [frontend interview handbook](https://www.frontendinterviewhandbook.com/front-end-system-design/#radio-framework)
+
+In my opinion, no answer is right or wrong in this round. But be prepared to answer why you choose one thing over another. (for eg: imagine you choose Svelte as your choice of frontend framework to design your application, now you might be asked to explain why did you choose Svelte over some other framework like React for example) I remember there were a few very deep discussions where the interviewer wanted me to explain my choices.
+
+The above 4 rounds are also called the crafts interviews. Now, the last two rounds are non-tech rounds.
+
+### Values Round
+
+This was the 5th round in the interview process. It was a 45-minute round. There were behavioral questions based on Atlassian's core values and how well the candidate aligns with them.
+
+Tip: Please go through all the [values](https://www.atlassian.com/company/values), and prepare some examples from your past experiences that align well with them. It's one of the reasons I chose Atlassian because I can relate to all the values.
+
+### Management Round
+
+This was the 6th round in the interview process. It was a 60-minute round with one of the senior engineering managers at Atlassian. It involved many scenario-based questions that go like "Tell me about a time when you..." that helps them understand whether you can work well with a team or not.
+
+Tip: You can use the STAR (Situation, Task, Action, Reward) method to craft your answer to such questions.
+
+---
+
+After all of the interviews, there is a debrief and hiring committee review that can take about 2 weeks before you can get any update on your application. Soon I received an update that I've received positive feedback from the hiring committee and they have initiated the next steps to align me with the team.
+
+
+
+
 
 ### 
 
