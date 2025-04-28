@@ -1,7 +1,8 @@
 Page Tree
 Tic Tac Toe
 Todo List
-Feature flag client - react
+Bar chart
+form and search bar
 
 Feature flag client, possibly local storage
 Api Client ( js )

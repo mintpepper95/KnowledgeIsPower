@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript/Promise.md",
+                "file": "React/React-dev-learn/1. Describing the UI.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,17 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Promise"
+              "title": "1. Describing the UI"
+            }
+          },
+          {
+            "id": "8322e8429c4754fe",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -63,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "esm",
+                "query": "react",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -177,9 +187,10 @@
   },
   "active": "2b3e7446e86bf74e",
   "lastOpenFiles": [
-    "Javascript/Jest/Introduction into testing with JEST.md",
     "Atlassian.md",
+    "WooliesX Csharp.md",
     "Javascript/Promise.md",
+    "Javascript/Jest/Introduction into testing with JEST.md",
     "Atlassian kit/js Blog API.md",
     "Javascript/Handwriting promise.md",
     "Atlassian kit/FeatureFlag JS.md",
@@ -202,7 +213,6 @@
     "DotNet/C_Sharp/C_Sharp concepts/Generics.md",
     "DotNet/C_Sharp/C_Sharp concepts/Exception Handling.md",
     "DotNet/C_Sharp/C_Sharp concepts/Class, Partial classes, Static modifiers and Polymorphism.md",
-    "DotNet/C_Sharp/C_Sharp concepts/Async.md",
     "React/React-dev-learn/attachments/Pasted image 20250421151052.png",
     "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
     "FrontEndInterviewPrep/dp_1.webm",
