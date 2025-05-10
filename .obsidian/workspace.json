@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2b3e7446e86bf74e",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "React/React-dev-learn/attachments/module_dependency_tree.webp"
-              },
-              "icon": "lucide-image",
-              "title": "module_dependency_tree"
-            }
-          },
-          {
             "id": "8322e8429c4754fe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Atlassian.md",
+                "file": "System design/Autocomplete.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -40,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Atlassian"
+              "title": "Autocomplete"
             }
           }
         ]
@@ -75,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "auto complete",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -100,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "f9838370ded5a893",
@@ -186,11 +175,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a7cafb0b48db0842",
+  "active": "8322e8429c4754fe",
   "lastOpenFiles": [
+    "System design/attachments/autocomplete-architecture.png",
+    "System design/attachments/google-search-autocomplete.png",
+    "System design/Scalability for dummies.md",
+    "System design/Autocomplete.md",
+    "Atlassian.md",
+    "React/React-dev-learn/attachments/module_dependency_tree.webp",
     "React/React-dev-learn/attachments/0 4Dsb0smecDtvTosK.webp",
     "Javascript/JS Projects/Tic Tac Toe in React.md",
-    "Atlassian.md",
     "React/React-dev-learn/1. Describing the UI.md",
     "WooliesX Csharp.md",
     "Javascript/Promise.md",
@@ -212,8 +206,6 @@
     "DotNet/C_Sharp/C_Sharp courses/3. LINQ.md",
     "DotNet/C_Sharp/C_Sharp concepts/readonly vs const.md",
     "DotNet/C_Sharp/C_Sharp concepts/read vs const.md",
-    "DotNet/C_Sharp/C_Sharp concepts/Properties over fields.md",
-    "DotNet/C_Sharp/C_Sharp concepts/Pass by value vs Pass by ref.md",
     "React/React-dev-learn/attachments/Pasted image 20250421151052.png",
     "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
     "FrontEndInterviewPrep/dp_1.webm",
@@ -225,9 +217,6 @@
     "CSS/attachments/Pasted image 20250325093409.png",
     "CSS/attachments/Pasted image 20250325093053.png",
     "CSS/attachments/Pasted image 20250325093045.png",
-    "CSS/attachments/Pasted image 20250325022318.png",
-    "CSS/attachments/Pasted image 20250325021527.png",
-    "CSS/attachments/Pasted image 20250325020007.png",
     "Leetcode/Math/Problems",
     "Leetcode/Math",
     "DotNet/MongoDB",
