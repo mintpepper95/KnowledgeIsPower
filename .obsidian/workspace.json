@@ -11,24 +11,12 @@
             "id": "2b3e7446e86bf74e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Javascript/JS Projects/Tic Tac Toe in React.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "file": "React/React-dev-learn/attachments/module_dependency_tree.webp"
               },
-              "icon": "lucide-file",
-              "title": "Tic Tac Toe in React"
+              "icon": "lucide-image",
+              "title": "module_dependency_tree"
             }
           },
           {
@@ -55,8 +43,7 @@
               "title": "Atlassian"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -88,7 +75,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "atlassian",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,8 +96,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -200,8 +186,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8322e8429c4754fe",
+  "active": "a7cafb0b48db0842",
   "lastOpenFiles": [
+    "React/React-dev-learn/attachments/0 4Dsb0smecDtvTosK.webp",
     "Javascript/JS Projects/Tic Tac Toe in React.md",
     "Atlassian.md",
     "React/React-dev-learn/1. Describing the UI.md",
@@ -227,7 +214,6 @@
     "DotNet/C_Sharp/C_Sharp concepts/read vs const.md",
     "DotNet/C_Sharp/C_Sharp concepts/Properties over fields.md",
     "DotNet/C_Sharp/C_Sharp concepts/Pass by value vs Pass by ref.md",
-    "DotNet/C_Sharp/C_Sharp concepts/Generics.md",
     "React/React-dev-learn/attachments/Pasted image 20250421151052.png",
     "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
     "FrontEndInterviewPrep/dp_1.webm",
