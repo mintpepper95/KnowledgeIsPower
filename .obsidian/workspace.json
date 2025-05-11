@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/Autocomplete.md",
+                "file": "Front End System Design/The Radio framework.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Autocomplete"
+              "title": "The Radio framework"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "auto complete",
+                "query": "frontend interview prep",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 304.50840759277344
   },
   "right": {
     "id": "f9838370ded5a893",
@@ -177,13 +176,30 @@
   },
   "active": "8322e8429c4754fe",
   "lastOpenFiles": [
-    "System design/attachments/autocomplete-architecture.png",
-    "System design/attachments/google-search-autocomplete.png",
+    "FrontEndInterviewPrep/Autocomplete.md",
+    "Front End System Design/The Radio framework.md",
+    "Front End System Design",
+    "FrontEndInterviewPrep/dp_1.webm",
+    "FrontEndInterviewPrep/dp_2.webm",
+    "FrontEndInterviewPrep/Manager Interview.md",
+    "FrontEndInterviewPrep/Pasted image 20240601203408.png",
+    "FrontEndInterviewPrep/Pasted image 20240608194516.png",
+    "FrontEndInterviewPrep/Pasted image 20240608203510.png",
+    "FrontEndInterviewPrep/Pasted image 20240608203645.png",
+    "FrontEndInterviewPrep/Pasted image 20240610161356.png",
+    "FrontEndInterviewPrep/Pasted image 20240610161553.png",
+    "FrontEndInterviewPrep/Pasted image 20240610190333.png",
+    "FrontEndInterviewPrep/Pasted image 20240610190551.png",
+    "FrontEndInterviewPrep/Polling, long polling, websocket and webhook.md",
+    "FrontEndInterviewPrep/Pasted image 20240610185507.png",
+    "FrontEndInterviewPrep/Pasted image 20240608203533.png",
+    "FrontEndInterviewPrep/bundle_1.webm",
+    "FrontEndInterviewPrep/Interviews/Chat application.md",
+    "FrontEndInterviewPrep/Interviews/Trello as an example.md",
+    "FrontEndInterviewPrep/Front end system design.md",
+    "FrontEndInterviewPrep/Multipart form data.md",
     "System design/Scalability for dummies.md",
-    "System design/Autocomplete.md",
     "Atlassian.md",
-    "React/React-dev-learn/attachments/module_dependency_tree.webp",
-    "React/React-dev-learn/attachments/0 4Dsb0smecDtvTosK.webp",
     "Javascript/JS Projects/Tic Tac Toe in React.md",
     "React/React-dev-learn/1. Describing the UI.md",
     "WooliesX Csharp.md",
@@ -200,29 +216,12 @@
     "React/React-dev-learn/Effect/2. You might not need an Effect.md",
     "React/React-dev-learn/Effect/1. Effect.md",
     "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
-    "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
-    "DotNet/C_Sharp/1. C_Sharp Basics.md",
-    "DotNet/C_Sharp/C_Sharp courses/Reducing cognitive load.md",
-    "DotNet/C_Sharp/C_Sharp courses/3. LINQ.md",
-    "DotNet/C_Sharp/C_Sharp concepts/readonly vs const.md",
-    "DotNet/C_Sharp/C_Sharp concepts/read vs const.md",
-    "React/React-dev-learn/attachments/Pasted image 20250421151052.png",
-    "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
-    "FrontEndInterviewPrep/dp_1.webm",
-    "FrontEndInterviewPrep/bundle_1.webm",
     "FrontEndInterviewPrep/dp1.webm",
-    "FrontEndInterviewPrep/dp_2.webm",
-    "CSS/attachments/Pasted image 20250326100536.png",
-    "CSS/attachments/Pasted image 20250325093420.png",
-    "CSS/attachments/Pasted image 20250325093409.png",
-    "CSS/attachments/Pasted image 20250325093053.png",
-    "CSS/attachments/Pasted image 20250325093045.png",
     "Leetcode/Math/Problems",
     "Leetcode/Math",
     "DotNet/MongoDB",
     "DotNet/C_Sharp/C_Sharp concepts/attachments",
     "DotNet/ASP.NET/pluralsight",
-    "DotNet/C_Sharp/C_Sharp concepts",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
