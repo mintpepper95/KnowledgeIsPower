@@ -54,7 +54,52 @@ Managing side effects and persistence etc.
 
 ---
 
-### Data model
+### Data model and props for the component
+
+Controller
+* current search string
+* options exposed via component API ( via e.g. props )
+
+Cache
+* Initial results
+* Cached results
+
+
+For customisable options, we can have things like below.
+* Number of results
+* Api url
+* Event listeners - 'input', 'focus', 'blur', 'change', 'select' etc
+* Customisable rendering options, like passing in an object for font e.g `{ textSize: 12px, textColor: 'red' }`
+* Class names - which allow devs to specify their own css class names
+
+There can be some more advanced things like
+* minimum query length - without a minimum length, there maybe too many results if query is too short as it's not specific enough. We might only want to trigger search when there's more than 3 characters
+* debounce duration - triggering api on every keystroke can be wasteful, like when user has not finished typing, we could debounce to make sure API doesn't get hit too often. We can debounce and make server not get called until no user input for 300ms.
+* timeout duration - how long we wait for a response before determining search has timed out and we display an error.
+* Cache related settings - cache duration and etc
+
+Server should provide API that supports query, limit ( max number of items ) and pagination ( page number )
+
+---
+
+### Optimisation and deep dive
+
+#### What happens if user updates query when there's a pending network request?
+we will need to make sure not to display results for previous queries to the user. We can't rely on return order of network responses from server as earlier request can be completed later.
+
+
+( Here we are proposing two solutions and talking trade-offs )
+We can perhaps attach a timestamp to request to determine which response is relevant.
+Or save the results in object/map, keyed by search query and only present results corresponding to input value of search.
+
+Cache remembers the responses of each query, so probably better.
+Note not advisable to 
+
+
+
+
+---
+
 
 
 
