@@ -88,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 304.50840759277344
+    "width": 304.50840759277344,
+    "collapsed": true
   },
   "right": {
     "id": "f9838370ded5a893",
@@ -176,6 +177,9 @@
   },
   "active": "8322e8429c4754fe",
   "lastOpenFiles": [
+    "Front End System Design/attachments/Pasted image 20250512081446.png",
+    "Front End System Design/attachments/news-feed-architecture.png",
+    "Front End System Design/attachments",
     "FrontEndInterviewPrep/Autocomplete.md",
     "Front End System Design/The Radio framework.md",
     "Front End System Design",
@@ -192,7 +196,6 @@
     "FrontEndInterviewPrep/Pasted image 20240610190551.png",
     "FrontEndInterviewPrep/Polling, long polling, websocket and webhook.md",
     "FrontEndInterviewPrep/Pasted image 20240610185507.png",
-    "FrontEndInterviewPrep/Pasted image 20240608203533.png",
     "FrontEndInterviewPrep/bundle_1.webm",
     "FrontEndInterviewPrep/Interviews/Chat application.md",
     "FrontEndInterviewPrep/Interviews/Trello as an example.md",
@@ -215,13 +218,11 @@
     "React/React-dev-learn/Effect/3. Lifecycle of Reactive Effects.md",
     "React/React-dev-learn/Effect/2. You might not need an Effect.md",
     "React/React-dev-learn/Effect/1. Effect.md",
-    "DotNet/C_Sharp/C_Sharp courses/2. Refactoring to SOLID.md",
     "FrontEndInterviewPrep/dp1.webm",
     "Leetcode/Math/Problems",
     "Leetcode/Math",
     "DotNet/MongoDB",
     "DotNet/C_Sharp/C_Sharp concepts/attachments",
-    "DotNet/ASP.NET/pluralsight",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",

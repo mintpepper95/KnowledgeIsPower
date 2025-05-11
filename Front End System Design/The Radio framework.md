@@ -35,4 +35,87 @@ Some general questions you might want to ask would be -
 
 ---
 
-### Architecute/High-level design
+### Architecture/High-level design
+
+Example of a news feed
+![[news-feed-architecture.png]]
+
+---
+
+### Data model
+Describe the entities, the fields they contain and which components they belong to.
+
+There are two kinds of data on a client app.
+
+##### Server-originated data
+Data from the server, usually from a database. Things like feed posts and comments.
+
+##### Client-only data
+State, data that lives on the client and does not have to be sent to the server.
+
+Two types of client data
+* Data to be persisted - user input entered into form fields, has to be sent to the server for it to be useful.
+* Temporal data - Form validation state, current navigation tab, whether a component is expanded, it's acceptable to lose these data when the browser tab is closed.
+
+
+For a news feed, the main entities would be the following.
+![[Pasted image 20250512081446.png]]
+
+---
+
+### API
+Things like HTTP methods and response data.
+
+If you are asked to design a UI component, talk about customisation options for the component, similar to props in React.
+
+
+---
+### Optimisation and deep dive
+
+There's no fixed way to go about optimisation and deep dive. There won't be enough time to cover every area, so select what to cover.
+
+E.g. For e-commerce websites, performance is important, talk about what can be done. For collaborative editors, how to handle race conditions and con-current modifications.
+
+Other things to talk about include accessibility and observability and etc.
+
+Things you can talk about
+* Performance
+* UX
+* Network
+* Accessibility
+* Multilingual support
+* Multi-device support
+* Security
+
+---
+
+### Evaluation Criteria
+
+##### Problem exploration
+* Explore requirements sufficiently by asking relevant clarifying questions.
+* Gather functional and non-functional requirements of the problem.
+* Define the scope of the problem and identify the important aspects of the problem to focus on.
+
+##### Architecture
+* Develop an architecture that solves the problem sufficiently.
+* Break down problem into smaller chunks.
+* Identify components of the system and define their responsibilities clearly.
+* How the components will work together and also the API (props) between the components.
+* Have scalability and reusability in mind.
+
+##### Technical proficiency
+* Demonstrate proficient knowledge of front end fundamentals, common tech and APIs
+* Able to dive into specific front end domain areas relevant to the problem.
+* Identify areas which need to be paid special attention to, and address them by proposing solutions and evaluating trade-offs.
+
+##### Exploration and trade-offs
+* Offer various possible solutions and evaluate trade-offs, these may not be the original problem, but a chunk of the problem, as we can have various solutions to them.
+* Explain the suitability of the solutions given context and requirements and provide recommendations. Don't insist there's only one solution. Usually open ended questions means there's a few possible solutions. Pick the one that suits the problem. Briefly why the other solutions are bad.
+
+##### Product and UX
+* Consider user experience when answering - loading states, performance, mobile friendliness, accessibility etc.
+
+* How to handle error cases.
+,
+
+
