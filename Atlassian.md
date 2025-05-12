@@ -24,7 +24,7 @@ https://www.youtube.com/watch?v=-wow5ApdZ0Y
 
 
 
-
+Caching solution on frontend that can essentially cache mulitple requests to a same function and at the same time which holds a reference to a promise. I fulfilled the solutions more or less but I wasn't good enough for Sr or even a downgrade to Mid level.
 
 
 Browser Coding Round where the interviewer asked to design a form or search bar like that and after that 2) Javascript Round , where interviewer gave a code snippet and with the help of promise/async -await approach how to handle api calls

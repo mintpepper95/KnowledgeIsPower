@@ -122,6 +122,13 @@ https://medium.com/geekculture/great-confusion-about-react-memoization-methods-r
 
 Recall react components re-renders when its state or prop changes. But it will also re-render when it's parent re-renders, in this last case where it re-renders due to parent, we can optimise performance with `React.memo`.
 
+Imagine a scenario where the parent component title changes, and it contains many children components.
+
+React will re-render the entire parent component which will re-render all the children, even if their props/states have not changed. React will still run their render functions.
+
+Although when doing virtual DOM diffing, React might see the children are the same and don't touch the DOM, rendering work has still happened. We can use `React.memo` to completely skip rendering. Good for pure UI components.
+
+
 We can memo components. When a component is wrapped in `React.memo`, React will render the component and memo the rendered output. Before next render, if new props are the same, React will will reuse the memoized output and skip the next rendering.
 
 By default `React.memo` does shallow comparison of props and objects of props.

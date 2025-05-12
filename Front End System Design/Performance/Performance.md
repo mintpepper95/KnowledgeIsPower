@@ -24,7 +24,7 @@ A CDN is a distributed network of servers that cache resources from your origin 
 
 The critical path involves the following steps
 * Browser begins parsing HTML document and converting it into a DOM.
-* Simultaneously browser also parses CSS files refenced in the HTML to build a CSS Object Model.
+* Simultaneously browser also parses CSS files referenced in the HTML to build a CSS Object Model.
 * When browser encounters a script tag, it must halt DOM construction until script is fetched, parsed and executed (unless we use defer or async)
 * Once Dom and CSSom are ready, they are combined to create the render tree.
 * The browser calculates the position and size of each element in the render tree.
@@ -99,8 +99,6 @@ The browser needs to download and parse all style sheets, that includes styles t
 
 CSS import declarations allows you to import an external CSS resource from within a stylesheet.
 HTML `<link>` is part of HTML response, and is discovered much sooner than a CSS file downloaded by `@import` declaration.
-
-##### In
 
 
 

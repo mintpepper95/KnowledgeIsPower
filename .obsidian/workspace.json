@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4492467e28a5efb6",
+            "id": "e887eb0946d9dd69",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/The Radio framework.md",
+                "file": "Front End System Design/Examples/JIRA - attempt 1.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,11 +28,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "The Radio framework"
+              "title": "JIRA - attempt 1"
             }
           },
           {
-            "id": "e887eb0946d9dd69",
+            "id": "8e87ca26c0f07201",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -54,8 +54,33 @@
               "icon": "lucide-file",
               "title": "Atlas"
             }
+          },
+          {
+            "id": "fe436f955f34d50b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "React/Talks and Articles/The How and Why of Flexible React Components.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "The How and Why of Flexible React Components"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -87,7 +112,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "react.lazy",
+                "query": "jira-att",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -198,43 +223,46 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4492467e28a5efb6",
+  "active": "fe436f955f34d50b",
   "lastOpenFiles": [
+    "React/Talks and Articles",
+    "Atlassian.md",
+    "React/Talks and Articles/The How and Why of Flexible React Components.md",
+    "Front End System Design/Atlas.md",
+    "Front End System Design/Examples/JIRA - attempt 1.md",
+    "Front End System Design/Performance/Preload.md",
+    "Front End System Design/Examples/attachments/jira-attempt-1.excalidraw",
+    "Front End System Design/Performance/Server side rendering.md",
+    "Front End System Design/Performance/Route based splitting.md",
+    "Front End System Design/Performance/Prefetch.md",
+    "Front End System Design/Performance/Performance Summary.md",
+    "Front End System Design/Performance/Performance.md",
+    "Front End System Design/Performance/List Virtualisation.md",
+    "Front End System Design/Performance/Import on Visibility.md",
+    "Front End System Design/Performance/Import on Interaction.md",
+    "Front End System Design/Performance/Dynamic import.md",
+    "Front End System Design/Performance/Compressing Javascript.md",
+    "Front End System Design/Performance/Bundle splitting.md",
+    "Front End System Design/Examples/Facebook news feed.md",
+    "Front End System Design/Examples/attachments",
+    "React/React-dev-learn/3. Managing state.md",
+    "React/React-dev-learn/UseMemo and UseCallback.md",
+    "Front End System Design/The Radio framework.md",
+    "Front End System Design/News Feed example.md",
     "Front End System Design/attachments/Pasted image 20250513004950.png",
     "Front End System Design/attachments/Pasted image 20250513004839.png",
     "Front End System Design/Performance/ARIA.md",
-    "Front End System Design/Performance/Server side rendering.md",
-    "Front End System Design/Performance/Bundle splitting.md",
-    "Front End System Design/Examples/JIRA.md",
-    "Front End System Design/Performance/List Virtualisation.md",
-    "Front End System Design/The Radio framework.md",
-    "Front End System Design/News Feed example.md",
-    "Front End System Design/Examples/Facebook news feed.md",
-    "Front End System Design/Atlas.md",
-    "Front End System Design/Performance/Performance Summary.md",
-    "Front End System Design/Performance/Prefetch.md",
-    "Front End System Design/Performance/Performance.md",
-    "Front End System Design/Performance/Dynamic import.md",
     "Front End System Design/Performance/attachments/Pasted image 20240606112409.png",
-    "Front End System Design/Performance/Compressing Javascript.md",
-    "Front End System Design/Performance/Preload.md",
-    "Front End System Design/Performance/Route based splitting.md",
     "Front End System Design/Performance/Tree shaking.md",
     "Front End System Design/Performance/React.lazy vs Suspense.md",
     "React/React-dev-learn/Performance.md",
     "FrontEndInterviewPrep/dp_1.webm",
     "FrontEndInterviewPrep/bundle_1.webm",
-    "FrontEndInterviewPrep/Autocomplete.md",
     "FrontEndInterviewPrep/dp1.webm",
     "FrontEndInterviewPrep/dp_2.webm",
-    "FrontEndInterviewPrep/Front end system design.md",
-    "FrontEndInterviewPrep/Manager Interview.md",
-    "FrontEndInterviewPrep/Multipart form data.md",
     "FrontEndInterviewPrep/Pasted image 20240601203912.png",
     "FrontEndInterviewPrep/Pasted image 20240601203408.png",
     "FrontEndInterviewPrep/Pasted image 20240601201956.png",
-    "FrontEndInterviewPrep/Interviews/Trello as an example.md",
-    "FrontEndInterviewPrep/Interviews/Notion.md",
     "Front End System Design/attachments/news-feed-architecture.png",
     "Front End System Design/attachments/Pasted image 20250512170405.png",
     "Front End System Design/attachments/Pasted image 20250512081446.png",
@@ -243,9 +271,6 @@
     "Front End System Design/attachments",
     "Front End System Design",
     "FrontEndInterviewPrep/Pasted image 20240608194516.png",
-    "FrontEndInterviewPrep/Pasted image 20240608203510.png",
-    "Leetcode/Math/Problems",
-    "Leetcode/Math",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
