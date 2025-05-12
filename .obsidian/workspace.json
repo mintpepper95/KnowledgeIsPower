@@ -79,8 +79,7 @@
               "title": "The How and Why of Flexible React Components"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -223,11 +222,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "fe436f955f34d50b",
+  "active": "e887eb0946d9dd69",
   "lastOpenFiles": [
+    "Front End System Design/Examples/attachments/Pasted image 20250513083156.png",
+    "React/Talks and Articles/The How and Why of Flexible React Components.md",
     "React/Talks and Articles",
     "Atlassian.md",
-    "React/Talks and Articles/The How and Why of Flexible React Components.md",
     "Front End System Design/Atlas.md",
     "Front End System Design/Examples/JIRA - attempt 1.md",
     "Front End System Design/Performance/Preload.md",
@@ -269,7 +269,6 @@
     "System design/Examples/attachments/excali1.excalidraw",
     "Front End System Design/Examples",
     "Front End System Design/attachments",
-    "Front End System Design",
     "FrontEndInterviewPrep/Pasted image 20240608194516.png",
     "Untitled.canvas",
     "Untitled 2.canvas",

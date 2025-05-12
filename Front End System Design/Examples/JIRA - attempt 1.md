@@ -94,6 +94,52 @@ const { state, addTicket } = useBoard();
   };
 ```
 
+
+##### React-query
+We can replace functionality of useReducer + custom hook to do state update and side effect with react-query.
+
+```ts
+// useAddTicket.ts
+import { useMutation, useQueryClient } from '@tanstack/react-query';
+
+async function postTicket(ticketData) {
+  const res = await fetch('/api/tickets', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(ticketData),
+  });
+  if (!res.ok) throw new Error('Failed to add ticket');
+  return res.json();
+}
+
+export function useAddTicket() {
+  const queryClient = useQueryClient();
+
+  return useMutation({
+    mutationFn: postTicket,
+    onSuccess: (newTicket) => {
+      // Update ticket list cache (optional)
+      queryClient.setQueryData(['tickets'], (old = []) => [...old, newTicket]);
+    },
+  });
+}
+
+// using it inside the component
+const { mutate: addTicket, isLoading, error } = useAddTicket();
+
+const handleAdd = () => {
+  addTicket({ title: 'New Ticket', status: 'To Do' });
+};
+```
+
+
+
+
+Overall structure would look like following
+
+![[Pasted image 20250513083156.png]]
+
+
 #### Conflict resolution
 Not just naively last operation win. Imagine two users both updating a ticket. One changes title, the other changes score. We want both.
 
