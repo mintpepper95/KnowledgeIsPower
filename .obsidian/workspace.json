@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/Performance/ARIA.md",
+                "file": "Front End System Design/The Radio framework.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "ARIA"
+              "title": "The Radio framework"
             }
           },
           {
@@ -55,8 +55,7 @@
               "title": "Atlas"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,14 +198,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e887eb0946d9dd69",
+  "active": "4492467e28a5efb6",
   "lastOpenFiles": [
+    "Front End System Design/attachments/Pasted image 20250513004950.png",
+    "Front End System Design/attachments/Pasted image 20250513004839.png",
+    "Front End System Design/Performance/ARIA.md",
+    "Front End System Design/Performance/Server side rendering.md",
+    "Front End System Design/Performance/Bundle splitting.md",
+    "Front End System Design/Examples/JIRA.md",
+    "Front End System Design/Performance/List Virtualisation.md",
     "Front End System Design/The Radio framework.md",
+    "Front End System Design/News Feed example.md",
+    "Front End System Design/Examples/Facebook news feed.md",
     "Front End System Design/Atlas.md",
     "Front End System Design/Performance/Performance Summary.md",
     "Front End System Design/Performance/Prefetch.md",
     "Front End System Design/Performance/Performance.md",
-    "Front End System Design/Performance/List Virtualisation.md",
     "Front End System Design/Performance/Dynamic import.md",
     "Front End System Design/Performance/attachments/Pasted image 20240606112409.png",
     "Front End System Design/Performance/Compressing Javascript.md",
@@ -214,7 +221,6 @@
     "Front End System Design/Performance/Route based splitting.md",
     "Front End System Design/Performance/Tree shaking.md",
     "Front End System Design/Performance/React.lazy vs Suspense.md",
-    "Front End System Design/Performance/ARIA.md",
     "React/React-dev-learn/Performance.md",
     "FrontEndInterviewPrep/dp_1.webm",
     "FrontEndInterviewPrep/bundle_1.webm",
@@ -229,22 +235,15 @@
     "FrontEndInterviewPrep/Pasted image 20240601201956.png",
     "FrontEndInterviewPrep/Interviews/Trello as an example.md",
     "FrontEndInterviewPrep/Interviews/Notion.md",
-    "FrontEndInterviewPrep/Interviews/Chat application.md",
-    "Front End System Design/Examples/Facebook news feed.md",
-    "Front End System Design/News Feed example.md",
     "Front End System Design/attachments/news-feed-architecture.png",
     "Front End System Design/attachments/Pasted image 20250512170405.png",
     "Front End System Design/attachments/Pasted image 20250512081446.png",
-    "FrontEndInterviewPrep/Trello.md",
     "System design/Examples/attachments/excali1.excalidraw",
-    "System design/Examples/Online bidding.md",
     "Front End System Design/Examples",
     "Front End System Design/attachments",
     "Front End System Design",
     "FrontEndInterviewPrep/Pasted image 20240608194516.png",
     "FrontEndInterviewPrep/Pasted image 20240608203510.png",
-    "FrontEndInterviewPrep/Pasted image 20240608203645.png",
-    "FrontEndInterviewPrep/Polling, long polling, websocket and webhook.md",
     "Leetcode/Math/Problems",
     "Leetcode/Math",
     "Untitled.canvas",

@@ -50,6 +50,40 @@ export default VirtualizedListExample;
 ```
 
 
+#### Another example of react-window
+In react-window, you pass a functional component as a child to List. This child is called for each visible item, and react-window will auto provide some props like index and data.
+```ts
+import { FixedSizeList as List } from 'react-window';
+
+// some json objects
+const data = [...];
+
+const Row = ({ index, data }) => {
+	const item = data[index];
+
+	return (
+	  <div className={index % 2 ? 'ListItemOdd' : 'ListItemEven'}>
+	    Row {index}
+	  </div>
+	);
+};
+
+// react-window
+const Example = () => (
+  <List
+    className="List"
+    height={150} // total height of List
+    width={300} // width of List
+    
+    itemCount={1000} // total number of items
+    itemSize={35} // height of each item
+
+	itemData={data}
+  >
+    {Row}  // Row gets called for each item
+  </List>
+);
+```
 #### Benefits and limitations
 Improved performance - by rendering only visible items, virtualisation reduces initial load time and minimize DOM manipulation (virtualised lists will re-use existing DOM nodes for new visible items) required during scrolling.
 

@@ -87,7 +87,7 @@ If you are asked to design a UI component, talk about customisation options for 
 
 There's no fixed way to go about optimisation and deep dive. There won't be enough time to cover every area, so select what to cover.
 
-E.g. For e-commerce websites, performance is important, talk about what can be done. For collaborative editors, how to handle race conditions and con-current modifications.
+E.g. For e-commerce websites, performance is important, talk about what can be done, e.g. bundle splitting via React.lazy() + Suspense. For collaborative editors, how to handle race conditions and con-current modifications. For large lists, virtualisation using react.window.
 
 Other things to talk about include accessibility and observability and etc.
 
@@ -104,6 +104,16 @@ Things you can talk about
 Time to interactive - how long till user can interact with page
 
 First Contentful Paint - First thing painted/rendered onto the screen, it could just be a background coluor.
+
+
+![[Pasted image 20250513004839.png]]
+
+![[Pasted image 20250513004950.png]]
+React comes with Sanitisation to prevent XSS (cross-site scripting). JSX auto escape special characters to prevent them from being interpreted as HTML or JS.
+
+CORS to make sure we are receiving data securely.
+
+
 
 
 ---
