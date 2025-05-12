@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "602170084fecb4a6",
+        "id": "00ac06f8892dcded",
         "type": "tabs",
         "children": [
           {
-            "id": "8322e8429c4754fe",
+            "id": "4492467e28a5efb6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 304.50840759277344,
-    "collapsed": true
+    "width": 304.50840759277344
   },
   "right": {
     "id": "f9838370ded5a893",
@@ -175,13 +174,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8322e8429c4754fe",
+  "active": "4492467e28a5efb6",
   "lastOpenFiles": [
+    "Front End System Design/Examples/News Feed example.md",
+    "Front End System Design/The Radio framework.md",
+    "FrontEndInterviewPrep/Trello.md",
+    "FrontEndInterviewPrep/Interviews/Trello as an example.md",
+    "FrontEndInterviewPrep/Interviews/Notion.md",
+    "FrontEndInterviewPrep/Interviews/Facebook news feed.md",
+    "FrontEndInterviewPrep/Interviews/Chat application.md",
+    "System design/Examples/attachments/excali1.excalidraw",
+    "System design/Examples/Online bidding.md",
+    "Front End System Design/Examples",
     "Front End System Design/attachments/Pasted image 20250512081446.png",
     "Front End System Design/attachments/news-feed-architecture.png",
     "Front End System Design/attachments",
     "FrontEndInterviewPrep/Autocomplete.md",
-    "Front End System Design/The Radio framework.md",
     "Front End System Design",
     "FrontEndInterviewPrep/dp_1.webm",
     "FrontEndInterviewPrep/dp_2.webm",
@@ -195,10 +203,7 @@
     "FrontEndInterviewPrep/Pasted image 20240610190333.png",
     "FrontEndInterviewPrep/Pasted image 20240610190551.png",
     "FrontEndInterviewPrep/Polling, long polling, websocket and webhook.md",
-    "FrontEndInterviewPrep/Pasted image 20240610185507.png",
     "FrontEndInterviewPrep/bundle_1.webm",
-    "FrontEndInterviewPrep/Interviews/Chat application.md",
-    "FrontEndInterviewPrep/Interviews/Trello as an example.md",
     "FrontEndInterviewPrep/Front end system design.md",
     "FrontEndInterviewPrep/Multipart form data.md",
     "System design/Scalability for dummies.md",
@@ -214,15 +219,9 @@
     "React/React-dev-learn/UseMemo and UseCallback.md",
     "React/React-dev-learn/Custom Hooks.md",
     "React/React-dev-learn/Effect/5. Removing Effect dependencies.md",
-    "React/React-dev-learn/Effect/4. Separating Events from Effects.md",
-    "React/React-dev-learn/Effect/3. Lifecycle of Reactive Effects.md",
-    "React/React-dev-learn/Effect/2. You might not need an Effect.md",
-    "React/React-dev-learn/Effect/1. Effect.md",
     "FrontEndInterviewPrep/dp1.webm",
     "Leetcode/Math/Problems",
     "Leetcode/Math",
-    "DotNet/MongoDB",
-    "DotNet/C_Sharp/C_Sharp concepts/attachments",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",

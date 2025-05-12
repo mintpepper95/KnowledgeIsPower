@@ -1,16 +1,20 @@
-* Requirements exploration
+* Requirements exploration - 10%
 	Understanding the requirements thoroughly by asking clarifying questions. Functional ( features ) and non-functional requirments (qualities like performant, fast loading, cache, lazy loading), responsiveness ( UI adapt to different devices), good UI/UX etc.
+
+	Also good time to draw a simple mock up of the UI.
 	
 * Architecture/High-level design
-	Key components of the product. For front end it can be a react architecture design.
+	Key components of the product. For front end it can be a react architecture design. Discuss any design patterns we want to use. Explain how the data will work and how the different components will work together.
 
 * Data Model/Entities
 	Define core entities, and how they related to each other. What components they belong to
 	
 * API
 	Define the interface between components.
+	Http methods for pulling and sending the data.
 
 * Optimisation and deep dive
+	Where we spend the majority of our time.
 
 ---
 
@@ -83,7 +87,7 @@ Things you can talk about
 * UX
 * Network
 * Accessibility
-* Multilingual support
+* Multilingual support - i18n
 * Multi-device support
 * Security
 
@@ -116,6 +120,27 @@ Things you can talk about
 * Consider user experience when answering - loading states, performance, mobile friendliness, accessibility etc.
 
 * How to handle error cases.
-,
 
+
+---
+
+### Common mistakes to avoid
+
+##### Jumping into answering immediately
+Make sure to take time to gather functional and non-functional requirements, ask assumptions so you know what the interviewer is actually asking.
+
+##### Approaching the question in an unstructured manner
+System designs are open-ended in nature, some candidates might just talk about whatever that comes to their mind, this may appear messy to the interviewer. Good approach would be write down each section you are going to talk about at the start of the interview.
+
+##### Insisting on only one solution or best solution
+Don't insist only one solution, especially when interviewer asks you about alternative.
+
+The interviewer wants to see you identify a solution with the right trade-offs. Explain why alternative solutions are bad.
+
+##### Going down a rabbit hole
+Don't get down a rabbit hole of diving too deep. Define an initial high level design first, then elaborate on the various parts of the system. Focus on the parts most important to the problem.
+
+If you are unsure, ask the interviewer if you should dive deeper into a specific component.
+
+---
 
