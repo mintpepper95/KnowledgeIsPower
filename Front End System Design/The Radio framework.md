@@ -1,5 +1,5 @@
 * Requirements exploration - 10%
-	Understanding the requirements thoroughly by asking clarifying questions. Functional ( features ) and non-functional requirments (qualities like performant, fast loading, cache, lazy loading), responsiveness ( UI adapt to different devices), good UI/UX etc.
+	Understanding the requirements thoroughly by asking clarifying questions. Functional ( features ) and non-functional requirements (qualities like performant, fast loading, cache, lazy loading), responsiveness ( UI adapt to different devices), good UI/UX etc.
 
 	Also good time to draw a simple mock up of the UI.
 	
@@ -65,12 +65,21 @@ Two types of client data
 For a news feed, the main entities would be the following.
 ![[Pasted image 20250512081446.png]]
 
+
+Another example
+
+![[Pasted image 20250512170405.png]]
+
+
+
 ---
 
 ### API
 Things like HTTP methods and response data.
 
 If you are asked to design a UI component, talk about customisation options for the component, similar to props in React.
+
+
 
 
 ---
@@ -83,13 +92,19 @@ E.g. For e-commerce websites, performance is important, talk about what can be d
 Other things to talk about include accessibility and observability and etc.
 
 Things you can talk about
-* Performance
+* Performance - Bundle splitting with React.lazy(), see [[React/React-dev-learn/Performance#Code splitting in React]],  virtualised list, defer third party modules to not block critical rendering path, caching strategies like local storage, session storage and cookies, time to interactive
 * UX
 * Network
 * Accessibility
 * Multilingual support - i18n
 * Multi-device support
 * Security
+
+
+Time to interactive - how long till user can interact with page
+
+First Contentful Paint - First thing painted/rendered onto the screen, it could just be a background coluor.
+
 
 ---
 

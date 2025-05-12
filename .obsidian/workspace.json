@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/The Radio framework.md",
+                "file": "Front End System Design/Performance/ARIA.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "The Radio framework"
+              "title": "ARIA"
+            }
+          },
+          {
+            "id": "e887eb0946d9dd69",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Front End System Design/Atlas.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Atlas"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -63,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "frontend interview prep",
+                "query": "react.lazy",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -174,52 +199,52 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4492467e28a5efb6",
+  "active": "e887eb0946d9dd69",
   "lastOpenFiles": [
-    "Front End System Design/Examples/News Feed example.md",
     "Front End System Design/The Radio framework.md",
-    "FrontEndInterviewPrep/Trello.md",
+    "Front End System Design/Atlas.md",
+    "Front End System Design/Performance/Performance Summary.md",
+    "Front End System Design/Performance/Prefetch.md",
+    "Front End System Design/Performance/Performance.md",
+    "Front End System Design/Performance/List Virtualisation.md",
+    "Front End System Design/Performance/Dynamic import.md",
+    "Front End System Design/Performance/attachments/Pasted image 20240606112409.png",
+    "Front End System Design/Performance/Compressing Javascript.md",
+    "Front End System Design/Performance/Preload.md",
+    "Front End System Design/Performance/Route based splitting.md",
+    "Front End System Design/Performance/Tree shaking.md",
+    "Front End System Design/Performance/React.lazy vs Suspense.md",
+    "Front End System Design/Performance/ARIA.md",
+    "React/React-dev-learn/Performance.md",
+    "FrontEndInterviewPrep/dp_1.webm",
+    "FrontEndInterviewPrep/bundle_1.webm",
+    "FrontEndInterviewPrep/Autocomplete.md",
+    "FrontEndInterviewPrep/dp1.webm",
+    "FrontEndInterviewPrep/dp_2.webm",
+    "FrontEndInterviewPrep/Front end system design.md",
+    "FrontEndInterviewPrep/Manager Interview.md",
+    "FrontEndInterviewPrep/Multipart form data.md",
+    "FrontEndInterviewPrep/Pasted image 20240601203912.png",
+    "FrontEndInterviewPrep/Pasted image 20240601203408.png",
+    "FrontEndInterviewPrep/Pasted image 20240601201956.png",
     "FrontEndInterviewPrep/Interviews/Trello as an example.md",
     "FrontEndInterviewPrep/Interviews/Notion.md",
-    "FrontEndInterviewPrep/Interviews/Facebook news feed.md",
     "FrontEndInterviewPrep/Interviews/Chat application.md",
+    "Front End System Design/Examples/Facebook news feed.md",
+    "Front End System Design/News Feed example.md",
+    "Front End System Design/attachments/news-feed-architecture.png",
+    "Front End System Design/attachments/Pasted image 20250512170405.png",
+    "Front End System Design/attachments/Pasted image 20250512081446.png",
+    "FrontEndInterviewPrep/Trello.md",
     "System design/Examples/attachments/excali1.excalidraw",
     "System design/Examples/Online bidding.md",
     "Front End System Design/Examples",
-    "Front End System Design/attachments/Pasted image 20250512081446.png",
-    "Front End System Design/attachments/news-feed-architecture.png",
     "Front End System Design/attachments",
-    "FrontEndInterviewPrep/Autocomplete.md",
     "Front End System Design",
-    "FrontEndInterviewPrep/dp_1.webm",
-    "FrontEndInterviewPrep/dp_2.webm",
-    "FrontEndInterviewPrep/Manager Interview.md",
-    "FrontEndInterviewPrep/Pasted image 20240601203408.png",
     "FrontEndInterviewPrep/Pasted image 20240608194516.png",
     "FrontEndInterviewPrep/Pasted image 20240608203510.png",
     "FrontEndInterviewPrep/Pasted image 20240608203645.png",
-    "FrontEndInterviewPrep/Pasted image 20240610161356.png",
-    "FrontEndInterviewPrep/Pasted image 20240610161553.png",
-    "FrontEndInterviewPrep/Pasted image 20240610190333.png",
-    "FrontEndInterviewPrep/Pasted image 20240610190551.png",
     "FrontEndInterviewPrep/Polling, long polling, websocket and webhook.md",
-    "FrontEndInterviewPrep/bundle_1.webm",
-    "FrontEndInterviewPrep/Front end system design.md",
-    "FrontEndInterviewPrep/Multipart form data.md",
-    "System design/Scalability for dummies.md",
-    "Atlassian.md",
-    "Javascript/JS Projects/Tic Tac Toe in React.md",
-    "React/React-dev-learn/1. Describing the UI.md",
-    "WooliesX Csharp.md",
-    "Javascript/Promise.md",
-    "Javascript/Jest/Introduction into testing with JEST.md",
-    "Atlassian kit/js Blog API.md",
-    "Javascript/Handwriting promise.md",
-    "Atlassian kit/FeatureFlag JS.md",
-    "React/React-dev-learn/UseMemo and UseCallback.md",
-    "React/React-dev-learn/Custom Hooks.md",
-    "React/React-dev-learn/Effect/5. Removing Effect dependencies.md",
-    "FrontEndInterviewPrep/dp1.webm",
     "Leetcode/Math/Problems",
     "Leetcode/Math",
     "Untitled.canvas",
