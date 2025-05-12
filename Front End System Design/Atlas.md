@@ -14,4 +14,4 @@ testing strategies (unit, integration, e2e) - they care about maintainability
 
 I've seen them ask specifically about state transitions and edge cases
 
-sounds like last time u covered the standard bases but didnt go deep enough into the specifics that make Atlassian unique. they want to see that you've thought about the specific challenges their products face.
+	sounds like last time u covered the standard bases but didnt go deep enough into the specifics that make Atlassian unique. they want to see that you'l,mmmmmmmmmmmmmmmmmm .//////////////////////////.<M/??`ve thought about the specific challenges their products face.
