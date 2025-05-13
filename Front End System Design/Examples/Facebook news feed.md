@@ -142,9 +142,30 @@ We can have a sliding window to show only a limited number of DOM elements inste
 
 
 #### Optimisation
+
+##### What happens when user visits a react app
+1. Browser sends HTTP request
+2. Server sends a single html, index.html for a react app
+3. The index file includes script tags that points to JS bundles
+4. As browser is parsing index.html, `<link rel='stylesheet>` triggers request for css, `<script src='...'>` triggers request for js. So now more requests.
+5. Server returns compiled/minifield JS, CSS, images, fonts etc. These live in `dist` or `build` folder.
+6. Downloaded JS, `main.js` initialise the React app, and begins to render its components.
+
+
 ##### Network performance
 Modern bundlers like Webpack don't handle compression directly.
 Eg. gzip to compress Javascript. They encode files in a more compact format.
+
+Brotli is an alternative compression algorithm that enables smaller sizes compared to gzip. It improves performance by reducing size of assets served to the client.
+
+React app often ships with large JS bundles, CSS files and other static assets. Brotli compresses them for smaller bundle sizes.
+
+Reducing time to first paint (FCP) and time to interactive (TTI), as it makes app load faster.
+
+They require custom compression plugins to enable them.
+
+There are some trade offs, with more resources and increased build time.
+
 
 If browser supports webp, we can use webp images. They are lighter than jpg and png, therefore load faster.
 
