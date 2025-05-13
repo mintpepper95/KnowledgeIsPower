@@ -11,12 +11,24 @@
             "id": "b3f13bfdc97e5d1e",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Front End System Design/Examples/attachments/jira-attempt-1.excalidraw"
+                "file": "Front End System Design/Examples/JIRA - attempt 1.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "excalidraw-icon",
-              "title": "jira-attempt-1"
+              "icon": "lucide-file",
+              "title": "JIRA - attempt 1"
             }
           }
         ]
@@ -72,8 +84,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -165,8 +176,8 @@
   },
   "active": "b3f13bfdc97e5d1e",
   "lastOpenFiles": [
-    "Front End System Design/Examples/JIRA - attempt 1.md",
     "Front End System Design/Examples/attachments/jira-attempt-1.excalidraw",
+    "Front End System Design/Examples/JIRA - attempt 1.md",
     "Front End System Design/Examples/attachments/Pasted image 20250514010304.png",
     "Front End System Design/Examples/Facebook news feed.md",
     "Front End System Design/Internationalisation.md",
