@@ -152,7 +152,112 @@ We can have a sliding window to show only a limited number of DOM elements inste
 6. Downloaded JS, `main.js` initialise the React app, and begins to render its components.
 
 
+---
+
+#### CDN to cache static files
+
+In this setup:
+
+- Your assets **live on your origin server** (e.g., Vite dev server, Express, or even Netlify).
+    
+- The CDN **sits in front**, and **caches files on-demand** as users request them.
+    
+
+This is how **Vercel**, **Netlify**, **Cloudflare Pages**, etc., work by default.
+
+**How it works:**
+
+1. User requests `main.js`
+    
+2. CDN checks if it has a cached copy.
+    
+3. If not, it fetches it from your origin (your app server), stores it, and serves it.
+    
+4. Next time someone else requests it, it's served directly from the CDN.
+
+## What About JS, HTML, and CSS?
+
+Yes — they are also **static files**, just like images.
+
+When you build your React app (`vite build` or `npm run build`), you generate:
+
+- `index.html`
+    
+- `main.[hash].js`
+    
+- `style.[hash].css`
+    
+- `/assets/...` (fonts, images, icons, etc.)
+    
+
+You deploy **all of this** to the CDN (either manually or through automated deployment).
+
+The CDN then:
+
+- Caches them.
+    
+- Serves them globally.
+    
+- Can apply optimizations like Brotli compression, HTTP/2, etc.
+
+
+If you're using **Azure Static Web Apps** → **YES**, static files (JS, HTML, CSS, images) are **automatically deployed to a global CDN** behind the scenes.
+
+- You run `vite build` → this outputs files to `dist/`.
+    
+- You configure Azure (via `azure-static-web-apps.yml`) to upload `dist/` as the static site root.
+
+After vite build, the output files in `dist/` is all you need to serve your react app in production.
+
+It's cause when you build, vite compiles your source code, jsx, tsx, ts, css etc, and minifies and optimises everything.
+
+Hash filenames for caching.
+
+And outputs a production ready static site to `/dist`.
+
+
+Note vite does auto code splitting for third party libraries. 
+For react component level code splitting, we need React.lazy().
+
+
+When you `vite build`, Vite uses **Rollup** under the hood. It will:
+
+- Split **vendor code** (e.g., `react`, `react-dom`, etc.) into separate chunks.
+    
+- Generate a `manifest` to track dependencies and optimize load order.
+
+* It doesn’t split your **own components*** without react.lazy
+
+
+We hash filenames because browser cache static files. If main.js changes, we want a new main.xxxx.js to distinguish it from main.yyyy.js. So browser sees it as a fresh file and refetch it.
+
+
+Client side production react app is considered a `static` site, as it's just a bundle of html, css, js and assets. It doesn't need server side runtime, it's just files that can be served directly via web servers or CDNs.
+
+
+When you visit a url with web app, browser sends a request to your origin server/hosting platform, for example azure static web app.
+
+For a hosting platform like azure static web app that supports CDNs, the request will first hits the CDN, which act as a reverse proxy. CDN cache HTML, JS, CSS at edge nodes (close to user)
+
+Checks if request files is in its file, if yes, serve it, if not fetch it from origin server. 
+
+From browser perspective, it's talking to domain, `myapp.com`, but response may be served by a CDN node near the user.
+
+Once CDN delivers the `index.html`, browser parses it and see links and scripts, and thus request for more content. 
+
+Again these requests go to your domain, CDN intercepts request and respond with cache if available
+
+
+Note for large media, like large videos and high quality images, it's better to store them in things like blob storage and get them in the app.
+
+
+---
+
 ##### Network performance
+
+Modern bundlers improve FCP and TTI via tree shaking ( smaller bundle ), code splitting (code splits vendor code only, so initial load is smaller), asset optimisation (minifying, compress images to webp), faster parsing JS.
+
+
 Modern bundlers like Webpack don't handle compression directly.
 Eg. gzip to compress Javascript. They encode files in a more compact format.
 

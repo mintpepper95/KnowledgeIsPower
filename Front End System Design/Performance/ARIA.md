@@ -57,8 +57,40 @@ All non-disabled interactive ARIA controls must be keyboard accessible.
 ```
 
 
+---
 
+## 1. **ARIA Roles**
 
+Roles define **what an element is**.
 
+| Role              | Purpose                                                           |
+| ----------------- | ----------------------------------------------------------------- |
+| `button`          | Marks an element as a button (even if it's a `<div>` or `<span>`) |
+| `dialog`          | Identifies a modal or popup dialog                                |
+| `navigation`      | Indicates a navigation landmark                                   |
+| `tab`, `tabpanel` | Used for custom tab interfaces                                    |
+| `alert`           | Marks a message that should be announced immediately              |
+| `progressbar`     | Indicates a progress indicator                                    |
 
+## 2. **ARIA Attributes**
 
+Attributes give **extra information** about roles or elements. They usually start with `aria-`.
+
+| Attribute                                       | Description                                                                   |
+| ----------------------------------------------- | ----------------------------------------------------------------------------- |
+| `aria-label`                                    | Custom label for an element                                                   |
+| `aria-hidden`                                   | Hides element from screen readers                                             |
+| `aria-expanded`                                 | Indicates if an element is expanded (e.g. dropdown)                           |
+| `aria-controls`                                 | References the element controlled by another (like a tab controlling a panel) |
+| `aria-checked`, `aria-selected`, `aria-pressed` | Reflect interactive states                                                    |
+| `aria-describedby`                              | Points to element that describes this one                                     |
+| `aria-live`                                     | Defines how updates should be announced (e.g. for alerts)                     |
+
+Whenever possible, **use native HTML elements** like `<button>`, `<input>`, `<nav>`, etc. because they:
+
+- Already have built-in accessibility
+    
+- Don’t require ARIA
+    
+
+> Use ARIA **only when you build custom components** (e.g. custom dropdown, tab interface, modals, etc.)

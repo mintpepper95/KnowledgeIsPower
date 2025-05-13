@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/Examples/Facebook news feed.md",
+                "file": "Front End System Design/Examples/JIRA - attempt 1.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Facebook news feed"
+              "title": "JIRA - attempt 1"
             }
           }
         ]
@@ -176,10 +176,14 @@
   },
   "active": "9452cadca5768fd6",
   "lastOpenFiles": [
+    "Front End System Design/Examples/attachments/Pasted image 20250514010304.png",
+    "Front End System Design/Examples/Facebook news feed.md",
+    "Front End System Design/Internationalisation.md",
+    "Front End System Design/Performance/ARIA.md",
+    "Front End System Design/Performance/List Virtualisation.md",
     "React/Talks and Articles/The How and Why of Flexible React Components.md",
     "Front End System Design/Atlas.md",
     "Front End System Design/Examples/JIRA - attempt 1.md",
-    "Front End System Design/Examples/Facebook news feed.md",
     "Front End System Design/Examples/Untitled.md",
     "React/Talks and Articles/attachments/Pasted image 20250513125941.png",
     "React/Talks and Articles/attachments/Pasted image 20250513125826.png",
@@ -199,7 +203,6 @@
     "Front End System Design/Performance/Prefetch.md",
     "Front End System Design/Performance/Performance Summary.md",
     "Front End System Design/Performance/Performance.md",
-    "Front End System Design/Performance/List Virtualisation.md",
     "Front End System Design/Performance/Import on Visibility.md",
     "Front End System Design/Performance/Import on Interaction.md",
     "Front End System Design/Performance/Dynamic import.md",
@@ -212,10 +215,7 @@
     "Front End System Design/News Feed example.md",
     "Front End System Design/attachments/Pasted image 20250513004950.png",
     "Front End System Design/attachments/Pasted image 20250513004839.png",
-    "Front End System Design/Performance/ARIA.md",
     "Front End System Design/Performance/Tree shaking.md",
-    "Front End System Design/Performance/React.lazy vs Suspense.md",
-    "React/React-dev-learn/Performance.md",
     "FrontEndInterviewPrep/dp_1.webm",
     "FrontEndInterviewPrep/bundle_1.webm",
     "FrontEndInterviewPrep/dp1.webm",

@@ -187,7 +187,46 @@ Multi store cons:
 * Need to worry about updating multiple stores
 
 
+#### Deferring load via import on interaction
+We defer loading of actual share dialog until share button is pressed. Improving both FCP and TTI.
+
+![[Pasted image 20250514010304.png]]
+
+
+### Inline CSS
+
+Inline critical CSS for FCP into your html instead of importing it from a separate file. This makes sure style is applied immediately, without waiting for external files to be fetched, parsed and applied. This speeds up FCP. You also reduce the number of HTTP requests. 
+
+
+### Above the fold Images and Below the fold images
+
+ATF Images are ones visible to user on page load.  All ATF images should be sized ( with an explicitly defined height and width ) so browser knows how much space to reserve when loading them. Else might cause layout shift, which will frustrate users. 
+BTF Images are ones not immediately visible to user on page load.  User needs to interactive/scroll to see them. Therefore can be lazy loaded. 
 
 
 
 
+Modern bundlers like webpack and vite perform **tree shaking** only on ESM code. Because ESM have static import export statements.
+
+While commonjs uses dynamic `require`, so bundler can't reliably know which exports are used at build time
+
+
+
+
+
+
+
+
+JavaScript is the second biggest [contributor to page size](https://almanac.httparchive.org/en/2020/page-weight#fig-2) and the second most [requested web resource](https://almanac.httparchive.org/en/2020/page-weight#fig-4) on the internet after images.
+
+- **Gzip** and **Brotli** are the most common ways to compress JavaScript and are widely supported by modern browsers.
+- **Brotli** offers a **better compression ratio** at similar compression levels.
+
+To reduce payload sizes, you can minify JavaScript before compression. [Minification](https://web.dev/reduce-network-payloads-using-text-compression/#minification) complements compression by removing whitespace and any unnecessary code to create a smaller but perfectly valid code file.
+
+
+Note modern web bundlers auto minify and do tree shaking.
+
+
+
+**SEO considerations:** Most web crawlers can interpret server rendered websites in a straight-forward manner. Things get slightly complicated in the case of client-side rendering as large payloads and a waterfall of network requests (e.g for API responses) may result in meaningful content not being rendered fast enough for a crawler to index it. Crawlers may understand JavaScript but there are limitations. As such, some workarounds are required to make a client-rendered website SEO friendly.
