@@ -133,6 +133,20 @@ const handleAdd = () => {
 ```
 
 
+A component calls `useQuery`, a mutation happens, then react query updates the internal cache, and notifies all components that some data has changed. Those components will auto re-render with the new data.
+
+Hence we don't actually need context here, because these are all server states. We would only need context/states for states not from server.
+
+React query vs context
+React query has automatic caching, refetching, can easily manual rollback etc.
+React query owns the data.
+Handles mutation with optimsitic updates.
+
+Imagine adding a new ticket,
+The new task **appears instantly in the UI**, even before the server replies.  
+If it fails, it disappears.  
+If it succeeds, the server sends the “real” ticket (with proper ID), and cache syncs.
+
 
 
 Overall structure would look like following

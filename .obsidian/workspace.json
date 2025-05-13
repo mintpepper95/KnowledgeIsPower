@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "00ac06f8892dcded",
+        "id": "3db3cc7303ecd649",
         "type": "tabs",
         "children": [
           {
-            "id": "e887eb0946d9dd69",
+            "id": "9452cadca5768fd6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front End System Design/Examples/JIRA - attempt 1.md",
+                "file": "Front End System Design/Examples/Facebook news feed.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,55 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "JIRA - attempt 1"
-            }
-          },
-          {
-            "id": "8e87ca26c0f07201",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Front End System Design/Atlas.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Atlas"
-            }
-          },
-          {
-            "id": "fe436f955f34d50b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React/Talks and Articles/The How and Why of Flexible React Components.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "The How and Why of Flexible React Components"
+              "title": "Facebook news feed"
             }
           }
         ]
@@ -222,14 +174,24 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e887eb0946d9dd69",
+  "active": "9452cadca5768fd6",
   "lastOpenFiles": [
-    "Front End System Design/Examples/attachments/Pasted image 20250513083156.png",
     "React/Talks and Articles/The How and Why of Flexible React Components.md",
-    "React/Talks and Articles",
-    "Atlassian.md",
     "Front End System Design/Atlas.md",
     "Front End System Design/Examples/JIRA - attempt 1.md",
+    "Front End System Design/Examples/Facebook news feed.md",
+    "Front End System Design/Examples/Untitled.md",
+    "React/Talks and Articles/attachments/Pasted image 20250513125941.png",
+    "React/Talks and Articles/attachments/Pasted image 20250513125826.png",
+    "React/Talks and Articles/attachments/Pasted image 20250513125820.png",
+    "React/Talks and Articles/attachments/Pasted image 20250513125225.png",
+    "React/Talks and Articles/attachments/Pasted image 20250513124856.png",
+    "React/Talks and Articles/attachments/Pasted image 20250513123619.png",
+    "React/Talks and Articles/attachments/Pasted image 20250513123514.png",
+    "React/Talks and Articles/attachments",
+    "Front End System Design/Examples/attachments/Pasted image 20250513083156.png",
+    "React/Talks and Articles",
+    "Atlassian.md",
     "Front End System Design/Performance/Preload.md",
     "Front End System Design/Examples/attachments/jira-attempt-1.excalidraw",
     "Front End System Design/Performance/Server side rendering.md",
@@ -243,7 +205,6 @@
     "Front End System Design/Performance/Dynamic import.md",
     "Front End System Design/Performance/Compressing Javascript.md",
     "Front End System Design/Performance/Bundle splitting.md",
-    "Front End System Design/Examples/Facebook news feed.md",
     "Front End System Design/Examples/attachments",
     "React/React-dev-learn/3. Managing state.md",
     "React/React-dev-learn/UseMemo and UseCallback.md",
@@ -252,7 +213,6 @@
     "Front End System Design/attachments/Pasted image 20250513004950.png",
     "Front End System Design/attachments/Pasted image 20250513004839.png",
     "Front End System Design/Performance/ARIA.md",
-    "Front End System Design/Performance/attachments/Pasted image 20240606112409.png",
     "Front End System Design/Performance/Tree shaking.md",
     "Front End System Design/Performance/React.lazy vs Suspense.md",
     "React/React-dev-learn/Performance.md",
@@ -260,16 +220,8 @@
     "FrontEndInterviewPrep/bundle_1.webm",
     "FrontEndInterviewPrep/dp1.webm",
     "FrontEndInterviewPrep/dp_2.webm",
-    "FrontEndInterviewPrep/Pasted image 20240601203912.png",
-    "FrontEndInterviewPrep/Pasted image 20240601203408.png",
-    "FrontEndInterviewPrep/Pasted image 20240601201956.png",
-    "Front End System Design/attachments/news-feed-architecture.png",
-    "Front End System Design/attachments/Pasted image 20250512170405.png",
-    "Front End System Design/attachments/Pasted image 20250512081446.png",
     "System design/Examples/attachments/excali1.excalidraw",
     "Front End System Design/Examples",
-    "Front End System Design/attachments",
-    "FrontEndInterviewPrep/Pasted image 20240608194516.png",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",

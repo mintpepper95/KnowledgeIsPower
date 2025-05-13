@@ -1,7 +1,11 @@
-#### Identifying functional and non-functional requirements.
+### Identifying functional and non-functional requirements.
 
 Infinite scrollable news feed - stories based on user subscriptions
-User can share the story, can post a story.
+User can share and post a story.
+
+Story can contain text and image.
+
+There are comments and likes.
 
 We want feature for a range of devices, and be accessible for people with disabilities.
 
@@ -10,11 +14,15 @@ We can use it to understand the data flow in our app
 
 ![[Pasted image 20240608162939.png]]
 
-Component Architecture
+---
+
+### Component Architecture
 
 ![[Pasted image 20240608163124.png]]
 
-#### Data entities
+---
+### Data entities
+
 ```
 type Story = {
 	id: number,
@@ -44,8 +52,9 @@ type Media = {
 }
 ```
 
+---
 
-API 
+### API 
 ``` 
 // maybe we don't want the comments
 // cursor is the timestamp, could be we want data from two years ago
@@ -68,11 +77,10 @@ So best practice for GraphQL is to use POST requests with a `application/json` c
 
 
 
-
 Q - Do they want to post with a single request? For request with medias, like image or video?
 
-
-Data Store
+---
+### State management
 We can simplify state management and reduce complexity by flattening our front end store.
 
 Feed_store
