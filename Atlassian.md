@@ -555,3 +555,10 @@ Following are the roles and responsibilities of a Atlassian Frontend Engineer:
 
 
 
+
+. Specifically, you need to have good anecdotes on hand for when they ask things like "tell me about a time when you've had to deal with a difficult colleague" or "tell be about the most difficult technical problem you've had to solve". The questions are pretty standard; just make sure you you can launch straight into an answer and you're not hunting around for something relevant to say.
+
+Also, If you really don't have a relevant anecdote (even from a totally unrelated part of life), just say you don't have much experience of X, quickly speculate how you'd be great in such a situation and then move on.
+
+
+
