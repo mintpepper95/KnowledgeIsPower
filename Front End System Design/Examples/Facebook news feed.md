@@ -323,3 +323,10 @@ HTTPS -  HTTPS prevents websites from having their information broadcast in a wa
 
 
 
+feedback for myself
+- aria attributes and roles examples, how do disabled people interact with our web app ( chat )
+- More clear on state management
+- Offline support
+
+
+
