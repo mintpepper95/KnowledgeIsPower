@@ -1,34 +1,20 @@
 {
   "main": {
-    "id": "2ec0a950ee4e9c3a",
+    "id": "d91ae749f78f86e1",
     "type": "split",
     "children": [
       {
-        "id": "1a3eebba5703d4a6",
+        "id": "bf50ad663f85fa86",
         "type": "tabs",
         "children": [
           {
-            "id": "b3f13bfdc97e5d1e",
+            "id": "8788929164d2cd5d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Front End System Design/Examples/Untitled.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "New tab"
             }
           }
         ]
@@ -37,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "85faae1de61caa9c",
+    "id": "ed028ed0fea9ec28",
     "type": "split",
     "children": [
       {
-        "id": "54d97459f5e68ac2",
+        "id": "05dc803cc6abc8ac",
         "type": "tabs",
         "children": [
           {
-            "id": "a7cafb0b48db0842",
+            "id": "0f26495770da4336",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -58,12 +44,12 @@
             }
           },
           {
-            "id": "91d6b3a7f854a1fd",
+            "id": "633e72085f2a75eb",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "jira-att",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,7 +61,7 @@
             }
           },
           {
-            "id": "13da362c5ae66fef",
+            "id": "341d19d562253c0d",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -88,23 +74,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 304.50840759277344
+    "width": 300
   },
   "right": {
-    "id": "f9838370ded5a893",
+    "id": "108b417a4fe29da7",
     "type": "split",
     "children": [
       {
-        "id": "ce76043ddc90d4a1",
+        "id": "016d1ced3a1de07d",
         "type": "tabs",
         "children": [
           {
-            "id": "6e0d72a5f695efa7",
+            "id": "0a91e0396953c635",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Javascript/Promise.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,46 +99,49 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Promise"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "47bbfa54e61ef7b4",
+            "id": "b14c66b4dddd32da",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Operation Health 2025.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Operation Health 2025"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "c0c4d81e7c845a1e",
+            "id": "5d1dc3343af90253",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
             }
           },
           {
-            "id": "d0bbbc5487bd7fda",
+            "id": "555c51d03c0536c6",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Operation Health 2025.md"
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Operation Health 2025"
+              "title": "Outline"
             }
           }
         ]
@@ -174,56 +162,6 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b3f13bfdc97e5d1e",
-  "lastOpenFiles": [
-    "Front End System Design/Examples/JIRA - attempt 1.md",
-    "Atlassian.md",
-    "Front End System Design/Examples/Facebook news feed.md",
-    "Front End System Design/Examples/Untitled.md",
-    "Front End System Design/The Radio framework.md",
-    "Front End System Design/News Feed example.md",
-    "Front End System Design/Performance/Performance Summary.md",
-    "Front End System Design/Performance/Performance.md",
-    "Front End System Design/Performance/Preload.md",
-    "Front End System Design/Performance/Route based splitting.md",
-    "Front End System Design/Performance/Server side rendering.md",
-    "Front End System Design/Performance/Bundle splitting.md",
-    "Front End System Design/Performance/Compressing Javascript.md",
-    "Front End System Design/Performance/Dynamic import.md",
-    "Front End System Design/Performance/Import on Interaction.md",
-    "Front End System Design/Performance/Import on Visibility.md",
-    "Front End System Design/Performance/List Virtualisation.md",
-    "Front End System Design/Examples/attachments/jira-attempt-1.excalidraw",
-    "Front End System Design/Examples/attachments/Pasted image 20250514010304.png",
-    "Front End System Design/Internationalisation.md",
-    "Front End System Design/Performance/ARIA.md",
-    "React/Talks and Articles/The How and Why of Flexible React Components.md",
-    "Front End System Design/Atlas.md",
-    "React/Talks and Articles/attachments/Pasted image 20250513125941.png",
-    "React/Talks and Articles/attachments/Pasted image 20250513125826.png",
-    "React/Talks and Articles/attachments/Pasted image 20250513125820.png",
-    "React/Talks and Articles/attachments/Pasted image 20250513125225.png",
-    "React/Talks and Articles/attachments/Pasted image 20250513124856.png",
-    "React/Talks and Articles/attachments/Pasted image 20250513123619.png",
-    "React/Talks and Articles/attachments/Pasted image 20250513123514.png",
-    "React/Talks and Articles/attachments",
-    "Front End System Design/Examples/attachments/Pasted image 20250513083156.png",
-    "React/Talks and Articles",
-    "Front End System Design/Performance/Prefetch.md",
-    "Front End System Design/Examples/attachments",
-    "React/React-dev-learn/3. Managing state.md",
-    "React/React-dev-learn/UseMemo and UseCallback.md",
-    "Front End System Design/attachments/Pasted image 20250513004950.png",
-    "Front End System Design/Performance/Tree shaking.md",
-    "FrontEndInterviewPrep/dp_1.webm",
-    "FrontEndInterviewPrep/bundle_1.webm",
-    "FrontEndInterviewPrep/dp1.webm",
-    "FrontEndInterviewPrep/dp_2.webm",
-    "System design/Examples/attachments/excali1.excalidraw",
-    "Front End System Design/Examples",
-    "Untitled.canvas",
-    "Untitled 2.canvas",
-    "Untitled 1.canvas",
-    "DotNet/Untitled.canvas"
-  ]
+  "active": "8788929164d2cd5d",
+  "lastOpenFiles": []
 }
