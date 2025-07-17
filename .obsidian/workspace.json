@@ -11,10 +11,12 @@
             "id": "8788929164d2cd5d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "image",
+              "state": {
+                "file": "Front End System Design/attachments/news-feed-architecture.png"
+              },
+              "icon": "lucide-image",
+              "title": "news-feed-architecture"
             }
           }
         ]
@@ -163,5 +165,7 @@
     }
   },
   "active": "8788929164d2cd5d",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Front End System Design/attachments/Pasted image 20250512081446.png"
+  ]
 }
