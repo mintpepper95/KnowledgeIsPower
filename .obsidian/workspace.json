@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/React-dev-learn/1. Describing the UI.md",
+                "file": "React/React-dev-learn/2. Adding Interactivity.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "1. Describing the UI"
+              "title": "2. Adding Interactivity"
             }
           }
         ]
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/React-dev-learn/1. Describing the UI.md",
+                "file": "React/React-dev-learn/2. Adding Interactivity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 1. Describing the UI"
+              "title": "Backlinks for 2. Adding Interactivity"
             }
           },
           {
@@ -176,10 +176,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "0f26495770da4336",
+  "active": "8788929164d2cd5d",
   "lastOpenFiles": [
-    "React/Talks and Articles/The How and Why of Flexible React Components.md",
     "React/React-dev-learn/1. Describing the UI.md",
+    "React/Talks and Articles/The How and Why of Flexible React Components.md",
     "Javascript/JS Projects/Tic Tac Toe in React.md",
     "React/React Routing.md",
     "React/React Home.md",
