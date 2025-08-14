@@ -151,15 +151,17 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "React/React-dev-learn/2. Adding Interactivity.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of 2. Adding Interactivity"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -176,7 +178,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8788929164d2cd5d",
+  "active": "555c51d03c0536c6",
   "lastOpenFiles": [
     "React/React-dev-learn/1. Describing the UI.md",
     "React/Talks and Articles/The How and Why of Flexible React Components.md",
