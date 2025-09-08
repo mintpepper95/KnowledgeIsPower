@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/React-dev-learn/2. Adding Interactivity.md",
+                "file": "Operation Health/Finance/ETF.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2. Adding Interactivity"
+              "title": "ETF"
             }
           }
         ]
@@ -151,13 +151,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/React-dev-learn/2. Adding Interactivity.md",
+                "file": "Operation Health/Finance/ETF.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2. Adding Interactivity"
+              "title": "Outline of ETF"
             }
           }
         ],
@@ -165,7 +165,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,8 +179,19 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "555c51d03c0536c6",
+  "active": "8788929164d2cd5d",
   "lastOpenFiles": [
+    "Operation Health/Finance/Crypto.md",
+    "Operation Health/Finance/ETF.md",
+    "Operation Health/What is Operation Health.md",
+    "Operation Health/Finance",
+    "Operation Health/attachments/DSCF3668.jpg",
+    "Operation Health/attachments",
+    "Atlassian.md",
+    "WooliesX Csharp.md",
+    "Operation Health",
+    "Untitled.md",
+    "React/React-dev-learn/2. Adding Interactivity.md",
     "React/React-dev-learn/1. Describing the UI.md",
     "React/Talks and Articles/The How and Why of Flexible React Components.md",
     "Javascript/JS Projects/Tic Tac Toe in React.md",
