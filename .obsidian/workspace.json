@@ -30,8 +30,21 @@
               "icon": "lucide-file",
               "title": "ETF"
             }
+          },
+          {
+            "id": "88dcf91cbf2623e9",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.12"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.9.12"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,6 +183,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -179,7 +193,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8788929164d2cd5d",
+  "active": "88dcf91cbf2623e9",
   "lastOpenFiles": [
     "Operation Health/Finance/Crypto.md",
     "Operation Health/Finance/ETF.md",
