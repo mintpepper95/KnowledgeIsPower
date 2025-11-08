@@ -32,15 +32,15 @@
             }
           },
           {
-            "id": "88dcf91cbf2623e9",
+            "id": "f4cec6cdc8876f19",
             "type": "leaf",
             "state": {
               "type": "release-notes",
               "state": {
-                "currentVersion": "1.9.12"
+                "currentVersion": "1.9.14"
               },
               "icon": "lucide-book-up",
-              "title": "Release Notes 1.9.12"
+              "title": "Release Notes 1.9.14"
             }
           }
         ],
@@ -193,7 +193,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "88dcf91cbf2623e9",
+  "active": "f4cec6cdc8876f19",
   "lastOpenFiles": [
     "Operation Health/Finance/Crypto.md",
     "Operation Health/Finance/ETF.md",
