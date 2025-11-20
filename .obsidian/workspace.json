@@ -30,8 +30,33 @@
               "icon": "lucide-file",
               "title": "ETF"
             }
+          },
+          {
+            "id": "54650b3c8f6dd923",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Operation Health/Interview advice from gemini.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Interview advice from gemini"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -180,11 +205,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8788929164d2cd5d",
+  "active": "54650b3c8f6dd923",
   "lastOpenFiles": [
+    "Operation Health/What is Operation Health.md",
+    "Operation Health/Running plan.md",
+    "Operation Health/Interview advice from gemini.md",
     "Operation Health/Finance/Crypto.md",
     "Operation Health/Finance/ETF.md",
-    "Operation Health/What is Operation Health.md",
     "Operation Health/Finance",
     "Operation Health/attachments/DSCF3668.jpg",
     "Operation Health/attachments",
