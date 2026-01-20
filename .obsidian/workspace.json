@@ -54,9 +54,21 @@
               "icon": "lucide-file",
               "title": "Interview advice from gemini"
             }
+          },
+          {
+            "id": "dea5a9cdbf092b43",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.4"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -205,7 +217,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "54650b3c8f6dd923",
+  "active": "dea5a9cdbf092b43",
   "lastOpenFiles": [
     "Operation Health/What is Operation Health.md",
     "Operation Health/Running plan.md",
