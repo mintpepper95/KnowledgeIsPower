@@ -54,9 +54,33 @@
               "icon": "lucide-file",
               "title": "Interview advice from gemini"
             }
+          },
+          {
+            "id": "dff7a3b316436024",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Leetcode/patterns.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "patterns"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -205,8 +229,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "0f26495770da4336",
+  "active": "dff7a3b316436024",
   "lastOpenFiles": [
+    "Leetcode/patterns.md",
     "Leetcode/NeetCode75",
     "Operation Health/What is Operation Health.md",
     "Operation Health/Running plan.md",
