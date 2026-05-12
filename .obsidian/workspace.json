@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/System design prep/Prep Overview.md",
+                "file": "System design/System design prep/system_design_interview_plan.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,7 +76,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Prep Overview"
+              "title": "system_design_interview_plan"
             }
           }
         ],
@@ -231,8 +231,10 @@
   },
   "active": "dff7a3b316436024",
   "lastOpenFiles": [
-    "System design/System design prep/Untitled.md",
     "System design/System design prep/Prep Overview.md",
+    "System design/System design prep/system_design_interview_plan.md",
+    "System design/System design prep/Untitled",
+    "System design/System design prep/Untitled.md",
     "Leetcode/patterns.md",
     "System design/System design prep",
     "Leetcode/NeetCode75",
