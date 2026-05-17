@@ -8,55 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8788929164d2cd5d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Operation Health/Finance/ETF.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "ETF"
-            }
-          },
-          {
             "id": "54650b3c8f6dd923",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Operation Health/Interview advice from gemini.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Interview advice from gemini"
-            }
-          },
-          {
-            "id": "dff7a3b316436024",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,9 +30,33 @@
               "icon": "lucide-file",
               "title": "system_design_interview_plan"
             }
+          },
+          {
+            "id": "dff7a3b316436024",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "1. SOLID For CSharp"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -112,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "vite",
+                "query": "clean arch",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -231,25 +207,27 @@
   },
   "active": "dff7a3b316436024",
   "lastOpenFiles": [
-    "System design/System design prep/Prep Overview.md",
+    "Operation Health/Finance/ETF.md",
     "System design/System design prep/system_design_interview_plan.md",
-    "System design/System design prep/Untitled",
+    "System design/System design prep/Prep Overview.md",
     "System design/System design prep/Untitled.md",
+    "Operation Health/Interview advice from gemini.md",
+    "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
+    "System design/days_1_3_study_notes.md",
+    "WooliesX Csharp.md",
+    "Untitled.md",
+    "System design/System design prep/Untitled",
     "Leetcode/patterns.md",
     "System design/System design prep",
     "Leetcode/NeetCode75",
     "Operation Health/What is Operation Health.md",
     "Operation Health/Running plan.md",
-    "Operation Health/Interview advice from gemini.md",
     "Operation Health/Finance/Crypto.md",
-    "Operation Health/Finance/ETF.md",
     "Operation Health/Finance",
     "Operation Health/attachments/DSCF3668.jpg",
     "Operation Health/attachments",
     "Atlassian.md",
-    "WooliesX Csharp.md",
     "Operation Health",
-    "Untitled.md",
     "React/React-dev-learn/2. Adding Interactivity.md",
     "React/React-dev-learn/1. Describing the UI.md",
     "React/Talks and Articles/The How and Why of Flexible React Components.md",
