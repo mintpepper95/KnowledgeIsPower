@@ -32,7 +32,7 @@
             }
           },
           {
-            "id": "dff7a3b316436024",
+            "id": "1ed560eb9ed16183",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -88,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "clean arch",
+                "query": "SOLID",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,7 +109,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -205,14 +206,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "dff7a3b316436024",
+  "active": "1ed560eb9ed16183",
   "lastOpenFiles": [
-    "Operation Health/Finance/ETF.md",
-    "System design/System design prep/system_design_interview_plan.md",
+    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20260520002209.png",
+    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20260519234536.png",
+    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20260519234451.png",
     "System design/System design prep/Prep Overview.md",
+    "System design/System design prep/system_design_interview_plan.md",
+    "System design/System design prep/atlassian system design video.md",
+    "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
+    "Operation Health/Finance/ETF.md",
     "System design/System design prep/Untitled.md",
     "Operation Health/Interview advice from gemini.md",
-    "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
     "System design/days_1_3_study_notes.md",
     "WooliesX Csharp.md",
     "Untitled.md",
