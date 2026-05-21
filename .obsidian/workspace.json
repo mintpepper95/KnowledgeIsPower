@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
+                "file": "Hobby/Motion blur.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "1. SOLID For CSharp"
+              "title": "Motion blur"
             }
           }
         ],
@@ -109,8 +109,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -208,13 +207,15 @@
   },
   "active": "1ed560eb9ed16183",
   "lastOpenFiles": [
+    "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
+    "Hobby/Motion blur.md",
+    "Hobby",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20260520002209.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20260519234536.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20260519234451.png",
     "System design/System design prep/Prep Overview.md",
     "System design/System design prep/system_design_interview_plan.md",
     "System design/System design prep/atlassian system design video.md",
-    "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
     "Operation Health/Finance/ETF.md",
     "System design/System design prep/Untitled.md",
     "Operation Health/Interview advice from gemini.md",
