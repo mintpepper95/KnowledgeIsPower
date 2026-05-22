@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/Graph and Trees/Problems/3043. Find the Length of the Longest Common Prefix.md",
+                "file": "Budgeting.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "3043. Find the Length of the Longest Common Prefix"
+              "title": "Budgeting"
             }
           }
         ]
@@ -182,8 +182,13 @@
   },
   "active": "54650b3c8f6dd923",
   "lastOpenFiles": [
-    "Leetcode/Graph and Trees/Graph and Trees.md",
+    "attachments/Pasted image 20260523024101.png",
+    "attachments/Pasted image 20260523023816.png",
+    "VSCode shortcuts.md",
+    "Budgeting.md",
+    "WooliesX Csharp.md",
     "Leetcode/Graph and Trees/Problems/3043. Find the Length of the Longest Common Prefix.md",
+    "Leetcode/Graph and Trees/Graph and Trees.md",
     "System design/System design prep/system_design_interview_plan.md",
     "Hobby/Motion blur.md",
     "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
@@ -197,8 +202,6 @@
     "System design/System design prep/Untitled.md",
     "Operation Health/Interview advice from gemini.md",
     "System design/days_1_3_study_notes.md",
-    "WooliesX Csharp.md",
-    "Untitled.md",
     "System design/System design prep/Untitled",
     "Leetcode/patterns.md",
     "System design/System design prep",
