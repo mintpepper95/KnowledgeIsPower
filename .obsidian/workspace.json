@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Budgeting.md",
+                "file": "Leetcode/Graph and Trees/Problems/3043. Find the Length of the Longest Common Prefix.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Budgeting"
+              "title": "3043. Find the Length of the Longest Common Prefix"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "SOLID",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -182,22 +182,29 @@
   },
   "active": "54650b3c8f6dd923",
   "lastOpenFiles": [
+    "Leetcode/Graph and Trees/Problems/623. Add One Row to Tree.md",
+    "Leetcode/Graph and Trees/Problems/1110. Delete Nodes And Return Forest.md",
+    "Leetcode/Graph and Trees/Problems/1992. Find All Groups of Farmland.md",
+    "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
+    "System design/System design prep/Prep Overview.md",
+    "System design/System design prep/atlassian system design video.md",
+    "Operation Health 2026.md",
+    "Interface vs abstract class.md",
+    "Operation Spark.md",
+    "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
+    "WooliesX Csharp.md",
+    "Hobby/Motion blur.md",
+    "Budgeting.md",
     "attachments/Pasted image 20260523024101.png",
     "attachments/Pasted image 20260523023816.png",
     "VSCode shortcuts.md",
-    "Budgeting.md",
-    "WooliesX Csharp.md",
     "Leetcode/Graph and Trees/Problems/3043. Find the Length of the Longest Common Prefix.md",
     "Leetcode/Graph and Trees/Graph and Trees.md",
     "System design/System design prep/system_design_interview_plan.md",
-    "Hobby/Motion blur.md",
-    "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
     "Hobby",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20260520002209.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20260519234536.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20260519234451.png",
-    "System design/System design prep/Prep Overview.md",
-    "System design/System design prep/atlassian system design video.md",
     "Operation Health/Finance/ETF.md",
     "System design/System design prep/Untitled.md",
     "Operation Health/Interview advice from gemini.md",
@@ -215,11 +222,6 @@
     "Atlassian.md",
     "Operation Health",
     "React/React-dev-learn/2. Adding Interactivity.md",
-    "React/React-dev-learn/1. Describing the UI.md",
-    "React/Talks and Articles/The How and Why of Flexible React Components.md",
-    "Javascript/JS Projects/Tic Tac Toe in React.md",
-    "React/React Routing.md",
-    "React/React Home.md",
     "Front End System Design/attachments/news-feed-architecture.png",
     "Front End System Design/attachments/Pasted image 20250512081446.png"
   ]
