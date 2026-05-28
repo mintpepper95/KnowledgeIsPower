@@ -31,6 +31,48 @@ You store a sequence of **immutable** events that described what happened instea
 - You need strong, simple consistency guarantees with minimal complexity
 
 
+#### Why Use Event Sourcing for Distributed Systems? (The Dual-Write Problem)
+
+In a microservice architecture, a service often needs to do two things atomically:
+- Update the database
+- Send a message/event to a message broker
+
+For example, a service handling an order must save the order state **and** publish an `OrderCreated` event. These two operations must succeed or fail together — otherwise you get inconsistencies (DB updated but no event published, or event published but DB rolled back).
+
+##### Why you can't just do both
+The naive approach — update the DB then send the message — has a race condition: the service could crash between the two operations. You'd end up with one succeeding and the other not.
+
+The traditional fix is a distributed transaction (2PC — two-phase commit) spanning both the DB and the message broker. But this is problematic:
+
+- Many databases and message brokers don't support 2PC
+- Even when supported, it tightly couples your service to both systems and adds significant complexity
+
+##### How Event Sourcing solves it
+
+Because Event Sourcing uses an **event store** as its sole source of truth, it collapses the two operations into one. Writing an event to the event store is a single atomic operation. The event store also acts as a message broker — it delivers events to any subscribers automatically.
+
+So instead of:
+
+```
+1. Write to DB   ← could crash here
+2. Publish to message broker
+```
+
+You get:
+
+```
+1. Append event to event store  ← single atomic write
+   └── event store notifies all subscribers automatically
+```
+
+##### Event ordering
+Because all events are appended to a single store in order, the ordering guarantee comes for free. If transaction T1 precedes T2, then event E1 will always be published before E2 — even across multiple service instances updating the same aggregate.
+
+##### Similarity to the outbox pattern
+The Outbox Pattern is a _delivery reliability_ solution layered on top of a traditional current-state DB. Event Sourcing is a fundamentally different _persistence model_ that happens to also solve the dual-write problem as a consequence of its design.
+
+So if someone already has a traditional DB and just wants guaranteed message delivery, the Outbox Pattern is the pragmatic choice — far less disruptive. Event Sourcing only makes sense if you also want the audit trail, temporal queries, projections, and replay capabilities. You'd never adopt Event Sourcing _solely_ to solve the dual-write problem — the Outbox Pattern is much simpler for that alone.
+
 #### What is projection?
 
 Projection - process of replaying events to build a read model, a particular view of the data optimised for querying.
@@ -383,6 +425,29 @@ Write → PostgreSQL (normalised, consistent)
 Read  → Elasticsearch / Redis / separate denormalised table (fast, shaped for queries)
 ```
 
+### Why Event Sourcing without CQRS makes little sense
+
+The Event Store is **append-only by design** — writes are cheap, just append a new event. But reads are fundamentally different: to answer "what is the current state of Order #123?" you must **replay every event for that order** from the beginning. That's a projection, and it happens on every read, which becomes a scaling issue.
+
+
+The read side subscribes to events as they're written and **pre-computes the projection once**, storing it in a read-optimised store:
+```
+// Write side — still just appends
+eventStore.Append("order-123", new OrderPlacedEvent(...))
+
+// Read side — projection handler runs once per event, not per query
+OnOrderPlaced(event) {
+    readDb.Upsert("order_summary", { orderId: event.Id, ... })
+}
+
+// Query time — trivially cheap
+readDb.Query("SELECT * FROM order_summary WHERE date = today AND total > 100")
+```
+The projection cost is **paid once at write time**, not repeatedly at read time. That's the fundamental shift.
+
+Without CQRS the projection is **lazy** (computed on demand at read time). With CQRS it becomes **eager** (computed once when the event arrives, result stored). The read side just serves pre-built answers.
+
+That's why ES and CQRS are described as a natural pair — ES produces a stream of events, CQRS gives you the pattern to consume that stream and materialise it into whatever shape your reads need.
 
 ### Buffer Is Not Mandatory — Correct
 
@@ -544,7 +609,80 @@ So in short:
 
 
 
+---
+### Outbox pattern - at least once delivery
 
+#### No outbox pattern
+Without outbox pattern, `service A` push message to a message queue, `service B` consume the message from the same queue.
 
+```csharp
+// Service A - handling a purchase 
+public async Task HandlePurchase(Order order) { 
+	await _db.SaveOrder(order);               // step 1 - save to DB 
+	await _queue.Publish(OrderPlaced(order)); // step 2 - push to queue 
+}
+```
 
-Outbox pattern
+These are two separate operations, not atomic. One of those operations can fail.
+##### Imagine save to DB works, but publish collapses
+Service B will never pick up the message cause it doesn't exist.
+
+So how do we atomically update DB and publish to queue?
+#### How Outbox pattern solves this
+Outbox solves this by only writing to one system, the db.
+Publish to queue is a downstream concern.
+
+You save order to DB, and write it to outbox.
+Can do this in the same db transaction which makes it atomic.
+Note some NoSQL dbs like mongo supports transactions too.
+
+A separate processor will run continuously and publish each message and mark them as completed. If the processor crashed, it just retry next cycle.
+
+The outbox pattern allows us to ignore anything after, because it's no longer our responsibility. It becomes the responsibility of whatever process picks up the message and handles it.
+##### Distributed transaction vs Outbox pattern
+```
+// Buying a product
+Old way (distributed transaction):
+  Lock payment + warehouse + notification + shipping simultaneously
+  Coordinate commit across all 4
+  Any one failing = everything rolls back
+  4 systems locked for 4 seconds = huge failure surface
+
+Outbox pattern:
+  Transaction 1: save order + write 4 outbox events (instant, one DB)
+  Then async: poller delivers each event independently
+    - Payment fails? Retry just payment
+    - Shipping slow? Doesn't block email
+    - Each system recovers independently, one system failure does not impact others
+```
+
+#### Issues with Outbox pattern
+
+- The Message relay might publish a message more than once. It crash after publishing a message but before recording the fact that it has done so. When it restarts, it will then publish the message again. As a result, a message consumer must be idempotent, perhaps by tracking the IDs of the messages that it has already processed. Fortunately, since message Consumers usually need to be idempotent (because a message broker can deliver messages more than once) this is typically not a problem.
+- Polling overhead
+- Increased latency compared to not using outbox
+- Message ordering can be tricky to preserve
+
+If a single processor process outbox by order id or something like that then ordering is guaranteed under normal conditions.
+
+**1. Concurrent transactions committing out of order**
+```
+Tx A starts  → inserts outbox row (seq: 101)
+Tx B starts  → inserts outbox row (seq: 102)
+Tx B commits → processor picks up seq 102
+Tx A commits → processor picks up seq 101
+```
+Processor may see and publish `102` before `101` depending on polling timing.
+
+**2. Retries due to failures** If message `101` fails to publish and gets retried, it may end up being delivered _after_ `102` and `103`.
+
+**3. Parallel processors** If you run multiple processor instances for high availability or throughput, two processor can pick up and publish different messages simultaneously with no ordering guarantee between them.
+
+To ensure ordering, all events for same aggregate go to the same partition. Within a partition, things like Kafka guarantees ordering. 
+
+For retries due to failures, the correct approach is to **block the relay from publishing `102` and `103` until `101` succeeds**. This means:
+
+- The relay must publish messages **strictly in sequence** per aggregate so it doesn't bring down other messages from other aggregates
+- If `101` fails, retry `101` until it succeeds before moving to `102`
+- Never skip a failed message and proceed to the next one
+
