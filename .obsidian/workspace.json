@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "bf50ad663f85fa86",
+        "id": "4395018dc106580a",
         "type": "tabs",
         "children": [
           {
-            "id": "54650b3c8f6dd923",
+            "id": "4bb54c488865757b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/Graph and Trees/Problems/3043. Find the Length of the Longest Common Prefix.md",
+                "file": "System design/days_1_3_study_notes.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "3043. Find the Length of the Longest Common Prefix"
+              "title": "days_1_3_study_notes"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "event sourcing",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -180,8 +180,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "54650b3c8f6dd923",
+  "active": "4bb54c488865757b",
   "lastOpenFiles": [
+    "System design/Some additional notes.md",
+    "System design/The 3 step framework.md",
+    "System design/DDD, Event sourcing and CQRS.md",
+    "System design/days_1_3_study_notes.md",
+    "DotNet/Event Sourcing and CQRS.md",
+    "DotNet/Domain Driven Design - a way of building of microservice.md",
+    "Leetcode/Graph and Trees/Problems/3043. Find the Length of the Longest Common Prefix.md",
     "Leetcode/Graph and Trees/Problems/623. Add One Row to Tree.md",
     "Leetcode/Graph and Trees/Problems/1110. Delete Nodes And Return Forest.md",
     "Leetcode/Graph and Trees/Problems/1992. Find All Groups of Farmland.md",
@@ -198,7 +205,6 @@
     "attachments/Pasted image 20260523024101.png",
     "attachments/Pasted image 20260523023816.png",
     "VSCode shortcuts.md",
-    "Leetcode/Graph and Trees/Problems/3043. Find the Length of the Longest Common Prefix.md",
     "Leetcode/Graph and Trees/Graph and Trees.md",
     "System design/System design prep/system_design_interview_plan.md",
     "Hobby",
@@ -208,20 +214,14 @@
     "Operation Health/Finance/ETF.md",
     "System design/System design prep/Untitled.md",
     "Operation Health/Interview advice from gemini.md",
-    "System design/days_1_3_study_notes.md",
     "System design/System design prep/Untitled",
     "Leetcode/patterns.md",
     "System design/System design prep",
     "Leetcode/NeetCode75",
-    "Operation Health/What is Operation Health.md",
-    "Operation Health/Running plan.md",
-    "Operation Health/Finance/Crypto.md",
     "Operation Health/Finance",
     "Operation Health/attachments/DSCF3668.jpg",
     "Operation Health/attachments",
-    "Atlassian.md",
     "Operation Health",
-    "React/React-dev-learn/2. Adding Interactivity.md",
     "Front End System Design/attachments/news-feed-architecture.png",
     "Front End System Design/attachments/Pasted image 20250512081446.png"
   ]
