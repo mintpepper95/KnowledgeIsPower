@@ -909,3 +909,15 @@ When asked to draw it, keep it simple:
 | Adapter | Concrete implementation of a port | `OrderRepository (EF Core)`, `StripePaymentGateway` |
 | Primary Adapter | Drives the application | ASP.NET Controller, Service Bus Consumer |
 | Secondary Adapter | Driven by the application | EF Core, SendGrid, Redis |
+
+Missing
+DI over new
+Http Clients - life time, singleton/transient/scoped
+auth
+exception handling
+
+eventhub
+
+ebay auction
+- how to  find winner
+

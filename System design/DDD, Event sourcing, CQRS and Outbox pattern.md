@@ -1,44 +1,20 @@
 
+[[#What is Event Sourcing?]]
+
+[[#What is an Aggregate root?]]
+
+[[#What is CQRS]]
+
+
+---
 ### What is Event Sourcing?
-You store a sequence of immutable events that described what happened instead of just the current state. Current state is always derived by roleplaying these events.
+You store a sequence of **immutable** events that described what happened instead of just the current state. Current state is always derived by roleplaying these events.
 
 1. Events are immutable and append only. You never update or delete events.
-2. An Event store - a specialised db for appending and replaying events
-3. Roleplay -  to get current state, you start from beginning or a snapshot and apply the events in order
+2. An event store - a specialised db for appending, replaying and querying events
+3. Replay -  to get current state, you start from beginning or a snapshot and apply the events in order
 
-An aggregate root comes from DDD. It's a cluster of domain objects treated as a single unit.
-
-Aggregate root is the entry point outside world talks to.
-
-Aggregate root is responsible for the following
-- Can I do this - validate
-- Emitting events - this happened, it never mutate states directly
-- Applying events to rebuild state
-
-Projection - process of replaying events to build a read model, a particular view of the data optimised for querying.
-
-You can have multiple projections for the same event, each for different use cases.
-
-```
-Same events →  Projection A: current account balance (for UI)
-            →  Projection B: monthly transaction summary (for reports)
-            →  Projection C: fraud detection feed (for alerts)
-```
-
-
-CQRS 
-Splits your system into read and write.
-
-- **Write side** → handles commands → validates → emits events (the aggregate root lives here)
-- **Read side** → consumes events → builds projections → serves queries
-
-
-Write: User -> Command (deposit money) -> Aggregate Root -> emit event -> Event Store 
-
-Read: User -> Query -> Event Store -> Projection rebuilds -> Serves queries
-
-
-### When Do You Actually Use It?
+#### When to use Event Sourcing?
 
 **Use it when:**
 
@@ -55,75 +31,31 @@ Read: User -> Query -> Event Store -> Projection rebuilds -> Serves queries
 - You need strong, simple consistency guarantees with minimal complexity
 
 
-**Event schema evolution** is the sneaky hard problem — once you have events in production, you can never change their shape without a migration strategy (upcasting, versioned events, etc.)
+#### What is projection?
 
+Projection - process of replaying events to build a read model, a particular view of the data optimised for querying.
 
-periodically save the computed state, and only replay events _after_ that snapshot.
+You can have multiple projections for the same event, each for different use cases.
 
-
-
-### 1. Aggregate Root is NOT the API Controller
-
-This is a common confusion. They live in completely different layers.
+You can add projections later and calculate it using replay.
 
 ```
-HTTP Request
-     ↓
-[API Controller]        ← Infrastructure / Presentation layer
-     ↓
-[Application Service]   ← Orchestration (handles commands/queries)
-     ↓
-[Aggregate Root]        ← Domain layer (your business rules live here)
-     ↓
-[Repository]            ← Persistence layer (saves to DB / event store)
+Same events →  Projection A: current account balance (for UI)
+            →  Projection B: monthly transaction summary (for reports)
+            →  Projection C: fraud detection feed (for alerts)
 ```
 
-Aggregate is just a domain class which contain domain logics.
 
-
-### DDD and Event Sourcing — They're Independent
-
-
-|Concept|What it is|Without the other?|
-|---|---|---|
-|**DDD**|A way to _model_ your domain with Aggregates, Entities, Value Objects|✅ Works without ES|
-|**Event Sourcing**|A _persistence strategy_ — store events instead of current state|✅ Works without DDD|
-|**CQRS**|Separate read and write paths|✅ Works without either|
-
-They pair _well together_ but none of them requires the others.
-
-**DDD without ES** (most common in practice):
-
-csharp
-
-```csharp
-booking.Confirm();
-await _repository.Save(booking); // just saves current state to DB row
-```
-
-**DDD with ES:**
-
-csharp
-
-```csharp
-booking.Confirm(); // internally records a BookingConfirmed event
-var events = booking.UncommittedEvents;
-await _eventStore.Append(events); // saves events instead of state
-```
-
-The only thing ES _adds_ to DDD is replacing "save current state" with "append events." The aggregate root concept, validation, and command handling all exist in plain DDD regardless.
-
-
-Projection - mapping a DB row to a DTO _is_ a trivial form of projection. But you're missing what makes projections specifically valuable in ES. There are two different things people call "projection":
-
+#### ES projection
+Projection - mapping a DB row to a DTO _is_ a trivial form of projection. There are two different things people call "projection":
 ```cs
 // DB has: { id, status, seatCount, createdAt }
 // You map it to a DTO — you're just reshaping existing stored state
 var dto = new BookingSummaryDto { Id = row.Id, Status = row.Status };
 ```
 
-ES Projection
 
+ES projection
 ```cs
 // You process a stream of raw events to BUILD a read model that
 // doesn't exist anywhere yet
@@ -139,51 +71,29 @@ foreach (var event in allEvents)
 
 **You can build read models that cross aggregate boundaries.** Say you want "total revenue per venue this month." In a traditional DB you'd join across tables. In ES, you replay `BookingConfirmed` events from _all_ bookings and aggregate them into a `VenueRevenueSummary` read model. The read model is a _materialised_ computation over raw events.
 
-
 **You can rebuild any projection from scratch, at any time.** This is the real power. If you add a new business requirement — say, "track how many bookings were made within 10 minutes of an event starting" — in a traditional system you have no historical data. In ES, you **replay all past events** through your new projection logic and instantly have historical data too. You can't do this with a current-state DB because the history is gone.
 
+#### What is event schema evolution and why is it a problem?
 
+**Event schema evolution** is the sneaky hard problem — once you have events in production, you can never change their shape without a migration strategy (upcasting, versioned events, etc.)
 
-**Eventual consistency comes from CQRS, not ES.**
+We can periodically save the computed state, and only replay events _after_ that snapshot.
 
-```
-Command → Write Side → Event Store
-                            ↓ (async, small lag)
-                       Projection updates Read Model
-                            ↓
-Query ← Read Model  ← (might be slightly stale)
-```
-
-This lag is a CQRS problem. You'd have the same eventual consistency issue with CQRS using a normal database. ES doesn't make it worse.
 
 **Where ES does have a specific consistency concern** — and this is the one worth knowing for a senior interview — is **cross-aggregate uniqueness**:
 
-
-### Cross-Aggregate Consistency
-
+#### Cross-Aggregate Consistency
 In DDD, each aggregate is a **consistency boundary**. This means:
 
 > _Within one aggregate, all your business rules are enforced atomically. You load it, change it, save it — all or nothing.
 
 ```cs
-// This is safe — everything happens inside ONE aggregate var booking = repository.Get(bookingId); 
-booking.Confirm(); // validates internally repository.Save(booking); // saves atomically
+// This is safe — everything happens inside ONE aggregate 
+var booking = repository.Get(bookingId); 
+booking.Confirm(); // validates internally 
+repository.Save(booking); // saves atomically
 ```
-
 No other aggregate is involved. No race conditions. Strongly consistent.
-
-#### Why email uniqueness is cross-aggregate
-
-In a typical DDD model, each `User` is its own aggregate, with its own ID and its own event stream:
-
-User aggregate stream 1: UserRegistered { email: "alice@gmail.com" } 
-User aggregate stream 2: UserRegistered { email: "bob@gmail.com" } 
-User aggregate stream 3: UserRegistered { email: "alice@gmail.com" } // dupe
-
-To enforce _"no duplicate emails"_, you need to look **across all User aggregates** before creating a new User. That's outside the boundary of any single aggregate — no single aggregate owns the rule _"emails must be globally unique."_
-
-In traditional DB, you can just add constraint to email to make it unique
-
 
 #### Why ES makes it harder
 
@@ -197,7 +107,6 @@ stream: user-xyz →  [UserRegistered { email: "alice@gmail.com" }]  ← ES does
 The event store just appends to independent streams. It has no concept of _"check all other streams before appending."
 
 Race condition
-
 ```cs
 Time 0ms:  Request A checks — is "alice@gmail.com" taken? → No
 Time 0ms:  Request B checks — is "alice@gmail.com" taken? → No
@@ -205,9 +114,8 @@ Time 1ms:  Request A appends UserRegistered { email: "alice@gmail.com" } ✅
 Time 1ms:  Request B appends UserRegistered { email: "alice@gmail.com" } ✅ ← duplicate
 ```
 
-Solving it
 
-This is what you'd say in an interview if pressed:
+##### Solving it
 
 **Option 1 — Use a separate unique index store** Maintain a dedicated lookup table (e.g. in Redis or a regular DB table) that maps email → userId, with a unique constraint. Check and reserve the email _before_ appending the event. This is outside the event store but gives you the atomic guarantee.
 
@@ -215,17 +123,6 @@ This is what you'd say in an interview if pressed:
 
 **Option 3 — Accept eventual consistency with compensation** Allow the duplicate, detect it in a projection, and send the second user a "this email is already registered" email. This is the _saga_ pattern — you compensate after the fact rather than preventing upfront. Uncommon for email uniqueness but used in financial systems.
 
-
-
-
-
-
-```csharp
-// "Is this email already registered?" requires checking across ALL User aggregates
-// In ES, each aggregate is its own isolated event stream
-// There's no easy way to do a unique constraint check across streams
-// the way a DB unique index gives you for free
-```
 
 Each aggregate in ES is its own isolated stream. Enforcing invariants _within_ one aggregate is strongly consistent (you can use optimistic concurrency with version numbers). But enforcing invariants _across_ aggregates is genuinely hard, and that's an ES-specific problem, not a CQRS one.
 
@@ -235,12 +132,135 @@ Each aggregate in ES is its own isolated stream. Enforcing invariants _within_ o
 - **"What about cross-aggregate consistency?"** — E.g. enforcing that a seat can't be double-booked. ES alone doesn't solve this — you need optimistic concurrency on the aggregate stream version, or a separate seat reservation step with its own consistency guarantee.
 - **"What if event schema changes?"** — Upcasting: when reading old events, a migration function transforms them to the new shape before the aggregate sees them.
 
+---
+
+### What is DDD and Aggregate root?
+
+Aggregate root from DDD, a pattern for breaking down system into microservices. It's a cluster of domain objects treated as a single unit. It is the entry point outside world talks to. 
+
+An aggregate correspond to a bounded context which usually maps to a microservice. 
+
+```
+HTTP Request
+     ↓
+[API Controller]        ← Infrastructure / Presentation layer
+     ↓
+[Application Service]   ← Orchestration (handles commands/queries)
+     ↓
+[Aggregate Root]        ← Domain layer (your business rules live here)
+     ↓
+[Repository]            ← Persistence layer (saves to DB / event store)
+```
+
+Note DDD and Event Source are not related, both can work without each other.
+CQRS can also work without either.
 
 
-CQRS vs direct SQL
+**DDD without ES**:
+The only thing ES _adds_ to DDD is replacing "save current state" with "append events." The aggregate root concept, validation, and command handling all exist in plain DDD regardless.
+```csharp
+booking.Confirm();
+await _repository.Save(booking); // just saves current state to db
+```
 
-#### Start with direct SQL for both reads and writes when:
+**DDD with ES:**
+```csharp
+booking.Confirm(); // internally records a BookingConfirmed event
+var events = booking.UncommittedEvents;
+await _eventStore.Append(events); // saves events instead of state
+```
 
+
+|Concept|What it is|Without the other?|
+|---|---|---|
+|**DDD**|A way to _model_ your domain with Aggregates, Entities, Value Objects|✅ Works without ES|
+|**Event Sourcing**|A _persistence strategy_ — store events instead of current state|✅ Works without DDD|
+|**CQRS**|Separate read and write paths|✅ Works without either|
+
+---
+### Eventual Consistency in DDD
+
+In Domain-Driven Design (DDD), maintaining invariants across domain boundaries is a classic challenge. The core principle is that **invariants must be enforced within a transaction boundary**, and an Aggregate is that boundary.
+
+When a business process requires consistency across multiple Aggregates (or Bounded Contexts), you must move from _immediate consistency_ to _eventual consistency_.
+
+### 1. Handling Cross-Aggregate Logic
+
+If two entities must always be consistent, they often belong in the same Aggregate. If they are logically distinct enough to be separate Aggregates, you must accept that they cannot be updated in a single ACID transaction.
+
+#### The "Eventual Consistency" Pattern
+
+Use **Domain Events** to propagate state changes. When Aggregate A changes, it publishes a domain event. A handler listens for that event and triggers the necessary update in Aggregate B.
+
+- **Process:**
+    
+    1. **Command:** Update Aggregate A.
+        
+    2. **Transaction:** Persist Aggregate A and the Domain Event in the same local database transaction (using the **Outbox Pattern** to ensure the event is actually sent).
+        
+    3. **Reaction:** An event handler consumes the event and issues a command to Aggregate B.
+        
+
+### 2. Ensuring Invariants (Techniques)
+
+| **Technique**               | **When to Use**                                                                                                                                      |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Aggregate Consolidation** | If the rule is a strict, non-negotiable invariant that must be consistent _instantly_, the Aggregates are likely one aggregate. Merge them.          |
+| **Domain Events**           | For business rules that can tolerate a slight delay in consistency. This is the most common DDD approach.                                            |
+| **Saga / Process Manager**  | Use when a business process spans multiple steps, multiple aggregates, or requires compensating actions (e.g., "If step B fails, roll back step A"). |
+| **Optimistic Concurrency**  | Use versioning on your aggregates to prevent "lost updates" when multiple processes are reacting to state changes.                                   |
+
+
+
+### Where the "Problem" Actually Lies
+
+Eventual consistency becomes a problem only when the **Business Language** doesn't account for it.
+
+- **The Technical Reality:** When you use a message queue (like Azure Service Bus), there is a delay (latency) between Service A finishing and Service B starting. During that window, the system is "inconsistent."
+    
+- **The DDD Solution:** Instead of trying to "fix" the latency with technical hacks (like distributed locks), DDD suggests you **model the latency into the business process.**
+    
+
+> **Example:** In an e-book store, if a user buys a book, "Immediate Consistency" would mean the user waits on the checkout page until the payment is processed AND the book is added to their library. "Eventual Consistency" means the user gets a "Thank you, your book is being prepared" message. The business has accepted a state of "Pending."
+
+### How to Maintain Invariants with Buffers
+
+When using message queues, you ensure invariants through these specific DDD/Microservice patterns:
+
+1. **Idempotency:** Service B must be able to receive the same message twice without causing side effects (e.g., charging a customer twice).
+    
+2. **Outbox Pattern:** To ensure you don't save to your DB but fail to send the message, you save the message _to the same DB_ in one transaction, then a separate process sends it.
+    
+3. **Compensating Transactions (Sagas):** If Service A completes but Service B fails (e.g., out of stock), you must trigger an "Undo" event back to Service A to refund the user.
+
+If you find yourself fighting eventual consistency (e.g., "I absolutely need this data to be updated in both places at the exact same millisecond"), you likely have a **Leaky Abstraction**. You should probably merge those two services into a single Bounded Context.
+
+---
+### What is CQRS
+
+Basically it splits your system into read and write.
+
+For example you can read and write into different databases.
+
+
+#### Problem of Eventual Consistency with CQRS
+**Eventual consistency comes from CQRS, not ES.**
+
+This lag is a CQRS problem. You'd have the same eventual consistency issue with CQRS using a normal database. ES has nothing to do with it.
+
+```
+Command → Write Side → Event Store
+                            ↓ (async, small lag)
+                       Projection updates Read Model
+                            ↓
+Query ← Read Model  ← (might be slightly stale)
+```
+
+
+
+#### CQRS vs direct SQL
+
+Start with direct SQL for both reads and writes when:
 - The app is straightforward CRUD
 - Read and write shapes are similar
 - Team is small, iteration speed matters
@@ -425,6 +445,15 @@ The event store enforces that **stream keys are unique**. You're not checking ac
 
 Examples
 
+Aggregate root is responsible for the following
+- Can I do this - validate
+- Emitting events - this happened, it never mutate states directly
+- Applying events to rebuild state
+
+
+
+### Command handlers
+---
 
 ### Real Life Examples
 
@@ -515,65 +544,6 @@ So in short:
 
 
 
-In Domain-Driven Design (DDD), maintaining invariants across domain boundaries is a classic challenge. The core principle is that **invariants must be enforced within a transaction boundary**, and an Aggregate is that boundary.
-
-When a business process requires consistency across multiple Aggregates (or Bounded Contexts), you must move from _immediate consistency_ to _eventual consistency_.
-
-### 1. Handling Cross-Aggregate Logic
-
-If two entities must always be consistent, they often belong in the same Aggregate. If they are logically distinct enough to be separate Aggregates, you must accept that they cannot be updated in a single ACID transaction.
-
-#### The "Eventual Consistency" Pattern
-
-Use **Domain Events** to propagate state changes. When Aggregate A changes, it publishes a domain event. A handler listens for that event and triggers the necessary update in Aggregate B.
-
-- **Process:**
-    
-    1. **Command:** Update Aggregate A.
-        
-    2. **Transaction:** Persist Aggregate A and the Domain Event in the same local database transaction (using the **Outbox Pattern** to ensure the event is actually sent).
-        
-    3. **Reaction:** An event handler consumes the event and issues a command to Aggregate B.
-        
-
-### 2. Ensuring Invariants (Techniques)
-
-| **Technique**               | **When to Use**                                                                                                                                      |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Aggregate Consolidation** | If the rule is a strict, non-negotiable invariant that must be consistent _instantly_, the Aggregates are likely one aggregate. Merge them.          |
-| **Domain Events**           | For business rules that can tolerate a slight delay in consistency. This is the most common DDD approach.                                            |
-| **Saga / Process Manager**  | Use when a business process spans multiple steps, multiple aggregates, or requires compensating actions (e.g., "If step B fails, roll back step A"). |
-| **Optimistic Concurrency**  | Use versioning on your aggregates to prevent "lost updates" when multiple processes are reacting to state changes.                                   |
-
-
-
-You are correct that DDD is the primary pattern for designing microservices. Without DDD, microservices often devolve into a "distributed monolith," where services are too tightly coupled and changing one requires changing ten others.
-
-The most critical link is the **Bounded Context**. In a healthy architecture, a Bounded Context usually maps 1:1 to a Microservice.
-
-
-### Where the "Problem" Actually Lies
-
-Eventual consistency becomes a problem only when the **Business Language** doesn't account for it.
-
-- **The Technical Reality:** When you use a message queue (like Azure Service Bus), there is a delay (latency) between Service A finishing and Service B starting. During that window, the system is "inconsistent."
-    
-- **The DDD Solution:** Instead of trying to "fix" the latency with technical hacks (like distributed locks), DDD suggests you **model the latency into the business process.**
-    
-
-> **Example:** In an e-book store, if a user buys a book, "Immediate Consistency" would mean the user waits on the checkout page until the payment is processed AND the book is added to their library. "Eventual Consistency" means the user gets a "Thank you, your book is being prepared" message. The business has accepted a state of "Pending."
-
-### How to Maintain Invariants with Buffers
-
-When using message queues, you ensure invariants through these specific DDD/Microservice patterns:
-
-1. **Idempotency:** Service B must be able to receive the same message twice without causing side effects (e.g., charging a customer twice).
-    
-2. **Outbox Pattern:** To ensure you don't save to your DB but fail to send the message, you save the message _to the same DB_ in one transaction, then a separate process sends it.
-    
-3. **Compensating Transactions (Sagas):** If Service A completes but Service B fails (e.g., out of stock), you must trigger an "Undo" event back to Service A to refund the user.
-
-If you find yourself fighting eventual consistency (e.g., "I absolutely need this data to be updated in both places at the exact same millisecond"), you likely have a **Leaky Abstraction**. You should probably merge those two services into a single Bounded Context.
 
 
 

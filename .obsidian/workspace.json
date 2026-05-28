@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/days_1_3_study_notes.md",
+                "file": "System design/System design prep/Prep Overview.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "days_1_3_study_notes"
+              "title": "Prep Overview"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "event sourcing",
+                "query": "singleton",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -182,10 +182,16 @@
   },
   "active": "4bb54c488865757b",
   "lastOpenFiles": [
-    "System design/Some additional notes.md",
-    "System design/The 3 step framework.md",
-    "System design/DDD, Event sourcing and CQRS.md",
+    "System design/System design prep/system_design_interview_plan.md",
+    "System design/Event driven systems.md",
+    "System design/System design prep/Prep Overview.md",
     "System design/days_1_3_study_notes.md",
+    "System design/Dependency Injection & Lifetimes.md",
+    "System design/Some additional notes.md",
+    "System design/System design prep/Untitled.md",
+    "System design/System design prep/atlassian system design video.md",
+    "System design/DDD, Event sourcing, CQRS and Outbox pattern.md",
+    "System design/The 3 step framework.md",
     "DotNet/Event Sourcing and CQRS.md",
     "DotNet/Domain Driven Design - a way of building of microservice.md",
     "Leetcode/Graph and Trees/Problems/3043. Find the Length of the Longest Common Prefix.md",
@@ -193,8 +199,6 @@
     "Leetcode/Graph and Trees/Problems/1110. Delete Nodes And Return Forest.md",
     "Leetcode/Graph and Trees/Problems/1992. Find All Groups of Farmland.md",
     "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
-    "System design/System design prep/Prep Overview.md",
-    "System design/System design prep/atlassian system design video.md",
     "Operation Health 2026.md",
     "Interface vs abstract class.md",
     "Operation Spark.md",
@@ -206,16 +210,12 @@
     "attachments/Pasted image 20260523023816.png",
     "VSCode shortcuts.md",
     "Leetcode/Graph and Trees/Graph and Trees.md",
-    "System design/System design prep/system_design_interview_plan.md",
     "Hobby",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20260520002209.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20260519234536.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20260519234451.png",
     "Operation Health/Finance/ETF.md",
-    "System design/System design prep/Untitled.md",
-    "Operation Health/Interview advice from gemini.md",
     "System design/System design prep/Untitled",
-    "Leetcode/patterns.md",
     "System design/System design prep",
     "Leetcode/NeetCode75",
     "Operation Health/Finance",
