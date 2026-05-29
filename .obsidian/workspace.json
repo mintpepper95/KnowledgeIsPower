@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/System design prep/Prep Overview.md",
+                "file": "System design/Dependency Injection & Lifetimes.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Prep Overview"
+              "title": "Dependency Injection & Lifetimes"
             }
           }
         ]
@@ -182,13 +182,13 @@
   },
   "active": "4bb54c488865757b",
   "lastOpenFiles": [
+    "System design/DDD, Event sourcing, CQRS and Outbox pattern.md",
+    "System design/System design prep/Prep Overview.md",
     "System design/System design prep/atlassian system design video.md",
     "System design/days_1_3_study_notes.md",
     "System design/System design prep/system_design_interview_plan.md",
     "System design/Event driven systems.md",
     "System design/Some additional notes.md",
-    "System design/DDD, Event sourcing, CQRS and Outbox pattern.md",
-    "System design/System design prep/Prep Overview.md",
     "System design/Dependency Injection & Lifetimes.md",
     "System design/The 12 technical concepts.md",
     "System design/The 3 step framework.md",
