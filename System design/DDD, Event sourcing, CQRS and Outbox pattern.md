@@ -285,6 +285,8 @@ Basically it splits your system into read and write.
 For example you can read and write into different databases.
 
 
+
+
 #### Problem of Eventual Consistency with CQRS
 **Eventual consistency comes from CQRS, not ES.**
 
@@ -310,6 +312,79 @@ Start with direct SQL for both reads and writes when:
 
 
 #### Introduce CQRS when a specific pain point emerges:
+
+
+CQRS (Command Query Responsibility Segregation) is one of those patterns that gets applied at very different levels of granularity, and people often talk past each other because they mean different things by it.
+
+Here's a breakdown of the levels:
+
+### Level 1: The core principle (method/object level)
+
+The original idea from Bertrand Meyer's **Command-Query Separation (CQS)** — not even CQRS yet — is simply:
+
+> A method should either _do something_ (command) or _return something_ (query), never both.
+
+CQRS takes this and applies it at the **architectural level** rather than just to individual methods.
+
+### Level 2: Separate models (logical separation)
+
+At this level you have one codebase/database, but you intentionally design **two distinct object models**:
+
+- A **write model** — concerned with business logic, validation, invariants
+- A **read model** — concerned with returning data shaped for the UI/consumer, often denormalized
+
+No infrastructure change, just a design discipline. This is the minimum most people mean by "doing CQRS."
+
+### Level 3: Separate data stores (physical separation)
+
+Now you actually maintain **two different databases** (or schemas):
+
+- A **write store** — normalized, optimized for consistency and transactional integrity
+- A **read store** — denormalized, optimized for fast queries (could be Redis, Elasticsearch, a flat SQL view, etc.)
+
+A sync mechanism (often async) propagates writes to the read store. This introduces **eventual consistency** as a real concern.
+
+### Level 4: CQRS + Event Sourcing
+
+This is the "full" version many DDD practitioners mean. The write side doesn't store _current state_ at all — it stores a **log of events** (e.g. `OrderPlaced`, `ItemAdded`, `OrderShipped`). Current state is derived by replaying events.
+
+The read side builds **projections** from those events — materialized views tailored to specific query needs.
+
+This gives you: full audit trail, time-travel debugging, ability to build new read models retroactively — but also significant complexity.
+
+---
+
+### Why the confusion exists
+
+These levels are often **conflated** because they naturally stack:
+
+```
+Event Sourcing
+    ↑  (common pairing, but independent)
+Separate data stores
+    ↑  (often motivates physical split)
+Separate models
+    ↑  (foundation)
+CQS principle
+```
+
+Each level is independently adoptable. You can have separate read/write models without separate stores. You can have separate stores without event sourcing. But many blog posts and talks describe the _full stack_ as if it's a single thing called "CQRS."
+
+---
+
+### Practical takeaway
+
+The question to ask when someone says "we use CQRS" is: **where does the split happen?**
+
+|Level|Split happens at|Consistency model|
+|---|---|---|
+|Models only|Code design|Strong|
+|Separate stores|Infrastructure|Eventual|
+|+ Event Sourcing|Persistence strategy|Eventual|
+
+The complexity cost goes up steeply at each level, so it's worth being deliberate about which one you actually need.
+
+
 
 **Pain point 1 — Read and write models are very different shapes**
 

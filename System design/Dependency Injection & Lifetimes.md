@@ -74,17 +74,15 @@ Request B:  [Controller]   → MyService (instance #2)   ← new instance
 
 **One instance for the entire application lifetime.**
 
-
-
 ```csharp
 builder.Services.AddSingleton<IMyService, MyService>();
 ```
 
-- Created once, reused forever (or until the app shuts down)
+- Created only once
 - Shared across all requests and all threads simultaneously
 - Disposed only when the application shuts down
 - **Best for:** Expensive-to-create services, caches, configuration wrappers, connection pools, `IMemoryCache`, `IHttpClientFactory`
-- **Danger zone:** Must be thread-safe. Cannot safely hold request-specific state.
+- **Danger zone:** Must be thread-safe. If your singleton holds mutable state, may cause race condition.
 
 ```
 Request A:  [Controller] → MyService (instance #1)
@@ -94,17 +92,16 @@ Request C:  [Controller] → MyService (instance #1)   ← still the same
 
 ---
 
-#### The Captive Dependency Problem ⚠️
+### The Captive Dependency Problem
 
-This is the most common DI mistake. **A longer-lived service captures a shorter-lived one**, which then behaves as if it has the longer lifetime:
-
-csharp
+**A longer-lived service captures a shorter-lived one**, which then behaves as if it has the longer lifetime:
 
 ```csharp
 // ❌ WRONG — Singleton captures a Scoped service
 public class MySingleton
 {
     private readonly IScopedService _scoped; // This scoped instance is now stuck forever!
+    
     public MySingleton(IScopedService scoped) => _scoped = scoped;
 }
 
@@ -115,29 +112,10 @@ builder.Services.AddScoped<IScopedService, ScopedService>();
 At runtime, .NET will **throw an `InvalidOperationException`** in development (scope validation is on by default). In production without validation it silently breaks — the "scoped" service becomes effectively a singleton, sharing state across requests.
 
 **The safe rule:**
-
 ```
 Singleton  → can consume → Singleton only
 Scoped     → can consume → Scoped + Singleton
-Transient  → can consume → Transient + Scoped + Singleton  (anything)
-```
-
-If a singleton needs scoped behaviour, inject `IServiceScopeFactory` and create a scope manually:
-
-
-```csharp
-public class MySingleton
-{
-    private readonly IServiceScopeFactory _scopeFactory;
-    public MySingleton(IServiceScopeFactory f) => _scopeFactory = f;
-
-    public async Task DoWorkAsync()
-    {
-        using var scope = _scopeFactory.CreateScope();
-        var scoped = scope.ServiceProvider.GetRequiredService<IScopedService>();
-        await scoped.DoSomethingAsync();
-    } // scoped is disposed here
-}
+Transient  → can consume → Transient + Scoped + Singleton
 ```
 
 ---
@@ -146,66 +124,44 @@ public class MySingleton
 
 `HttpClient` looks like it should be `Transient` — but that's a trap.
 
+Note `HttpClient` in Blazor is just `fetch()` API, so this whole thing doesn't apply.
 ##### The two failure modes:
 
-**1. `new HttpClient()` everywhere or Transient registration** Each instance holds a socket. Disposing `HttpClient` doesn't immediately release the underlying socket — it lingers in `TIME_WAIT`. Under load, you exhaust the port pool: **socket exhaustion**.
+**1. `new HttpClient()` everywhere or Transient registration** 
+Each instance of the client will create a new connection pool. A connection pool keeps a collection of established sockets warm and ready so when a request comes in, you can use the socket in the pool instead of re-establishing network connection.
 
-**2. One static/Singleton `HttpClient`** The instance never picks up DNS changes. If a service's IP changes, your singleton keeps hitting the old address until the app restarts: **DNS staleness**.
+* When you need to use `HttpClient`, transient means everytime you have to re-establish the network connection, making pool useless
+
+* Disposing `HttpClient` doesn't immediately release the underlying socket — it lingers in for a while (not reusable). Under load, you exhaust the port pool: **socket exhaustion** and will make app unresponsive, as it can only open a certain number of sockets.
+
+**2. One static/Singleton `HttpClient`**
+* Domain names like `github.com` is just human friendly, routers only understand raw ip - `140.282.121.1`. When you tell `HttpClient` to connect to `github.com`, it does a DNS lookup to get ip address. `HttpClient` then opens a TCP connection to it.
+* Once connection is opened, domain name is completely ignored. With singleton lifetime, connections are opened indefinitely. So if GitHub changes their ip address, `HttpClient` won't pick it up as it already has an active open socket to old ip address, it will never look at the domain name again until app is restarted.
 
 ##### The solution: `IHttpClientFactory`
 
-Introduced in .NET Core 2.1. Register it once:
-
 ```csharp
-builder.Services.AddHttpClient(); // basic
-// or named:
-builder.Services.AddHttpClient("github", c =>
-{
-    c.BaseAddress = new Uri("https://api.github.com/");
-    c.DefaultRequestHeaders.Add("Accept", "application/vnd.github.v3+json");
-});
-// or typed:
-builder.Services.AddHttpClient<GitHubService>();
-```
-
-Under the hood, `IHttpClientFactory` manages a pool of `HttpMessageHandler` instances:
-
-- **Handlers are pooled** — sockets are reused, no exhaustion
-- **Handlers are rotated** every **2 minutes** by default — DNS changes are picked up
-- **`HttpClient` itself is lightweight** — `IHttpClientFactory.CreateClient()` creates a new `HttpClient` wrapper each time, but it shares the pooled handler underneath
-
-```
-IHttpClientFactory
-    └── Handler Pool
-            ├── HttpMessageHandler (2 min lifetime) ← rotated for DNS
-            ├── HttpMessageHandler (1.5 min, still active)
-            └── HttpMessageHandler (being retired...)
-
-Each CreateClient() call → new HttpClient wrapper → reuses a pooled handler
-```
-
-##### Typed clients and their gotcha:
+// This will register IHttpClientFactory
+builder.Services.AddHttpClient(
+	"github", 
+	c => { c.BaseAddress = new Uri("https://api.github.com/"); }
+);
 
 
-```csharp
-// Typed client — registered as Transient automatically
-builder.Services.AddHttpClient<GitHubService>();
-
-public class GitHubService
-{
-    private readonly HttpClient _client; // safe — factory manages the handler
-    public GitHubService(HttpClient client) => _client = client;
+// We can now use the injected named client
+public class XXXService { 
+	private readonly HttpClient _client; 
+	public MyService(IHttpClientFactory factory) {
+		_client = factory.CreateClient("github"); // Created on demand } 
+	}
 }
 ```
 
-Typed clients are **Transient** by design — get a fresh one each time, return it, let the factory handle the handler lifecycle. Don't cache a typed client in a singleton; you'd pin an old handler and reintroduce DNS staleness.
-
-##### Configuring handler lifetime:
-
-
-```csharp
-builder.Services.AddHttpClient("myClient")
-    .SetHandlerLifetime(TimeSpan.FromMinutes(5)); // default is 2 min
-```
+`IHttpClientFactory`                         - Singleton
+`HttpClient` (from `CreateClient`)    - **Transient**, new instance each call`HttpMessageHandler` (underneath)    - **Pooled** — reused for ~2 minutes
 
 
+Under the hood, `IHttpClientFactory` manages a pool of `HttpMessageHandler` instances:
+- **Handlers are pooled** — sockets are reused, no exhaustion
+- **Handlers are rotated** every **2 minutes** by default — so DNS changes are picked up
+- **`HttpClient` itself is lightweight** — `IHttpClientFactory.CreateClient()` creates a new `HttpClient` wrapper each time, but it shares the pooled handler underneath
