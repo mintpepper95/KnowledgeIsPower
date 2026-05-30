@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/Resiliency and circular patterns.md",
+                "file": "System design/System design prep/system_design_interview_plan.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Resiliency and circular patterns"
+              "title": "system_design_interview_plan"
             }
           },
           {
@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/Resiliency and circular patterns.md",
+                "file": "System design/DDD, Event sourcing, CQRS and Outbox pattern.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,11 +76,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Resiliency and circular patterns"
+              "title": "DDD, Event sourcing, CQRS and Outbox pattern"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -112,7 +112,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "singleton",
+                "query": "clean architec",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -133,7 +133,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -229,20 +230,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "39a1bcc999dfe6fb",
+  "active": "ab562f0a758f3c04",
   "lastOpenFiles": [
-    "System design/Redis.md",
-    "System design/Event Driven System.md",
-    "System design/Dependency Injection & Lifetimes.md",
-    "System design/DDD, Event sourcing, CQRS and Outbox pattern.md",
-    "System design/Resiliency and circular patterns.md",
-    "System design/Some additional notes.md",
     "System design/days_1_3_study_notes.md",
     "System design/System design prep/Prep Overview.md",
-    "System design/System design prep/atlassian system design video.md",
-    "System design/System design prep/system_design_interview_plan.md",
+    "System design/Dependency Injection & Lifetimes.md",
+    "System design/DDD, Event sourcing, CQRS and Outbox pattern.md",
     "System design/The 12 technical concepts.md",
     "System design/The 3 step framework.md",
+    "System design/Some additional notes.md",
+    "System design/Resiliency and circular patterns.md",
+    "System design/Redis.md",
+    "System design/Event Driven System and dead letter queue.md",
+    "System design/attachments/Pasted image 20260530192954.png",
+    "System design/attachments/Pasted image 20260530192939.png",
+    "System design/System design prep/atlassian system design video.md",
+    "System design/System design prep/system_design_interview_plan.md",
     "System design/System design prep/Untitled.md",
     "DotNet/Event Sourcing and CQRS.md",
     "DotNet/Domain Driven Design - a way of building of microservice.md",
@@ -257,7 +260,6 @@
     "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
     "WooliesX Csharp.md",
     "Hobby/Motion blur.md",
-    "Budgeting.md",
     "attachments/Pasted image 20260523024101.png",
     "attachments/Pasted image 20260523023816.png",
     "Hobby",
@@ -271,7 +273,6 @@
     "Operation Health/attachments/DSCF3668.jpg",
     "Operation Health/attachments",
     "Operation Health",
-    "Front End System Design/attachments/news-feed-architecture.png",
-    "Front End System Design/attachments/Pasted image 20250512081446.png"
+    "Front End System Design/attachments/news-feed-architecture.png"
   ]
 }

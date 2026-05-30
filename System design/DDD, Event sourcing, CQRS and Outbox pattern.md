@@ -282,25 +282,52 @@ If you find yourself fighting eventual consistency (e.g., "I absolutely need thi
 
 Basically it splits your system into read and write.
 
-For example you can read and write into different databases.
+CQRS can exist at different levels.
+
+### Level 1: The core principle (method/object level)
+
+Original idea from **Command-Query Separation (CQS)** — not even CQRS yet — is simply:
+
+> A method should either _do something_ (command) or _return something_ (query), never both.
+
+CQRS takes this and applies it at the **architectural level** rather than just to individual methods.
+
+### Level 2: Separate models (logical separation)
+
+At this level you have one codebase/database, but you intentionally design **two distinct object models**:
+- A **write model** — concerned with business logic, validation, invariants
+- A **read model** — concerned with returning data shaped for the UI/consumer, often denormalized
+
+No infrastructure change, just a design discipline.
+
+### Level 3: Separate data stores (physical separation)
+
+Now you actually maintain **two different databases** (or schemas):
+
+- A **write store** — normalized, optimized for consistency and transactional integrity
+- A **read store** — denormalized, optimized for fast queries (could be Redis, Elasticsearch, a flat SQL view, etc.)
+
+A sync mechanism (often async) propagates writes to the read store. This introduces **eventual consistency** as a real concern.
+
+
+### Level 4: CQRS + Event Sourcing
+
+The write side doesn't store _current state_ at all — it stores a **log of events** (e.g. `OrderPlaced`, `ItemAdded`, `OrderShipped`). Current state is derived by replaying events.
+
+The read side builds **projections** from those events — materialized views tailored to specific query needs.
+
+This gives you: full audit trail, time-travel debugging, ability to build new read models retroactively — but also significant complexity.
 
 
 
+
+
+---
 
 #### Problem of Eventual Consistency with CQRS
 **Eventual consistency comes from CQRS, not ES.**
 
-This lag is a CQRS problem. You'd have the same eventual consistency issue with CQRS using a normal database. ES has nothing to do with it.
-
-```
-Command → Write Side → Event Store
-                            ↓ (async, small lag)
-                       Projection updates Read Model
-                            ↓
-Query ← Read Model  ← (might be slightly stale)
-```
-
-
+This lag is a CQRS problem. You'd have the same eventual consistency issue with CQRS not using event sourcing. The problem is when a write happens, read is not updated in sync due to using separate stores for read and write.
 
 #### CQRS vs direct SQL
 

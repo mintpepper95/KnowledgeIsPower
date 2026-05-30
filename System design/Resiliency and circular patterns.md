@@ -25,94 +25,86 @@ Service A's thread pool fills up waiting on B. B's fills up waiting on C. The wh
 
 ### The Circuit Breaker Pattern
 
-Borrowed from electrical engineering. The idea: **stop trying to call something that's failing**, give it time to recover, then cautiously retry.
+#### Explain main idea of Circuit Breaker Pattern and its three states?
+**Stop trying to call something that's failing**, give it time to recover, then cautiously retry.
 
-#### The Three States
+**CLOSED** — normal operation, requests pass through. Monitors success and failure.
 
-**CLOSED** — normal operation, requests pass through. Failures are counted.
-
-**OPEN** — failure threshold exceeded. All requests **fail immediately** (no network call made). A timer starts.
+**OPEN** — failure threshold exceeded. All requests blocked from reaching failed service/resource (no network call made). A timer starts.
 
 **HALF-OPEN** — timer expires, a small number of probe requests are allowed through. If they succeed → back to CLOSED. If they fail → back to OPEN.
 
 ---
+#### Circuit Breaker in details
+
+Polly is a resilience library with multiple policies: retry, circuit breaker, timeout, bulkhead isolation etc.
+
+##### Difference between retry and circuit breaker
+**Retry:** "Request failed - try again" 
+It assumes the failure is transient. But this is dangerous on its own, because if the downstream service is truly broken, retries pile up, amplify load, and can cascade failures across your whole system.
+
+**Circuit breaker:** "Service failed too many times - stop trying" 
+It watches the _pattern_ of failures, and when a threshold is exceeded, it starts _rejecting requests immediately_ without even attempting the call. It protects both the caller and the downstream service.
+
+Imagine Service A calls Service B, and Service B is down. Without a circuit breaker:
+- Every request to A tries to call B -> A use up all of its threads trying to call B, A's threads wait for B's timeout
+- A eventually has no free thread to handle incoming request
+- A becomes slow, causing cascade effects to services C, D, E that depend on A
+
+With a circuit breaker, once B trips the breaker, A's calls fail fast (in microseconds, not seconds). A's threads stay free, its queue stays clear, it can still serve other requests. The damage is _contained to the B→A boundary_ rather than cascading upward. That's blast radius containment — not retry/delay, but _fail-fast isolation_.
+
+##### Dotnet example
+
+Here circuit breaker wraps the retry. This means: the breaker monitors _logical outcomes_ (did the user's intent succeed or fail?), not individual attempt counts. Three retries that all fail = one failure from the breaker's perspective. If you reverse the order, every retry attempt is counted separately, making the breaker trip too eagerly on a single transient hiccup.
+
+`MinimumThroughput` prevents flapping. If the service just started and 2 of 2 calls failed, that's 100% failure ratio but statistically meaningless. The threshold ensures you have enough signal before tripping.
+
+```cs
+// Recommended: retry inside circuit breaker
+pipeline.AddCircuitBreaker(new CircuitBreakerStrategyOptions {
+    MinimumThroughput = 5, // for 5 calls 
+    FailureRatio = 0.6, // 60% of 5 calls fail 
+    SamplingDuration = TimeSpan.FromSeconds(10), // in 10 secs
+    BreakDuration = TimeSpan.FromSeconds(30), // open for 30 secs
+    ShouldHandle = new PredicateBuilder() // what count has failure
+    .Handle<HttpRequestException>()
+});
+
+// Retry sits inside the breaker
+pipeline.AddRetry(new RetryStrategyOptions {
+	MaxRetryAttempts = 3,
+    Delay = TimeSpan.FromMilliseconds(200),
+    BackoffType = DelayBackoffType.Exponential,
+    UseJitter = true,
+    ShouldHandle = new PredicateBuilder()
+    .Handle<HttpRequestException>()
+});
+
+// ┌─ CircuitBreaker ────────────────┐
+// │  ┌─ Retry ─────────────────┐    │
+// │  │   actual HTTP call      │    │
+// │  └─────────────────────────┘    │
+// └─────────────────────────────────┘
+```
+
+Use retry alone when failures are almost always transient — a DNS blip, a brief network partition, a rate-limit response where you should back off. Typically fine for idempotent operations like reads.
+
+Use a circuit breaker when the downstream service can be genuinely broken for extended periods, or when protecting your own throughput matters. Essential for writes and payment flows where a degraded experience is better than a hung request.
+
+Use both together for most production HTTP calls to external services — the retry handles transient noise, the breaker handles sustained outages.
 
 #### Key Configuration Knobs
 
 These are the things you'd actually tune in production, and interviewers love to probe this:
 
-|Parameter|What it controls|Tradeoff|
-|---|---|---|
-|**Failure threshold**|How many failures before opening|Too low = flapping; too high = slow to react|
-|**Time window**|Rolling window for counting failures|Short = reactive; long = stable|
-|**Open timeout**|How long to stay open before probing|Too short = hammering a sick service|
-|**Half-open probe count**|How many requests to test with|Too many = risk re-overloading|
-|**Failure definition**|Timeout? 5xx? Both?|Misconfigured = wrong signal|
+| Parameter                 | What it controls                     | Tradeoff                                     |
+| ------------------------- | ------------------------------------ | -------------------------------------------- |
+| **Failure threshold**     | How many failures before opening     | Too low = flapping; too high = slow to react |
+| **Time window**           | Rolling window for counting failures | Short = reactive; long = stable              |
+| **Open timeout**          | How long to stay open before probing | Too short = hammering a sick service         |
+| **Half-open probe count** | How many requests to test with       | Too many = risk re-overloading               |
+| **Failure definition**    | Timeout? 5xx? Both?                  | Misconfigured = wrong signal                 |
 
----
-
-### Related Resiliency Patterns
-
-Circuit breaker rarely works alone. At staff level you should know the **full toolkit** and when to reach for each:
-
-#### Retry with Backoff
-
-Automatically retry failed requests, with increasing delay.
-
-- **Exponential backoff**: wait 1s, 2s, 4s, 8s...
-- **Jitter**: add randomness to prevent **retry storms** (all clients retrying in sync)
-- Critical rule: **only retry idempotent operations**. Retrying a payment = double charge.
-
-#### Timeout
-
-Set a hard deadline on every outbound call. Without it, a slow dependency holds your threads forever.
-
-- Set at **multiple levels**: connection timeout, read timeout, overall request timeout
-- Should be **lower than your caller's timeout** — otherwise your caller gives up before you do, orphaning work
-
-#### Bulkhead
-
-Isolate resources so one consumer can't exhaust them all. Named after ship hull compartments.
-
-- Give Service B calls their **own thread pool**, separate from Service C calls
-- If C hangs and fills its pool, B's pool is unaffected
-- In practice: separate connection pools, separate executor services, separate queue limits
-
-#### Fallback
-
-Define what to do when the primary path fails:
-
-- Return **cached data** (stale but available)
-- Return a **default/degraded response** ("recommendations unavailable, showing popular items")
-- **Shed load** gracefully with a meaningful error
-
-#### Rate Limiting / Load Shedding
-
-Protect yourself from being the bottleneck for others. Shed excess load deliberately rather than falling over.
-
----
-
-### How They Compose
-
-At staff level, the key insight is these patterns **layer together**:
-
-```
-Incoming request
-       │
-  [Rate Limiter]          ← shed load before it hits you
-       │
-  [Bulkhead]              ← isolate downstream calls
-       │
-  [Circuit Breaker]       ← stop calling dead services
-       │
-  [Timeout]               ← bound how long you'll wait
-       │
-  [Retry + Jitter]        ← handle transient failures
-       │
-  [Fallback]              ← graceful degradation
-```
-
-Each layer handles a different failure class. Missing any one creates a gap.
 
 ---
 
