@@ -1,9 +1,7 @@
 
-
 ### Why Resiliency Matters
 
 In a distributed system, **partial failure is the norm, not the exception**. Any network call can:
-
 - Fail outright
 - Hang indefinitely
 - Succeed slowly enough to cascade
@@ -30,15 +28,6 @@ Service A's thread pool fills up waiting on B. B's fills up waiting on C. The wh
 Borrowed from electrical engineering. The idea: **stop trying to call something that's failing**, give it time to recover, then cautiously retry.
 
 #### The Three States
-
-```
-              failure threshold                   probe request
-  CLOSED ──────────────────────► OPEN ──────────────────────► HALF-OPEN
-    ▲                                                               │
-    │                        success                               │
-    └───────────────────────────────────────────────────────────── ┘
-                             fail → back to OPEN
-```
 
 **CLOSED** — normal operation, requests pass through. Failures are counted.
 

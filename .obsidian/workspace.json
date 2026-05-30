@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/Dependency Injection & Lifetimes.md",
+                "file": "System design/Resiliency and circular patterns.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,11 +52,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Dependency Injection & Lifetimes"
+              "title": "Resiliency and circular patterns"
+            }
+          },
+          {
+            "id": "39a1bcc999dfe6fb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "System design/Resiliency and circular patterns.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Resiliency and circular patterns"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -205,13 +229,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ab562f0a758f3c04",
+  "active": "39a1bcc999dfe6fb",
   "lastOpenFiles": [
-    "System design/Event Driven system.md",
-    "System design/Resiliency and circular patterns.md",
-    "System design/Some additional notes.md",
+    "System design/Redis.md",
+    "System design/Event Driven System.md",
     "System design/Dependency Injection & Lifetimes.md",
     "System design/DDD, Event sourcing, CQRS and Outbox pattern.md",
+    "System design/Resiliency and circular patterns.md",
+    "System design/Some additional notes.md",
     "System design/days_1_3_study_notes.md",
     "System design/System design prep/Prep Overview.md",
     "System design/System design prep/atlassian system design video.md",
@@ -235,7 +260,6 @@
     "Budgeting.md",
     "attachments/Pasted image 20260523024101.png",
     "attachments/Pasted image 20260523023816.png",
-    "VSCode shortcuts.md",
     "Hobby",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20260520002209.png",
     "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20260519234536.png",
