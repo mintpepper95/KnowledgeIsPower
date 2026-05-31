@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/Resiliency and circular patterns.md",
+                "file": "System design/Event Driven System and Dead Letter Queue.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,31 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Resiliency and circular patterns"
-            }
-          },
-          {
-            "id": "ab562f0a758f3c04",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "System design/System design prep/system_design_interview_plan.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "system_design_interview_plan"
+              "title": "Event Driven System and Dead Letter Queue"
             }
           },
           {
@@ -79,8 +55,7 @@
               "title": "DDD, Event sourcing, CQRS and Outbox pattern"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -112,7 +87,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "clean architec",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -133,8 +108,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -230,22 +204,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ab562f0a758f3c04",
+  "active": "4bb54c488865757b",
   "lastOpenFiles": [
+    "System design/Redis.md",
+    "System design/Event Driven System and Dead Letter Queue.md",
+    "System design/DDD, Event sourcing, CQRS and Outbox pattern.md",
+    "System design/Dependency Injection & Lifetimes.md",
+    "System design/Resiliency and circular patterns.md",
+    "System design/System design prep/system_design_interview_plan.md",
     "System design/days_1_3_study_notes.md",
     "System design/System design prep/Prep Overview.md",
-    "System design/Dependency Injection & Lifetimes.md",
-    "System design/DDD, Event sourcing, CQRS and Outbox pattern.md",
     "System design/The 12 technical concepts.md",
     "System design/The 3 step framework.md",
     "System design/Some additional notes.md",
-    "System design/Resiliency and circular patterns.md",
-    "System design/Redis.md",
-    "System design/Event Driven System and dead letter queue.md",
     "System design/attachments/Pasted image 20260530192954.png",
     "System design/attachments/Pasted image 20260530192939.png",
     "System design/System design prep/atlassian system design video.md",
-    "System design/System design prep/system_design_interview_plan.md",
     "System design/System design prep/Untitled.md",
     "DotNet/Event Sourcing and CQRS.md",
     "DotNet/Domain Driven Design - a way of building of microservice.md",
