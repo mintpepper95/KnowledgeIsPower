@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/The 3 step framework.md",
+                "file": "Operation Health/Finance stuff.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "The 3 step framework"
+              "title": "Finance stuff"
             }
           }
         ]
@@ -182,6 +182,14 @@
   },
   "active": "4bb54c488865757b",
   "lastOpenFiles": [
+    "Operation Health/attachments/DSCF3668.jpg",
+    "Operation Health/Finance stuff.md",
+    "Operation Health/Finance/ETF.md",
+    "Operation Health/Finance/Crypto.md",
+    "Operation Health/Interview advice from gemini.md",
+    "Operation Health/Running plan.md",
+    "Operation Health/What is Operation Health.md",
+    "System design/The 3 step framework.md",
     "System design/Event Driven System and Dead Letter Queue.md",
     "System design/Dependency Injection & Lifetimes.md",
     "System design/The 12 technical concepts.md",
@@ -189,7 +197,6 @@
     "System design/Examples/attachments/excali1.excalidraw",
     "System design/Redis.md",
     "System design/Untitled",
-    "System design/The 3 step framework.md",
     "System design/Some additional notes.md",
     "System design/System design prep/system_design_interview_plan.md",
     "System design/System design prep/atlassian system design video.md",
@@ -205,13 +212,7 @@
     "Leetcode/Graph and Trees/Problems/3043. Find the Length of the Longest Common Prefix.md",
     "Leetcode/Graph and Trees/Problems/623. Add One Row to Tree.md",
     "Leetcode/Graph and Trees/Problems/1110. Delete Nodes And Return Forest.md",
-    "Leetcode/Graph and Trees/Problems/1992. Find All Groups of Farmland.md",
-    "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
-    "Operation Health 2026.md",
-    "Interface vs abstract class.md",
-    "Operation Spark.md",
     "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
-    "WooliesX Csharp.md",
     "attachments/Pasted image 20260523024101.png",
     "attachments/Pasted image 20260523023816.png",
     "Hobby",
@@ -222,7 +223,6 @@
     "System design/System design prep",
     "Leetcode/NeetCode75",
     "Operation Health/Finance",
-    "Operation Health/attachments/DSCF3668.jpg",
     "Operation Health/attachments",
     "Operation Health",
     "Front End System Design/attachments/news-feed-architecture.png"
