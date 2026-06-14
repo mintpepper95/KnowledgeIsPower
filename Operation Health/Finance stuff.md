@@ -8,14 +8,20 @@ CHESS only applies to ASX
 I spend 30k renting a year, to match this in after tax, I need to increase my salary to 195k.
 
 
-~250k in high interest account (borrow 150k from westpac)
+~250k in high interest account (borrow 100k from westpac)
 ~ 30k ETF + stock
+
+
+~ transfer the 4000 mum transferred to westpac
+
+have ~70k income by end of 2026
 
 
 
 
 Moving money - after tax would be $400 after 4 months with 235k principal.
 After 4 months intro period, if I transfer fund from Macqurie (5%) to Rabobank (5.4%) with principal of 240k, it would be $500 difference a year.
+
 
 
 
