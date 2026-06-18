@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Operation Health/Finance stuff.md",
+                "file": "System design/Questions/Design Bidding Platform.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Finance stuff"
+              "title": "Design Bidding Platform"
             }
           }
         ]
@@ -88,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 422.50840759277344,
+    "collapsed": true
   },
   "right": {
     "id": "108b417a4fe29da7",
@@ -182,36 +183,37 @@
   },
   "active": "4bb54c488865757b",
   "lastOpenFiles": [
-    "Operation Health/attachments/DSCF3668.jpg",
+    "System design/Questions/Design Uber.md",
+    "System design/Questions/Design Bidding Platform.md",
+    "System design/Examples/Online bidding.md",
+    "System design/Questions",
+    "System design/days_1_3_study_notes.md",
+    "System design/DDD, Event sourcing, CQRS and Outbox pattern.md",
+    "System design/Dependency Injection & Lifetimes.md",
+    "System design/Event Driven System and Dead Letter Queue.md",
+    "System design/Redis.md",
+    "System design/Resiliency and circular patterns.md",
+    "System design/Some additional notes.md",
+    "System design/System design prep/system_design_interview_plan.md",
+    "System design/System design prep/atlassian system design video.md",
+    "System design/The 12 technical concepts.md",
+    "System design/The 3 step framework.md",
+    "Budgeting.md",
+    "Atlassian.md",
     "Operation Health/Finance stuff.md",
+    "Operation Health/attachments/DSCF3668.jpg",
     "Operation Health/Finance/ETF.md",
     "Operation Health/Finance/Crypto.md",
     "Operation Health/Interview advice from gemini.md",
     "Operation Health/Running plan.md",
     "Operation Health/What is Operation Health.md",
-    "System design/The 3 step framework.md",
-    "System design/Event Driven System and Dead Letter Queue.md",
-    "System design/Dependency Injection & Lifetimes.md",
-    "System design/The 12 technical concepts.md",
-    "System design/Examples/Online bidding.md",
     "System design/Examples/attachments/excali1.excalidraw",
-    "System design/Redis.md",
-    "System design/Untitled",
-    "System design/Some additional notes.md",
-    "System design/System design prep/system_design_interview_plan.md",
-    "System design/System design prep/atlassian system design video.md",
-    "System design/days_1_3_study_notes.md",
     "System design/System design prep/Prep Overview.md",
-    "System design/DDD, Event sourcing, CQRS and Outbox pattern.md",
-    "System design/Resiliency and circular patterns.md",
     "System design/attachments/Pasted image 20260530192954.png",
     "System design/attachments/Pasted image 20260530192939.png",
     "System design/System design prep/Untitled.md",
     "DotNet/Event Sourcing and CQRS.md",
     "DotNet/Domain Driven Design - a way of building of microservice.md",
-    "Leetcode/Graph and Trees/Problems/3043. Find the Length of the Longest Common Prefix.md",
-    "Leetcode/Graph and Trees/Problems/623. Add One Row to Tree.md",
-    "Leetcode/Graph and Trees/Problems/1110. Delete Nodes And Return Forest.md",
     "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
     "attachments/Pasted image 20260523024101.png",
     "attachments/Pasted image 20260523023816.png",
