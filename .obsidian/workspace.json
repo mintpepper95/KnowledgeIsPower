@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/Questions/Design Ticketmaster.md",
+                "file": "System design/Questions/Design Online auction.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Design Ticketmaster"
+              "title": "Design Online auction"
             }
           }
         ]
@@ -88,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 422.50840759277344
+    "width": 422.50840759277344,
+    "collapsed": true
   },
   "right": {
     "id": "108b417a4fe29da7",
@@ -182,9 +183,9 @@
   },
   "active": "4bb54c488865757b",
   "lastOpenFiles": [
-    "System design/Questions/Design Online auction.md",
-    "System design/Questions/Design Ticketmaster.md",
     "System design/Questions/Design Bidding Platform.md",
+    "System design/Questions/Design Ticketmaster.md",
+    "System design/Questions/Design Online auction.md",
     "System design/Questions/attachments/Pasted image 20260618162057.png",
     "System design/Questions/attachments/Pasted image 20260618161705.png",
     "System design/Questions/attachments/Pasted image 20260618161259.png",
