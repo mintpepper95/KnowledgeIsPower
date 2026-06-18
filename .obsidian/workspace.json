@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/Questions/Design Bidding Platform.md",
+                "file": "System design/Questions/Design Ticketmaster.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Design Bidding Platform"
+              "title": "Design Ticketmaster"
             }
           }
         ]
@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 422.50840759277344,
-    "collapsed": true
+    "width": 422.50840759277344
   },
   "right": {
     "id": "108b417a4fe29da7",
@@ -183,8 +182,19 @@
   },
   "active": "4bb54c488865757b",
   "lastOpenFiles": [
-    "System design/Questions/Design Uber.md",
+    "System design/Questions/Design Online auction.md",
+    "System design/Questions/Design Ticketmaster.md",
     "System design/Questions/Design Bidding Platform.md",
+    "System design/Questions/attachments/Pasted image 20260618162057.png",
+    "System design/Questions/attachments/Pasted image 20260618161705.png",
+    "System design/Questions/attachments/Pasted image 20260618161259.png",
+    "System design/Questions/attachments/Pasted image 20260618161200.png",
+    "System design/Questions/attachments/Pasted image 20260618154412.png",
+    "System design/Questions/attachments/Pasted image 20260618153101.png",
+    "System design/Questions/attachments/Pasted image 20260618152150.png",
+    "System design/Questions/attachments/Pasted image 20260618151048.png",
+    "System design/Questions/attachments",
+    "System design/Questions/Design Uber.md",
     "System design/Examples/Online bidding.md",
     "System design/Questions",
     "System design/days_1_3_study_notes.md",
@@ -210,23 +220,13 @@
     "System design/Examples/attachments/excali1.excalidraw",
     "System design/System design prep/Prep Overview.md",
     "System design/attachments/Pasted image 20260530192954.png",
-    "System design/attachments/Pasted image 20260530192939.png",
     "System design/System design prep/Untitled.md",
-    "DotNet/Event Sourcing and CQRS.md",
-    "DotNet/Domain Driven Design - a way of building of microservice.md",
-    "Screenshot 2024-03-11 at 23-15-31 Preserving and Resetting State – React.png",
-    "attachments/Pasted image 20260523024101.png",
-    "attachments/Pasted image 20260523023816.png",
     "Hobby",
-    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20260520002209.png",
-    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20260519234536.png",
-    "DotNet/C_Sharp/C_Sharp courses/attachments/Pasted image 20260519234451.png",
     "System design/System design prep/Untitled",
     "System design/System design prep",
     "Leetcode/NeetCode75",
     "Operation Health/Finance",
     "Operation Health/attachments",
-    "Operation Health",
-    "Front End System Design/attachments/news-feed-architecture.png"
+    "Operation Health"
   ]
 }
