@@ -76,6 +76,8 @@ Redis pub/sub operates on fire and forget. If message is somehow missed, then mi
 ---
 ### When to use and not use Redis
 
+Note Redis is single threaded.
+
 #### When to use Redis (Caching/Server-side session storage/rate limiting/leaderboards)?
 **Caching (cache-aside)**
 

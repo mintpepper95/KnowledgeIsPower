@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/Questions/Design Online auction.md",
+                "file": "System design/Questions/Guide.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Design Online auction"
+              "title": "Guide"
             }
           }
         ]
@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 422.50840759277344,
-    "collapsed": true
+    "width": 422.50840759277344
   },
   "right": {
     "id": "108b417a4fe29da7",
@@ -183,9 +182,13 @@
   },
   "active": "4bb54c488865757b",
   "lastOpenFiles": [
-    "System design/Questions/Design Bidding Platform.md",
-    "System design/Questions/Design Ticketmaster.md",
     "System design/Questions/Design Online auction.md",
+    "System design/Questions/Guide.md",
+    "System design/Questions/Design Bidding Platform.md",
+    "System design/Redis.md",
+    "System design/Questions/attachments/Pasted image 20260619155732.png",
+    "System design/Questions/attachments/Pasted image 20260619154742.png",
+    "System design/Questions/Design Ticketmaster.md",
     "System design/Questions/attachments/Pasted image 20260618162057.png",
     "System design/Questions/attachments/Pasted image 20260618161705.png",
     "System design/Questions/attachments/Pasted image 20260618161259.png",
@@ -202,7 +205,6 @@
     "System design/DDD, Event sourcing, CQRS and Outbox pattern.md",
     "System design/Dependency Injection & Lifetimes.md",
     "System design/Event Driven System and Dead Letter Queue.md",
-    "System design/Redis.md",
     "System design/Resiliency and circular patterns.md",
     "System design/Some additional notes.md",
     "System design/System design prep/system_design_interview_plan.md",
@@ -212,7 +214,6 @@
     "Budgeting.md",
     "Atlassian.md",
     "Operation Health/Finance stuff.md",
-    "Operation Health/attachments/DSCF3668.jpg",
     "Operation Health/Finance/ETF.md",
     "Operation Health/Finance/Crypto.md",
     "Operation Health/Interview advice from gemini.md",
@@ -220,8 +221,6 @@
     "Operation Health/What is Operation Health.md",
     "System design/Examples/attachments/excali1.excalidraw",
     "System design/System design prep/Prep Overview.md",
-    "System design/attachments/Pasted image 20260530192954.png",
-    "System design/System design prep/Untitled.md",
     "Hobby",
     "System design/System design prep/Untitled",
     "System design/System design prep",
