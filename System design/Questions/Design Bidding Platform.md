@@ -150,6 +150,9 @@ We ensure bids in kafka before returning status back to client.
 Auction state is a filtered queue of highest bids. So downstream can subscribe to a server that reads from the auction state.
 
 
+---
+
+### My attempt
 
 
 

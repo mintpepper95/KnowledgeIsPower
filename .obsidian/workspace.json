@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/Questions/Guide.md",
+                "file": "System design/Questions/Design Auction System - Code Monkey.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Guide"
+              "title": "Design Auction System - Code Monkey"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Scale",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -182,13 +182,18 @@
   },
   "active": "4bb54c488865757b",
   "lastOpenFiles": [
-    "System design/Questions/Design Online auction.md",
-    "System design/Questions/Guide.md",
+    "System design/Questions/Auction - System Design Handbook.md",
+    "System design/Questions/Design Auction System - Code Monkey.md",
+    "System design/Questions/attachments/Pasted image 20260618151048.png",
     "System design/Questions/Design Bidding Platform.md",
+    "System design/Examples/Online bidding.md",
+    "System design/Questions/Guide.md",
+    "System design/Questions/Design Uber.md",
+    "System design/Questions/Design Ticketmaster.md",
+    "System design/Questions/Design Online auction.md",
     "System design/Redis.md",
     "System design/Questions/attachments/Pasted image 20260619155732.png",
     "System design/Questions/attachments/Pasted image 20260619154742.png",
-    "System design/Questions/Design Ticketmaster.md",
     "System design/Questions/attachments/Pasted image 20260618162057.png",
     "System design/Questions/attachments/Pasted image 20260618161705.png",
     "System design/Questions/attachments/Pasted image 20260618161259.png",
@@ -196,10 +201,7 @@
     "System design/Questions/attachments/Pasted image 20260618154412.png",
     "System design/Questions/attachments/Pasted image 20260618153101.png",
     "System design/Questions/attachments/Pasted image 20260618152150.png",
-    "System design/Questions/attachments/Pasted image 20260618151048.png",
     "System design/Questions/attachments",
-    "System design/Questions/Design Uber.md",
-    "System design/Examples/Online bidding.md",
     "System design/Questions",
     "System design/days_1_3_study_notes.md",
     "System design/DDD, Event sourcing, CQRS and Outbox pattern.md",
@@ -217,10 +219,7 @@
     "Operation Health/Finance/ETF.md",
     "Operation Health/Finance/Crypto.md",
     "Operation Health/Interview advice from gemini.md",
-    "Operation Health/Running plan.md",
-    "Operation Health/What is Operation Health.md",
     "System design/Examples/attachments/excali1.excalidraw",
-    "System design/System design prep/Prep Overview.md",
     "Hobby",
     "System design/System design prep/Untitled",
     "System design/System design prep",
