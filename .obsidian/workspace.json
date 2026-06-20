@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/Questions/Design Auction System - Code Monkey.md",
+                "file": "System design/Questions/TicketMaster/Design Ticketmaster.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Design Auction System - Code Monkey"
+              "title": "Design Ticketmaster"
             }
           }
         ]
@@ -183,17 +183,19 @@
   },
   "active": "4bb54c488865757b",
   "lastOpenFiles": [
+    "System design/Questions/Design Auction System - Code Monkey.md",
+    "System design/Questions/TicketMaster/Design Ticketmaster.md",
+    "System design/Questions/TicketMaster",
+    "System design/Questions/Design Bidding Platform.md",
+    "System design/Questions/Design Online auction.md",
+    "System design/Questions/Auction - System Design Handbook.md",
     "System design/Questions/attachments/Pasted image 20260620224943.png",
     "System design/Questions/attachments/Pasted image 20260620223542.png",
-    "System design/Questions/Auction - System Design Handbook.md",
-    "System design/Questions/Design Auction System - Code Monkey.md",
     "System design/Questions/attachments/Pasted image 20260618151048.png",
-    "System design/Questions/Design Bidding Platform.md",
     "System design/Examples/Online bidding.md",
     "System design/Questions/Guide.md",
     "System design/Questions/Design Uber.md",
     "System design/Questions/Design Ticketmaster.md",
-    "System design/Questions/Design Online auction.md",
     "System design/Redis.md",
     "System design/Questions/attachments/Pasted image 20260619155732.png",
     "System design/Questions/attachments/Pasted image 20260619154742.png",
@@ -202,7 +204,6 @@
     "System design/Questions/attachments/Pasted image 20260618161259.png",
     "System design/Questions/attachments/Pasted image 20260618161200.png",
     "System design/Questions/attachments/Pasted image 20260618154412.png",
-    "System design/Questions/attachments/Pasted image 20260618153101.png",
     "System design/Questions/attachments",
     "System design/Questions",
     "System design/days_1_3_study_notes.md",
@@ -227,7 +228,6 @@
     "System design/System design prep",
     "Leetcode/NeetCode75",
     "Operation Health/Finance",
-    "Operation Health/attachments",
-    "Operation Health"
+    "Operation Health/attachments"
   ]
 }
