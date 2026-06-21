@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/Questions/WhatsApp/Design WhatsApp.md",
+                "file": "System design/Questions/WhatsApp/My attempt 1.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Design WhatsApp"
+              "title": "My attempt 1"
             }
           }
         ]
@@ -183,6 +183,20 @@
   },
   "active": "4bb54c488865757b",
   "lastOpenFiles": [
+    "System design/Questions/WhatsApp/attachments/Pasted image 20260622021525.png",
+    "System design/Questions/WhatsApp/attachments/Pasted image 20260622021443.png",
+    "System design/The 3 step framework.md",
+    "System design/Questions/WhatsApp/My attempt 1.md",
+    "System design/Resiliency and circular patterns.md",
+    "System design/DDD, Event sourcing, CQRS and Outbox pattern.md",
+    "System design/Redis.md",
+    "System design/Event Driven System and Dead Letter Queue.md",
+    "System design/Dependency Injection & Lifetimes.md",
+    "System design/Some additional notes.md",
+    "System design/The 12 technical concepts.md",
+    "System design/Questions/Design Uber.md",
+    "System design/Questions/Guide.md",
+    "System design/Questions/WhatsApp/Design WhatsApp.md",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260622010823.png",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260622010720.png",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260622010411.png",
@@ -191,7 +205,6 @@
     "System design/Questions/WhatsApp/attachments/Pasted image 20260622005505.png",
     "System design/Questions/WhatsApp/attachments",
     "System design/Concepts/Common concepts.md",
-    "System design/Questions/WhatsApp/Design WhatsApp.md",
     "System design/Questions/WhatsApp",
     "System design/Questions/TicketMaster/Design Ticketmaster.md",
     "System design/Concepts",
@@ -204,28 +217,15 @@
     "System design/Questions/Design Online auction.md",
     "System design/Questions/Auction - System Design Handbook.md",
     "System design/Questions/attachments/Pasted image 20260620224943.png",
-    "System design/Questions/attachments/Pasted image 20260620223542.png",
-    "System design/Questions/attachments/Pasted image 20260618151048.png",
     "System design/Examples/Online bidding.md",
-    "System design/Questions/Guide.md",
-    "System design/Questions/Design Uber.md",
     "System design/Questions/Design Ticketmaster.md",
-    "System design/Redis.md",
     "System design/Questions/attachments",
     "System design/Questions",
     "System design/days_1_3_study_notes.md",
-    "System design/DDD, Event sourcing, CQRS and Outbox pattern.md",
-    "System design/Dependency Injection & Lifetimes.md",
-    "System design/Event Driven System and Dead Letter Queue.md",
-    "System design/Resiliency and circular patterns.md",
-    "System design/Some additional notes.md",
     "System design/System design prep/system_design_interview_plan.md",
     "System design/System design prep/atlassian system design video.md",
-    "System design/The 12 technical concepts.md",
-    "System design/The 3 step framework.md",
     "Budgeting.md",
     "Atlassian.md",
-    "Operation Health/Finance stuff.md",
     "System design/Examples/attachments/excali1.excalidraw",
     "Hobby",
     "System design/System design prep/Untitled"
