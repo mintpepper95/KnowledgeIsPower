@@ -88,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 422.50840759277344
+    "width": 422.50840759277344,
+    "collapsed": true
   },
   "right": {
     "id": "108b417a4fe29da7",
@@ -182,6 +183,13 @@
   },
   "active": "4bb54c488865757b",
   "lastOpenFiles": [
+    "System design/Questions/WhatsApp/attachments/Pasted image 20260622010823.png",
+    "System design/Questions/WhatsApp/attachments/Pasted image 20260622010720.png",
+    "System design/Questions/WhatsApp/attachments/Pasted image 20260622010411.png",
+    "System design/Questions/WhatsApp/attachments/Pasted image 20260622010220.png",
+    "System design/Questions/WhatsApp/attachments/Pasted image 20260622005920.png",
+    "System design/Questions/WhatsApp/attachments/Pasted image 20260622005505.png",
+    "System design/Questions/WhatsApp/attachments",
     "System design/Concepts/Common concepts.md",
     "System design/Questions/WhatsApp/Design WhatsApp.md",
     "System design/Questions/WhatsApp",
@@ -203,11 +211,6 @@
     "System design/Questions/Design Uber.md",
     "System design/Questions/Design Ticketmaster.md",
     "System design/Redis.md",
-    "System design/Questions/attachments/Pasted image 20260619155732.png",
-    "System design/Questions/attachments/Pasted image 20260619154742.png",
-    "System design/Questions/attachments/Pasted image 20260618162057.png",
-    "System design/Questions/attachments/Pasted image 20260618161705.png",
-    "System design/Questions/attachments/Pasted image 20260618161259.png",
     "System design/Questions/attachments",
     "System design/Questions",
     "System design/days_1_3_study_notes.md",
@@ -223,10 +226,8 @@
     "Budgeting.md",
     "Atlassian.md",
     "Operation Health/Finance stuff.md",
-    "Operation Health/Finance/ETF.md",
     "System design/Examples/attachments/excali1.excalidraw",
     "Hobby",
-    "System design/System design prep/Untitled",
-    "System design/System design prep"
+    "System design/System design prep/Untitled"
   ]
 }
