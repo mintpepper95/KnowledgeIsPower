@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/Questions/TicketMaster/Design Ticketmaster.md",
+                "file": "System design/Questions/WhatsApp/Design WhatsApp.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Design Ticketmaster"
+              "title": "Design WhatsApp"
             }
           }
         ]
@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 422.50840759277344,
-    "collapsed": true
+    "width": 422.50840759277344
   },
   "right": {
     "id": "108b417a4fe29da7",
@@ -183,8 +182,15 @@
   },
   "active": "4bb54c488865757b",
   "lastOpenFiles": [
-    "System design/Questions/Design Auction System - Code Monkey.md",
+    "System design/Concepts/Common concepts.md",
+    "System design/Questions/WhatsApp/Design WhatsApp.md",
+    "System design/Questions/WhatsApp",
     "System design/Questions/TicketMaster/Design Ticketmaster.md",
+    "System design/Concepts",
+    "System design/Questions/TicketMaster/attachments/Pasted image 20260621215300.png",
+    "System design/Questions/TicketMaster/attachments/Pasted image 20260621213246.png",
+    "System design/Questions/TicketMaster/attachments",
+    "System design/Questions/Design Auction System - Code Monkey.md",
     "System design/Questions/TicketMaster",
     "System design/Questions/Design Bidding Platform.md",
     "System design/Questions/Design Online auction.md",
@@ -202,8 +208,6 @@
     "System design/Questions/attachments/Pasted image 20260618162057.png",
     "System design/Questions/attachments/Pasted image 20260618161705.png",
     "System design/Questions/attachments/Pasted image 20260618161259.png",
-    "System design/Questions/attachments/Pasted image 20260618161200.png",
-    "System design/Questions/attachments/Pasted image 20260618154412.png",
     "System design/Questions/attachments",
     "System design/Questions",
     "System design/days_1_3_study_notes.md",
@@ -220,14 +224,9 @@
     "Atlassian.md",
     "Operation Health/Finance stuff.md",
     "Operation Health/Finance/ETF.md",
-    "Operation Health/Finance/Crypto.md",
-    "Operation Health/Interview advice from gemini.md",
     "System design/Examples/attachments/excali1.excalidraw",
     "Hobby",
     "System design/System design prep/Untitled",
-    "System design/System design prep",
-    "Leetcode/NeetCode75",
-    "Operation Health/Finance",
-    "Operation Health/attachments"
+    "System design/System design prep"
   ]
 }
