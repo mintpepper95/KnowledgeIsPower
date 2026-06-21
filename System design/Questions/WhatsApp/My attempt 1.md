@@ -5,15 +5,16 @@
 ---
 ### Feedbacks
 
-1. Outbox with background service + READ DB with CDC is wrong
+
+#### Outbox with background service + READ DB with CDC is wrong
 
 This approach is for reliability propagating events to other systems like downstream consumers, not for delivering a message to a person who's waiting for it. It adds latency.
 
-WebSocket as a single pipe point is correct, but polling for non active chat is a weakness. If a user has 20 active convos, HTTP polling means their device is constantly sending HTTP requests which both drains user battery and create load on our servers.
-
-Instead of tying WebSocket connection to a specific chat room, tie connection to user session. 
+WebSocket multiplexing as a single pipe point is correct, but polling for non active chat is a weakness. If a user has 20 active convos, HTTP polling means their device is constantly sending HTTP requests which both drains user battery and create load on our servers.
 
 A dispatcher in front end code can look at events and update chats.
+##### WebSocket multiplex
+WebSocket multiplexing is running multiple independent streams of data over a single WebSocket connection. Reduced overhead compare to multiple WebSocket connection as HTTP handshake is performed just once. Clients can subscribe/unsubscribe to specific topics.
 
 
 #### Inefficiency in retrieving unread message
@@ -39,8 +40,6 @@ Server persist message to db and drops it to kafka.
 Kafka use  chat_id to route message to a specific partition. A bg worker can process that partition.
 
 
-
-
 #### Session routing & Presence Service
 Distributed chat system can't function without knowing where users are connected and if they are online.
 
@@ -48,3 +47,20 @@ Because WebSockets are stateful, long lived connections. A user is tethered to o
 * Session routing - When a message arrives in backend, backend must ask a fast store like Redis: Which specific WebSocket server holds User B's connection now? So need to map user_id to WS node to route message to the right machine so it can be pushed to the client.
   
   We can have a Presence Service for listening to heartbeats from client.
+
+### Sql vs NoSql
+They are pretty similar these days. Even NoSql can do transactions now.
+So instead we could talk about data access pattern.
+
+Chat append to a data partition, read recent N by sort key, occasional scan back.
+
+So NoSql works well, however many chat systems also works well on Sql. Discord started with Sql and moved to NoSql.
+
+#### CAP and Idempotency
+
+CAP only applies during a partition.
+Messafe delivery is about deliver now, reconcile order later.
+
+
+
+
