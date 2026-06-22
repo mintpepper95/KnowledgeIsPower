@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/Questions/WhatsApp/My attempt 1.md",
+                "file": "System design/Questions/Guide.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "My attempt 1"
+              "title": "Guide"
             }
           }
         ]
@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 422.50840759277344,
-    "collapsed": true
+    "width": 422.50840759277344
   },
   "right": {
     "id": "108b417a4fe29da7",
@@ -183,12 +182,23 @@
   },
   "active": "4bb54c488865757b",
   "lastOpenFiles": [
+    "System design/Questions/WhatsApp/My attempt 1.md",
+    "System design/Questions/Guide.md",
+    "System design/Questions/Design Bidding Platform.md",
+    "System design/Questions/Design Auction System - Code Monkey.md",
+    "System design/Questions/Auction - System Design Handbook.md",
+    "System design/Questions/WhatsApp/Design WhatsApp.md",
+    "System design/Questions/WhatsApp/attachments/Pasted image 20260623022639.png",
+    "System design/Questions/WhatsApp/attachments/Pasted image 20260623021728.png",
+    "System design/Questions/WhatsApp/attachments/Pasted image 20260623021707.png",
+    "System design/Questions/WhatsApp/My attempt 1.md.tmp.13744.40ee0ffc596a",
+    "System design/Questions/Design Ticketmaster.md",
+    "System design/Questions/Design Online auction.md",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260622104715.png",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260622104635.png",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260622021525.png",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260622021443.png",
     "System design/The 3 step framework.md",
-    "System design/Questions/WhatsApp/My attempt 1.md",
     "System design/Resiliency and circular patterns.md",
     "System design/DDD, Event sourcing, CQRS and Outbox pattern.md",
     "System design/Redis.md",
@@ -197,28 +207,17 @@
     "System design/Some additional notes.md",
     "System design/The 12 technical concepts.md",
     "System design/Questions/Design Uber.md",
-    "System design/Questions/Guide.md",
-    "System design/Questions/WhatsApp/Design WhatsApp.md",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260622010823.png",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260622010720.png",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260622010411.png",
-    "System design/Questions/WhatsApp/attachments/Pasted image 20260622010220.png",
-    "System design/Questions/WhatsApp/attachments/Pasted image 20260622005920.png",
-    "System design/Questions/WhatsApp/attachments/Pasted image 20260622005505.png",
     "System design/Questions/WhatsApp/attachments",
     "System design/Concepts/Common concepts.md",
     "System design/Questions/WhatsApp",
     "System design/Questions/TicketMaster/Design Ticketmaster.md",
     "System design/Concepts",
-    "System design/Questions/TicketMaster/attachments/Pasted image 20260621215300.png",
     "System design/Questions/TicketMaster/attachments",
-    "System design/Questions/Design Auction System - Code Monkey.md",
     "System design/Questions/TicketMaster",
-    "System design/Questions/Design Bidding Platform.md",
-    "System design/Questions/Design Online auction.md",
-    "System design/Questions/Auction - System Design Handbook.md",
     "System design/Examples/Online bidding.md",
-    "System design/Questions/Design Ticketmaster.md",
     "System design/Questions/attachments",
     "System design/Questions",
     "System design/days_1_3_study_notes.md",
@@ -227,7 +226,6 @@
     "Budgeting.md",
     "Atlassian.md",
     "System design/Examples/attachments/excali1.excalidraw",
-    "Hobby",
-    "System design/System design prep/Untitled"
+    "Hobby"
   ]
 }
