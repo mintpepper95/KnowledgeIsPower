@@ -61,6 +61,37 @@ So NoSql works well, however many chat systems also works well on Sql. Discord s
 CAP only applies during a partition.
 Messafe delivery is about deliver now, reconcile order later.
 
+Message ordering within a chat and idempotetency push you towards needing per partition consistency.
 
+
+#### Do we need event sourcing?
+We don't need event sourcing pattenrn. But chat message log is append only, features like edit/delete history, read receipts and multi-device sync can be moddeled as events over time.
+
+#### Idempotency
+Without a client generated message id/idempotency key, retrying failing messages will create dupes.
+
+#### Fan-out for group chats
+Do you fan out on write (push to everyone's inbox) of fan out on read (everyone reads shared chat partition).
+
+
+#### Hot partition
+A 50k member group keyed to one partition is a hotspot. Can say chat throughput per group is bounded.
+
+
+
+Send diagram
+
+![[Pasted image 20260622104635.png]]
+Offline/multi-device reconciliation
+
+![[Pasted image 20260622104715.png]]
+
+
+
+The first is the **idempotency + ordering pair**. The script is roughly: "Client generates a `client_msg_id`. Chat Service dedups on `(chat_id, client_msg_id)` so network-blip retries don't duplicate. It then assigns a monotonic per-chat sequence — that's my ordering authority, not wall-clock time, which dodges clock skew across nodes. Kafka partitioning by `chat_id` preserves that order through the broker, and the client uses the sequence to detect gaps and trigger backfill." If you say that unprompted, you've answered idempotency, ordering, indexing, and clock-skew in one breath, and the interviewer mentally upgrades you.
+
+---
+
+### Ordering, clock skew, Snowflake ID and sequence
 
 
