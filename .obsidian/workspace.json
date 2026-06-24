@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/Questions/Guide.md",
+                "file": "System design/Questions/Uber/My attempt.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,19 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Guide"
+              "title": "My attempt"
+            }
+          },
+          {
+            "id": "6f8dd85ffa3d4ad9",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "System design/Questions/WhatsApp/attachments/Pasted image 20260623191149.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20260623191149"
             }
           }
         ]
@@ -63,7 +75,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Scale",
+                "query": "fan out",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -182,7 +194,20 @@
   },
   "active": "4bb54c488865757b",
   "lastOpenFiles": [
+    "System design/Questions/Untitled.md",
+    "System design/Questions/Uber/My attempt.md",
+    "System design/Questions/Uber",
+    "System design/Questions/WhatsApp/My version.md",
+    "System design/Questions/Uber.md",
+    "System design/Questions/WhatsApp/attachments/Pasted image 20260623191149.png",
+    "System design/Questions/WhatsApp/My attempt 2.md",
     "System design/Questions/WhatsApp/My attempt 1.md",
+    "System design/Redis.md",
+    "System design/Event Driven System and Dead Letter Queue.md",
+    "System design/Dependency Injection & Lifetimes.md",
+    "System design/DDD, Event sourcing, CQRS and Outbox pattern.md",
+    "System design/days_1_3_study_notes.md",
+    "System design/Some additional notes.md",
     "System design/Questions/Guide.md",
     "System design/Questions/Design Bidding Platform.md",
     "System design/Questions/Design Auction System - Code Monkey.md",
@@ -200,16 +225,10 @@
     "System design/Questions/WhatsApp/attachments/Pasted image 20260622021443.png",
     "System design/The 3 step framework.md",
     "System design/Resiliency and circular patterns.md",
-    "System design/DDD, Event sourcing, CQRS and Outbox pattern.md",
-    "System design/Redis.md",
-    "System design/Event Driven System and Dead Letter Queue.md",
-    "System design/Dependency Injection & Lifetimes.md",
-    "System design/Some additional notes.md",
     "System design/The 12 technical concepts.md",
     "System design/Questions/Design Uber.md",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260622010823.png",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260622010720.png",
-    "System design/Questions/WhatsApp/attachments/Pasted image 20260622010411.png",
     "System design/Questions/WhatsApp/attachments",
     "System design/Concepts/Common concepts.md",
     "System design/Questions/WhatsApp",
@@ -220,12 +239,6 @@
     "System design/Examples/Online bidding.md",
     "System design/Questions/attachments",
     "System design/Questions",
-    "System design/days_1_3_study_notes.md",
-    "System design/System design prep/system_design_interview_plan.md",
-    "System design/System design prep/atlassian system design video.md",
-    "Budgeting.md",
-    "Atlassian.md",
-    "System design/Examples/attachments/excali1.excalidraw",
-    "Hobby"
+    "System design/Examples/attachments/excali1.excalidraw"
   ]
 }

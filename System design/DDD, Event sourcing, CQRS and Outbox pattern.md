@@ -47,9 +47,14 @@ The traditional fix is a distributed transaction (2PC — two-phase commit) span
 - Many databases and message brokers don't support 2PC
 - Even when supported, it tightly couples your service to both systems and adds significant complexity
 
-##### How Event Sourcing solves it
+##### How Event Sourcing solves the dual write problem
 
 Because Event Sourcing uses an **event store** as its sole source of truth, it collapses the two operations into one. Writing an event to the event store is a single atomic operation. The event store also acts as a message broker — it delivers events to any subscribers automatically.
+
+
+So rather than DB + outbox + CDC-to-Kafka, you append the event to an event store, and that store _is_ both your persistence and your event source. Downstream consumers subscribe to the event stream directly. Downstream consumers read the event stream: one builds a **read model / projection** (a queryable "current state of each chat" table for fetching history — this is where CQRS naturally pairs in), another handles live delivery, another updates search indexes, etc.
+
+To get "current state" (e.g. "what's in this chat right now"), you either replay events or, more practically, read from a **projection** that a consumer keeps up to date by folding the events.
 
 So instead of:
 
@@ -337,47 +342,6 @@ Start with direct SQL for both reads and writes when:
 - Team is small, iteration speed matters
 - Consistency between what you write and what you read matters for UX
 
-
-#### Introduce CQRS when a specific pain point emerges:
-
-
-CQRS (Command Query Responsibility Segregation) is one of those patterns that gets applied at very different levels of granularity, and people often talk past each other because they mean different things by it.
-
-Here's a breakdown of the levels:
-
-### Level 1: The core principle (method/object level)
-
-The original idea from Bertrand Meyer's **Command-Query Separation (CQS)** — not even CQRS yet — is simply:
-
-> A method should either _do something_ (command) or _return something_ (query), never both.
-
-CQRS takes this and applies it at the **architectural level** rather than just to individual methods.
-
-### Level 2: Separate models (logical separation)
-
-At this level you have one codebase/database, but you intentionally design **two distinct object models**:
-
-- A **write model** — concerned with business logic, validation, invariants
-- A **read model** — concerned with returning data shaped for the UI/consumer, often denormalized
-
-No infrastructure change, just a design discipline. This is the minimum most people mean by "doing CQRS."
-
-### Level 3: Separate data stores (physical separation)
-
-Now you actually maintain **two different databases** (or schemas):
-
-- A **write store** — normalized, optimized for consistency and transactional integrity
-- A **read store** — denormalized, optimized for fast queries (could be Redis, Elasticsearch, a flat SQL view, etc.)
-
-A sync mechanism (often async) propagates writes to the read store. This introduces **eventual consistency** as a real concern.
-
-### Level 4: CQRS + Event Sourcing
-
-This is the "full" version many DDD practitioners mean. The write side doesn't store _current state_ at all — it stores a **log of events** (e.g. `OrderPlaced`, `ItemAdded`, `OrderShipped`). Current state is derived by replaying events.
-
-The read side builds **projections** from those events — materialized views tailored to specific query needs.
-
-This gives you: full audit trail, time-travel debugging, ability to build new read models retroactively — but also significant complexity.
 
 ---
 
