@@ -1,3 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Interview
 
 First interview was with an engineering manager. General interview with a mix of introduction, behavioural, and technical. Second interview was a technical interview with 2 engineering managers. Consisted of a whiteboard interview, code review on a project they provided beforehand, and other technical questions. There may have been a third behavioural interview, but didn't progress to it.
@@ -45,3 +63,6 @@ Question 4
 
 How would you set up a system for a website that does ebay-like auctions. (Architectural, whiteboard)
 
+
+
+var products1 = new List<Product> { banana, apple }; var products2 = new List<Product> { banana, apple }; var history1 = new ShopperHistory(customerId, products1); var history2 = new ShopperHistory(customerId, products2); // This will return FALSE because products1 != products2 by reference bool areEqual = history1 == history2;

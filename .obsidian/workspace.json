@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/Questions/Uber/My attempt.md",
+                "file": "System design/Dependency Injection & Lifetimes.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,22 +28,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "My attempt"
+              "title": "Dependency Injection & Lifetimes"
             }
           },
           {
             "id": "6f8dd85ffa3d4ad9",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "System design/Questions/WhatsApp/attachments/Pasted image 20260623191149.png"
+                "file": "System design/Questions/Design Bidding Platform.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260623191149"
+              "icon": "lucide-file",
+              "title": "Design Bidding Platform"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -75,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "fan out",
+                "query": "http factory",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -192,51 +205,51 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4bb54c488865757b",
+  "active": "6f8dd85ffa3d4ad9",
   "lastOpenFiles": [
-    "System design/Questions/Untitled.md",
-    "System design/Questions/Uber/My attempt.md",
-    "System design/Questions/Uber",
-    "System design/Questions/WhatsApp/My version.md",
-    "System design/Questions/Uber.md",
-    "System design/Questions/WhatsApp/attachments/Pasted image 20260623191149.png",
-    "System design/Questions/WhatsApp/My attempt 2.md",
+    "System design/Questions/Design Online auction.md",
+    "System design/Questions/Design Bidding Platform.md",
+    "System design/Questions/Design Auction System - Code Monkey.md",
     "System design/Questions/WhatsApp/My attempt 1.md",
+    "System design/Questions/WhatsApp/My attempt 2.md",
+    "System design/Questions/Common Flows in System Design.md",
+    "System design/Questions/Auction.md",
+    "System design/Questions/Auction - System Design Handbook.md",
+    "System design/Questions/WhatsApp/Design WhatsApp.md",
+    "System design/Questions/Design Uber.md",
+    "System design/Questions/WhatsApp/My version.md",
+    "System design/Questions/WhatsApp/attachments/Pasted image 20260625132207.png",
+    "System design/Questions/attachments/Pasted image 20260625132114.png",
+    "System design/Questions/TicketMaster/Design Ticketmaster.md",
+    "System design/Questions/Uber/My attempt.md",
+    "System design/Questions/Design Ticketmaster.md",
+    "System design/Questions/Guide.md",
+    "System design/Questions/WhatsApp/attachments/Pasted image 20260623191149.png",
+    "System design/Dependency Injection & Lifetimes.md",
+    "DotNet/C_Sharp/C_Sharp courses/1. SOLID For CSharp.md",
+    "WooliesX Csharp.md",
+    "Fractions and decimals.md",
+    "System design/Questions/Untitled.md",
+    "System design/Questions/Uber",
+    "System design/Questions/Uber.md",
     "System design/Redis.md",
     "System design/Event Driven System and Dead Letter Queue.md",
-    "System design/Dependency Injection & Lifetimes.md",
     "System design/DDD, Event sourcing, CQRS and Outbox pattern.md",
     "System design/days_1_3_study_notes.md",
     "System design/Some additional notes.md",
-    "System design/Questions/Guide.md",
-    "System design/Questions/Design Bidding Platform.md",
-    "System design/Questions/Design Auction System - Code Monkey.md",
-    "System design/Questions/Auction - System Design Handbook.md",
-    "System design/Questions/WhatsApp/Design WhatsApp.md",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260623022639.png",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260623021728.png",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260623021707.png",
     "System design/Questions/WhatsApp/My attempt 1.md.tmp.13744.40ee0ffc596a",
-    "System design/Questions/Design Ticketmaster.md",
-    "System design/Questions/Design Online auction.md",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260622104715.png",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260622104635.png",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260622021525.png",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260622021443.png",
-    "System design/The 3 step framework.md",
-    "System design/Resiliency and circular patterns.md",
-    "System design/The 12 technical concepts.md",
-    "System design/Questions/Design Uber.md",
-    "System design/Questions/WhatsApp/attachments/Pasted image 20260622010823.png",
-    "System design/Questions/WhatsApp/attachments/Pasted image 20260622010720.png",
     "System design/Questions/WhatsApp/attachments",
-    "System design/Concepts/Common concepts.md",
     "System design/Questions/WhatsApp",
-    "System design/Questions/TicketMaster/Design Ticketmaster.md",
     "System design/Concepts",
     "System design/Questions/TicketMaster/attachments",
     "System design/Questions/TicketMaster",
-    "System design/Examples/Online bidding.md",
     "System design/Questions/attachments",
     "System design/Questions",
     "System design/Examples/attachments/excali1.excalidraw"

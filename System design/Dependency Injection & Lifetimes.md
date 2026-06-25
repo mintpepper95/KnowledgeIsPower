@@ -130,13 +130,19 @@ Note `HttpClient` in Blazor is just `fetch()` API, so this whole thing doesn't a
 **1. `new HttpClient()` everywhere or Transient registration** 
 Each instance of the client will create a new connection pool. A connection pool keeps a collection of established sockets warm and ready so when a request comes in, you can use the socket in the pool instead of re-establishing network connection.
 
-* When you need to use `HttpClient`, transient means everytime you have to re-establish the network connection, making pool useless
+* When you need to use `HttpClient`, transient means every time you have to re-establish the network connection, making pool useless
 
 * Disposing `HttpClient` doesn't immediately release the underlying socket — it lingers in for a while (not reusable). Under load, you exhaust the port pool: **socket exhaustion** and will make app unresponsive, as it can only open a certain number of sockets.
 
 **2. One static/Singleton `HttpClient`**
 * Domain names like `github.com` is just human friendly, routers only understand raw ip - `140.282.121.1`. When you tell `HttpClient` to connect to `github.com`, it does a DNS lookup to get ip address. `HttpClient` then opens a TCP connection to it.
 * Once connection is opened, domain name is completely ignored. With singleton lifetime, connections are opened indefinitely. So if GitHub changes their ip address, `HttpClient` won't pick it up as it already has an active open socket to old ip address, it will never look at the domain name again until app is restarted.
+
+| Lifetime                           | Socket exhaustion | Stale DNS |
+| ---------------------------------- | ----------------- | --------- |
+| Transient/Scoped (new per request) | Yes               | No        |
+| Singleton                          | No                | Yes       |
+| `IHttpClientFactory`               | No                | No        |
 
 ##### The solution: `IHttpClientFactory`
 
@@ -165,3 +171,103 @@ Under the hood, `IHttpClientFactory` manages a pool of `HttpMessageHandler` inst
 - **Handlers are pooled** — sockets are reused, no exhaustion
 - **Handlers are rotated** every **2 minutes** by default — so DNS changes are picked up
 - **`HttpClient` itself is lightweight** — `IHttpClientFactory.CreateClient()` creates a new `HttpClient` wrapper each time, but it shares the pooled handler underneath
+
+
+
+---
+
+When you wrap an `HttpClient` in a `using` block, or when a Scoped/Transient lifecycle ends and .NET disposes of it, you aren't actually closing the underlying network socket right away.
+
+Instead, `HttpClient` tells the operating system, _"I am done with this connection."_ The operating system replies, _"Okay, I will close it, but I have to put this socket into a safety state called **`TIME_WAIT`** for the next 2 to 4 minutes."_
+
+### Why does the OS do this?
+
+The `TIME_WAIT` state is a built-in feature of the global TCP/IP network protocol. The OS keeps that specific port reserved just in case any stray, delayed network packets from the server arrive late. If it reopened that port immediately for a different request, those late packets would corrupt the new data stream.
+
+### The Crash Scenario
+
+If your web API gets a spike in traffic and handles 1,000 requests per second, and each request creates, uses, and immediately disposes of an `HttpClient`:
+
+1. You open 1,000 sockets.
+    
+2. You immediately dispose of them.
+    
+3. Those 1,000 sockets sit in `TIME_WAIT` for 4 minutes.
+    
+
+Within those 4 minutes, you will have accumulated **240,000 sockets** sitting completely dead in the `TIME_WAIT` state. Because an operating system has a hard limit on how many outbound ports it can open, your server completely runs out of sockets and throws a fatal `SocketException` (_"No buffer space available"_).
+
+## How `IHttpClientFactory` Solves the Paradox
+
+This is exactly why `IHttpClientFactory` was created. It splits the `HttpClient` into two pieces:
+
+1. **The Wrapper (`HttpClient`):** This is the lightweight object injected into your Transient or Scoped service. When your service lifetime ends, this wrapper **is** disposed of immediately. It's cheap and goes straight to the garbage collector.
+    
+2. **The Connection Pool (`HttpMessageHandler`):** This is the heavy piece that actually holds the open OS network sockets. The factory keeps this pool alive in the background.
+    
+
+When your Scoped service spins up, the factory hands it an `HttpClient` wrapper hooked up to an _already open_ socket from the pool. When your service dies, the wrapper is destroyed, but the factory slides that underlying socket right back into the pool to be reused for the next request.
+
+No sockets get put into `TIME_WAIT`, and your server stays completely stable.
+
+
+
+---
+
+
+
+
+**DI container** (or IoC container). In .NET the built-in one is `IServiceCollection` / `IServiceProvider`.
+
+- **`IServiceCollection`** — where you _register_ services (the "write" side). This is what you use in `Startup.cs` / `Program.cs` during app startup.
+- **`IServiceProvider`** — where you _resolve_ services at runtime (the "read" side). The framework builds this from the collection and uses it to inject dependencies automatically.
+
+The container looks at the registered graph, instantiates everything in the right order, and injects them.
+
+**Third-party alternatives** exist (Autofac, Lamar, DryIoc) that plug into the same `IServiceCollection` abstraction but offer more advanced features like property injection, decorators, or dynamic registration. The built-in one covers most scenarios.
+
+
+### Cartesian explosion
+
+### The Simple Example: A Blog
+
+Imagine you have a single **Blog**.
+
+- This Blog has **3 Posts**.
+    
+- This Blog also has **4 Tags** (like "Tech", "News", "Coding", "Fun").
+    
+
+You want to load the Blog, its Posts, and its Tags all at once using this code:
+
+C#
+
+```
+var blog = dbContext.Blogs
+    .Include(b => b.Posts)
+    .Include(b => b.Tags)
+    .First();
+```
+
+### The "Explosion"
+
+In reality, there are only **8 pieces of data** in your database: 1 Blog + 3 Posts + 4 Tags.
+
+However, because EF Core uses a single `LEFT JOIN` query by default, the database creates a grid combining every Post with every Tag.
+
+The database calculates the rows by multiplying: **1 (Blog) × 3 (Posts) × 4 (Tags) = 12 Rows.**
+
+The database will send this flat grid back to your app:
+
+|**Blog Data**|**Post Data**|**Tag Data**|
+|---|---|---|
+|My Blog|Post 1|Tech|
+|My Blog|Post 1|News|
+|My Blog|Post 1|Coding|
+|My Blog|Post 1|Fun|
+|My Blog|Post 2|Tech|
+|...and so on|...|...|
+
+Notice how "My Blog" and "Post 1" are completely duplicated over and over again?
+
+If your blog had **100 Posts** and **50 Tags**, the database would send back **5,000 rows** of heavily duplicated data across your network, just to deliver 151 actual items. This chokes your database CPU, network bandwidth, and your app's memory.
