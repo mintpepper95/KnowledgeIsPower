@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/Questions/Design Bidding Platform.md",
+                "file": "Budgeting.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Design Bidding Platform"
+              "title": "Budgeting"
             }
           }
         ],
@@ -207,8 +207,8 @@
   },
   "active": "6f8dd85ffa3d4ad9",
   "lastOpenFiles": [
-    "System design/Questions/Design Online auction.md",
     "System design/Questions/Design Bidding Platform.md",
+    "System design/Questions/Design Online auction.md",
     "System design/Questions/Design Auction System - Code Monkey.md",
     "System design/Questions/WhatsApp/My attempt 1.md",
     "System design/Questions/WhatsApp/My attempt 2.md",
