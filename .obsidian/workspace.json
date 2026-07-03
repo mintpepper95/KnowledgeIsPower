@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Budgeting.md",
+                "file": "Leetcode/Graph and Trees/Problems/3286. Find a Safe Walk Through a Grid.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Budgeting"
+              "title": "3286. Find a Safe Walk Through a Grid"
             }
           }
         ],
@@ -207,6 +207,8 @@
   },
   "active": "6f8dd85ffa3d4ad9",
   "lastOpenFiles": [
+    "Budgeting.md",
+    "Leetcode/Graph and Trees/Problems/3286. Find a Safe Walk Through a Grid.md",
     "System design/Questions/Design Bidding Platform.md",
     "System design/Questions/Design Online auction.md",
     "System design/Questions/Design Auction System - Code Monkey.md",
@@ -235,8 +237,6 @@
     "System design/Redis.md",
     "System design/Event Driven System and Dead Letter Queue.md",
     "System design/DDD, Event sourcing, CQRS and Outbox pattern.md",
-    "System design/days_1_3_study_notes.md",
-    "System design/Some additional notes.md",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260623022639.png",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260623021728.png",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260623021707.png",
