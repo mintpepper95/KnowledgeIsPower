@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Leetcode/Graph and Trees/Problems/3286. Find a Safe Walk Through a Grid.md",
+                "file": "Operation Health 2026.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "3286. Find a Safe Walk Through a Grid"
+              "title": "Operation Health 2026"
             }
           }
         ],
@@ -207,8 +207,8 @@
   },
   "active": "6f8dd85ffa3d4ad9",
   "lastOpenFiles": [
-    "Budgeting.md",
     "Leetcode/Graph and Trees/Problems/3286. Find a Safe Walk Through a Grid.md",
+    "Budgeting.md",
     "System design/Questions/Design Bidding Platform.md",
     "System design/Questions/Design Online auction.md",
     "System design/Questions/Design Auction System - Code Monkey.md",
