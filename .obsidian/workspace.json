@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Operation Health 2026.md",
+                "file": "Leetcode/Sorting/Problems/628. Maximum Product of Three Numbers.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Operation Health 2026"
+              "title": "628. Maximum Product of Three Numbers"
             }
           }
         ],
@@ -205,8 +205,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6f8dd85ffa3d4ad9",
+  "active": "0f26495770da4336",
   "lastOpenFiles": [
+    "Operation Health 2026.md",
+    "Leetcode/Sorting/Problems/628. Maximum Product of Three Numbers.md",
+    "Leetcode/Arrays",
     "Leetcode/Graph and Trees/Problems/3286. Find a Safe Walk Through a Grid.md",
     "Budgeting.md",
     "System design/Questions/Design Bidding Platform.md",
@@ -235,8 +238,6 @@
     "System design/Questions/Uber",
     "System design/Questions/Uber.md",
     "System design/Redis.md",
-    "System design/Event Driven System and Dead Letter Queue.md",
-    "System design/DDD, Event sourcing, CQRS and Outbox pattern.md",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260623022639.png",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260623021728.png",
     "System design/Questions/WhatsApp/attachments/Pasted image 20260623021707.png",
@@ -251,7 +252,6 @@
     "System design/Questions/TicketMaster/attachments",
     "System design/Questions/TicketMaster",
     "System design/Questions/attachments",
-    "System design/Questions",
-    "System design/Examples/attachments/excali1.excalidraw"
+    "System design/Questions"
   ]
 }
